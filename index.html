@@ -46,7 +46,7 @@
         .popup-content p {
             margin: 0 0 15px;
             font-size: 16px;
-            line-height: 1.4; /* 팝업 줄바꿈 간격 조정 */
+            line-height: 1.4; /* 팝업 줄바꿈 간격 */
         }
         .popup-content .close-button {
             position: absolute;
@@ -92,20 +92,22 @@
             background-color: #e0e0e0;
         }
         /* 마커 라벨 스타일 */
-        .gm-style .gm-label {
-            font-family: Arial, sans-serif;
-            font-size: 11px; /* 글씨 크기 축소 */
-            color: #000000;
-            background-color: #ffffff; /* 완전 불투명 흰색 */
-            padding: 3px 6px;
-            border: 1px solid #999; /* 경계선 강화 */
-            border-radius: 2px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* 입체감 추가 */
-            max-width: 150px; /* 긴 텍스트 관리 */
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis; /* 긴 텍스트 생략 */
-            font-weight: bold;
+        .gm-style .gm-label,
+        .gm-style div[aria-label] {
+            font-family: Arial, sans-serif !important;
+            font-size: 10px !important;
+            color: #000000 !important;
+            background-color: #ffffff !important; /* 완전 불투명 흰색 */
+            padding: 4px 8px !important; /* 여백 증가 */
+            border: 1px solid #999 !important; /* 경계선 강화 */
+            border-radius: 3px !important;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3) !important; /* 그림자 강화 */
+            max-width: 150px !important;
+            white-space: nowrap !important;
+            overflow: hidden !important;
+            text-overflow: ellipsis !important;
+            font-weight: bold !important;
+            z-index: 1000 !important;
         }
     </style>
 </head>
