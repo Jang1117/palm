@@ -44,15 +44,18 @@
             font-size: 22px;
         }
         .popup-content p {
-            margin: 0 0 10px;
+            margin: 0 0 15px;
             font-size: 16px;
+        }
+        .popup-content .established-date {
+            font-weight: bold;
         }
         .popup-content .close-button {
             position: absolute;
             top: 10px;
             right: 10px;
             cursor: pointer;
-            color: #000;
+            color: #000000;
             font-weight: bold;
             font-size: 16px;
         }
@@ -67,6 +70,10 @@
         }
         .popup-content .move-button:hover {
             background-color: #0056b3;
+        }
+        .popup-content img.asset-image {
+            max-width: 100%;
+            margin-top: 8px;
         }
         /* Global, Local 버튼 스타일 */
         .global-button, .local-button {
@@ -89,16 +96,6 @@
         }
         .global-button:hover, .local-button:hover {
             background-color: #e0e0e0;
-        }
-        /* 마커 라벨 스타일 */
-        .gm-style .gm-label {
-            font-family: Arial, sans-serif;
-            font-size: 12px;
-            color: #000;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 2px 4px;
-            border-radius: 2px;
-            white-space: nowrap;
         }
     </style>
 </head>
@@ -123,137 +120,84 @@
         // 전역 변수 정의
         let map;
         let markers = [];
-        let currentProvinceAssets = null;
-        let assetsByProvince = null;
-        let lastViewedAsset = null;
-
-        // 커스텀 마커 아이콘 (팜나무 모양)
-        const palmTreeIcon = {
-            url: './palm_tree.png', // main 브랜치 루트 디렉토리의 palm_tree.png
-            scaledSize: new window.google.maps.Size(40, 40),
-            labelOrigin: new window.google.maps.Point(20, 50) // 라벨이 마커 아래에 위치
-        };
-
-        // 마커 이미지 로드 디버깅
-        const img = new Image();
-        img.src = palmTreeIcon.url;
-        img.onload = () => console.log("마커 이미지가 로드되었습니다: ", palmTreeIcon.url);
-        img.onerror = () => console.error("마커 이미지 로드 실패: ", palmTreeIcon.url);
-
-        // Google Maps API 로드 오류 디버깅
-        window.addEventListener('error', (event) => {
-            if (event.message.includes('google is not defined')) {
-                console.error('Google Maps API 로드 실패. API 키 또는 HTTP 리퍼러를 확인하세요.');
-            }
-        });
+        let lastViewedAsset = null; // 마지막으로 확인한 자산 저장
 
         // 지도 초기화 함수
-        window.initMap = function() {
-            if (typeof window.google === 'undefined') {
-                console.error('Google Maps API가 로드되지 않았습니다. API 키와 네트워크를 확인하세요.');
-                return;
-            }
-
+        function initMap() {
+            // assets 변수가 정의되었는지 확인
             if (typeof assets === "undefined") {
-                console.error("assets.js가 로드되지 않았습니다. 파일을 확인하세요.");
+                console.error("Error: 'assets' is not defined. Ensure assets.js is loaded correctly.");
                 return;
             }
-
-            // 자산을 지역별로 그룹화
-            assetsByProvince = assets.reduce((acc, asset) => {
-                const province = asset.province;
-                if (!acc[province]) {
-                    acc[province] = [];
-                }
-                acc[province].push(asset);
-                return acc;
-            }, {});
 
             // 지도 중심 설정 (인도네시아 서부 수마트라)
-            map = new window.google.maps.Map(document.getElementById("map"), {
+            map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 8,
                 center: { lat: -1.5, lng: 101.0 },
                 fullscreenControl: false,
-                mapTypeId: window.google.maps.MapTypeId.SATELLITE
+                mapTypeId: google.maps.MapTypeId.SATELLITE
             });
 
-            console.log(`줌 레벨: ${map.getZoom()}`);
+            // 초기 줌 레벨 출력
+            console.log(`Zoom level: ${map.getZoom()}`);
 
+            // 줌 레벨 변화 감지
             map.addListener("zoom_changed", () => {
-                console.log(`줌 레벨: ${map.getZoom()}`);
+                console.log(`Zoom level: ${map.getZoom()}`);
                 updateMarkers();
             });
 
+            // 초기 마커 설정
             updateMarkers();
 
+            // 마커 업데이트 함수
             function updateMarkers() {
+                // 기존 마커 제거
                 markers.forEach(marker => marker.setMap(null));
                 markers = [];
 
                 const zoom = map.getZoom();
 
                 if (zoom <= 7) {
-                    Object.keys(assetsByProvince).forEach(province => {
-                        const provinceAssets = assetsByProvince[province];
-                        let latSum = 0, lngSum = 0;
-                        provinceAssets.forEach(asset => {
-                            latSum += asset.position.lat;
-                            lngSum += asset.position.lng;
-                        });
-                        const center = {
-                            lat: latSum / provinceAssets.length,
-                            lng: lngSum / provinceAssets.length
-                        };
-
-                        const marker = new window.google.maps.Marker({
-                            position: center,
-                            map: map,
-                            title: `${province}: ${provinceAssets.length}개 자산`,
-                            icon: palmTreeIcon,
-                            label: {
-                                text: `${province} (${provinceAssets.length})`,
-                                fontSize: "12px",
-                                fontWeight: "bold",
-                                color: "#000",
-                                fontFamily: "Arial, sans-serif"
-                            }
-                        });
-
-                        marker.addListener("click", () => {
-                            showPopup(province, `${province}: ${provinceAssets.length}개 자산`, `이 지역에는 ${provinceAssets.length}개의 팜 오일 자산이 있습니다.`, `
-                                <button class="move-button" onclick="moveToAssetsWrapper('${province}')">자산 이동</button>
-                            `);
-                        });
-
-                        markers.push(marker);
-                    });
-                } else {
+                    // 줌 레벨 7 이하: 전체 자산의 중심점에 단일 마커 표시
+                    let latSum = 0, lngSum = 0;
                     assets.forEach(asset => {
-                        const marker = new window.google.maps.Marker({
+                        latSum += asset.position.lat;
+                        lngSum += asset.position.lng;
+                    });
+                    const center = {
+                        lat: latSum / assets.length,
+                        lng: lngSum / assets.length
+                    };
+
+                    const marker = new google.maps.Marker({
+                        position: center,
+                        map: map,
+                        title: `인도네시아: ${assets.length}개 자산`
+                    });
+
+                    marker.addListener("click", () => {
+                        // 팝업 창 표시
+                        showPopup("인도네시아", `인도네시아: ${assets.length}개 자산`, `이 지역에는 ${assets.length}개의 팜 오일 자산이 있습니다.`, `
+                            <button class="move-button" onclick="moveToAssets()">자산 이동</button>
+                        `);
+                    });
+
+                    markers.push(marker);
+                } else {
+                    // 줌 레벨 8 이상: 개별 자산 마커 표시
+                    assets.forEach(asset => {
+                        const marker = new google.maps.Marker({
                             position: asset.position,
                             map: map,
-                            title: asset.title,
-                            icon: palmTreeIcon,
-                            label: {
-                                text: asset.title,
-                                fontSize: "12px",
-                                fontWeight: "normal",
-                                color: "#000",
-                                fontFamily: "Arial, sans-serif"
-                            }
+                            title: asset.title
                         });
 
                         marker.addListener("click", () => {
+                            // 팝업 창 표시 및 줌 조정
                             showPopup(asset.title, asset.title, asset.description, `
-                                <p><strong>회사명:</strong> ${asset.millCompanyName}</p>
-                                <p><strong>모회사:</strong> ${asset.parentCompanyName}</p>
-                                <p><strong>주소:</strong> ${asset.address}</p>
-                                <p><strong>지역:</strong> ${asset.province}</p>
-                                <p><strong>농장면적:</strong> ${asset.farmArea}</p>
-                                <p><strong>FFB 생산:</strong> ${asset.ffbProduction}</p>
-                                <p><strong>설비 용량:</strong> ${asset.facilityCapacity}</p>
-                                <p><strong>CPO 생산:</strong> ${asset.cpoProduction}</p>
-                                <p><strong>PK 생산:</strong> ${asset.pkProduction}</p>
+                                <p class="established-date">설립시기: ${asset.establishedDate}</p>
+                                <img src="${asset.imageUrl}" alt="${asset.title}" class="asset-image">
                             `, asset);
                             map.setZoom(15);
                             map.setCenter(asset.position);
@@ -265,55 +209,48 @@
             }
         }
 
+        // 팝업 창 표시 함수
         function showPopup(id, title, description, extraContent, asset = null) {
             const popupOverlay = document.getElementById("popupOverlay");
             const popupTitle = document.getElementById("popupTitle");
             const popupDescription = document.getElementById("popupDescription");
             const popupExtra = document.getElementById("popupExtra");
 
+            // 팝업 내용 설정
             popupTitle.textContent = title;
             popupDescription.textContent = description;
             popupExtra.innerHTML = extraContent;
 
+            // 마지막으로 확인한 자산 저장
             if (asset) {
                 lastViewedAsset = asset;
             }
 
-            if (id in assetsByProvince) {
-                currentProvinceAssets = assetsByProvince[id];
-            } else {
-                currentProvinceAssets = null;
-            }
-
+            // 팝업 표시
             popupOverlay.style.display = "block";
         }
 
+        // 팝업 창 닫기 함수
         function closePopup() {
             const popupOverlay = document.getElementById("popupOverlay");
             popupOverlay.style.display = "none";
-            currentProvinceAssets = null;
         }
 
+        // 자산으로 이동 함수
         function moveToAssets() {
-            if (currentProvinceAssets) {
-                const bounds = new window.google.maps.LatLngBounds();
-                currentProvinceAssets.forEach(asset => {
-                    bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
-                });
-                map.fitBounds(bounds);
+            const bounds = new google.maps.LatLngBounds();
+            assets.forEach(asset => {
+                bounds.extend(new google.maps.LatLng(asset.position.lat, asset.position.lng));
+            });
+            map.fitBounds(bounds);
 
-                const currentZoom = map.getZoom();
-                if (currentZoom > 10) map.setZoom(10);
-                if (currentZoom < 7) map.setZoom(7);
-            }
+            // 줌 레벨 제한
+            const currentZoom = map.getZoom();
+            if (currentZoom > 10) map.setZoom(10);
+            if (currentZoom < 7) map.setZoom(7);
         }
 
-        function moveToAssetsWrapper(province) {
-            currentProvinceAssets = assetsByProvince[province];
-            moveToAssets();
-            closePopup();
-        }
-
+        // Local 버튼 클릭 시 마지막으로 확인한 자산으로 이동
         function moveToLocal() {
             if (lastViewedAsset) {
                 map.setZoom(15);
@@ -323,6 +260,7 @@
             }
         }
 
+        // Global 버튼 클릭 시 지도 초기 상태로 복원
         function resetMap() {
             map.setZoom(8);
             map.setCenter({ lat: -1.5, lng: 101.0 });
@@ -332,8 +270,7 @@
 
     <!-- Google Maps JavaScript API 로드 -->
     <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKZ64N6aTmQLaU312nCqXeyrNa-lol2IQ&callback=initMap&loading=async"
-        onerror="console.error('Google Maps API 스크립트 로드 실패. 네트워크 또는 API 키를 확인하세요.');">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKZ64N6aTmQLaU312nCqXeyrNa-lol2IQ&callback=initMap&loading=async">
     </script>
 </body>
 </html>
