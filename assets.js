@@ -15,7 +15,7 @@ const assets = [
     },
     {
         position: { lat: -1.393, lng: 101.593 }, // 더미 좌표
-        title: "BINA PRATAMA SAKATOJAYA",
+        title: "Bina Pratama Sakatojaya",
         millCompanyName: "BINA PRATAMA SAKATOJAYA",
         parentCompanyName: "INCASI RAYA",
         address: "Nagari Sei Jujuhan, Kec. Sangir Balai Janggo, Kab. Solok Selatan, Propinsi Sumatera Barat",
@@ -29,7 +29,7 @@ const assets = [
     },
     {
         position: { lat: -0.997, lng: 101.742 }, // 더미 좌표
-        title: "SUMBAR ANDALAS KENCANA",
+        title: "Sumbar Andalas Kencana",
         millCompanyName: "SUMBAR ANDALAS KENCANA",
         parentCompanyName: "INCASI RAYA",
         address: "Muaro Timpeh, Dharmasraya, West Sumatra",
@@ -43,7 +43,7 @@ const assets = [
     },
     {
         position: { lat: -2.184, lng: 100.917 }, // 더미 좌표
-        title: "SODETAN",
+        title: "Sodetan",
         millCompanyName: "INCASI RAYA",
         parentCompanyName: "INCASI RAYA",
         address: "Ds.Muara Sakai, Kec.Pancung Soal, Pesisir Selatan, West Sumatra",
@@ -57,7 +57,7 @@ const assets = [
     },
     {
         position: { lat: -2.331, lng: 100.995 }, // 더미 좌표
-        title: "SILAUT",
+        title: "Silaut",
         millCompanyName: "SUMATERA JAYA AGRO LESTARI",
         parentCompanyName: "INCASI RAYA",
         address: "Ds.Silaut, Kec.Lunang Silaut, Pesisir Selatan, West Sumatra",
@@ -71,7 +71,7 @@ const assets = [
     },
     {
         position: { lat: -1.251, lng: 101.575 }, // 더미 좌표
-        title: "SELAGO MAKMUR PLANTATION",
+        title: "Selago Makmur Plantation",
         millCompanyName: "SELAGO MAKMUR PLANTATION",
         parentCompanyName: "INCASI RAYA",
         address: "Sei Rumbai, Dharmasraya, West Sumatra",
@@ -85,7 +85,7 @@ const assets = [
     },
     {
         position: { lat: 0.362, lng: 99.634 }, // 더미 좌표
-        title: "PASAMANAN MARAHMA SEJAHTERA",
+        title: "Pasamanan Marahma Sejahtera",
         millCompanyName: "PASAMANAN MARAHMA SEJAHTERA",
         parentCompanyName: "INCASI RAYA",
         address: "Sei Aur, U.Gading, Pasaman Barat, West Sumatra",
@@ -99,7 +99,7 @@ const assets = [
     },
     {
         position: { lat: -1.320, lng: 101.649 }, // 더미 좌표
-        title: "PANGIAN",
+        title: "Pangian",
         millCompanyName: "INCASI RAYA",
         parentCompanyName: "INCASI RAYA",
         address: "Sei Rumbai, Dharmasraya, West Sumatra",
@@ -113,7 +113,7 @@ const assets = [
     },
     {
         position: { lat: 0.333, lng: 99.383 }, // 더미 좌표
-        title: "BINTARA TANI NUSANTARA",
+        title: "Bintara Tani Nusantara",
         millCompanyName: "BINTARA TANI NUSANTARA",
         parentCompanyName: "INCASI RAYA",
         address: "Ds.Jorong Kiawai Timur, Kec.Sungai Beremas, Pasaman Barat, West Sumatra",
@@ -127,7 +127,7 @@ const assets = [
     },
     {
         position: { lat: 1.079, lng: 100.055 }, // 더미 좌표
-        title: "MULTIAGRO SUMATERAJAYA",
+        title: "Multiagro Sumaterajaya",
         millCompanyName: "MULTIAGRO SUMATERAJAYA",
         parentCompanyName: "INCASI RAYA",
         address: "Desa Aliaga RT 000 RW 000, Aliaga, Huta Raja Tinggi, Padang Lawas, Sumatera Utara",
