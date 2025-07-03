@@ -11,7 +11,7 @@ const assets = [
         facilityCapacity: "120 ton/hour",
         cpoProduction: "46,626 ton/year",
         pkProduction: "10,341 ton/year",
-        description: "농장면적: 12,433 ha, FFB 생산: 243,148 ton/year, 설비 용량: 120 ton/hour, CPO 생산: 46,626 ton/year, PK 생산: 10,341 ton/year."
+        description: "농장면적: 12,433 ha, FFB 생산: 243,148 ton/year, 설비 용량: 120 ton/hour, CPO 생산: 46,626 ton/year, PK 생산: 10,341 ton/year. "
     },
     {
         position: { lat: -2.331, lng: 100.995 },
