@@ -96,17 +96,17 @@
         .gm-style div[aria-label],
         .gm-style div[role="button"] {
             font-family: Arial, sans-serif !important;
-            font-size: 11px !important; /* 글씨 크기 증가 */
+            font-size: 11px !important;
             color: #000000 !important;
-            background-color: #ffffff !important; /* 완전 불투명 흰색 */
-            padding: 4px 8px !important; /* 여백 증가 */
-            border: 1px solid #999 !important; /* 경계선 */
+            background-color: #ffffff !important;
+            padding: 4px 8px !important;
+            border: 1px solid #999 !important;
             border-radius: 3px !important;
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3) !important; /* 입체감 */
-            max-width: 150px !important; /* 긴 텍스트 관리 */
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3) !important;
+            max-width: 150px !important;
             white-space: nowrap !important;
             overflow: hidden !important;
-            text-overflow: ellipsis !important; /* 긴 텍스트 생략 */
+            text-overflow: ellipsis !important;
             font-weight: bold !important;
             z-index: 1000 !important;
         }
@@ -136,11 +136,15 @@
         let lastViewedAsset = null;
 
         // 마커 이미지 로드 디버깅
-        const palmTreeIconUrl = './palm_tree.png';
+        const palmTreeIconUrl = './palm_tree.png'; // 기본 경로
+        const fallbackIconUrl = 'https://www.flaticon.com/svg/vstatic/icons/svg/944/94481.svg?token=exp=1727931432~hmac=8b7b8f8f8f8f8f8f8f8f8f8f8f8f8f8f'; // 대체 이미지
         const img = new Image();
         img.src = palmTreeIconUrl;
         img.onload = () => console.log("마커 이미지가 로드되었습니다: ", palmTreeIconUrl);
-        img.onerror = () => console.error("마커 이미지 로드 실패: ", palmTreeIconUrl);
+        img.onerror = () => {
+            console.error("마커 이미지 로드 실패: ", palmTreeIconUrl);
+            console.log("대체 이미지 사용: ", fallbackIconUrl);
+        };
 
         // Google Maps API 로드 오류 디버깅
         window.addEventListener('error', (event) => {
@@ -168,12 +172,20 @@
                 labelOrigin: new window.google.maps.Point(20, 50)
             };
 
+            // 이미지 로드 실패 시 대체 URL 사용
+            const imgTest = new Image();
+            imgTest.src = palmTreeIconUrl;
+            imgTest.onerror = () => {
+                console.warn("기본 마커 이미지 로드 실패, 대체 이미지 사용");
+                palmTreeIcon.url = fallbackIconUrl;
+            };
+
             // 지도 중심 설정 (인도네시아 서부 수마트라, 일반 지도)
             map = new window.google.maps.Map(document.getElementById("map"), {
                 zoom: 8,
                 center: { lat: -1.5, lng: 101.0 },
                 fullscreenControl: false,
-                mapTypeId: window.google.maps.MapTypeId.ROADMAP // 일반 지도
+                mapTypeId: window.google.maps.MapTypeId.ROADMAP
             });
 
             // 동적 CSS 주입으로 라벨 스타일 강제 적용
