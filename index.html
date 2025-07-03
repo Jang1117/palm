@@ -46,7 +46,7 @@
         .popup-content p {
             margin: 0 0 15px;
             font-size: 16px;
-            line-height: 1.4;
+            line-height: 1.4; /* 팝업 줄바꿈 간격 조정 */
         }
         .popup-content .close-button {
             position: absolute;
@@ -92,23 +92,20 @@
             background-color: #e0e0e0;
         }
         /* 마커 라벨 스타일 */
-        .gm-style .gm-label,
-        .gm-style div[aria-label],
-        .gm-style div[role="button"] {
-            font-family: Arial, sans-serif !important;
-            font-size: 11px !important;
-            color: #000000 !important;
-            background-color: #ffffff !important;
-            padding: 4px 8px !important;
-            border: 1px solid #999 !important;
-            border-radius: 3px !important;
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3) !important;
-            max-width: 150px !important;
-            white-space: nowrap !important;
-            overflow: hidden !important;
-            text-overflow: ellipsis !important;
-            font-weight: bold !important;
-            z-index: 1000 !important;
+        .gm-style .gm-label {
+            font-family: Arial, sans-serif;
+            font-size: 10px; /* 글씨 크기 축소 */
+            color: #000000;
+            background-color: #ffffff; /* 완전 불투명 흰색 */
+            padding: 3px 6px;
+            border: 1px solid #999; /* 경계선 강화 */
+            border-radius: 2px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* 입체감 추가 */
+            max-width: 150px; /* 긴 텍스트 관리 */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; /* 긴 텍스트 생략 */
+            font-weight: bold;
         }
     </style>
 </head>
@@ -136,15 +133,11 @@
         let lastViewedAsset = null;
 
         // 마커 이미지 로드 디버깅
-        const palmTreeIconUrl = './palm_tree.png'; // 기본 경로
-        const fallbackIconUrl = 'https://www.flaticon.com/svg/vstatic/icons/svg/944/94481.svg?token=exp=1727931432~hmac=8b7b8f8f8f8f8f8f8f8f8f8f8f8f8f8f'; // 대체 이미지
+        const palmTreeIconUrl = './palm_tree.png'; // main 브랜치 루트 디렉토리
         const img = new Image();
         img.src = palmTreeIconUrl;
         img.onload = () => console.log("마커 이미지가 로드되었습니다: ", palmTreeIconUrl);
-        img.onerror = () => {
-            console.error("마커 이미지 로드 실패: ", palmTreeIconUrl);
-            console.log("대체 이미지 사용: ", fallbackIconUrl);
-        };
+        img.onerror = () => console.error("마커 이미지 로드 실패: ", palmTreeIconUrl);
 
         // Google Maps API 로드 오류 디버깅
         window.addEventListener('error', (event) => {
@@ -169,51 +162,18 @@
             const palmTreeIcon = {
                 url: palmTreeIconUrl,
                 scaledSize: new window.google.maps.Size(40, 40),
-                labelOrigin: new window.google.maps.Point(20, 50)
+                labelOrigin: new window.google.maps.Point(20, 50) // 라벨이 마커 아래에 위치
             };
 
-            // 이미지 로드 실패 시 대체 URL 사용
-            const imgTest = new Image();
-            imgTest.src = palmTreeIconUrl;
-            imgTest.onerror = () => {
-                console.warn("기본 마커 이미지 로드 실패, 대체 이미지 사용");
-                palmTreeIcon.url = fallbackIconUrl;
-            };
-
-            // 지도 중심 설정 (인도네시아 서부 수마트라, 일반 지도)
+            // 지도 중심 설정 (인도네시아 서부 수마트라)
             map = new window.google.maps.Map(document.getElementById("map"), {
                 zoom: 8,
                 center: { lat: -1.5, lng: 101.0 },
                 fullscreenControl: false,
-                mapTypeId: window.google.maps.MapTypeId.ROADMAP
+                mapTypeId: window.google.maps.MapTypeId.SATELLITE
             });
 
-            // 동적 CSS 주입으로 라벨 스타일 강제 적용
-            const style = document.createElement('style');
-            style.textContent = `
-                .gm-style .gm-label,
-                .gm-style div[aria-label],
-                .gm-style div[role="button"] {
-                    font-family: Arial, sans-serif !important;
-                    font-size: 11px !important;
-                    color: #000000 !important;
-                    background-color: #ffffff !important;
-                    padding: 4px 8px !important;
-                    border: 1px solid #999 !important;
-                    border-radius: 3px !important;
-                    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3) !important;
-                    max-width: 150px !important;
-                    white-space: nowrap !important;
-                    overflow: hidden !important;
-                    text-overflow: ellipsis !important;
-                    font-weight: bold !important;
-                    z-index: 1000 !important;
-                }
-            `;
-            document.head.appendChild(style);
-            console.log("동적 CSS 주입 완료: .gm-label 스타일");
-
-            console.log(`줌 레벨: ${map.getZoom()}, 지도 타입: ${map.getMapTypeId()}`);
+            console.log(`줌 레벨: ${map.getZoom()}`);
 
             map.addListener("zoom_changed", () => {
                 console.log(`줌 레벨: ${map.getZoom()}`);
@@ -247,7 +207,7 @@
                         icon: palmTreeIcon,
                         label: {
                             text: `인도네시아 (${assets.length})`,
-                            fontSize: "11px",
+                            fontSize: "10px",
                             fontWeight: "bold",
                             color: "#000000",
                             fontFamily: "Arial, sans-serif"
@@ -271,7 +231,7 @@
                             icon: palmTreeIcon,
                             label: {
                                 text: asset.title,
-                                fontSize: "11px",
+                                fontSize: "10px",
                                 fontWeight: "bold",
                                 color: "#000000",
                                 fontFamily: "Arial, sans-serif"
@@ -296,7 +256,6 @@
                         markers.push(marker);
                     });
                 }
-                console.log(`마커 업데이트 완료: ${markers.length}개`);
             }
         }
 
@@ -307,7 +266,7 @@
             const popupExtra = document.getElementById("popupExtra");
 
             popupTitle.textContent = title;
-            popupDescription.innerHTML = description;
+            popupDescription.innerHTML = description; // HTML로 렌더링
             popupExtra.innerHTML = extraContent;
 
             if (asset) {
