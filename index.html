@@ -46,6 +46,7 @@
         .popup-content p {
             margin: 0 0 15px;
             font-size: 16px;
+            line-height: 1.4; /* 팝업 줄바꿈 간격 조정 */
         }
         .popup-content .close-button {
             position: absolute;
@@ -93,14 +94,18 @@
         /* 마커 라벨 스타일 */
         .gm-style .gm-label {
             font-family: Arial, sans-serif;
-            font-size: 12px;
+            font-size: 10px; /* 글씨 크기 축소 */
             color: #000000;
             background-color: #ffffff; /* 완전 불투명 흰색 */
-            padding: 3px 6px; /* 여백 증가 */
-            border: 1px solid #ccc; /* 경계선 */
+            padding: 3px 6px;
+            border: 1px solid #999; /* 경계선 강화 */
             border-radius: 2px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* 입체감 추가 */
+            max-width: 150px; /* 긴 텍스트 관리 */
             white-space: nowrap;
-            font-weight: bold; /* 글씨 선명도 */
+            overflow: hidden;
+            text-overflow: ellipsis; /* 긴 텍스트 생략 */
+            font-weight: bold;
         }
     </style>
 </head>
@@ -202,7 +207,7 @@
                         icon: palmTreeIcon,
                         label: {
                             text: `인도네시아 (${assets.length})`,
-                            fontSize: "12px",
+                            fontSize: "10px",
                             fontWeight: "bold",
                             color: "#000000",
                             fontFamily: "Arial, sans-serif"
@@ -226,8 +231,8 @@
                             icon: palmTreeIcon,
                             label: {
                                 text: asset.title,
-                                fontSize: "12px",
-                                fontWeight: "normal",
+                                fontSize: "10px",
+                                fontWeight: "bold",
                                 color: "#000000",
                                 fontFamily: "Arial, sans-serif"
                             }
