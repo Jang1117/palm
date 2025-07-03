@@ -47,9 +47,6 @@
             margin: 0 0 15px;
             font-size: 16px;
         }
-        .popup-content .established-date {
-            font-weight: bold;
-        }
         .popup-content .close-button {
             position: absolute;
             top: 10px;
@@ -70,10 +67,6 @@
         }
         .popup-content .move-button:hover {
             background-color: #0056b3;
-        }
-        .popup-content img.asset-image {
-            max-width: 100%;
-            margin-top: 8px;
         }
         /* Global, Local 버튼 스타일 */
         .global-button, .local-button {
@@ -102,12 +95,12 @@
             font-family: Arial, sans-serif;
             font-size: 12px;
             color: #000000;
-            background-color: #ffffff; /* 완전 불투명 흰색 배경 */
+            background-color: #ffffff; /* 완전 불투명 흰색 */
             padding: 3px 6px; /* 여백 증가 */
-            border: 1px solid #ccc; /* 경계선 추가 */
+            border: 1px solid #ccc; /* 경계선 */
             border-radius: 2px;
             white-space: nowrap;
-            font-weight: bold; /* 글씨 선명도 향상 */
+            font-weight: bold; /* 글씨 선명도 */
         }
     </style>
 </head>
@@ -242,8 +235,10 @@
 
                         marker.addListener("click", () => {
                             showPopup(asset.title, asset.title, asset.description, `
-                                <p class="established-date">설립시기: ${asset.establishedDate}</p>
-                                <img src="${asset.imageUrl}" alt="${asset.title}" class="asset-image">
+                                <p><strong>회사명:</strong> ${asset.millCompanyName}</p>
+                                <p><strong>모회사:</strong> ${asset.parentCompanyName}</p>
+                                <p><strong>주소:</strong> ${asset.address}</p>
+                                <p><strong>지역:</strong> ${asset.province}</p>
                             `, asset);
                             map.setZoom(15);
                             map.setCenter(asset.position);
@@ -259,7 +254,7 @@
             const popupOverlay = document.getElementById("popupOverlay");
             const popupTitle = document.getElementById("popupTitle");
             const popupDescription = document.getElementById("popupDescription");
-            const popupExtra = document.getElementById("popupExtra");
+            const popupExtra = document.getBinder().getElementById("popupExtra");
 
             popupTitle.textContent = title;
             popupDescription.textContent = description;
