@@ -49,7 +49,7 @@
         }
         .popup-content .close-button {
             position: absolute;
-            top: UIFontWeightBoldpx;
+            top: 10px;
             right: 10px;
             cursor: pointer;
             color: #000;
@@ -134,8 +134,14 @@
             labelOrigin: new google.maps.Point(20, 50) // 라벨이 마커 아래에 위치
         };
 
+        // 마커 이미지 로드 디버깅
+        const img = new Image();
+        img.src = palmTreeIcon.url;
+        img.onload = () => console.log("마커 이미지가 로드되었습니다: ", palmTreeIcon.url);
+        img.onerror = () => console.error("마커 이미지 로드 실패: ", palmTreeIcon.url);
+
         // 지도 초기화 함수
-        function initMap() {
+        window.initMap = function() {
             if (typeof assets === "undefined") {
                 console.error("assets.js가 로드되지 않았습니다. 파일을 확인하세요.");
                 return;
@@ -158,12 +164,6 @@
                 fullscreenControl: false,
                 mapTypeId: google.maps.MapTypeId.SATELLITE
             });
-
-            // 마커 이미지 로드 디버깅
-            const img = new Image();
-            img.src = palmTreeIcon.url;
-            img.onload = () => console.log("마커 이미지가 로드되었습니다: ", palmTreeIcon.url);
-            img.onerror = () => console.error("마커 이미지 로드 실패: ", palmTreeIcon.url);
 
             console.log(`줌 레벨: ${map.getZoom()}`);
 
