@@ -130,8 +130,8 @@
         // 커스텀 마커 아이콘 (팜나무 모양)
         const palmTreeIcon = {
             url: './palm_tree.png', // main 브랜치 루트 디렉토리의 palm_tree.png
-            scaledSize: new google.maps.Size(40, 40),
-            labelOrigin: new google.maps.Point(20, 50) // 라벨이 마커 아래에 위치
+            scaledSize: new window.google.maps.Size(40, 40),
+            labelOrigin: new window.google.maps.Point(20, 50) // 라벨이 마커 아래에 위치
         };
 
         // 마커 이미지 로드 디버깅
@@ -140,8 +140,20 @@
         img.onload = () => console.log("마커 이미지가 로드되었습니다: ", palmTreeIcon.url);
         img.onerror = () => console.error("마커 이미지 로드 실패: ", palmTreeIcon.url);
 
+        // Google Maps API 로드 오류 디버깅
+        window.addEventListener('error', (event) => {
+            if (event.message.includes('google is not defined')) {
+                console.error('Google Maps API 로드 실패. API 키 또는 HTTP 리퍼러를 확인하세요.');
+            }
+        });
+
         // 지도 초기화 함수
         window.initMap = function() {
+            if (typeof window.google === 'undefined') {
+                console.error('Google Maps API가 로드되지 않았습니다. API 키와 네트워크를 확인하세요.');
+                return;
+            }
+
             if (typeof assets === "undefined") {
                 console.error("assets.js가 로드되지 않았습니다. 파일을 확인하세요.");
                 return;
@@ -158,11 +170,11 @@
             }, {});
 
             // 지도 중심 설정 (인도네시아 서부 수마트라)
-            map = new google.maps.Map(document.getElementById("map"), {
+            map = new window.google.maps.Map(document.getElementById("map"), {
                 zoom: 8,
                 center: { lat: -1.5, lng: 101.0 },
                 fullscreenControl: false,
-                mapTypeId: google.maps.MapTypeId.SATELLITE
+                mapTypeId: window.google.maps.MapTypeId.SATELLITE
             });
 
             console.log(`줌 레벨: ${map.getZoom()}`);
@@ -193,7 +205,7 @@
                             lng: lngSum / provinceAssets.length
                         };
 
-                        const marker = new google.maps.Marker({
+                        const marker = new window.google.maps.Marker({
                             position: center,
                             map: map,
                             title: `${province}: ${provinceAssets.length}개 자산`,
@@ -217,7 +229,7 @@
                     });
                 } else {
                     assets.forEach(asset => {
-                        const marker = new google.maps.Marker({
+                        const marker = new window.google.maps.Marker({
                             position: asset.position,
                             map: map,
                             title: asset.title,
@@ -284,9 +296,9 @@
 
         function moveToAssets() {
             if (currentProvinceAssets) {
-                const bounds = new google.maps.LatLngBounds();
+                const bounds = new window.google.maps.LatLngBounds();
                 currentProvinceAssets.forEach(asset => {
-                    bounds.extend(new google.maps.LatLng(asset.position.lat, asset.position.lng));
+                    bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
                 });
                 map.fitBounds(bounds);
 
@@ -320,7 +332,8 @@
 
     <!-- Google Maps JavaScript API 로드 -->
     <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKZ64N6aTmQLaU312nCqXeyrNa-lol2IQ&callback=initMap&loading=async">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKZ64N6aTmQLaU312nCqXeyrNa-lol2IQ&callback=initMap&loading=async"
+        onerror="console.error('Google Maps API 스크립트 로드 실패. 네트워크 또는 API 키를 확인하세요.');">
     </script>
 </body>
 </html>
