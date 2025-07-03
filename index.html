@@ -234,7 +234,11 @@
                         });
 
                         marker.addListener("click", () => {
-                            showPopup(asset.title, asset.title, asset.description, `
+                            // description을 줄바꿈 형식으로 변환
+                            const descParts = asset.description.split(", ");
+                            const intro = `${asset.title}은 ${asset.millCompanyName} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName} 그룹의 일원입니다.`;
+                            const formattedDesc = `${intro}<br>${descParts.join("<br>")}`;
+                            showPopup(asset.title, asset.title, formattedDesc, `
                                 <p><strong>회사명:</strong> ${asset.millCompanyName}</p>
                                 <p><strong>모회사:</strong> ${asset.parentCompanyName}</p>
                                 <p><strong>주소:</strong> ${asset.address}</p>
@@ -257,7 +261,7 @@
             const popupExtra = document.getElementById("popupExtra");
 
             popupTitle.textContent = title;
-            popupDescription.textContent = description;
+            popupDescription.innerHTML = description; // HTML로 렌더링
             popupExtra.innerHTML = extraContent;
 
             if (asset) {
