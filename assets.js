@@ -132,7 +132,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -0.344148333, lng: 99.96159333 },
@@ -147,7 +147,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -2.062159, lng: 101.005916 },
@@ -162,7 +162,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -2.27866, lng: 101.16361 },
@@ -177,7 +177,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -0.046138, lng: 99.915697 },
@@ -192,7 +192,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -1.07924, lng: 101.66442 },
@@ -207,7 +207,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: 0.224338, lng: 99.715572 },
@@ -222,7 +222,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: 0.238055556, lng: 99.70361111 },
@@ -237,7 +237,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -0.0229198, lng: 100.002806 },
@@ -252,7 +252,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: 0.305, lng: 99.44721 },
@@ -267,7 +267,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -1.392715, lng: 101.478578 },
@@ -282,7 +282,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -1.52085, lng: 101.553368 },
@@ -297,7 +297,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -0.903777778, lng: 101.3981389 },
@@ -312,7 +312,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: 0.324638889, lng: 99.45223333 },
@@ -327,7 +327,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -1.46771, lng: 101.51416 },
@@ -342,7 +342,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -1.1498167, lng: 101.7401833 },
@@ -357,7 +357,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -0.04939, lng: 99.8837 },
@@ -372,7 +372,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -0.10169, lng: 100.05 },
@@ -387,7 +387,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: 0.198959, lng: 99.626588 },
@@ -402,7 +402,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: 0.01405, lng: 99.83695 },
@@ -417,7 +417,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -0.31971, lng: 99.87707 },
@@ -432,7 +432,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: 0.121017, lng: 99.720883 },
@@ -447,7 +447,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: 0.229917, lng: 99.477083 },
@@ -462,7 +462,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -1.10739, lng: 101.51263 },
@@ -477,7 +477,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -0.05248, lng: 99.97282 },
@@ -492,7 +492,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -0.15489, lng: 100.02914 },
@@ -507,7 +507,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "KENCANA PERMATA NUSANTARA",
@@ -516,7 +516,7 @@ const assets = [
         address: "Deli Tua, Patumbak, Desa Aji Baho, Sibiru-biru, Deli Serdang, Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 3.453384, lng: 98.699743 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SERBAHUTA JAYA",
@@ -525,7 +525,7 @@ const assets = [
         address: "Ds.Sumber Mulyo, Kec.Merbau,Lab.Batu Utara, North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 2.222888889, lng: 99.93463889 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SEI SILAU",
@@ -534,7 +534,7 @@ const assets = [
         address: "Desa Buntu Pane Kec. Buntu Pane Kab. Asahan Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 2.902802778, lng: 99.51136944 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "BAYUNG AGRO SAWITA",
@@ -543,7 +543,7 @@ const assets = [
         address: "Desa Senawar Jaya, Kec. Bayung Lencir, Kab. Musi Banyuasin, Sumatra Selatan",
         province: "SUMATERA SELATAN",
         position: { lat: -2.008928333, lng: 103.7050478 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SEI MANGKEI",
@@ -552,7 +552,7 @@ const assets = [
         address: "Desa Sei Mangkei Kec. Bosar Maligas Kab. Simalungun Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 3.130777778, lng: 99.34386111 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "GUNUNG RAYA",
@@ -561,7 +561,7 @@ const assets = [
         address: "Bosar Maligas, Kabupaten Simalungun",
         province: "SUMATERA UTARA",
         position: { lat: 3.143901, lng: 99.372642 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SEI DAUN",
@@ -570,7 +570,7 @@ const assets = [
         address: "Desa Pers Torganda Kec. Kota Pinang Kab. Labuhan Batu Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 1.669166667, lng: 100.3266667 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "KISARAN",
@@ -579,7 +579,7 @@ const assets = [
         address: "Dusun 3 Lolotan, Kel. Perkebunan Sei Balai, Kec. Sei Balai Kab. Batu Bara, Sumut",
         province: "SUMATERA UTARA",
         position: { lat: 3.04075, lng: 99.58144444 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "BINTANG NAULI PRATAMA",
@@ -588,7 +588,7 @@ const assets = [
         address: "Anggoli, Sibabangun, Kabupaten Tapanuli Tengah",
         province: "SUMATERA UTARA",
         position: { lat: 1.527861, lng: 98.974806 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "CIPTA LESTARI SAWIT",
@@ -597,7 +597,7 @@ const assets = [
         address: "Kuala Puntian, Tj. Lago, Kab. Banyuasin",
         province: "SUMATERA SELATAN",
         position: { lat: -2.651361, lng: 104.534425 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SIMPANG",
@@ -606,7 +606,7 @@ const assets = [
         address: "Negri Lama, Kec.Bilah Hilir, Lab.Batu, North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 2.33347, lng: 100.09947 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "GIGA PUTRA NUSANTARA",
@@ -615,7 +615,7 @@ const assets = [
         address: "Unnamed Road, Sel., Aek Nabara Jae, Barumun",
         province: "SUMATERA UTARA",
         position: { lat: 1.308047, lng: 99.768288 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "ARYA RAMA PERSADA",
@@ -624,7 +624,7 @@ const assets = [
         address: "Desa Perjuangan Kec. Sei Balai Kab. Batubara, North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 3.098421, lng: 99.59478 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SAWITTA JAYA LAU PAKAM",
@@ -633,7 +633,7 @@ const assets = [
         address: "Dsn.Janji Matogu, Ds.Lau Pakam, Kec.Mardingding, Simalunggun, North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 3.260417, lng: 97.965 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "BANYUASIN NUSANTARA SEJAHTERA",
@@ -642,7 +642,7 @@ const assets = [
         address: "Karang Baru, Muara Telang, Banyu Asin Regency, South Sumatra 30961",
         province: "SUMATERA SELATAN",
         position: { lat: -2.878338, lng: 104.727277 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "GOLDEN BLOSSOM SUMATRA",
@@ -651,7 +651,7 @@ const assets = [
         address: "Desa Prambatan, Kecamatan Abab, Muara Enim, Sumatera Selatan",
         province: "SUMATERA SELATAN",
         position: { lat: -3.067688, lng: 104.204637 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "GOLDEN OILINDO NUSANTARA",
@@ -660,7 +660,7 @@ const assets = [
         address: "Kel. Sedinginan, Tanah Putih, Rokan Hilir, Riau",
         province: "SUMATERA SELATAN",
         position: { lat: -3.119195, lng: 104.694516 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SUTOPO LESTARI JAYA",
@@ -669,7 +669,7 @@ const assets = [
         address: "Ds.Gasing, Kec.Talang Kelapa, Kab.Banyuasin, South Sumatera",
         province: "SUMATERA SELATAN",
         position: { lat: -2.795, lng: 104.736 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "TIMUR",
@@ -678,7 +678,7 @@ const assets = [
         address: "Batu Sondat, Batahan, Kabupaten Mandailing Natal",
         province: "SUMATERA UTARA",
         position: { lat: 0.3672, lng: 99.3076 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SAWITA INTER PERKASA",
@@ -687,7 +687,7 @@ const assets = [
         address: "Ds.Sionggang, Kec.Buntu Pane,  Asahan, North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 2.799, lng: 99.441617 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "MULIA TANI JAYA",
@@ -696,7 +696,7 @@ const assets = [
         address: "Kec.Padang Tualang, Kab Langkat",
         province: "SUMATERA UTARA",
         position: { lat: 3.866267, lng: 98.356083 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SAWIT SEBERANG",
@@ -705,7 +705,7 @@ const assets = [
         address: "Ds.Sawit Seberang, Kec.Sawit Seberang, Langkat, North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 3.7996, lng: 98.277133 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "CIPTA SAWITA JAYA CEMERLANG",
@@ -714,7 +714,7 @@ const assets = [
         address: "Desa Dolok Merawan Kecamatan Dolok Merawan, Serdang Bedagai, Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 3.20315, lng: 99.060567 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SRI ANDALAN LESTARI",
@@ -723,7 +723,7 @@ const assets = [
         address: "Kec.Suak Tape, Kab.Banyuasin",
         province: "SUMATERA SELATAN",
         position: { lat: -2.786283, lng: 104.363683 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "DEWA RENCANA PERANGIN ANGIN (Eks. ERAKARYA PRIMA)",
@@ -732,7 +732,7 @@ const assets = [
         address: "Ds. Raja Tengah, Kec.Kuala, Langkat,  North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 3.501233, lng: 98.437783 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SAWIT LANGKAT",
@@ -741,7 +741,7 @@ const assets = [
         address: "Desa Sei Bamban Kec. Padang Tualang Kab. Langkat Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 3.700416667, lng: 98.29422222 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "PATILUBAN MUDIK",
@@ -750,7 +750,7 @@ const assets = [
         address: "Desa Patiluban Mudik, Mandailing Natal, Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 0.567528, lng: 99.203306 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "RAYA PADANG LANGKAT",
@@ -759,7 +759,7 @@ const assets = [
         address: "Ds.Padang Langkat, Kec.Gebang, Langkat  North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 3.946467, lng: 98.3661 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "PULAU RAJA",
@@ -768,7 +768,7 @@ const assets = [
         address: "Desa Pulau Rakyat Pekan Kec. Pulau Rakyat Kab. Asahan Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 2.702111111, lng: 99.6247 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "PRIMA PALM LATEX INDUSTRI",
@@ -777,7 +777,7 @@ const assets = [
         address: "Ds.Huta Padang, Kec.Bandar Pasir Mandoge, Asahan North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 2.78305, lng: 99.253967 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "PINANG AWAN",
@@ -786,7 +786,7 @@ const assets = [
         address: "Dsn.Aek Batu, Ds.Asam Jawa, Kec.Torgamba,Lab.Batu Selatan, North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 1.842826389, lng: 100.2030556 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "PERMATA HIJAU PASAMAN",
@@ -795,7 +795,7 @@ const assets = [
         address: "Ds.Mananti Sosa, Jae, Kec.Huta Raja Tinggi, Kab.Padang Lawas, North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 1.062767, lng: 100.0715 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "PEMATANG KERASAAN",
@@ -804,7 +804,7 @@ const assets = [
         address: "Desa Nagori Pematang Kerasaan Kec. Bandar Kab. Simalungun - North Sumatera",
         province: "SUMATERA UTARA",
         position: { lat: 3.082638889, lng: 99.30208333 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "PASIR MANDOGE",
@@ -813,7 +813,7 @@ const assets = [
         address: "Desa Huta Bagasan Kec. Bandar Pasir Mandoge Kab. Asahan Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 2.768708333, lng: 99.31758333 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "PANGKATAN INDONESIA",
@@ -822,7 +822,7 @@ const assets = [
         address: "Dusun II, Kel.Perkebunan Pangkatan, Kec.Pangkatan Kab.Labuhan Batu, Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 2.10305, lng: 99.94766 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "PAGAR MERBAU",
@@ -831,7 +831,7 @@ const assets = [
         address: "Sidodadi Batu Delapan, Pagar Merbau, Deli Serdang, Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 3.526013889, lng: 98.89828056 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "PADANG HALABAN",
@@ -840,7 +840,7 @@ const assets = [
         address: "Desa Padang Halaban, Kecamatan Aek Kuo, Kabupaten Labura, Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 2.3175, lng: 99.83888889 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "PABATU",
@@ -849,7 +849,7 @@ const assets = [
         address: "Jl. Besar Tinggi Siantar, Kel. Kedai Damar, Kec. Tebing Tinggi, Kab. Serdang Bedagai",
         province: "SUMATERA UTARA",
         position: { lat: 3.288066667, lng: 99.11066667 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "NEGRI LAMA II",
@@ -858,7 +858,7 @@ const assets = [
         address: "Desa Perkebunan Negeri Seberang Kec. Bilah Hilir Kab. Labuhan Batu Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 2.359694444, lng: 100.0353056 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "NEGRI LAMA I",
@@ -867,7 +867,7 @@ const assets = [
         address: "Desa Perkebunan Negeri Seberang Kec. Bilah Hilir Kab. Labuhan Batu Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 2.359694444, lng: 100.0418889 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "NAULI SAWIT",
@@ -876,7 +876,7 @@ const assets = [
         address: "Ds.Bajamas, Kec.Sirandorung,Tapanuli Tengah, North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 2.08645, lng: 98.308633 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "MITRA NIAGA SEJATI JAYA",
@@ -885,7 +885,7 @@ const assets = [
         address: "Dsn IV Bukit Pelita, Ds.Bukit Selamat, Kec.Besitang,, Langkat  North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 4.052805556, lng: 98.13683333 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "MITRA AGUNG SAWITA SEJATI",
@@ -894,7 +894,7 @@ const assets = [
         address: "jl. Huta I Bandar Sakti, Bandar Tinggi - Simalungun",
         province: "SUMATERA UTARA",
         position: { lat: 3.296391667, lng: 99.30501667 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "MATA PAO",
@@ -903,7 +903,7 @@ const assets = [
         address: "Desa Mata Pao, Teluk Mengkudu,Serdang Bedagai, Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 3.530833333, lng: 99.09194444 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SAWIT PERMAI ABADI",
@@ -912,7 +912,7 @@ const assets = [
         address: "Dusun Batu Gajah, Kel. Mancang, Kec. Selesai, Langkat - Sumut",
         province: "SUMATERA UTARA",
         position: { lat: 3.652877778, lng: 98.42920833 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "MAKMUR ABADI RAYA",
@@ -921,7 +921,7 @@ const assets = [
         address: "Ds.Tanjung Putus, Kec.Padang Tualang, Langkat North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 3.8069, lng: 98.341667 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "KUALA MAS SAWIT ABADI",
@@ -930,7 +930,7 @@ const assets = [
         address: "Desa Mampang, Kec. Kotapinang, Kab. Labuhanbatu Selatan - Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 1.812138889, lng: 100.0254444 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "KUALA GUNUNG",
@@ -939,7 +939,7 @@ const assets = [
         address: "Desa Kuala Gunung RT.000 RW.000, Lima Puluh, Asahan, Sumut",
         province: "SUMATERA UTARA",
         position: { lat: 3.163358333, lng: 99.48234722 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "KARYA SERASI JAYA ABADI",
@@ -948,7 +948,7 @@ const assets = [
         address: "Ds.Binjai, Kec.Tebing Syahbandar,Kab.Serdang Bedagai, North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 3.34228, lng: 99.22248 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "KARYA MITRA ANDALAN",
@@ -957,7 +957,7 @@ const assets = [
         address: "Ds.Pulau Maria, Kec.Teluk Dalam, Asahan,  North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 2.78359, lng: 99.61768 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SOSA",
@@ -966,7 +966,7 @@ const assets = [
         address: "Desa Ujung Batu Gunung Tua Sosa - North Sumatera",
         province: "SUMATERA UTARA",
         position: { lat: 1.0657, lng: 99.963133 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "KARIMUN AROMATICS",
@@ -975,7 +975,7 @@ const assets = [
         address: "Desa Besitang Kec. Besitang Kab. Langkat Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 4.013155, lng: 98.149684 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "BINA RAHMAD MADANI",
@@ -984,7 +984,7 @@ const assets = [
         address: "Besitang - Langkat, Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 3.932425, lng: 98.178011 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SEI MERAN",
@@ -993,7 +993,7 @@ const assets = [
         address: "Gebang Langkat, Desa Sei Meran, Kec. Pangkalan Susu, Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 4.065217, lng: 98.217833 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "TANJUNG SELAMAT",
@@ -1002,7 +1002,7 @@ const assets = [
         address: "Desa Kampung Padang Kec. Bilah Hilir Kab. Labuhan Batu Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 2.128889, lng: 100.008889 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "HERFINTA FARM AND PLANTATION",
@@ -1011,7 +1011,7 @@ const assets = [
         address: "Ds.Aek Batu, Kec.Torgamba,  Lab.Batu Selatan North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 1.8535, lng: 100.1656389 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "HARKAT SEJAHTERA",
@@ -1020,7 +1020,7 @@ const assets = [
         address: "Ds.Pengkolan, Kec.Bosar Maligas, Simalungun N.Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 3.065017, lng: 99.428267 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "GUNUNG SELAMAT LESTARI",
@@ -1029,7 +1029,7 @@ const assets = [
         address: "Ds.Pekan Tolan. Kec. Kampung Rakyat,  Lab.Batu Selatan North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 2.0399, lng: 100.044967 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "GUNUNG MELAYU II",
@@ -1038,7 +1038,7 @@ const assets = [
         address: "Desa Gonting Malaha Kec. Bandar Pulau Kab. Asahan Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 2.749388889, lng: 99.46969444 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "GUNUNG MELAYU I",
@@ -1047,7 +1047,7 @@ const assets = [
         address: "Desa Rahuning Kec. Bandar Pulau Kab. Asahan - North Sumatera",
         province: "SUMATERA UTARA",
         position: { lat: 2.791694444, lng: 99.59830556 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "RAPI TECHNIK",
@@ -1056,7 +1056,7 @@ const assets = [
         address: "Jl. Asahan Km. 18, Desa Pematang Asilum, Kec. Gunung Malela, Kab. Simalungun, Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 2.999722, lng: 99.21675 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "TAPIAN NAULI",
@@ -1065,7 +1065,7 @@ const assets = [
         address: "Sukarame Baru, Kec. Kualuh Hulu Aek Kanopan 21457, Labuhan Batu Utara, Sumut",
         province: "SUMATERA UTARA",
         position: { lat: 2.584773, lng: 99.784703 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "STABAT",
@@ -1074,7 +1074,7 @@ const assets = [
         address: "Desa gohor lama kec.wampu kab.langkat",
         province: "SUMATERA UTARA",
         position: { lat: 3.760164, lng: 98.393 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "DOLOK ILIR",
@@ -1083,7 +1083,7 @@ const assets = [
         address: "Desa Bandar Selamat Kec. Dolok Batunanggar Kab. Simalungun Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 3.122297222, lng: 99.16170278 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "DJAJA PUTRA INDONESIA",
@@ -1092,7 +1092,7 @@ const assets = [
         address: "Desa Buntu Maraja Kec. Bandar Pulau Kab. Asahan Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 2.678333333, lng: 99.42761111 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "DAYA LABUHAN INDAH 1",
@@ -1101,7 +1101,7 @@ const assets = [
         address: "Ds.Kampung Pangkatan, Kec.Pangkatan,Lab.Batu,  North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 2.151167, lng: 99.991167 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "DOLOK SINUMBAH",
@@ -1110,7 +1110,7 @@ const assets = [
         address: "Desa Dolok Sinumbah Kec. Hutabayu Raja Kab. Simalungun Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 3.111022222, lng: 99.32975 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "CITRA INDAH PERTIWI",
@@ -1119,7 +1119,7 @@ const assets = [
         address: "Dusun Kampung Lalang, Desa Pematang Seleng, Kec. Bilah Hulu, Kab. Labuhan Batu, Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 2.060046667, lng: 100.0128 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "PALUTA INTI SAWIT",
@@ -1128,7 +1128,7 @@ const assets = [
         address: "Desa Siancimun Kec. Halongonan Kab. Padang Lawas Utara Tapanuli Selatan - North Sumatera",
         province: "SUMATERA UTARA",
         position: { lat: 1.552694444, lng: 99.83686111 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "CISADANE SAWIT RAYA",
@@ -1137,7 +1137,7 @@ const assets = [
         address: "Desa Sei Siarti Kec. Panai Tengah Kab. Labuhan Batu - Belitung",
         province: "SUMATERA UTARA",
         position: { lat: 2.242755556, lng: 100.1906694 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "CIPTA CHEMICAL MEDAN OIL",
@@ -1146,7 +1146,7 @@ const assets = [
         address: "Ds.Tanjung Selamat Km. 1 Kec.Padang Tualang, Langkat North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 3.854211111, lng: 98.34435278 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "CINTA RAJA",
@@ -1155,7 +1155,7 @@ const assets = [
         address: "Ds.Silinda, Kec.Bangun Purba, Deli Serdang North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 3.217, lng: 98.78099 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "BUANA SAWIT INDAH",
@@ -1164,7 +1164,7 @@ const assets = [
         address: "Desa Perkebunan Petatal, Kec. Talawi, Kab. Batubara, Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 3.153429, lng: 99.50958 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "BLOK SONGO",
@@ -1173,7 +1173,7 @@ const assets = [
         address: "Desa Blok Songo, Kecamatan Kota Pinang, Kabupaten Labuhan Batu selatan. Provinsi sumatra utara.",
         province: "SUMATERA UTARA",
         position: { lat: 1.948333, lng: 100.101136 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "BINANGA",
@@ -1182,7 +1182,7 @@ const assets = [
         address: "Desa Simangambat Kec. Barumun Tengah, Kab. Padang Lawas Utara Tapanuli Selatan - North Sumatera",
         province: "SUMATERA UTARA",
         position: { lat: 1.479483333, lng: 99.95716667 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "BERANGIR",
@@ -1191,7 +1191,7 @@ const assets = [
         address: "Jl.Lintas Perkebunan Berangir, Kel. Pulo Bargot, Kec.Marbau Kab. Labuhan Batu Utara, Sumut",
         province: "SUMATERA UTARA",
         position: { lat: 2.2247222, lng: 99.760278 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "BAH JAMBI",
@@ -1200,7 +1200,7 @@ const assets = [
         address: "Ds.Bah Jambi, Kec.Huta Bayu Raja, Simalungun, North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 2.98887, lng: 99.219539 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "KARYA PRATAMA NIAGA JAYA",
@@ -1209,7 +1209,7 @@ const assets = [
         address: "JL . Besar km.97 tanjung seri kec.sei suka kab.batu bara",
         province: "SUMATERA UTARA",
         position: { lat: 3.316388889, lng: 99.31377778 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "ANUGRAH MULTI SAWITA",
@@ -1218,7 +1218,7 @@ const assets = [
         address: "Dusun I Desa Rahuning II Kec. Rahuning Simpang Mak Inang, Asahan",
         province: "SUMATERA UTARA",
         position: { lat: 2.706580556, lng: 99.61847778 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "ANUGERAH TANJUNG MEDAN",
@@ -1227,7 +1227,7 @@ const assets = [
         address: "Ds.Tanjung Medan, Kec.Kampung Rakyat, Lab. Batu Selatan, North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 2.063067, lng: 100.146783 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "ANUGERAH LANGKAT MAKMUR",
@@ -1236,7 +1236,7 @@ const assets = [
         address: "Kampung Lama, Besitang, Langkat, Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 4.013036111, lng: 98.19419167 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "AJAMU",
@@ -1245,7 +1245,7 @@ const assets = [
         address: "Jl.Besar Ajamu, Kel.Ajamu, Kec. Panai Hulu Kab. Labuhan Batu, Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 2.457183, lng: 100.16065 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "AIR BATU",
@@ -1254,7 +1254,7 @@ const assets = [
         address: "Desa Perkebunan Air Batu III/IX Kec. Air Batu Kab. Asahan Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 2.859237, lng: 99.638435 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "AGRINDO INDAH PERSADA 1",
@@ -1263,7 +1263,7 @@ const assets = [
         address: "Ds.Bandar Pasir Mandoge, Kec.B.Pasir Mandoge, Asahan  North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 2.778667, lng: 99.393433 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "AEK TOROP",
@@ -1272,7 +1272,7 @@ const assets = [
         address: "Jl. Aek Torop, Kel. Aek Batu, Kec. Torgamba Kab.Labuhan Batu Selatan, Sumut",
         province: "SUMATERA UTARA",
         position: { lat: 1.792777778, lng: 100.1558333 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "AEK SIGALA GALA",
@@ -1281,7 +1281,7 @@ const assets = [
         address: "Desa Ujung Gading Jae, Kec. Simangambat Kab. Padang Lawas Utara - North Sumatera",
         province: "SUMATERA UTARA",
         position: { lat: 1.619694444, lng: 100.1038056 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "AEK SIBIRONG",
@@ -1290,7 +1290,7 @@ const assets = [
         address: "Aek Sibirong,  Kota Batangtoru Tapanuli Selatan - North Sumatera",
         province: "SUMATERA UTARA",
         position: { lat: 1.409061111, lng: 98.85691944 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "AGUNG AGRO LESTARI",
@@ -1299,7 +1299,7 @@ const assets = [
         address: "Kuala Bangka, Labuhan Batu Utara, Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 2.541258333, lng: 99.88066944 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "AEK RASO",
@@ -1308,7 +1308,7 @@ const assets = [
         address: "Desa Rasau Kec. Kota Pinang Kab. Labuhan Batu Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 1.703805556, lng: 100.1723333 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "AEK NABARA (SMA)",
@@ -1317,7 +1317,7 @@ const assets = [
         address: "Aek Nabara Selatan Kab. Labuhan Batu - North Sumatera",
         province: "SUMATERA UTARA",
         position: { lat: 1.999805556, lng: 99.93969444 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "AEK LOBA",
@@ -1326,7 +1326,7 @@ const assets = [
         address: "Desa Aek Loba, Kec. Aek Kuasan, Kab. Asahan. Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 2.651388889, lng: 99.61777778 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "AEK BATU (PM)",
@@ -1335,7 +1335,7 @@ const assets = [
         address: "Ds.Pangkatan, Kec.Pangkatan, Lab. Batu North Sumatra (TOLLING ARRANGEMENT)",
         province: "SUMATERA UTARA",
         position: { lat: 1.850583, lng: 100.1457 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "ADOLINA",
@@ -1344,7 +1344,7 @@ const assets = [
         address: "Ds.Adolina, Kec.Perbaungan, Serdang Bedagai, North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 3.568055556, lng: 98.9475 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "TELUK PANJI (ABM)",
@@ -1353,7 +1353,7 @@ const assets = [
         address: "Ds.Teluk Panji, Kec.Kampung Rakyat, Lab.Batu Selatan North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 2.05228, lng: 100.25207 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SIRINGO-RINGO",
@@ -1362,7 +1362,7 @@ const assets = [
         address: "Kampung Tempel, Labuhan Batu Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 2.09733, lng: 99.76692 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "WAIMUSI AGRO INDAH",
@@ -1371,7 +1371,7 @@ const assets = [
         address: "Desa Pulau Geronggang,  Kecamatan Pedamaran Timur, OKI, South Sumatra",
         province: "SUMATERA SELATAN",
         position: { lat: -3.671662, lng: 105.067917 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "INDRALAYA AGRO LESTARI",
@@ -1380,7 +1380,7 @@ const assets = [
         address: "Ds.Patra Tani, Kec.Muara Belida, Kab.Muara Enim, Sumatera Selatan",
         province: "SUMATERA SELATAN",
         position: { lat: -3.07425, lng: 104.5885 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SELATAN AGRO MAKMUR LESTARI",
@@ -1389,7 +1389,7 @@ const assets = [
         address: "Desa Rengas Abang Sungai Raden, Kec. Air Sugihan, Kab, Ogan Komering Ilir, Propinsi Sumatera Selatan",
         province: "SUMATERA SELATAN",
         position: { lat: -2.692214, lng: 105.219246 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SELATAN AGUNG SEJAHTERA",
@@ -1398,7 +1398,7 @@ const assets = [
         address: "Desa Petunang; Kecamatan Tuah Negeri; Kabupaten Musi Rawas; Sumatera Selatan",
         province: "SUMATERA SELATAN",
         position: { lat: -3.0509, lng: 103.2188 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SUMBER BUMI SAWIT JADI JAYA",
@@ -1407,7 +1407,7 @@ const assets = [
         address: "Nagori Buntu Bayu, Kecamatan Hatonduhan,  Kabupaten Simalungun,  Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 2.8025, lng: 99.2025 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "KARYA HAVEA INDONESIA",
@@ -1416,7 +1416,7 @@ const assets = [
         address: "Dolok Masihul, Serdang Bedagai, Sumut",
         province: "SUMATERA UTARA",
         position: { lat: 3.369467, lng: 99.018833 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "MANGSANG",
@@ -1425,7 +1425,7 @@ const assets = [
         address: "Desa mangsang, Kec. Bayung Lencir, Palembang",
         province: "SUMATERA SELATAN",
         position: { lat: -2.173, lng: 103.987 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SUN SAWIT",
@@ -1434,7 +1434,7 @@ const assets = [
         address: "Desa Talang Cempedak Kec. Jejawi Kab. Ogan Komering Ilir",
         province: "SUMATERA SELATAN",
         position: { lat: -3.169472, lng: 104.893222 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SERASAN SEKUNDANG SAWITMAS",
@@ -1443,7 +1443,7 @@ const assets = [
         address: "Pagar Dewa Lubai Kabupaten Muara Enim, Sumatera Selatan",
         province: "SUMATERA SELATAN",
         position: { lat: -3.89291027, lng: 104.0956053 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "BUMI MEKAR TANI",
@@ -1452,7 +1452,7 @@ const assets = [
         address: "Desa Jadi Mulya I Kec. Nibung Kab. Musirawas Utara",
         province: "SUMATERA SELATAN",
         position: { lat: -2.494944, lng: 102.875972 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "MUKUT",
@@ -1461,7 +1461,7 @@ const assets = [
         address: "Desa Mukut,Kecamatan Pulau Rimau,Kab.Banyuasin,",
         province: "SUMATERA SELATAN",
         position: { lat: -2.441002, lng: 104.426761 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "PAPASO",
@@ -1470,7 +1470,7 @@ const assets = [
         address: "Desa Papaso, Batang Lubu Sutam, Padang Lawas Regency, North Sumatra",
         province: "SUMATERA UTARA",
         position: { lat: 0.896, lng: 100.108222 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "BERKAT SAWIT SEJATI",
@@ -1479,7 +1479,7 @@ const assets = [
         address: "Desa Tampang Baru, kecamatan Bayung Lencir, kabupaten Musi banyuasin, propinsi sumatera selatan",
         province: "SUMATERA SELATAN",
         position: { lat: -2.320361, lng: 103.708667 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SUNGAI KIKIM",
@@ -1488,7 +1488,7 @@ const assets = [
         address: "Desa Sungai Laro, Kecamatan Kikim tengah, Kabupaten Lahat",
         province: "SUMATERA SELATAN",
         position: { lat: -3.634733, lng: 103.2188 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "LALAN",
@@ -1497,7 +1497,7 @@ const assets = [
         address: "Jaya Agung, Lalan, Musi Banyuasin Regency, South Sumatra",
         province: "SUMATERA SELATAN",
         position: { lat: -2.23413, lng: 104.332258 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "RANTAU PANJANG (GPI)",
@@ -1506,7 +1506,7 @@ const assets = [
         address: "Desa Rantau Panjang Kecamatan Babat Toman Kabupaten Musi Banyuasin Provinsi Sumatera Selatan",
         province: "SUMATERA SELATAN",
         position: { lat: -2.916183, lng: 103.750833 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "TRANSPACIFIC AGRO INDUSTRY",
@@ -1515,7 +1515,7 @@ const assets = [
         address: "Desa Upang Jaya Rt.000 Rw. 000 Upang Jaya - Makarti Jaya Banyuasin - 00000",
         province: "SUMATERA SELATAN",
         position: { lat: -2.8025, lng: 104.8969444 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "BERKAT SAWIT SUKAMAJU",
@@ -1524,7 +1524,7 @@ const assets = [
         address: "Desa sukamaju, Kecamatan Babat Supat, Kabupaten Musi Banyuasin, Sumatera Selatan",
         province: "SUMATERA SELATAN",
         position: { lat: -2.674503, lng: 104.079356 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SWADAYA INDOPALMA",
@@ -1533,7 +1533,7 @@ const assets = [
         address: "Ds.Sungai Rengit, Kec.Talang Kelapa, Kab.Banyuasin, South Sumatra",
         province: "SUMATERA SELATAN",
         position: { lat: -2.765881, lng: 104.63151 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "GRAHA SAWIT MAKMUR",
@@ -1542,7 +1542,7 @@ const assets = [
         address: "Jalan Perbaungan; Tebing Tinggi Dusun II; Kelurahan Sei Sijenggi; Kecamatan Perbaungan, Serdang Bedagai, Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 3.552058, lng: 99.017867 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "ANDIRA AGRO",
@@ -1551,7 +1551,7 @@ const assets = [
         address: "Dsn Teluk Kelapa, Ds.Karanganyar,Kec. Muara Padang, Banyuasin, South Sumatra",
         province: "SUMATERA SELATAN",
         position: { lat: -2.820965, lng: 104.966879 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "MALUAI INDAH",
@@ -1560,7 +1560,7 @@ const assets = [
         address: "Ogan Komering Ulu Timur, Sumatera Selatan",
         province: "SUMATERA SELATAN",
         position: { lat: -3.76419, lng: 104.73926 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "ANGGOLI",
@@ -1569,7 +1569,7 @@ const assets = [
         address: "Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 1.538639, lng: 98.984611 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SIKAPAS",
@@ -1578,7 +1578,7 @@ const assets = [
         address: "Mandailing Natal SUmatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 1.217194444, lng: 98.89572222 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "DAYA SEMESTA AGRO PERSADA",
@@ -1587,7 +1587,7 @@ const assets = [
         address: "Desa Perajin Kec. Banyuasin I Kab. Banyuasin, Sumatera Selatan",
         province: "SUMATERA SELATAN",
         position: { lat: -2.963166667, lng: 104.9175833 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SUNGAI LILIN (HINDOLI)",
@@ -1596,7 +1596,7 @@ const assets = [
         address: "Ds.Pinang Banjar, Kec.Sungai Lilin, Musi Banyuasin, South Sumatra",
         province: "SUMATERA SELATAN",
         position: { lat: -2.612777778, lng: 104.12825 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "CINTA MANIS LAMA",
@@ -1605,7 +1605,7 @@ const assets = [
         address: "Desa Cinta Manis Lama Kec. Banyuasin Kab. Musi Banyuasin - South Sumatera",
         province: "SUMATERA SELATAN",
         position: { lat: -2.906944444, lng: 104.9130556 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "ARSI GRIYA PLANTATIONS",
@@ -1614,7 +1614,7 @@ const assets = [
         address: "Tirta Sari, Banyuasin I, Kabupaten Banyu Asin, Sumatera Selatan 30962",
         province: "SUMATERA SELATAN",
         position: { lat: -2.86129, lng: 104.940941 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "KARANG AGUNG",
@@ -1623,7 +1623,7 @@ const assets = [
         address: "Jl. Desa Karang Agung Rt. 0 Rw. 0, Kel Karang Agung, Lalam, , Kec Musi Banyuasin,  Sumatra Selatan",
         province: "SUMATERA SELATAN",
         position: { lat: -2.261, lng: 104.3126944 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "Langkat Makmur Jaya Sawita",
@@ -1632,7 +1632,7 @@ const assets = [
         address: "Buluh Telang, Padang Tualang, Langkat Regency, North Sumatra, Indonesia",
         province: "SUMATERA UTARA",
         position: { lat: 3.8779, lng: 98.340547 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "Karya Agung Sawit (Ujung Batu)",
@@ -1641,7 +1641,7 @@ const assets = [
         address: "Tobing Tinggi Hr, Huristak, Padang Lawas Regency, North Sumatra 22765, Indonesia",
         province: "SUMATERA UTARA",
         position: { lat: 1.318478, lng: 100.010726 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "GASING SAWIT ABADI",
@@ -1650,7 +1650,7 @@ const assets = [
         address: "Karang Anyar, Muara Telang, Banyu Asin Regency, South Sumatra, Indonesia",
         province: "SUMATERA SELATAN",
         position: { lat: -2.555194, lng: 104.767111 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "WANAPOTENSI GUNA",
@@ -1659,7 +1659,7 @@ const assets = [
         address: "Ds.Nganti, Kec.Sanga Desa, Musi Banyuasin, South Sumatra",
         province: "SUMATERA SELATAN",
         position: { lat: -2.821718, lng: 103.444369 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "Bersama Oesaha Saragih Sejahtera",
@@ -1668,7 +1668,7 @@ const assets = [
         address: "Jl. Besar Nagori Dolok, Damakitang, Silou Kahaen Kabupaten Simalungun –Provinsi Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 3.209528, lng: 98.884364 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "BUNGA MAYANG",
@@ -1677,7 +1677,7 @@ const assets = [
         address: "Desa Bunga MayangKec SimpangKab Ogan Komering Ulu, Propinsi Sumsel",
         province: "SUMATERA SELATAN",
         position: { lat: -4.471613889, lng: 104.2559444 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "BUMI KHATULISTIWA MANDIRI",
@@ -1686,7 +1686,7 @@ const assets = [
         address: "Ogan Komering Ilir, SUMATERA SELATAN",
         province: "SUMATERA SELATAN",
         position: { lat: -3.27903889, lng: 105.8116667 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "TANJUNG KELILING",
@@ -1695,7 +1695,7 @@ const assets = [
         address: "Tanjung Keliling Village, Salapian Sub District, Langkat District, Sumatera Utara, Indonesia",
         province: "SUMATERA UTARA",
         position: { lat: 3.509944, lng: 98.306778 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SIMPANG GAMBIR",
@@ -1704,7 +1704,7 @@ const assets = [
         address: "Simpang Gambir, Lingga Bayu, Mandailing Natal, Sumatra Utara, Indonesia",
         province: "SUMATERA UTARA",
         position: { lat: 0.59643, lng: 99.299704 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "KELANTAN SAKTI",
@@ -1713,7 +1713,7 @@ const assets = [
         address: "Menang Raya, Pedamaran, Kabupaten Ogan Komering Ilir, Sumatera Selatan, Indonesia",
         province: "SUMATERA SELATAN",
         position: { lat: -3.50618, lng: 104.94046 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "SAWITTA JAYA SEJAHTERA",
@@ -1722,7 +1722,7 @@ const assets = [
         address: "Huta IV Nagori  Buntu Bayu, Kecamatan Buntu Bayu Hatonduhan  Kabupaten Simalungun Provinsi Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 2.7946111, lng: 99.21711111 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "PALMARIS RAYA",
@@ -1731,7 +1731,7 @@ const assets = [
         address: "Desa Air Apa, Kecamatan Sinunukan, Kabupaten Mandailing Natal, Provinsi Sumatera Utara",
         province: "SUMATERA UTARA",
         position: { lat: 0.44475, lng: 99.2605 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         title: "KASIH AGRO MANDIRI",
@@ -1740,7 +1740,7 @@ const assets = [
         address: "Biyuku, Suak Tapeh, Banyu Asin Regency, South Sumatra, Indonesia",
         province: "SUMATERA SELATAN",
         position: { lat: -2.84472, lng: 104.32972 },
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
         {
         position: { lat: -2.184, lng: 100.917 },
@@ -1875,7 +1875,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -0.344148333, lng: 99.96159333 },
@@ -1890,7 +1890,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -2.062159, lng: 101.005916 },
@@ -1905,7 +1905,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -2.27866, lng: 101.16361 },
@@ -1920,7 +1920,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -0.046138, lng: 99.915697 },
@@ -1935,7 +1935,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -1.07924, lng: 101.66442 },
@@ -1950,7 +1950,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: 0.224338, lng: 99.715572 },
@@ -1965,7 +1965,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: 0.238055556, lng: 99.70361111 },
@@ -1980,7 +1980,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -0.0229198, lng: 100.002806 },
@@ -1995,7 +1995,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: 0.305, lng: 99.44721 },
@@ -2010,7 +2010,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -1.392715, lng: 101.478578 },
@@ -2025,7 +2025,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -1.52085, lng: 101.553368 },
@@ -2040,7 +2040,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -0.903777778, lng: 101.3981389 },
@@ -2055,7 +2055,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: 0.324638889, lng: 99.45223333 },
@@ -2070,7 +2070,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -1.46771, lng: 101.51416 },
@@ -2085,7 +2085,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -1.1498167, lng: 101.7401833 },
@@ -2100,7 +2100,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -0.04939, lng: 99.8837 },
@@ -2115,7 +2115,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -0.10169, lng: 100.05 },
@@ -2130,7 +2130,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: 0.198959, lng: 99.626588 },
@@ -2145,7 +2145,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: 0.01405, lng: 99.83695 },
@@ -2160,7 +2160,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -0.31971, lng: 99.87707 },
@@ -2175,7 +2175,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: 0.121017, lng: 99.720883 },
@@ -2190,7 +2190,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: 0.229917, lng: 99.477083 },
@@ -2205,7 +2205,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -1.10739, lng: 101.51263 },
@@ -2220,7 +2220,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -0.05248, lng: 99.97282 },
@@ -2235,7 +2235,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -0.15489, lng: 100.02914 },
@@ -2250,7 +2250,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: 3.453384, lng: 98.699743 },
@@ -2265,7 +2265,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -2.84472, lng: 104.32972 },
@@ -2280,7 +2280,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -3.598555556, lng: 105.0600278 },
@@ -2295,7 +2295,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -2.549611111, lng: 103.944 },
@@ -2310,7 +2310,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -2.824422222, lng: 104.7283361 },
@@ -2325,7 +2325,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -3.627, lng: 104.869467 },
@@ -2340,7 +2340,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -2.968333333, lng: 104.1211389 },
@@ -2355,7 +2355,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: 3.497324, lng: 98.224693 },
@@ -2370,7 +2370,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -3.33805, lng: 103.911133 },
@@ -2385,7 +2385,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -3.487916667, lng: 104.0363611 },
@@ -2400,7 +2400,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -3.548361111, lng: 103.8448611 },
@@ -2415,7 +2415,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -2.738527778, lng: 103.5673611 },
@@ -2430,7 +2430,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -2.369967, lng: 103.969733 },
@@ -2445,7 +2445,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -2.212233, lng: 103.800117 },
@@ -2460,7 +2460,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -3.70709, lng: 105.09926 },
@@ -2475,7 +2475,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -2.223666667, lng: 104.1796667 },
@@ -2490,7 +2490,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -3.942694444, lng: 105.1104444 },
@@ -2505,7 +2505,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: 2.014435, lng: 99.879679 },
@@ -2520,7 +2520,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -3.254102, lng: 103.238561 },
@@ -2535,7 +2535,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -2.947957, lng: 104.466609 },
@@ -2550,7 +2550,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -2.627033, lng: 103.818533 },
@@ -2565,7 +2565,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -2.352617, lng: 103.909866 },
@@ -2580,7 +2580,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -2.900166667, lng: 103.1763889 },
@@ -2595,7 +2595,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -1.96278, lng: 103.61547 },
@@ -2610,7 +2610,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -4.059583, lng: 104.198233 },
@@ -2625,7 +2625,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -3.22145, lng: 104.470717 },
@@ -2640,7 +2640,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -2.848567, lng: 104.26545 },
@@ -2655,7 +2655,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -2.997861111, lng: 102.7867222 },
@@ -2670,7 +2670,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: 1.061333333, lng: 99.82838889 },
@@ -2685,7 +2685,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -3.808166667, lng: 105.1717778 },
@@ -2700,7 +2700,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -3.55315, lng: 103.30196 },
@@ -2715,7 +2715,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -2.795033, lng: 102.944683 },
@@ -2730,7 +2730,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -3.43852, lng: 103.6996 },
@@ -2745,7 +2745,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -2.535817, lng: 104.150283 },
@@ -2760,7 +2760,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -3.525365, lng: 104.345655 },
@@ -2775,7 +2775,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
     {
         position: { lat: -3.851717, lng: 103.80405 },
@@ -2790,7 +2790,7 @@ const assets = [
         cpoProduction: "(no data) ton/year",
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
-        markerIcon: "new_palm_tree.png"
+        markerIcon: "palm_tree.png"
     },
         {
         title: "BULUH CAWANG PLANTATION",
