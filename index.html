@@ -114,7 +114,7 @@
         .popup-content h3 {
             margin: 0 0 10px;
             font-size: 22px;
-        }
+移动:        }
         .popup-content p {
             margin: 0 0 15px;
             font-size: 16px;
@@ -205,12 +205,19 @@
             const normalizedAssets = assets
                 .map(asset => ({
                     ...asset,
-                    province: asset.province.trim().toUpperCase() // Normalize province
+                    province: asset.province ? asset.province.trim().toUpperCase() : 'UNKNOWN' // Normalize province
                 }))
                 .filter(asset => {
-                    if (seenTitles.has(asset.title)) return false;
+                    if (!asset.position || isNaN(asset.position.lat) || isNaN(asset.position.lng)) {
+                        console.warn(`Invalid position for asset: ${asset.title}`);
+                        return false;
+                    }
+                    if (seenTitles.has(asset.title)) {
+                        console.warn(`Duplicate title found: ${asset.title}`);
+                        return false;
+                    }
                     seenTitles.add(asset.title);
-                    return asset.position && !isNaN(asset.position.lat) && !isNaN(asset.position.lng);
+                    return true;
                 })
                 .sort((a, b) => a.title.localeCompare(b.title));
             console.log(`Loaded ${normalizedAssets.length} unique assets`);
@@ -297,14 +304,21 @@
 
                 Object.keys(groupedAssets).sort().forEach(province => {
                     const provinceAssets = groupedAssets[province];
-                    let latSum = 0, lngSum = 0;
+                    let latSum = 0, lngSum = 0, validCount = 0;
                     provinceAssets.forEach(asset => {
-                        latSum += asset.position.lat;
-                        lngSum += asset.position.lng;
+                        if (asset.position && !isNaN(asset.position.lat) && !isNaN(asset.position.lng)) {
+                            latSum += asset.position.lat;
+                            lngSum += asset.position.lng;
+                            validCount++;
+                        }
                     });
+                    if (validCount === 0) {
+                        console.warn(`No valid coordinates for province: ${province}`);
+                        return;
+                    }
                     const center = {
-                        lat: latSum / provinceAssets.length,
-                        lng: lngSum / provinceAssets.length
+                        lat: latSum / validCount,
+                        lng: lngSum / validCount
                     };
 
                     const marker = new window.google.maps.Marker({
@@ -397,7 +411,9 @@
             selectedProvince = null;
             const bounds = new window.google.maps.LatLngBounds();
             assets.forEach(asset => {
-                bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
+                if (asset.position && !isNaN(asset.position.lat) && !isNaN(asset.position.lng)) {
+                    bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
+                }
             });
             map.fitBounds(bounds);
 
@@ -422,9 +438,21 @@
             const millList = document.getElementById("millList");
             const searchInput = document.getElementById("searchInput");
 
+            function dedupeAndSortAssets(assets) {
+                const uniqueAssets = [];
+                const seenTitles = new Set();
+                assets.forEach(asset => {
+                    if (!seenTitles.has(asset.title)) {
+                        seenTitles.add(asset.title);
+                        uniqueAssets.push(asset);
+                    }
+                });
+                return uniqueAssets.sort((a, b) => a.title.localeCompare(b.title));
+            }
+
             function groupAssetsByProvince(assets) {
                 return assets.reduce((groups, asset) => {
-                    const province = asset.province;
+                    const province = asset.province || 'UNKNOWN';
                     if (!groups[province]) {
                         groups[province] = [];
                     }
@@ -435,7 +463,8 @@
 
             function populateMillList(filteredAssets = assets) {
                 millList.innerHTML = "";
-                const groupedAssets = groupAssetsByProvince(filteredAssets);
+                const uniqueAssets = dedupeAndSortAssets(filteredAssets);
+                const groupedAssets = groupAssetsByProvince(uniqueAssets);
 
                 Object.keys(groupedAssets).sort().forEach(province => {
                     const details = document.createElement("details");
@@ -449,16 +478,20 @@
                         const li = document.createElement("li");
                         li.textContent = asset.title;
                         li.addEventListener("click", () => {
-                            map.setCenter(asset.position);
-                            map.setZoom(15);
-                            const formattedDesc = asset.description 
-                                ? `${asset.title}은 ${asset.millCompanyName} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName} 그룹의 일원입니다.<br>${asset.description.replace(/, /g, "<br>")}`
-                                : `${asset.title}은 ${asset.millCompanyName} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName} 그룹의 일원입니다.`;
-                            showPopup(asset.title, asset.title, formattedDesc, `
-                                <p><strong>회사명:</strong> ${asset.millCompanyName}</p>
-                                <p><strong>모회사:</strong> ${asset.parentCompanyName}</p>
-                                <p><strong>주소:</strong> ${asset.address}</p>
-                                <p><strong>지역:</strong> ${asset.province}</p>`);
+                            if (asset.position && !isNaN(asset.position.lat) && !isNaN(asset.position.lng)) {
+                                map.setCenter(asset.position);
+                                map.setZoom(15);
+                                const formattedDesc = asset.description 
+                                    ? `${asset.title}은 ${asset.millCompanyName} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName} 그룹의 일원입니다.<br>${asset.description.replace(/, /g, "<br>")}`
+                                    : `${asset.title}은 ${asset.millCompanyName} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName} 그룹의 일원입니다.`;
+                                showPopup(asset.title, asset.title, formattedDesc, `
+                                    <p><strong>회사명:</strong> ${asset.millCompanyName}</p>
+                                    <p><strong>모회사:</strong> ${asset.parentCompanyName}</p>
+                                    <p><strong>주소:</strong> ${asset.address}</p>
+                                    <p><strong>지역:</strong> ${asset.province}</p>`);
+                            } else {
+                                console.warn(`Invalid position for asset: ${asset.title}`);
+                            }
                         });
                         ul.appendChild(li);
                     });
@@ -472,9 +505,9 @@
             searchInput.addEventListener("input", () => {
                 const query = searchInput.value.toLowerCase();
                 const filteredAssets = assets.filter(asset => 
-                    asset.title.toLowerCase().includes(query) ||
-                    asset.millCompanyName.toLowerCase().includes(query) ||
-                    asset.parentCompanyName.toLowerCase().includes(query)
+                    (asset.title && asset.title.toLowerCase().includes(query)) ||
+                    (asset.millCompanyName && asset.millCompanyName.toLowerCase().includes(query)) ||
+                    (asset.parentCompanyName && asset.parentCompanyName.toLowerCase().includes(query))
                 );
                 populateMillList(filteredAssets);
             });
