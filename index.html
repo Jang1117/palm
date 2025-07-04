@@ -114,7 +114,7 @@
         .popup-content h3 {
             margin: 0 0 10px;
             font-size: 22px;
-移动:        }
+        }
         .popup-content p {
             margin: 0 0 15px;
             font-size: 16px;
@@ -176,15 +176,16 @@
         </div>
     </div>
 
-    <script src="https://jang1117.github.io/palm/assets.js" onerror="handleAssetsLoadError()"></script>
     <script>
         let map;
         let markers = [];
         let selectedProvince = null;
+        let assets = []; // Initialize assets as empty array
 
         function handleAssetsLoadError() {
             console.error("assets.js 로드 실패. 파일 경로 또는 구성을 확인하세요.");
             alert("자산 데이터를 로드하지 못했습니다. assets.js 파일을 확인하세요.");
+            initializeMap(); // Proceed with empty assets
         }
 
         const defaultIcon = 'https://jang1117.github.io/palm/palm_tree.png';
@@ -205,7 +206,11 @@
             const normalizedAssets = assets
                 .map(asset => ({
                     ...asset,
-                    province: asset.province ? asset.province.trim().toUpperCase() : 'UNKNOWN' // Normalize province
+                    province: asset.province ? asset.province.trim().toUpperCase() : 'UNKNOWN',
+                    title: asset.title || 'Untitled',
+                    millCompanyName: asset.millCompanyName || 'Unknown',
+                    parentCompanyName: asset.parentCompanyName || 'Unknown',
+                    address: asset.address || 'Unknown'
                 }))
                 .filter(asset => {
                     if (!asset.position || isNaN(asset.position.lat) || isNaN(asset.position.lng)) {
@@ -231,14 +236,16 @@
                 return;
             }
             selectedProvince = province.toUpperCase();
-            const provinceAssets = assets.filter(asset => asset.province.toUpperCase() === selectedProvince);
+            const provinceAssets = assets.filter(asset => (asset.province || 'UNKNOWN').toUpperCase() === selectedProvince);
             if (provinceAssets.length === 0) {
                 console.warn(`No assets found for province: ${selectedProvince}`);
                 return;
             }
             const bounds = new window.google.maps.LatLngBounds();
             provinceAssets.forEach(asset => {
-                bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
+                if (asset.position && !isNaN(asset.position.lat) && !isNaN(asset.position.lng)) {
+                    bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
+                }
             });
             map.fitBounds(bounds);
             const currentZoom = map.getZoom();
@@ -254,14 +261,12 @@
                 return;
             }
 
-            if (typeof assets === 'undefined') {
-                console.error("assets.js가 로드되지 않았습니다. 파일을 확인하세요.");
-                alert("자산 데이터를 로드하지 못했습니다. assets.js 파일을 확인하세요.");
-                return;
+            // Normalize and deduplicate assets if available
+            if (typeof assets !== 'undefined' && assets.length > 0) {
+                assets = normalizeAndDedupeAssets(assets);
+            } else {
+                console.warn("No assets available. Initializing with empty data.");
             }
-
-            // Normalize and deduplicate assets
-            assets = normalizeAndDedupeAssets(assets);
 
             map = new window.google.maps.Map(document.getElementById("map"), {
                 zoom: 7,
@@ -289,12 +294,12 @@
             let displayAssets = assets;
 
             if (selectedProvince && zoom > 7) {
-                displayAssets = assets.filter(asset => asset.province === selectedProvince);
+                displayAssets = assets.filter(asset => (asset.province || 'UNKNOWN').toUpperCase() === selectedProvince);
             }
 
             if (zoom <= 7) {
                 const groupedAssets = assets.reduce((groups, asset) => {
-                    const province = asset.province;
+                    const province = (asset.province || 'UNKNOWN').toUpperCase();
                     if (!groups[province]) {
                         groups[province] = [];
                     }
@@ -347,6 +352,10 @@
                 });
             } else {
                 displayAssets.forEach(asset => {
+                    if (!asset.position || isNaN(asset.position.lat) || isNaN(asset.position.lng)) {
+                        console.warn(`Skipping marker for asset due to invalid position: ${asset.title}`);
+                        return;
+                    }
                     const markerIcon = {
                         url: defaultIcon,
                         scaledSize: new window.google.maps.Size(40, 40),
@@ -391,9 +400,9 @@
             const popupDescription = document.getElementById("popupDescription");
             const popupExtra = document.getElementById("popupExtra");
 
-            popupTitle.textContent = title;
-            popupDescription.innerHTML = description;
-            popupExtra.innerHTML = extraContent;
+            popupTitle.textContent = title || 'Unknown';
+            popupDescription.innerHTML = description || 'No description available.';
+            popupExtra.innerHTML = extraContent || '';
 
             popupOverlay.style.display = "block";
         }
@@ -447,12 +456,12 @@
                         uniqueAssets.push(asset);
                     }
                 });
-                return uniqueAssets.sort((a, b) => a.title.localeCompare(b.title));
+                return uniqueAssets.sort((a, b) => (a.title || 'Untitled').localeCompare(b.title || 'Untitled'));
             }
 
             function groupAssetsByProvince(assets) {
                 return assets.reduce((groups, asset) => {
-                    const province = asset.province || 'UNKNOWN';
+                    const province = (asset.province || 'UNKNOWN').toUpperCase();
                     if (!groups[province]) {
                         groups[province] = [];
                     }
@@ -474,9 +483,9 @@
                     details.appendChild(summary);
 
                     const ul = document.createElement("ul");
-                    groupedAssets[province].sort((a, b) => a.title.localeCompare(b.title)).forEach(asset => {
+                    groupedAssets[province].sort((a, b) => (a.title || 'Untitled').localeCompare(b.title || 'Untitled')).forEach(asset => {
                         const li = document.createElement("li");
-                        li.textContent = asset.title;
+                        li.textContent = asset.title || 'Untitled';
                         li.addEventListener("click", () => {
                             if (asset.position && !isNaN(asset.position.lat) && !isNaN(asset.position.lng)) {
                                 map.setCenter(asset.position);
@@ -505,14 +514,29 @@
             searchInput.addEventListener("input", () => {
                 const query = searchInput.value.toLowerCase();
                 const filteredAssets = assets.filter(asset => 
-                    (asset.title && asset.title.toLowerCase().includes(query)) ||
-                    (asset.millCompanyName && asset.millCompanyName.toLowerCase().includes(query)) ||
-                    (asset.parentCompanyName && asset.parentCompanyName.toLowerCase().includes(query))
+                    (asset.title || 'Untitled').toLowerCase().includes(query) ||
+                    (asset.millCompanyName || 'Unknown').toLowerCase().includes(query) ||
+                    (asset.parentCompanyName || 'Unknown').toLowerCase().includes(query)
                 );
                 populateMillList(filteredAssets);
             });
         }
 
+        // Load assets.js dynamically to handle syntax errors
+        (function() {
+            const script = document.createElement('script');
+            script.src = 'https://jang1117.github.io/palm/assets.js';
+            script.onerror = handleAssetsLoadError;
+            script.onload = () => {
+                if (typeof assets !== 'undefined') {
+                    console.log(`assets.js loaded successfully with ${assets.length} assets`);
+                } else {
+                    console.error('assets.js loaded but "assets" variable is undefined');
+                    handleAssetsLoadError();
+                }
+            };
+            document.head.appendChild(script);
+        })();
     </script>
 
     <script async defer
