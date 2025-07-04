@@ -508,5 +508,1238 @@ const assets = [
         pkProduction: "(no data) ton/year",
         description: "농장면적: (no data) ha, FFB 생산: (no data) ton/year, 설비 용량: (no data) ton/hour, CPO 생산: (no data) ton/year, PK 생산: (no data) ton/year.",
         markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "KENCANA PERMATA NUSANTARA",
+        millCompanyName: "KENCANA PERMATA NUSANTARA",
+        parentCompanyName: "KENCANA PERMATA NUSANTARA",
+        address: "Deli Tua, Patumbak, Desa Aji Baho, Sibiru-biru, Deli Serdang, Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.453384, lng: 98.699743 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SERBAHUTA JAYA",
+        millCompanyName: "SERBAHUTA JAYA",
+        parentCompanyName: "SERBAHUTA JAYA",
+        address: "Ds.Sumber Mulyo, Kec.Merbau,Lab.Batu Utara, North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.222888889, lng: 99.93463889 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SEI SILAU",
+        millCompanyName: "PERKEBUNAN NUSANTARA III",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Buntu Pane Kec. Buntu Pane Kab. Asahan Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.902802778, lng: 99.51136944 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "BAYUNG AGRO SAWITA",
+        millCompanyName: "BAYUNG AGRO SAWITA",
+        parentCompanyName: "ADRGROUP",
+        address: "Desa Senawar Jaya, Kec. Bayung Lencir, Kab. Musi Banyuasin, Sumatra Selatan",
+        province: "SUMATERA SELATAN",
+        position: { lat: -2.008928333, lng: 103.7050478 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SEI MANGKEI",
+        millCompanyName: "PERKEBUNAN NUSANTARA III",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Sei Mangkei Kec. Bosar Maligas Kab. Simalungun Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.130777778, lng: 99.34386111 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "GUNUNG RAYA",
+        millCompanyName: "PERKEBUNAN NUSANTARA IV",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Bosar Maligas, Kabupaten Simalungun",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.143901, lng: 99.372642 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SEI DAUN",
+        millCompanyName: "PERKEBUNAN NUSANTARA III",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Pers Torganda Kec. Kota Pinang Kab. Labuhan Batu Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 1.669166667, lng: 100.3266667 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "KISARAN",
+        millCompanyName: "BAKRIE SUMATERA PLANTATION",
+        parentCompanyName: "BAKRIE SUMATERA PLANTATIONS",
+        address: "Dusun 3 Lolotan, Kel. Perkebunan Sei Balai, Kec. Sei Balai Kab. Batu Bara, Sumut",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.04075, lng: 99.58144444 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "BINTANG NAULI PRATAMA",
+        millCompanyName: "BINTANG NAULI PRATAMA",
+        parentCompanyName: "MENTARI GROUP",
+        address: "Anggoli, Sibabangun, Kabupaten Tapanuli Tengah",
+        province: "SUMATERA UTARA",
+        position: { lat: 1.527861, lng: 98.974806 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "CIPTA LESTARI SAWIT",
+        millCompanyName: "CIPTA LESTARI SAWIT",
+        parentCompanyName: "CIPTA LESTARI SAWIT",
+        address: "Kuala Puntian, Tj. Lago, Kab. Banyuasin",
+        province: "SUMATERA SELATAN",
+        position: { lat: -2.651361, lng: 104.534425 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SIMPANG",
+        millCompanyName: "SAWITTA UNGGUL JAYA",
+        parentCompanyName: "SAWITA UNGGUL JAYA",
+        address: "Negri Lama, Kec.Bilah Hilir, Lab.Batu, North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.33347, lng: 100.09947 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "GIGA PUTRA NUSANTARA",
+        millCompanyName: "GIGA AEK NABARA BARUMUN",
+        parentCompanyName: "MENTARI GROUP",
+        address: "Unnamed Road, Sel., Aek Nabara Jae, Barumun",
+        province: "SUMATERA UTARA",
+        position: { lat: 1.308047, lng: 99.768288 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "ARYA RAMA PERSADA",
+        millCompanyName: "ARYA RAMA PERSADA",
+        parentCompanyName: "GRAHA",
+        address: "Desa Perjuangan Kec. Sei Balai Kab. Batubara, North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.098421, lng: 99.59478 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SAWITTA JAYA LAU PAKAM",
+        millCompanyName: "SAWITTA JAYA LAU PAKAM",
+        parentCompanyName: "SAWITTA JAYA LAU PAKAM",
+        address: "Dsn.Janji Matogu, Ds.Lau Pakam, Kec.Mardingding, Simalunggun, North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.260417, lng: 97.965 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "BANYUASIN NUSANTARA SEJAHTERA",
+        millCompanyName: "BANYUASIN NUSANTARA SEJAHTERA",
+        parentCompanyName: "BANYUASIN NUSANTARA SEJAHTERA",
+        address: "Karang Baru, Muara Telang, Banyu Asin Regency, South Sumatra 30961",
+        province: "SUMATERA SELATAN",
+        position: { lat: -2.878338, lng: 104.727277 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "GOLDEN BLOSSOM SUMATRA",
+        millCompanyName: "GOLDEN BLOSSOM SUMATRA",
+        parentCompanyName: "SURYA BUMI",
+        address: "Desa Prambatan, Kecamatan Abab, Muara Enim, Sumatera Selatan",
+        province: "SUMATERA SELATAN",
+        position: { lat: -3.067688, lng: 104.204637 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "GOLDEN OILINDO NUSANTARA",
+        millCompanyName: "GOLDEN OILINDO NUSANTARA",
+        parentCompanyName: "MODESPHIL",
+        address: "Kel. Sedinginan, Tanah Putih, Rokan Hilir, Riau",
+        province: "SUMATERA SELATAN",
+        position: { lat: -3.119195, lng: 104.694516 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SUTOPO LESTARI JAYA",
+        millCompanyName: "SUTOPO LESTARI JAYA",
+        parentCompanyName: "SWADAYA INDOPALMA",
+        address: "Ds.Gasing, Kec.Talang Kelapa, Kab.Banyuasin, South Sumatera",
+        province: "SUMATERA SELATAN",
+        position: { lat: -2.795, lng: 104.736 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "TIMUR",
+        millCompanyName: "PERKEBUNAN NUSANTARA IV",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Batu Sondat, Batahan, Kabupaten Mandailing Natal",
+        province: "SUMATERA UTARA",
+        position: { lat: 0.3672, lng: 99.3076 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SAWITA INTER PERKASA",
+        millCompanyName: "SAWITA INTER PERKASA",
+        parentCompanyName: "MULTI PALMA ABADI SEJAHTERA",
+        address: "Ds.Sionggang, Kec.Buntu Pane,  Asahan, North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.799, lng: 99.441617 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "MULIA TANI JAYA",
+        millCompanyName: "MULIA TANI JAYA",
+        parentCompanyName: "MULIA TANI JAYA",
+        address: "Kec.Padang Tualang, Kab Langkat",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.866267, lng: 98.356083 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SAWIT SEBERANG",
+        millCompanyName: "PERKEBUNAN NUSANTARA II",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Ds.Sawit Seberang, Kec.Sawit Seberang, Langkat, North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.7996, lng: 98.277133 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "CIPTA SAWITA JAYA CEMERLANG",
+        millCompanyName: "CIPTA SAWITA JAYA CEMERLANG",
+        parentCompanyName: "SAWITTA JAYA LAU PAKAM",
+        address: "Desa Dolok Merawan Kecamatan Dolok Merawan, Serdang Bedagai, Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.20315, lng: 99.060567 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SRI ANDALAN LESTARI",
+        millCompanyName: "SRI ANDALAN LESTARI",
+        parentCompanyName: "BUANA SRIWIJAYA SEJAHTERA",
+        address: "Kec.Suak Tape, Kab.Banyuasin",
+        province: "SUMATERA SELATAN",
+        position: { lat: -2.786283, lng: 104.363683 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "DEWA RENCANA PERANGIN ANGIN (Eks. ERAKARYA PRIMA)",
+        millCompanyName: "DEWA RENCANA PERANGIN ANGIN",
+        parentCompanyName: "GRAHA",
+        address: "Ds. Raja Tengah, Kec.Kuala, Langkat,  North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.501233, lng: 98.437783 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SAWIT LANGKAT",
+        millCompanyName: "PERKEBUNAN NUSANTARA IV",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Sei Bamban Kec. Padang Tualang Kab. Langkat Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.700416667, lng: 98.29422222 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "PATILUBAN MUDIK",
+        millCompanyName: "TRI BAHTERA SRIKANDI",
+        parentCompanyName: "SAGO NAULI",
+        address: "Desa Patiluban Mudik, Mandailing Natal, Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 0.567528, lng: 99.203306 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "RAYA PADANG LANGKAT",
+        millCompanyName: "RAYA PADANG LANGKAT",
+        parentCompanyName: "RAYA PADANG LANGKAT",
+        address: "Ds.Padang Langkat, Kec.Gebang, Langkat  North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.946467, lng: 98.3661 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "PULAU RAJA",
+        millCompanyName: "PERKEBUNAN NUSANTARA IV",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Pulau Rakyat Pekan Kec. Pulau Rakyat Kab. Asahan Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.702111111, lng: 99.6247 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "PRIMA PALM LATEX INDUSTRI",
+        millCompanyName: "PRIMA PALM LATEX INDUSTRI",
+        parentCompanyName: "PRIMA PALM LATEX INDUSTRI",
+        address: "Ds.Huta Padang, Kec.Bandar Pasir Mandoge, Asahan North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.78305, lng: 99.253967 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "PINANG AWAN",
+        millCompanyName: "PERKEBUNAN MILANO",
+        parentCompanyName: "WILMAR INTERNATIONAL",
+        address: "Dsn.Aek Batu, Ds.Asam Jawa, Kec.Torgamba,Lab.Batu Selatan, North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 1.842826389, lng: 100.2030556 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "PERMATA HIJAU PASAMAN",
+        millCompanyName: "PERMATA HIJAU PASAMAN",
+        parentCompanyName: "WILMAR INTERNATIONAL",
+        address: "Ds.Mananti Sosa, Jae, Kec.Huta Raja Tinggi, Kab.Padang Lawas, North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 1.062767, lng: 100.0715 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "PEMATANG KERASAAN",
+        millCompanyName: "PRIMA SAUHUR LESTARI",
+        parentCompanyName: "PRIMA SAUHUR LESTARI",
+        address: "Desa Nagori Pematang Kerasaan Kec. Bandar Kab. Simalungun - North Sumatera",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.082638889, lng: 99.30208333 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "PASIR MANDOGE",
+        millCompanyName: "PERKEBUNAN NUSANTARA IV",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Huta Bagasan Kec. Bandar Pasir Mandoge Kab. Asahan Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.768708333, lng: 99.31758333 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "PANGKATAN INDONESIA",
+        millCompanyName: "PANGKATAN INDONESIA",
+        parentCompanyName: "M.P.EVANS",
+        address: "Dusun II, Kel.Perkebunan Pangkatan, Kec.Pangkatan Kab.Labuhan Batu, Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.10305, lng: 99.94766 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "PAGAR MERBAU",
+        millCompanyName: "PERKEBUNAN NUSANTARA II",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Sidodadi Batu Delapan, Pagar Merbau, Deli Serdang, Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.526013889, lng: 98.89828056 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "PADANG HALABAN",
+        millCompanyName: "SINAR MAS AGRO RESOURCES",
+        parentCompanyName: "SMART/GOLDEN AGRI RESOURCES (GAR)",
+        address: "Desa Padang Halaban, Kecamatan Aek Kuo, Kabupaten Labura, Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.3175, lng: 99.83888889 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "PABATU",
+        millCompanyName: "PERKEBUNAN NUSANTARA IV",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Jl. Besar Tinggi Siantar, Kel. Kedai Damar, Kec. Tebing Tinggi, Kab. Serdang Bedagai",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.288066667, lng: 99.11066667 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "NEGRI LAMA II",
+        millCompanyName: "HARI SAWIT JAYA",
+        parentCompanyName: "ASIAN AGRI",
+        address: "Desa Perkebunan Negeri Seberang Kec. Bilah Hilir Kab. Labuhan Batu Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.359694444, lng: 100.0353056 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "NEGRI LAMA I",
+        millCompanyName: "HARI SAWIT JAYA",
+        parentCompanyName: "ASIAN AGRI",
+        address: "Desa Perkebunan Negeri Seberang Kec. Bilah Hilir Kab. Labuhan Batu Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.359694444, lng: 100.0418889 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "NAULI SAWIT",
+        millCompanyName: "NAULI SAWIT",
+        parentCompanyName: "ERA CIPTA",
+        address: "Ds.Bajamas, Kec.Sirandorung,Tapanuli Tengah, North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.08645, lng: 98.308633 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "MITRA NIAGA SEJATI JAYA",
+        millCompanyName: "MITRA NIAGA SEJATI JAYA",
+        parentCompanyName: "MITRA NIAGA SEJATI JAYA",
+        address: "Dsn IV Bukit Pelita, Ds.Bukit Selamat, Kec.Besitang,, Langkat  North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 4.052805556, lng: 98.13683333 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "MITRA AGUNG SAWITA SEJATI",
+        millCompanyName: "MITRA AGUNG SAWITA SEJATI",
+        parentCompanyName: "MITRA AGUNG SAWITA SEJATI",
+        address: "jl. Huta I Bandar Sakti, Bandar Tinggi - Simalungun",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.296391667, lng: 99.30501667 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "MATA PAO",
+        millCompanyName: "SOCFIN INDONESIA",
+        parentCompanyName: "SOCFIN INDONESIA",
+        address: "Desa Mata Pao, Teluk Mengkudu,Serdang Bedagai, Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.530833333, lng: 99.09194444 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SAWIT PERMAI ABADI",
+        millCompanyName: "SAWIT PERMAI ABADI",
+        parentCompanyName: "SAWIT PERMAI ABADI",
+        address: "Dusun Batu Gajah, Kel. Mancang, Kec. Selesai, Langkat - Sumut",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.652877778, lng: 98.42920833 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "MAKMUR ABADI RAYA",
+        millCompanyName: "MAKMUR ABADI RAYA",
+        parentCompanyName: "MAKMUR ABADI RAYA",
+        address: "Ds.Tanjung Putus, Kec.Padang Tualang, Langkat North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.8069, lng: 98.341667 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "KUALA MAS SAWIT ABADI",
+        millCompanyName: "KUALA MAS SAWIT ABADI",
+        parentCompanyName: "KUALA MAS",
+        address: "Desa Mampang, Kec. Kotapinang, Kab. Labuhanbatu Selatan - Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 1.812138889, lng: 100.0254444 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "KUALA GUNUNG",
+        millCompanyName: "TENERA LESTARI",
+        parentCompanyName: "TENERA LESTARI",
+        address: "Desa Kuala Gunung RT.000 RW.000, Lima Puluh, Asahan, Sumut",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.163358333, lng: 99.48234722 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "KARYA SERASI JAYA ABADI",
+        millCompanyName: "KARYA SERASI JAYA ABADI",
+        parentCompanyName: "SUMBER TANI AGUNG",
+        address: "Ds.Binjai, Kec.Tebing Syahbandar,Kab.Serdang Bedagai, North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.34228, lng: 99.22248 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "KARYA MITRA ANDALAN",
+        millCompanyName: "KARYA MITRA ANDALAN",
+        parentCompanyName: "MAHKOTA",
+        address: "Ds.Pulau Maria, Kec.Teluk Dalam, Asahan,  North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.78359, lng: 99.61768 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SOSA",
+        millCompanyName: "KARYA AGUNG SAWITA",
+        parentCompanyName: "SUMBER TANI AGUNG",
+        address: "Desa Ujung Batu Gunung Tua Sosa - North Sumatera",
+        province: "SUMATERA UTARA",
+        position: { lat: 1.0657, lng: 99.963133 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "KARIMUN AROMATICS",
+        millCompanyName: "KARIMUN AROMATICS",
+        parentCompanyName: "KARIMUN AROMATICS",
+        address: "Desa Besitang Kec. Besitang Kab. Langkat Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 4.013155, lng: 98.149684 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "BINA RAHMAD MADANI",
+        millCompanyName: "BINA RAHMAD MADANI",
+        parentCompanyName: "TRINITY",
+        address: "Besitang - Langkat, Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.932425, lng: 98.178011 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SEI MERAN",
+        millCompanyName: "JAYA BARU PERTAMA",
+        parentCompanyName: "JAYA BARU PERTAMA",
+        address: "Gebang Langkat, Desa Sei Meran, Kec. Pangkalan Susu, Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 4.065217, lng: 98.217833 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "TANJUNG SELAMAT",
+        millCompanyName: "INDO SEPADAN JAYA",
+        parentCompanyName: "ASIAN AGRI",
+        address: "Desa Kampung Padang Kec. Bilah Hilir Kab. Labuhan Batu Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.128889, lng: 100.008889 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "HERFINTA FARM AND PLANTATION",
+        millCompanyName: "HERFINTA FARM AND PLANTATION",
+        parentCompanyName: "HERFINTA PALM & PLANTATION",
+        address: "Ds.Aek Batu, Kec.Torgamba,  Lab.Batu Selatan North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 1.8535, lng: 100.1656389 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "HARKAT SEJAHTERA",
+        millCompanyName: "HARKAT SEJAHTERA",
+        parentCompanyName: "HARKAT SEJAHTERA",
+        address: "Ds.Pengkolan, Kec.Bosar Maligas, Simalungun N.Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.065017, lng: 99.428267 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "GUNUNG SELAMAT LESTARI",
+        millCompanyName: "GUNUNG SELAMAT LESTARI",
+        parentCompanyName: "DUTA MARGA",
+        address: "Ds.Pekan Tolan. Kec. Kampung Rakyat,  Lab.Batu Selatan North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.0399, lng: 100.044967 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "GUNUNG MELAYU II",
+        millCompanyName: "GUNUNG MELAYU",
+        parentCompanyName: "ASIAN AGRI",
+        address: "Desa Gonting Malaha Kec. Bandar Pulau Kab. Asahan Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.749388889, lng: 99.46969444 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "GUNUNG MELAYU I",
+        millCompanyName: "SAUDARA SEJATI LUHUR",
+        parentCompanyName: "ASIAN AGRI",
+        address: "Desa Rahuning Kec. Bandar Pulau Kab. Asahan - North Sumatera",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.791694444, lng: 99.59830556 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "RAPI TECHNIK",
+        millCompanyName: "RAPI TECHNIK",
+        parentCompanyName: "RAPI TECHNIK",
+        address: "Jl. Asahan Km. 18, Desa Pematang Asilum, Kec. Gunung Malela, Kab. Simalungun, Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.999722, lng: 99.21675 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "TAPIAN NAULI",
+        millCompanyName: "GRAHADURA LEIDONG PRIMA",
+        parentCompanyName: "BAKRIE SUMATERA PLANTATIONS",
+        address: "Sukarame Baru, Kec. Kualuh Hulu Aek Kanopan 21457, Labuhan Batu Utara, Sumut",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.584773, lng: 99.784703 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "STABAT",
+        millCompanyName: "LANGKAT NUSANTARA KEPONG",
+        parentCompanyName: "KUALA LUMPUR KEPONG BERHAD",
+        address: "Desa gohor lama kec.wampu kab.langkat",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.760164, lng: 98.393 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "DOLOK ILIR",
+        millCompanyName: "PERKEBUNAN NUSANTARA IV",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Bandar Selamat Kec. Dolok Batunanggar Kab. Simalungun Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.122297222, lng: 99.16170278 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "DJAJA PUTRA INDONESIA",
+        millCompanyName: "DJAJA PUTRA INDONESIA",
+        parentCompanyName: "DJAJA PUTRA INDONESIA",
+        address: "Desa Buntu Maraja Kec. Bandar Pulau Kab. Asahan Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.678333333, lng: 99.42761111 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "DAYA LABUHAN INDAH 1",
+        millCompanyName: "DAYA LABUHAN INDAH",
+        parentCompanyName: "WILMAR INTERNATIONAL",
+        address: "Ds.Kampung Pangkatan, Kec.Pangkatan,Lab.Batu,  North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.151167, lng: 99.991167 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "DOLOK SINUMBAH",
+        millCompanyName: "PERKEBUNAN NUSANTARA IV",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Dolok Sinumbah Kec. Hutabayu Raja Kab. Simalungun Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.111022222, lng: 99.32975 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "CITRA INDAH PERTIWI",
+        millCompanyName: "CITRA INDAH PERTIWI",
+        parentCompanyName: "CITRA INDAH PERTIWI",
+        address: "Dusun Kampung Lalang, Desa Pematang Seleng, Kec. Bilah Hulu, Kab. Labuhan Batu, Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.060046667, lng: 100.0128 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "PALUTA INTI SAWIT",
+        millCompanyName: "PALUTA INTI SAWIT",
+        parentCompanyName: "PALUTA INTI SAWIT",
+        address: "Desa Siancimun Kec. Halongonan Kab. Padang Lawas Utara Tapanuli Selatan - North Sumatera",
+        province: "SUMATERA UTARA",
+        position: { lat: 1.552694444, lng: 99.83686111 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "CISADANE SAWIT RAYA",
+        millCompanyName: "CISADANE SAWIT RAYA",
+        parentCompanyName: "CISADANE RAYA",
+        address: "Desa Sei Siarti Kec. Panai Tengah Kab. Labuhan Batu - Belitung",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.242755556, lng: 100.1906694 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "CIPTA CHEMICAL MEDAN OIL",
+        millCompanyName: "CIPTA CHEMICAL MEDAN OIL",
+        parentCompanyName: "CIPTA CHEMICAL MEDAN OIL",
+        address: "Ds.Tanjung Selamat Km. 1 Kec.Padang Tualang, Langkat North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.854211111, lng: 98.34435278 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "CINTA RAJA",
+        millCompanyName: "CINTA RAJA",
+        parentCompanyName: "CINTA RAJA",
+        address: "Ds.Silinda, Kec.Bangun Purba, Deli Serdang North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.217, lng: 98.78099 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "BUANA SAWIT INDAH",
+        millCompanyName: "BUANA SAWIT INDAH",
+        parentCompanyName: "BUANA SAWIT INDAH/NON GROUP",
+        address: "Desa Perkebunan Petatal, Kec. Talawi, Kab. Batubara, Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.153429, lng: 99.50958 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "BLOK SONGO",
+        millCompanyName: "NUBIKA JAYA",
+        parentCompanyName: "PERMATA HIJAU SAWIT",
+        address: "Desa Blok Songo, Kecamatan Kota Pinang, Kabupaten Labuhan Batu selatan. Provinsi sumatra utara.",
+        province: "SUMATERA UTARA",
+        position: { lat: 1.948333, lng: 100.101136 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "BINANGA",
+        millCompanyName: "AUSTINDO NUSANTARA JAYA AGRI",
+        parentCompanyName: "AUSTINDO NUSANTARA JAYA AGRI",
+        address: "Desa Simangambat Kec. Barumun Tengah, Kab. Padang Lawas Utara Tapanuli Selatan - North Sumatera",
+        province: "SUMATERA UTARA",
+        position: { lat: 1.479483333, lng: 99.95716667 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "BERANGIR",
+        millCompanyName: "PERKEBUNAN NUSANTARA IV",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Jl.Lintas Perkebunan Berangir, Kel. Pulo Bargot, Kec.Marbau Kab. Labuhan Batu Utara, Sumut",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.2247222, lng: 99.760278 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "BAH JAMBI",
+        millCompanyName: "PERKEBUNAN NUSANTARA IV",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Ds.Bah Jambi, Kec.Huta Bayu Raja, Simalungun, North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.98887, lng: 99.219539 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "KARYA PRATAMA NIAGA JAYA",
+        millCompanyName: "KARYA PRATAMA NIAGA JAYA",
+        parentCompanyName: "MAHKOTA",
+        address: "JL . Besar km.97 tanjung seri kec.sei suka kab.batu bara",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.316388889, lng: 99.31377778 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "ANUGRAH MULTI SAWITA",
+        millCompanyName: "ANUGRAH MULTI SAWITA",
+        parentCompanyName: "ANUGRAH MULTI SAWITA",
+        address: "Dusun I Desa Rahuning II Kec. Rahuning Simpang Mak Inang, Asahan",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.706580556, lng: 99.61847778 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "ANUGERAH TANJUNG MEDAN",
+        millCompanyName: "ANUGERAH TANJUNG MEDAN",
+        parentCompanyName: "ANUGERAH TANJUNG MEDAN",
+        address: "Ds.Tanjung Medan, Kec.Kampung Rakyat, Lab. Batu Selatan, North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.063067, lng: 100.146783 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "ANUGERAH LANGKAT MAKMUR",
+        millCompanyName: "ANUGERAH LANGKAT MAKMUR",
+        parentCompanyName: "ANUGERAH LANGKAT MAKMUR",
+        address: "Kampung Lama, Besitang, Langkat, Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 4.013036111, lng: 98.19419167 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "AJAMU",
+        millCompanyName: "PERKEBUNAN NUSANTARA IV",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Jl.Besar Ajamu, Kel.Ajamu, Kec. Panai Hulu Kab. Labuhan Batu, Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.457183, lng: 100.16065 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "AIR BATU",
+        millCompanyName: "PERKEBUNAN NUSANTARA IV",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Perkebunan Air Batu III/IX Kec. Air Batu Kab. Asahan Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.859237, lng: 99.638435 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "AGRINDO INDAH PERSADA 1",
+        millCompanyName: "AGRINDO INDAH PERSADA",
+        parentCompanyName: "WILMAR INTERNATIONAL",
+        address: "Ds.Bandar Pasir Mandoge, Kec.B.Pasir Mandoge, Asahan  North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.778667, lng: 99.393433 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "AEK TOROP",
+        millCompanyName: "PERKEBUNAN NUSANTARA III",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Jl. Aek Torop, Kel. Aek Batu, Kec. Torgamba Kab.Labuhan Batu Selatan, Sumut",
+        province: "SUMATERA UTARA",
+        position: { lat: 1.792777778, lng: 100.1558333 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "AEK SIGALA GALA",
+        millCompanyName: "BARUMUN AGRO SENTOSA",
+        parentCompanyName: "PASIFIK AGRO SENTOSA",
+        address: "Desa Ujung Gading Jae, Kec. Simangambat Kab. Padang Lawas Utara - North Sumatera",
+        province: "SUMATERA UTARA",
+        position: { lat: 1.619694444, lng: 100.1038056 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "AEK SIBIRONG",
+        millCompanyName: "MAJU INDO RAYA",
+        parentCompanyName: "MAJU INDO RAYA",
+        address: "Aek Sibirong,  Kota Batangtoru Tapanuli Selatan - North Sumatera",
+        province: "SUMATERA UTARA",
+        position: { lat: 1.409061111, lng: 98.85691944 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "AGUNG AGRO LESTARI",
+        millCompanyName: "AGUNG AGRO LESTARI",
+        parentCompanyName: "AGUNG AGRO LESTARI",
+        address: "Kuala Bangka, Labuhan Batu Utara, Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.541258333, lng: 99.88066944 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "AEK RASO",
+        millCompanyName: "PERKEBUNAN NUSANTARA III",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Rasau Kec. Kota Pinang Kab. Labuhan Batu Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 1.703805556, lng: 100.1723333 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "AEK NABARA (SMA)",
+        millCompanyName: "SUPRA MATRA ABADI",
+        parentCompanyName: "ASIAN AGRI",
+        address: "Aek Nabara Selatan Kab. Labuhan Batu - North Sumatera",
+        province: "SUMATERA UTARA",
+        position: { lat: 1.999805556, lng: 99.93969444 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "AEK LOBA",
+        millCompanyName: "SOCFIN INDONESIA",
+        parentCompanyName: "SOCFIN INDONESIA",
+        address: "Desa Aek Loba, Kec. Aek Kuasan, Kab. Asahan. Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.651388889, lng: 99.61777778 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "AEK BATU (PM)",
+        millCompanyName: "PERKEBUNAN MILANO",
+        parentCompanyName: "WILMAR INTERNATIONAL",
+        address: "Ds.Pangkatan, Kec.Pangkatan, Lab. Batu North Sumatra (TOLLING ARRANGEMENT)",
+        province: "SUMATERA UTARA",
+        position: { lat: 1.850583, lng: 100.1457 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "ADOLINA",
+        millCompanyName: "PERKEBUNAN NUSANTARA IV",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Ds.Adolina, Kec.Perbaungan, Serdang Bedagai, North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.568055556, lng: 98.9475 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "TELUK PANJI (ABM)",
+        millCompanyName: "ABDI BUDI MULIA",
+        parentCompanyName: "AATHI BAGAWATHI MANUFACTURING SDN BHD",
+        address: "Ds.Teluk Panji, Kec.Kampung Rakyat, Lab.Batu Selatan North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.05228, lng: 100.25207 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SIRINGO-RINGO",
+        millCompanyName: "SIRINGO-RINGO",
+        parentCompanyName: "MUSIM MAS",
+        address: "Kampung Tempel, Labuhan Batu Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.09733, lng: 99.76692 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "WAIMUSI AGRO INDAH",
+        millCompanyName: "WAIMUSI AGRO INDAH",
+        parentCompanyName: "WAIMUSI AGRO INDAH",
+        address: "Desa Pulau Geronggang,  Kecamatan Pedamaran Timur, OKI, South Sumatra",
+        province: "SUMATERA SELATAN",
+        position: { lat: -3.671662, lng: 105.067917 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "INDRALAYA AGRO LESTARI",
+        millCompanyName: "INDRALAYA",
+        parentCompanyName: "INDRALAYA",
+        address: "Ds.Patra Tani, Kec.Muara Belida, Kab.Muara Enim, Sumatera Selatan",
+        province: "SUMATERA SELATAN",
+        position: { lat: -3.07425, lng: 104.5885 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SELATAN AGRO MAKMUR LESTARI",
+        millCompanyName: "SELATAN AGRO MAKMUR LESTARI",
+        parentCompanyName: "SRIWIJAYA PALM OIL",
+        address: "Desa Rengas Abang Sungai Raden, Kec. Air Sugihan, Kab, Ogan Komering Ilir, Propinsi Sumatera Selatan",
+        province: "SUMATERA SELATAN",
+        position: { lat: -2.692214, lng: 105.219246 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SELATAN AGUNG SEJAHTERA",
+        millCompanyName: "SELATAN AGUNG SEJAHTERA",
+        parentCompanyName: "KUALA MAS",
+        address: "Desa Petunang; Kecamatan Tuah Negeri; Kabupaten Musi Rawas; Sumatera Selatan",
+        province: "SUMATERA SELATAN",
+        position: { lat: -3.0509, lng: 103.2188 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SUMBER BUMI SAWIT JADI JAYA",
+        millCompanyName: "SUMBER BUMI SAWIT JADI JAYA",
+        parentCompanyName: "SUMBER MAKMUR JAYA",
+        address: "Nagori Buntu Bayu, Kecamatan Hatonduhan,  Kabupaten Simalungun,  Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.8025, lng: 99.2025 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "KARYA HAVEA INDONESIA",
+        millCompanyName: "KARYA HAVEA INDONESIA",
+        parentCompanyName: "KARYA HAVEA INDONESIA",
+        address: "Dolok Masihul, Serdang Bedagai, Sumut",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.369467, lng: 99.018833 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "MANGSANG",
+        millCompanyName: "BINAKARYA ERAMANDIRI",
+        parentCompanyName: "BINAKARYA ERAMANDIRI",
+        address: "Desa mangsang, Kec. Bayung Lencir, Palembang",
+        province: "SUMATERA SELATAN",
+        position: { lat: -2.173, lng: 103.987 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SUN SAWIT",
+        millCompanyName: "SINAR UTAMA NABATI",
+        parentCompanyName: "INDAH GROUP",
+        address: "Desa Talang Cempedak Kec. Jejawi Kab. Ogan Komering Ilir",
+        province: "SUMATERA SELATAN",
+        position: { lat: -3.169472, lng: 104.893222 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SERASAN SEKUNDANG SAWITMAS",
+        millCompanyName: "SERASAN SEKUNDANG SAWITMAS",
+        parentCompanyName: "SUTOMO/SINAR JAYA AGRO INVESTAMA",
+        address: "Pagar Dewa Lubai Kabupaten Muara Enim, Sumatera Selatan",
+        province: "SUMATERA SELATAN",
+        position: { lat: -3.89291027, lng: 104.0956053 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "BUMI MEKAR TANI",
+        millCompanyName: "BUMI MEKAR TANI",
+        parentCompanyName: "TUDUNG AGRI/GARUDAFOOD",
+        address: "Desa Jadi Mulya I Kec. Nibung Kab. Musirawas Utara",
+        province: "SUMATERA SELATAN",
+        position: { lat: -2.494944, lng: 102.875972 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "MUKUT",
+        millCompanyName: "HINDOLI",
+        parentCompanyName: "CARGILL",
+        address: "Desa Mukut,Kecamatan Pulau Rimau,Kab.Banyuasin,",
+        province: "SUMATERA SELATAN",
+        position: { lat: -2.441002, lng: 104.426761 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "PAPASO",
+        millCompanyName: "KARYA AGUNG SAWITA",
+        parentCompanyName: "SUMBER TANI AGUNG",
+        address: "Desa Papaso, Batang Lubu Sutam, Padang Lawas Regency, North Sumatra",
+        province: "SUMATERA UTARA",
+        position: { lat: 0.896, lng: 100.108222 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "BERKAT SAWIT SEJATI",
+        millCompanyName: "BERKAT SAWIT SEJATI",
+        parentCompanyName: "MUSIM MAS",
+        address: "Desa Tampang Baru, kecamatan Bayung Lencir, kabupaten Musi banyuasin, propinsi sumatera selatan",
+        province: "SUMATERA SELATAN",
+        position: { lat: -2.320361, lng: 103.708667 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SUNGAI KIKIM",
+        millCompanyName: "SAWIT MAS SEJAHTERA",
+        parentCompanyName: "SMART/GOLDEN AGRI RESOURCES (GAR)",
+        address: "Desa Sungai Laro, Kecamatan Kikim tengah, Kabupaten Lahat",
+        province: "SUMATERA SELATAN",
+        position: { lat: -3.634733, lng: 103.2188 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "LALAN",
+        millCompanyName: "BANYU KAHURIPAN INDONESIA",
+        parentCompanyName: "DHANISTHA SURYA NUSANTARA",
+        address: "Jaya Agung, Lalan, Musi Banyuasin Regency, South Sumatra",
+        province: "SUMATERA SELATAN",
+        position: { lat: -2.23413, lng: 104.332258 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "RANTAU PANJANG (GPI)",
+        millCompanyName: "GUTHRIE PECCONINA INDONESIA",
+        parentCompanyName: "SIME DARBY/MINAMAS",
+        address: "Desa Rantau Panjang Kecamatan Babat Toman Kabupaten Musi Banyuasin Provinsi Sumatera Selatan",
+        province: "SUMATERA SELATAN",
+        position: { lat: -2.916183, lng: 103.750833 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "TRANSPACIFIC AGRO INDUSTRY",
+        millCompanyName: "TRANSPACIFIC AGRO INDUSTRY",
+        parentCompanyName: "SUMBER TANI AGUNG",
+        address: "Desa Upang Jaya Rt.000 Rw. 000 Upang Jaya - Makarti Jaya Banyuasin - 00000",
+        province: "SUMATERA SELATAN",
+        position: { lat: -2.8025, lng: 104.8969444 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "BERKAT SAWIT SUKAMAJU",
+        millCompanyName: "BERKAT SAWIT SUKAMAJU",
+        parentCompanyName: "BERKAT SAWIT SUKAMAJU",
+        address: "Desa sukamaju, Kecamatan Babat Supat, Kabupaten Musi Banyuasin, Sumatera Selatan",
+        province: "SUMATERA SELATAN",
+        position: { lat: -2.674503, lng: 104.079356 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SWADAYA INDOPALMA",
+        millCompanyName: "SWADAYA INDOPALMA",
+        parentCompanyName: "SWADAYA INDOPALMA",
+        address: "Ds.Sungai Rengit, Kec.Talang Kelapa, Kab.Banyuasin, South Sumatra",
+        province: "SUMATERA SELATAN",
+        position: { lat: -2.765881, lng: 104.63151 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "GRAHA SAWIT MAKMUR",
+        millCompanyName: "GRAHA SAWIT MAKMUR",
+        parentCompanyName: "GRAHA SAWIT MAKMUR",
+        address: "Jalan Perbaungan; Tebing Tinggi Dusun II; Kelurahan Sei Sijenggi; Kecamatan Perbaungan, Serdang Bedagai, Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.552058, lng: 99.017867 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "ANDIRA AGRO",
+        millCompanyName: "ANDIRA AGRO",
+        parentCompanyName: "META EPSI",
+        address: "Dsn Teluk Kelapa, Ds.Karanganyar,Kec. Muara Padang, Banyuasin, South Sumatra",
+        province: "SUMATERA SELATAN",
+        position: { lat: -2.820965, lng: 104.966879 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "MALUAI INDAH",
+        millCompanyName: "CAMPANG TIGA",
+        parentCompanyName: "CAMPANG TIGA",
+        address: "Ogan Komering Ulu Timur, Sumatera Selatan",
+        province: "SUMATERA SELATAN",
+        position: { lat: -3.76419, lng: 104.73926 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "ANGGOLI",
+        millCompanyName: "TRI BAHTERA SRIKANDI",
+        parentCompanyName: "SAGO NAULI",
+        address: "Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 1.538639, lng: 98.984611 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SIKAPAS",
+        millCompanyName: "MADINA AGRO LESTARI",
+        parentCompanyName: "SUMBER TANI AGUNG",
+        address: "Mandailing Natal SUmatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 1.217194444, lng: 98.89572222 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "DAYA SEMESTA AGRO PERSADA",
+        millCompanyName: "DAYA SEMESTA AGRO PERSADA",
+        parentCompanyName: "PASIFIK AGRO SENTOSA",
+        address: "Desa Perajin Kec. Banyuasin I Kab. Banyuasin, Sumatera Selatan",
+        province: "SUMATERA SELATAN",
+        position: { lat: -2.963166667, lng: 104.9175833 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SUNGAI LILIN (HINDOLI)",
+        millCompanyName: "HINDOLI",
+        parentCompanyName: "CARGILL",
+        address: "Ds.Pinang Banjar, Kec.Sungai Lilin, Musi Banyuasin, South Sumatra",
+        province: "SUMATERA SELATAN",
+        position: { lat: -2.612777778, lng: 104.12825 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "CINTA MANIS LAMA",
+        millCompanyName: "TUNAS BARU LAMPUNG",
+        parentCompanyName: "SUNGAI BUDI",
+        address: "Desa Cinta Manis Lama Kec. Banyuasin Kab. Musi Banyuasin - South Sumatera",
+        province: "SUMATERA SELATAN",
+        position: { lat: -2.906944444, lng: 104.9130556 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "ARSI GRIYA PLANTATIONS",
+        millCompanyName: "ARSI GROUP",
+        parentCompanyName: "ARSI GROUP",
+        address: "Tirta Sari, Banyuasin I, Kabupaten Banyu Asin, Sumatera Selatan 30962",
+        province: "SUMATERA SELATAN",
+        position: { lat: -2.86129, lng: 104.940941 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "KARANG AGUNG",
+        millCompanyName: "BANYU KAHURIPAN INDONESIA",
+        parentCompanyName: "DHANISTHA SURYA NUSANTARA",
+        address: "Jl. Desa Karang Agung Rt. 0 Rw. 0, Kel Karang Agung, Lalam, , Kec Musi Banyuasin,  Sumatra Selatan",
+        province: "SUMATERA SELATAN",
+        position: { lat: -2.261, lng: 104.3126944 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "Langkat Makmur Jaya Sawita",
+        millCompanyName: "Langkat Makmur Jaya Sawita",
+        parentCompanyName: "PT Langkat Makmur Jaya Sawita",
+        address: "Buluh Telang, Padang Tualang, Langkat Regency, North Sumatra, Indonesia",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.8779, lng: 98.340547 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "Karya Agung Sawit (Ujung Batu)",
+        millCompanyName: "Karya Agung Sawit",
+        parentCompanyName: "SUMBER TANI AGUNG",
+        address: "Tobing Tinggi Hr, Huristak, Padang Lawas Regency, North Sumatra 22765, Indonesia",
+        province: "SUMATERA UTARA",
+        position: { lat: 1.318478, lng: 100.010726 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "GASING SAWIT ABADI",
+        millCompanyName: "GASING SAWIT ABADI",
+        parentCompanyName: "GASING SAWIT ABADI",
+        address: "Karang Anyar, Muara Telang, Banyu Asin Regency, South Sumatra, Indonesia",
+        province: "SUMATERA SELATAN",
+        position: { lat: -2.555194, lng: 104.767111 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "WANAPOTENSI GUNA",
+        millCompanyName: "WANAPOTENSI GUNA",
+        parentCompanyName: "WANA POTENSI GUNA",
+        address: "Ds.Nganti, Kec.Sanga Desa, Musi Banyuasin, South Sumatra",
+        province: "SUMATERA SELATAN",
+        position: { lat: -2.821718, lng: 103.444369 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "Bersama Oesaha Saragih Sejahtera",
+        millCompanyName: "Bersama Oesaha Saragih Sejahtera",
+        parentCompanyName: "Bersama Oesaha Saragih Sejahtera",
+        address: "Jl. Besar Nagori Dolok, Damakitang, Silou Kahaen Kabupaten Simalungun –Provinsi Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.209528, lng: 98.884364 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "BUNGA MAYANG",
+        millCompanyName: "WANA KARYA MULYA KAHURIPAN",
+        parentCompanyName: "MATAHARI KAHURIPAN INDONESIA",
+        address: "Desa Bunga MayangKec SimpangKab Ogan Komering Ulu, Propinsi Sumsel",
+        province: "SUMATERA SELATAN",
+        position: { lat: -4.471613889, lng: 104.2559444 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "BUMI KHATULISTIWA MANDIRI",
+        millCompanyName: "BUMI KHATULISTIWA MANDIRI",
+        parentCompanyName: "BUMI KHATULISTIWA MANDIRI",
+        address: "Ogan Komering Ilir, SUMATERA SELATAN",
+        province: "SUMATERA SELATAN",
+        position: { lat: -3.27903889, lng: 105.8116667 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "TANJUNG KELILING",
+        millCompanyName: "LANGKAT NUSANTARA KEPONG",
+        parentCompanyName: "KUALA LUMPUR KEPONG BERHAD",
+        address: "Tanjung Keliling Village, Salapian Sub District, Langkat District, Sumatera Utara, Indonesia",
+        province: "SUMATERA UTARA",
+        position: { lat: 3.509944, lng: 98.306778 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SIMPANG GAMBIR",
+        millCompanyName: "PERKEBUNAN SUMATERA UTARA",
+        parentCompanyName: "PERKEBUNAN SUMATERA UTARA",
+        address: "Simpang Gambir, Lingga Bayu, Mandailing Natal, Sumatra Utara, Indonesia",
+        province: "SUMATERA UTARA",
+        position: { lat: 0.59643, lng: 99.299704 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "KELANTAN SAKTI",
+        millCompanyName: "KELANTAN SAKTI",
+        parentCompanyName: "KELANTAN SAKTI",
+        address: "Menang Raya, Pedamaran, Kabupaten Ogan Komering Ilir, Sumatera Selatan, Indonesia",
+        province: "SUMATERA SELATAN",
+        position: { lat: -3.50618, lng: 104.94046 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "SAWITTA JAYA SEJAHTERA",
+        millCompanyName: "SAWITTA JAYA SEJAHTERA",
+        parentCompanyName: "SAWITTA JAYA LAU PAKAM",
+        address: "Huta IV Nagori  Buntu Bayu, Kecamatan Buntu Bayu Hatonduhan  Kabupaten Simalungun Provinsi Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 2.7946111, lng: 99.21711111 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "PALMARIS RAYA",
+        millCompanyName: "PALMARIS RAYA",
+        parentCompanyName: "PALMARIS RAYA",
+        address: "Desa Air Apa, Kecamatan Sinunukan, Kabupaten Mandailing Natal, Provinsi Sumatera Utara",
+        province: "SUMATERA UTARA",
+        position: { lat: 0.44475, lng: 99.2605 },
+        markerIcon: "new_palm_tree.png"
+    },
+    {
+        title: "KASIH AGRO MANDIRI",
+        millCompanyName: "KASIH AGRO MANDIRI",
+        parentCompanyName: "ADRGROUP",
+        address: "Biyuku, Suak Tapeh, Banyu Asin Regency, South Sumatra, Indonesia",
+        province: "SUMATERA SELATAN",
+        position: { lat: -2.84472, lng: 104.32972 },
+        markerIcon: "new_palm_tree.png"
     }
 ];
