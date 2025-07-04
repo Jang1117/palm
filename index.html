@@ -200,13 +200,35 @@
             }
         });
 
+        function normalizeAndDedupeAssets(assets) {
+            const seenTitles = new Set();
+            const normalizedAssets = assets
+                .map(asset => ({
+                    ...asset,
+                    province: asset.province.trim().toUpperCase() // Normalize province
+                }))
+                .filter(asset => {
+                    if (seenTitles.has(asset.title)) return false;
+                    seenTitles.add(asset.title);
+                    return asset.position && !isNaN(asset.position.lat) && !isNaN(asset.position.lng);
+                })
+                .sort((a, b) => a.title.localeCompare(b.title));
+            console.log(`Loaded ${normalizedAssets.length} unique assets`);
+            console.log('Provinces:', [...new Set(normalizedAssets.map(a => a.province))]);
+            return normalizedAssets;
+        }
+
         function moveToProvince(province) {
             if (!map) {
                 console.error("지도가 초기화되지 않았습니다.");
                 return;
             }
-            selectedProvince = province;
-            const provinceAssets = assets.filter(asset => asset.province === province);
+            selectedProvince = province.toUpperCase();
+            const provinceAssets = assets.filter(asset => asset.province.toUpperCase() === selectedProvince);
+            if (provinceAssets.length === 0) {
+                console.warn(`No assets found for province: ${selectedProvince}`);
+                return;
+            }
             const bounds = new window.google.maps.LatLngBounds();
             provinceAssets.forEach(asset => {
                 bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
@@ -230,6 +252,9 @@
                 alert("자산 데이터를 로드하지 못했습니다. assets.js 파일을 확인하세요.");
                 return;
             }
+
+            // Normalize and deduplicate assets
+            assets = normalizeAndDedupeAssets(assets);
 
             map = new window.google.maps.Map(document.getElementById("map"), {
                 zoom: 7,
@@ -397,18 +422,6 @@
             const millList = document.getElementById("millList");
             const searchInput = document.getElementById("searchInput");
 
-            function dedupeAndSortAssets(assets) {
-                const uniqueAssets = [];
-                const seenTitles = new Set();
-                assets.forEach(asset => {
-                    if (!seenTitles.has(asset.title)) {
-                        seenTitles.add(asset.title);
-                        uniqueAssets.push(asset);
-                    }
-                });
-                return uniqueAssets.sort((a, b) => a.title.localeCompare(b.title));
-            }
-
             function groupAssetsByProvince(assets) {
                 return assets.reduce((groups, asset) => {
                     const province = asset.province;
@@ -422,8 +435,7 @@
 
             function populateMillList(filteredAssets = assets) {
                 millList.innerHTML = "";
-                const uniqueAssets = dedupeAndSortAssets(filteredAssets);
-                const groupedAssets = groupAssetsByProvince(uniqueAssets);
+                const groupedAssets = groupAssetsByProvince(filteredAssets);
 
                 Object.keys(groupedAssets).sort().forEach(province => {
                     const details = document.createElement("details");
@@ -439,14 +451,14 @@
                         li.addEventListener("click", () => {
                             map.setCenter(asset.position);
                             map.setZoom(15);
-                            showPopup(asset.title, asset.title, 
-                                asset.description 
-                                    ? `${asset.title}은 ${asset.millCompanyName} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName} 그룹의 일원입니다.<br>${asset.description.replace(/, /g, "<br>")}`
-                                    : `${asset.title}은 ${asset.millCompanyName} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName} 그룹의 일원입니다.`, 
-                                `<p><strong>회사명:</strong> ${asset.millCompanyName}</p>
-                                 <p><strong>모회사:</strong> ${asset.parentCompanyName}</p>
-                                 <p><strong>주소:</strong> ${asset.address}</p>
-                                 <p><strong>지역:</strong> ${asset.province}</p>`);
+                            const formattedDesc = asset.description 
+                                ? `${asset.title}은 ${asset.millCompanyName} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName} 그룹의 일원입니다.<br>${asset.description.replace(/, /g, "<br>")}`
+                                : `${asset.title}은 ${asset.millCompanyName} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName} 그룹의 일원입니다.`;
+                            showPopup(asset.title, asset.title, formattedDesc, `
+                                <p><strong>회사명:</strong> ${asset.millCompanyName}</p>
+                                <p><strong>모회사:</strong> ${asset.parentCompanyName}</p>
+                                <p><strong>주소:</strong> ${asset.address}</p>
+                                <p><strong>지역:</strong> ${asset.province}</p>`);
                         });
                         ul.appendChild(li);
                     });
