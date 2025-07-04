@@ -1,186 +1,478 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palm Oil Mills Map</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <title>Sumatra Mill Plant 지도</title>
     <style>
-        body { margin: 0; padding: 0; }
-        #map { height: 100vh; width: 100%; }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        #map {
+            height: 100vh;
+            width: 100%;
+        }
         #sidebar {
             position: fixed;
             top: 70px;
             right: 0;
             width: 300px;
-            height: calc(100vh - 70px);
-            background: white;
-            box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+            height: calc(100% - 70px);
+            background: #f8f8f8;
             overflow-y: auto;
+            scrollbar-width: thin;
             padding: 10px;
+            box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+            z-index: 900;
             visibility: visible;
-            z-index: 1000;
         }
-        #sidebar h3 { margin: 0 0 10px 0; }
-        #sidebar ul { list-style: none; padding: 0; }
-        #sidebar li { padding: 5px 0; cursor: pointer; }
-        #sidebar li:hover { background: #f0f0f0; }
-        #search {
-            width: 100%;
+        #sidebar::-webkit-scrollbar {
+            width: 6px;
+        }
+        #sidebar::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 3px;
+        }
+        #sidebar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        #sidebar h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        #sidebar input {
+            width: calc(100% - 20px);
             padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        #sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        #sidebar li {
+            padding: 10px;
+            cursor: pointer;
+            border-bottom: 1px solid #ddd;
+        }
+        #sidebar li:hover {
+            background: #e0e0e0;
+        }
+        #sidebar details {
             margin-bottom: 10px;
-            box-sizing: border-box;
+        }
+        #sidebar summary {
+            font-weight: bold;
+            padding: 8px;
+            cursor: pointer;
+            background: #e0e0e0;
+            border-radius: 4px;
         }
         .global-button {
             position: fixed;
             top: 20px;
             right: 10px;
-            padding: 10px 20px;
-            background: #0078A8;
-            color: white;
-            border: none;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 8px 12px;
+            font-size: 14px;
             cursor: pointer;
             z-index: 1000;
         }
-        .global-button:hover { background: #005f80; }
+        .global-button:hover {
+            background-color: #e0e0e0;
+        }
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 2000;
+        }
+        .popup-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 360px;
+            max-width: 90%;
+            text-align: left;
+        }
+        .popup-content h3 {
+            margin: 0 0 10px;
+            font-size: 22px;
+        }
+        .popup-content p {
+            margin: 0 0 15px;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+        .popup-content .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            color: #000;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .gm-style .gm-label {
+            font-size: 12px;
+            color: #000;
+            background-color: #fff;
+            padding: 3px 6px;
+            border: 1px solid #999;
+            border-radius: 2px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+            max-width: 150px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            #sidebar {
+                width: 250px;
+                height: calc(100% - 70px);
+            }
+            .global-button {
+                font-size: 12px;
+                padding: 8px;
+            }
+            .popup-content {
+                width: 300px;
+            }
+        }
     </style>
 </head>
 <body>
-    <div id="map"></div>
     <div id="sidebar">
-        <input type="text" id="search" placeholder="Search by title or province...">
-        <div id="asset-list"></div>
+        <h2>Palm Mill Plant</h2>
+        <input type="text" id="searchInput" placeholder="자산 이름 검색...">
+        <ul id="millList"></ul>
     </div>
-    <button class="global-button" onclick="moveToProvince('Indonesia')">Indonesia</button>
+    <div id="map"></div>
+    <button class="global-button" onclick="resetMap()">Indonesia</button>
 
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-content" id="popupContent">
+            <span class="close-button" onclick="closePopup()">X</span>
+            <h3 id="popupTitle"></h3>
+            <p id="popupDescription"></p>
+            <div id="popupExtra"></div>
+        </div>
+    </div>
+
+    <script src="https://jang1117.github.io/palm/assets.js" onerror="handleAssetsLoadError()"></script>
     <script>
-        let map, markers = [];
-        const assetData = [];
+        let map;
+        let markers = [];
+        let selectedProvince = null;
 
-        // Load multiple asset files
-        async function loadAssets() {
-            const assetFiles = [
-                'https://jang1117.github.io/palm/assets_riau.js',
-                'https://jang1117.github.io/palm/assets_sumatera.js'
-            ];
-            try {
-                const responses = await Promise.all(
-                    assetFiles.map(file => fetch(file).then(res => res.ok ? res.text() : Promise.reject(`Failed to load ${file}`)))
-                );
-                responses.forEach((text, index) => {
-                    const script = document.createElement('script');
-                    script.text = text + `\nassetData.push(...assets);`;
-                    document.body.appendChild(script);
-                });
-                console.log(`Loaded ${assetData.length} assets`);
-                initializeMap();
-                initializeSidebar();
-            } catch (error) {
-                handleAssetsLoadError(error);
+        function handleAssetsLoadError() {
+            console.error("assets.js 로드 실패. 파일 경로 또는 구성을 확인하세요.");
+            alert("자산 데이터를 로드하지 못했습니다. assets.js 파일을 확인하세요.");
+        }
+
+        const defaultIcon = 'https://jang1117.github.io/palm/palm_tree.png';
+        const img = new Image();
+        img.src = defaultIcon;
+        img.onload = () => console.log("마커 이미지가 로드되었습니다: ", defaultIcon);
+        img.onerror = () => console.error("마커 이미지 로드 실패: ", defaultIcon);
+
+        window.addEventListener('error', (event) => {
+            if (event.message.includes('google is not defined') || event.message.includes('maps')) {
+                console.error('Google Maps API 로드 실패. API 키 또는 HTTP 리퍼러를 확인하세요.');
+                alert('Google Maps API를 로드하지 못했습니다. 네트워크 또는 API 키를 확인하세요.');
             }
-        }
+        });
 
-        function handleAssetsLoadError(error) {
-            console.error('Error loading asset files:', error);
-            alert('Failed to load assets_riau.js or assets_sumatera.js. Please check the files and try again.');
-        }
-
-        function initializeMap() {
-            map = L.map('map').setView([-2, 117], 7);
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            }).addTo(map);
-
-            const palmIcon = L.icon({
-                iconUrl: 'https://jang1117.github.io/palm/palm_tree.png',
-                iconSize: [32, 32],
-                iconAnchor: [16, 32],
-                popupAnchor: [0, -32]
+        function moveToProvince(province) {
+            if (!map) {
+                console.error("지도가 초기화되지 않았습니다.");
+                return;
+            }
+            selectedProvince = province;
+            const provinceAssets = assets.filter(asset => asset.province === province);
+            const bounds = new window.google.maps.LatLngBounds();
+            provinceAssets.forEach(asset => {
+                bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
             });
-
-            // Remove duplicates by title and sort
-            const uniqueAssets = Array.from(new Map(assetData.map(item => [item.title, item])).values())
-                .sort((a, b) => a.title.localeCompare(b.title));
-
-            uniqueAssets.forEach(asset => {
-                if (asset.position && asset.position.lat && asset.position.lng) {
-                    const marker = L.marker([asset.position.lat, asset.position.lng], { icon: palmIcon })
-                        .addTo(map)
-                        .bindPopup(`
-                            <b>${asset.title}</b><br>
-                            Mill: ${asset.millCompanyName}<br>
-                            Parent: ${asset.parentCompanyName}<br>
-                            Address: ${asset.address}<br>
-                            Province: ${asset.province}<br>
-                            ${asset.description ? `Description: ${asset.description}` : ''}
-                        `);
-                    markers.push({ marker, asset });
-                }
-            });
-
-            map.on('zoomend', updateMarkers);
+            map.fitBounds(bounds);
+            const currentZoom = map.getZoom();
+            if (currentZoom > 10) map.setZoom(10);
+            if (currentZoom < 7) map.setZoom(7);
             updateMarkers();
         }
 
-        function updateMarkers() {
-            const zoomLevel = map.getZoom();
-            markers.forEach(({ marker, asset }) => {
-                const isVisible = zoomLevel > 7 ? asset.province === 'Sumatera Barat' : true;
-                if (isVisible) {
-                    if (!map.hasLayer(marker)) marker.addTo(map);
-                } else {
-                    if (map.hasLayer(marker)) map.removeLayer(marker);
-                }
+        window.initMap = function() {
+            if (typeof window.google === 'undefined' || typeof window.google.maps === 'undefined') {
+                console.error('Google Maps API가 로드되지 않았습니다. API 키와 네트워크를 확인하세요.');
+                alert('Google Maps API 로드에 실패했습니다. API 키를 확인하세요.');
+                return;
+            }
+
+            if (typeof assets === 'undefined') {
+                console.error("assets.js가 로드되지 않았습니다. 파일을 확인하세요.");
+                alert("자산 데이터를 로드하지 못했습니다. assets.js 파일을 확인하세요.");
+                return;
+            }
+
+            map = new window.google.maps.Map(document.getElementById("map"), {
+                zoom: 7,
+                center: { lat: -1.5, lng: 101.0 },
+                fullscreenControl: false,
+                mapTypeId: window.google.maps.MapTypeId.ROADMAP
             });
+
+            console.log(`지도 초기화 완료. 줌 레벨: ${map.getZoom()}`);
+
+            map.addListener("zoom_changed", () => {
+                console.log(`줌 레벨 변경: ${map.getZoom()}`);
+                updateMarkers();
+            });
+
+            updateMarkers();
+            initializeSidebar();
+        };
+
+        function updateMarkers() {
+            markers.forEach(marker => marker.setMap(null));
+            markers = [];
+
+            const zoom = map.getZoom();
+            let displayAssets = assets;
+
+            if (selectedProvince && zoom > 7) {
+                displayAssets = assets.filter(asset => asset.province === selectedProvince);
+            }
+
+            if (zoom <= 7) {
+                const groupedAssets = assets.reduce((groups, asset) => {
+                    const province = asset.province;
+                    if (!groups[province]) {
+                        groups[province] = [];
+                    }
+                    groups[province].push(asset);
+                    return groups;
+                }, {});
+
+                Object.keys(groupedAssets).sort().forEach(province => {
+                    const provinceAssets = groupedAssets[province];
+                    let latSum = 0, lngSum = 0;
+                    provinceAssets.forEach(asset => {
+                        latSum += asset.position.lat;
+                        lngSum += asset.position.lng;
+                    });
+                    const center = {
+                        lat: latSum / provinceAssets.length,
+                        lng: lngSum / provinceAssets.length
+                    };
+
+                    const marker = new window.google.maps.Marker({
+                        position: center,
+                        map: map,
+                        title: `${province}: ${provinceAssets.length}개 자산`,
+                        icon: {
+                            url: defaultIcon,
+                            scaledSize: new window.google.maps.Size(40, 40),
+                            labelOrigin: new window.google.maps.Point(20, 50)
+                        },
+                        label: {
+                            text: `${province} (${provinceAssets.length})`,
+                            fontSize: "12px",
+                            fontWeight: "bold",
+                            color: "#000",
+                            fontFamily: "Arial, sans-serif"
+                        }
+                    });
+
+                    marker.addListener("click", () => {
+                        moveToProvince(province);
+                    });
+
+                    markers.push(marker);
+                });
+            } else {
+                displayAssets.forEach(asset => {
+                    const markerIcon = {
+                        url: defaultIcon,
+                        scaledSize: new window.google.maps.Size(40, 40),
+                        labelOrigin: new window.google.maps.Point(20, 50)
+                    };
+
+                    const marker = new window.google.maps.Marker({
+                        position: asset.position,
+                        map: map,
+                        title: asset.title,
+                        icon: markerIcon,
+                        label: {
+                            text: asset.title,
+                            fontSize: "12px",
+                            fontWeight: "bold",
+                            color: "#000",
+                            fontFamily: "Arial, sans-serif"
+                        }
+                    });
+
+                    marker.addListener("click", () => {
+                        const formattedDesc = asset.description 
+                            ? `${asset.title}은 ${asset.millCompanyName} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName} 그룹의 일원입니다.<br>${asset.description.replace(/, /g, "<br>")}`
+                            : `${asset.title}은 ${asset.millCompanyName} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName} 그룹의 일원입니다.`;
+                        showPopup(asset.title, asset.title, formattedDesc, `
+                            <p><strong>회사명:</strong> ${asset.millCompanyName}</p>
+                            <p><strong>모회사:</strong> ${asset.parentCompanyName}</p>
+                            <p><strong>주소:</strong> ${asset.address}</p>
+                            <p><strong>지역:</strong> ${asset.province}</p>`);
+                        map.setZoom(15);
+                        map.setCenter(asset.position);
+                    });
+
+                    markers.push(marker);
+                });
+            }
         }
 
-        function moveToProvince(province) {
-            const coords = {
-                'Indonesia': [-2, 117, 5],
-                'Sumatera Barat': [-0.95, 100.35, 8],
-                'Sumatera Selatan': [-3.32, 103.97, 8],
-                'Sumatera Utara': [2.12, 99.55, 8],
-                'Riau': [0.5, 101.5, 8]
-            }[province] || [-2, 117, 5];
-            map.setView([coords[0], coords[1]], coords[2]);
+        function showPopup(id, title, description, extraContent) {
+            const popupOverlay = document.getElementById("popupOverlay");
+            const popupTitle = document.getElementById("popupTitle");
+            const popupDescription = document.getElementById("popupDescription");
+            const popupExtra = document.getElementById("popupExtra");
+
+            popupTitle.textContent = title;
+            popupDescription.innerHTML = description;
+            popupExtra.innerHTML = extraContent;
+
+            popupOverlay.style.display = "block";
+        }
+
+        function closePopup() {
+            const popupOverlay = document.getElementById("popupOverlay");
+            popupOverlay.style.display = "none";
+        }
+
+        function moveToAssets() {
+            if (!map) {
+                console.error("지도가 초기화되지 않았습니다.");
+                return;
+            }
+            selectedProvince = null;
+            const bounds = new window.google.maps.LatLngBounds();
+            assets.forEach(asset => {
+                bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
+            });
+            map.fitBounds(bounds);
+
+            const currentZoom = map.getZoom();
+            if (currentZoom > 10) map.setZoom(10);
+            if (currentZoom < 7) map.setZoom(7);
+            updateMarkers();
+        }
+
+        function resetMap() {
+            if (!map) {
+                console.error("지도가 초기화되지 않았습니다.");
+                return;
+            }
+            selectedProvince = null;
+            map.setZoom(7);
+            map.setCenter({ lat: -1.5, lng: 101.0 });
+            updateMarkers();
         }
 
         function initializeSidebar() {
-            const searchInput = document.getElementById('search');
-            const assetList = document.getElementById('asset-list');
+            const millList = document.getElementById("millList");
+            const searchInput = document.getElementById("searchInput");
 
-            // Group assets by province
-            const groupedAssets = {};
-            assetData.forEach(asset => {
-                if (!groupedAssets[asset.province]) groupedAssets[asset.province] = [];
-                groupedAssets[asset.province].push(asset);
-            });
+            function dedupeAndSortAssets(assets) {
+                const uniqueAssets = [];
+                const seenTitles = new Set();
+                assets.forEach(asset => {
+                    if (!seenTitles.has(asset.title)) {
+                        seenTitles.add(asset.title);
+                        uniqueAssets.push(asset);
+                    }
+                });
+                return uniqueAssets.sort((a, b) => a.title.localeCompare(b.title));
+            }
 
-            // Sort provinces and assets
-            const sortedProvinces = Object.keys(groupedAssets).sort();
-            assetList.innerHTML = sortedProvinces.map(province => {
-                const assets = groupedAssets[province].sort((a, b) => a.title.localeCompare(b.title));
-                return `
-                    <h3>${province}</h3>
-                    <ul>${assets.map(asset => `<li onclick="map.setView([${asset.position.lat}, ${asset.position.lng}], 10)">${asset.title}</li>`).join('')}</ul>
-                `;
-            }).join('');
+            function groupAssetsByProvince(assets) {
+                return assets.reduce((groups, asset) => {
+                    const province = asset.province;
+                    if (!groups[province]) {
+                        groups[province] = [];
+                    }
+                    groups[province].push(asset);
+                    return groups;
+                }, {});
+            }
 
-            // Search functionality
-            searchInput.addEventListener('input', () => {
+            function populateMillList(filteredAssets = assets) {
+                millList.innerHTML = "";
+                const uniqueAssets = dedupeAndSortAssets(filteredAssets);
+                const groupedAssets = groupAssetsByProvince(uniqueAssets);
+
+                Object.keys(groupedAssets).sort().forEach(province => {
+                    const details = document.createElement("details");
+                    details.open = true;
+                    const summary = document.createElement("summary");
+                    summary.textContent = `${province} (${groupedAssets[province].length})`;
+                    details.appendChild(summary);
+
+                    const ul = document.createElement("ul");
+                    groupedAssets[province].sort((a, b) => a.title.localeCompare(b.title)).forEach(asset => {
+                        const li = document.createElement("li");
+                        li.textContent = asset.title;
+                        li.addEventListener("click", () => {
+                            map.setCenter(asset.position);
+                            map.setZoom(15);
+                            showPopup(asset.title, asset.title, 
+                                asset.description 
+                                    ? `${asset.title}은 ${asset.millCompanyName} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName} 그룹의 일원입니다.<br>${asset.description.replace(/, /g, "<br>")}`
+                                    : `${asset.title}은 ${asset.millCompanyName} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName} 그룹의 일원입니다.`, 
+                                `<p><strong>회사명:</strong> ${asset.millCompanyName}</p>
+                                 <p><strong>모회사:</strong> ${asset.parentCompanyName}</p>
+                                 <p><strong>주소:</strong> ${asset.address}</p>
+                                 <p><strong>지역:</strong> ${asset.province}</p>`);
+                        });
+                        ul.appendChild(li);
+                    });
+                    details.appendChild(ul);
+                    millList.appendChild(details);
+                });
+            }
+
+            populateMillList();
+
+            searchInput.addEventListener("input", () => {
                 const query = searchInput.value.toLowerCase();
-                assetList.innerHTML = sortedProvinces.map(province => {
-                    const assets = groupedAssets[province]
-                        .filter(asset => asset.title.toLowerCase().includes(query) || asset.province.toLowerCase().includes(query))
-                        .sort((a, b) => a.title.localeCompare(b.title));
-                    return assets.length ? `<h3>${province}</h3><ul>${assets.map(asset => `<li onclick="map.setView([${asset.position.lat}, ${asset.position.lng}], 10)">${asset.title}</li>`).join('')}</ul>` : '';
-                }).join('');
+                const filteredAssets = assets.filter(asset => 
+                    asset.title.toLowerCase().includes(query) ||
+                    asset.millCompanyName.toLowerCase().includes(query) ||
+                    asset.parentCompanyName.toLowerCase().includes(query)
+                );
+                populateMillList(filteredAssets);
             });
         }
 
-        // Start loading assets
-        loadAssets();
+    </script>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKZ64N6aTmQLaU312nCqXeyrNa-lol2IQ&callback=initMap&loading=async"
+        onerror="console.error('Google Maps API 스크립트 로드 실패. 네트워크 또는 API 키를 확인하세요.'); alert('Google Maps API 로드에 실패했습니다. API 키를 확인하세요.');">
     </script>
 </body>
 </html>
