@@ -6518,6 +6518,150 @@ const assets = [
         province: "BENGKULU",
         position: { lat: -3.998716, lng: 102.429673 },
         description: ""
+    },
+    {
+        title: "LAMBANG BUMI PERKASA",
+        millCompanyName: "LAMBANG BUMI PERKASA",
+        parentCompanyName: "LAMBANG BUMI PERKASA",
+        address: "Terbanggi Ilir, Bandar Mataram, Lampung Tengah, Lampung",
+        province: "LAMPUNG",
+        position: { lat: -4.701791, lng: 105.372801 },
+        description: ""
+    },
+    {
+        title: "PKS 6 SUKADANA",
+        millCompanyName: "PKS 6 SUKADANA",
+        parentCompanyName: "SUNGAI BUDI",
+        address: "Lampung",
+        province: "LAMPUNG",
+        position: { lat: -5.103759, lng: 105.557317 },
+        description: ""
+    },
+    {
+        title: "PKS 3 HANAKAU",
+        millCompanyName: "AGRO BUMI MAS",
+        parentCompanyName: "AGRO BUMI MAS",
+        address: "Jl. Negara Pakuan Ratu Desa Hanakau Jaya Kec. Sungkai Utara Kab. Lampung Utara",
+        province: "LAMPUNG",
+        position: { lat: -4.573555556, lng: 104.7576111 },
+        description: ""
+    },
+    {
+        title: "PALM LAMPUNG PERSADA",
+        millCompanyName: "PALM LAMPUNG PERSADA",
+        parentCompanyName: "KUD SUMBER PANGAN",
+        address: "Desa Bumi Agung Kec. Bahuga Kab. Way Kanan - Lampung",
+        province: "LAMPUNG",
+        position: { lat: -4.372722222, lng: 104.5998056 },
+        description: ""
+    },
+    {
+        title: "SUNGAI MERAH",
+        millCompanyName: "SUMBER INDAH PERKASA",
+        parentCompanyName: "SMART/GOLDEN AGRI RESOURCES (GAR)",
+        address: "Desa Sidomukti Batu Kec. Gedung Aji Baru Kab. Tulang Bawang - Lampung",
+        province: "LAMPUNG",
+        position: { lat: -4.218444444, lng: 105.5887778 },
+        description: ""
+    },
+    {
+        title: "GARUDA BUMI PERKASA",
+        millCompanyName: "GARUDA BUMI PERKASA",
+        parentCompanyName: "TUDUNG AGRI/GARUDAFOOD",
+        address: "Jl. Raya Lintas Timur km 193, Ds. Agung Batin, Kec. Simpang Pematang, Mesuji, Lampung",
+        province: "LAMPUNG",
+        position: { lat: -4.029933, lng: 105.158833 },
+        description: ""
+    },
+    {
+        title: "WAY KANAN SAWITINDO MAS",
+        millCompanyName: "WAY KANAN SAWITINDO MAS",
+        parentCompanyName: "SUTOMO/SINAR JAYA AGRO INVESTAMA",
+        address: "Tanjung Raja Sakti Kec. Blambangan Umpu Kab. Way Kanan",
+        province: "LAMPUNG",
+        position: { lat: -4.446305556, lng: 104.4220556 },
+        description: ""
+    },
+    {
+        title: "TERBANGGI",
+        millCompanyName: "TUNAS BARU LAMPUNG",
+        parentCompanyName: "SUNGAI BUDI",
+        address: "Jl. Lintas Sumatera Km. 75 Desa Way Kekah Kec. Terbanggi Besar Kab. Lampung Tengah - Lampung",
+        province: "LAMPUNG",
+        position: { lat: -4.871388889, lng: 105.1798889 },
+        description: ""
+    },
+    {
+        title: "SURYA UTAMA NABATI",
+        millCompanyName: "SURYA UTAMA NABATI",
+        parentCompanyName: "SURYA UTAMA NABATI",
+        address: "Jl Lintas Timur Km. 142 Indraloka II Kec. Way Kenanga Kab Tulang Bawang Barat",
+        province: "LAMPUNG",
+        position: { lat: -4.186025, lng: 105.216925 },
+        description: ""
+    },
+    {
+        title: "SUNGAI BUAYA",
+        millCompanyName: "SUMBER INDAH PERKASA",
+        parentCompanyName: "SMART/GOLDEN AGRI RESOURCES (GAR)",
+        address: "Kampung Talang Batu Kecamatan Mesuji Timur Kabupaten Mesuji 34697 - Lampung",
+        province: "LAMPUNG",
+        position: { lat: -4.136388889, lng: 105.4427778 },
+        description: ""
+    },
+    {
+        title: "MESUJI",
+        millCompanyName: "TUNAS BARU LAMPUNG",
+        parentCompanyName: "SUNGAI BUDI",
+        address: "Desa Mukti Karya Kec. Pancajaya Kab. Mesuji Lampung",
+        province: "LAMPUNG",
+        position: { lat: -4.01961, lng: 105.27441 },
+        description: ""
+    },
+    {
+        title: "MENGGALA SAWITINDO",
+        millCompanyName: "MENGGALA SAWITINDO",
+        parentCompanyName: "SUTOMO/SINAR JAYA AGRO INVESTAMA",
+        address: "Kp. Linggai Unit 9 Menggala Tulang Bawang - Lampung",
+        province: "LAMPUNG",
+        position: { lat: -4.350847, lng: 105.270936 },
+        description: ""
+    },
+    {
+        title: "KRIYA SWARNA PUBIAN",
+        millCompanyName: "KRIYA SWARNA PUBIAN",
+        parentCompanyName: "MEDCO AGRO",
+        address: "Desa Segala Mider Kec. Padang Ratu Kab. Lampung Tengah Lampung",
+        province: "LAMPUNG",
+        position: { lat: -5.06187, lng: 104.88018 },
+        description: ""
+    },
+    {
+        title: "KALIREJO LESTARI",
+        millCompanyName: "KALIREJO LESTARI",
+        parentCompanyName: "SUTOMO/SINAR JAYA AGRO INVESTAMA",
+        address: "Sendang KM. 1 Desa Kalirejo Lampung Tengah - Lampung",
+        province: "LAMPUNG",
+        position: { lat: -5.228708333, lng: 104.9482111 },
+        description: ""
+    },
+    {
+        title: "BEKRI",
+        millCompanyName: "PERKEBUNAN NUSANTARA VII",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Sinar Banten/Bekri Kec. Gunung Sugih Kab. Lampung Tengah Lampung",
+        province: "LAMPUNG",
+        position: { lat: -5.07314, lng: 105.13487 },
+        description: ""
+    },
+    {
+        title: "ANAKTUHA SAWIT MANDIRI",
+        millCompanyName: "ANAKTUHA SAWIT MANDIRI",
+        parentCompanyName: "SUTOMO/SINAR JAYA AGRO INVESTAMA",
+        address: "Dusun VII Bumi Arum Bumi Ratu Nuban Lampung Tengah - Lampung",
+        province: "LAMPUNG",
+        position: { lat: -5.095458333, lng: 105.1868194 },
+        description: ""
     }
 ];
 window.assets = assets;
