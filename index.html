@@ -165,7 +165,7 @@
         <ul id="millList"></ul>
     </div>
     <div id="map"></div>
-    <button class="global-button" onclick="resetMap()">Indonesia</button>
+    <button class="global-button" onclick="resetMap()">Home</button>
 
     <div class="popup-overlay" id="popupOverlay">
         <div class="popup-content" id="popupContent">
@@ -467,7 +467,57 @@
                 populateMillList(filteredAssets);
             });
         }
+    // 중심지점 계산 함수
+function calculateCenter() {
+    if (!assets || assets.length === 0) {
+        console.error("assets 데이터가 없거나 로드되지 않음");
+        return { lat: 0, lng: 102 }; // 기본값
+    }
+    const total = assets.reduce((acc, asset) => {
+        return {
+            lat: acc.lat + asset.position.lat,
+            lng: acc.lng + asset.position.lng
+        };
+    }, { lat: 0, lng: 0 });
+    return {
+        lat: total.lat / assets.length,
+        lng: total.lng / assets.length
+    };
+}
 
+// Home 버튼 클릭 시 실행
+function showHome() {
+    const center = calculateCenter();
+    map.setCenter(center);
+    map.setZoom(6); // 전체 데이터를 보기 위한 줌 레벨
+    // 모든 마커 표시
+    assets.forEach(asset => {
+        const marker = new google.maps.Marker({
+            position: asset.position,
+            map: map,
+            title: asset.title
+        });
+    });
+    console.log("Home 중심:", center);
+}
+
+// 초기 지도 로드
+function initMap() {
+    const center = calculateCenter();
+    const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 6,
+        center: center
+    });
+    window.map = map; // 전역 변수로 저장하여 showHome에서 사용
+    console.log("초기 중심:", center);
+    assets.forEach(asset => {
+        const marker = new google.maps.Marker({
+            position: asset.position,
+            map: map,
+            title: asset.title
+        });
+    });
+}
     </script>
 
     <script async defer
