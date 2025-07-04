@@ -5555,6 +5555,708 @@ const assets = [
         province: "RIAU",
         position: { lat: 1.08225, lng: 101.3330833 },
         description: ""
+    },
+    {
+        title: "DHARMASRAYA PALMA SEJAHTERA",
+        millCompanyName: "DHARMASRAYA PALMA SEJAHTERA",
+        parentCompanyName: "JAWA POS AGRO",
+        address: "Dusun Danglo Mandiri, Desa Tanjung Putra, Kec. Mersam, Kab. Batanghari, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.646226, lng: 102.925742 },
+        description: ""
+    },
+    {
+        title: "SEI KANDANG",
+        millCompanyName: "ASIATIC PERSADA",
+        parentCompanyName: "ASIATIC PERSADA",
+        address: "Desa Bungku, Kec Bajubang, Kab Batanghari",
+        province: "JAMBI",
+        position: { lat: -2.04295, lng: 103.34671 },
+        description: ""
+    },
+    {
+        title: "TEBO INDAH",
+        millCompanyName: "TEBO INDAH",
+        parentCompanyName: "TEBO INDAH",
+        address: "Sungai Keruh, Tebo Tengah, Kabupaten Tebo",
+        province: "JAMBI",
+        position: { lat: -1.500694, lng: 102.578667 },
+        description: ""
+    },
+    {
+        title: "ERASAKTI WIRAFORESTAMA 3",
+        millCompanyName: "ERASAKTI WIRAFORESTAMA",
+        parentCompanyName: "KURNIA TUNGGAL",
+        address: "Desa Talang Duku, Seberang (Miaso) 2",
+        province: "JAMBI",
+        position: { lat: -1.518944, lng: 103.637139 },
+        description: ""
+    },
+    {
+        title: "KURNIA TUNGGAL NUGRAHA",
+        millCompanyName: "KURNIA TUNGGAL NUGRAHA",
+        parentCompanyName: "KURNIA TUNGGAL NUGRAHA",
+        address: "Talang Duku, Kec. Taman Rajo, Kabupaten Muaro Jambi",
+        province: "JAMBI",
+        position: { lat: -1.50855, lng: 103.6639 },
+        description: ""
+    },
+    {
+        title: "HUTAN ALAM LESTARI",
+        millCompanyName: "HUTAN ALAM LESTARI",
+        parentCompanyName: "HUTAN ALAM LESTARI",
+        address: "Jambi",
+        province: "JAMBI",
+        position: { lat: -1.610917, lng: 103.342417 },
+        description: ""
+    },
+    {
+        title: "MUTIARA SAWIT SEMESTA",
+        millCompanyName: "MUTIARA SAWIT SEMESTA",
+        parentCompanyName: "MUTIARA SAWIT SEMESTA",
+        address: "Jambi",
+        province: "JAMBI",
+        position: { lat: -1.607917, lng: 102.863222 },
+        description: ""
+    },
+    {
+        title: "ADIMULIA PALMO LESTARI",
+        millCompanyName: "ADIMULIA PALMO LESTARI",
+        parentCompanyName: "ADIMULIA",
+        address: "Jambi",
+        province: "JAMBI",
+        position: { lat: -1.706111111, lng: 102.7822222 },
+        description: ""
+    },
+    {
+        title: "PALMA GEMILANG KENCANA",
+        millCompanyName: "PALMA GEMILANG KENCANA",
+        parentCompanyName: "PALMA GEMILANG KENCANA",
+        address: "Tanjung Jabung Timur, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.299176, lng: 103.48658 },
+        description: ""
+    },
+    {
+        title: "SURYA SUMBER SAWIT ABADI",
+        millCompanyName: "SURYA SUMBER SAWIT ABADI",
+        parentCompanyName: "SURYA SUMBER SAWIT ABADI",
+        address: "Tebo, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.471122, lng: 102.62099 },
+        description: ""
+    },
+    {
+        title: "PENGABUAN",
+        millCompanyName: "KREASI CIPTA INDOTAMA",
+        parentCompanyName: "KREASI CIPTA INDOTAMA",
+        address: "Tanjung Jabung Barat, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.253734, lng: 102.954144 },
+        description: ""
+    },
+    {
+        title: "KURNIA BATANG HARI BERJAYA",
+        millCompanyName: "KURNIA BATANG HARI BERJAYA",
+        parentCompanyName: "KURNIA BATANG HARI BERJAYA",
+        address: "Jambi",
+        province: "JAMBI",
+        position: { lat: -1.788731, lng: 103.079706 },
+        description: ""
+    },
+    {
+        title: "PRIMA MAS LESTARI",
+        millCompanyName: "PRIMA MAS LESTARI",
+        parentCompanyName: "PRIMA MAS LESTARI",
+        address: "Jambi",
+        province: "JAMBI",
+        position: { lat: -1.707144, lng: 102.160727 },
+        description: ""
+    },
+    {
+        title: "RANTAU GEDANG",
+        millCompanyName: "SAWIT JAMBI LESTARI",
+        parentCompanyName: "ASIAN AGRI",
+        address: "Jambi",
+        province: "JAMBI",
+        position: { lat: -1.735995, lng: 102.964954 },
+        description: ""
+    },
+    {
+        title: "MERLUNG INTI LESTARI",
+        millCompanyName: "MERLUNG INTI LESTARI",
+        parentCompanyName: "MERLUNG INTI LESTARI",
+        address: "Suko Awin Jaya, Sekernan, Kabupaten Muaro Jambi",
+        province: "JAMBI",
+        position: { lat: -1.32864, lng: 103.27372 },
+        description: ""
+    },
+    {
+        title: "GIRI PURNO MILL",
+        millCompanyName: "SELARAS MITRA SARIMBA",
+        parentCompanyName: "SELARAS MITRA SARIMBA",
+        address: "Giri Purno, Rimbo Ilir, Kabupaten Tebo, Jambi 37553, Indonesia",
+        province: "JAMBI",
+        position: { lat: -1.4104, lng: 102.26582 },
+        description: ""
+    },
+    {
+        title: "SURYA GEMILANG AGRO MANDIRI",
+        millCompanyName: "SURYA GEMILANG AGRO MANDIRI",
+        parentCompanyName: "SURYA GEMILANG AGRO MANDIRI",
+        address: "Jl. Jambi Muara Sabak, No. 08, RT. 006, RW. 003, Teluk Dawan, Muara Sabak Barat, Kab. Tanjung Jabung Timur",
+        province: "JAMBI",
+        position: { lat: -1.271232, lng: 103.814442 },
+        description: ""
+    },
+    {
+        title: "BUNGO LIMBUR",
+        millCompanyName: "BUNGO LIMBUR",
+        parentCompanyName: "BUNGO LIMBUR",
+        address: "Jl. Lintas Tengah Bungo - Padang Km. 33 Desa Perinti Luweh Kec. Tanah Kumbuh Kab. Muara Bungo",
+        province: "JAMBI",
+        position: { lat: -1.376795, lng: 101.88791 },
+        description: ""
+    },
+    {
+        title: "AGRO WIJAYA INDUSTRI",
+        millCompanyName: "AGRO WIJAYA INDUSTRI",
+        parentCompanyName: "AGRO WIJAYA INDUSTRI",
+        address: "Dusun Sungai Abu Desa Koto Rayo Kec. Tabir Kab. Merangin - Jambi",
+        province: "JAMBI",
+        position: { lat: -1.761472222, lng: 102.244 },
+        description: ""
+    },
+    {
+        title: "SUMBER MUKTI KAHURIPAN",
+        millCompanyName: "SUMBER MUKTI KAHURIPAN",
+        parentCompanyName: "MATAHARI KAHURIPAN INDONESIA",
+        address: "Desa Mekar Sari, kec. Kumpeh, Kab. Muaro Jambi",
+        province: "JAMBI",
+        position: { lat: -1.486026, lng: 103.856408 },
+        description: ""
+    },
+    {
+        title: "SUKSES GEMILANG PALEM",
+        millCompanyName: "SUKSES GEMILANG PALEM",
+        parentCompanyName: "SUKSES GEMILANG PALEM",
+        address: "Desa Teluk Kecimbung Kec. Bathin VIII Kab. Sarolangun - Jambi",
+        province: "JAMBI",
+        position: { lat: -2.267556, lng: 102.547056 },
+        description: ""
+    },
+    {
+        title: "SEKAPUR SIRIH",
+        millCompanyName: "SAWIT JUJUHAN ABADI",
+        parentCompanyName: "ASIAN AGRI",
+        address: "Dusun Sirih Sekapur Kec. Jujuhan Kab. Bungo - Jambi",
+        province: "JAMBI",
+        position: { lat: -1.242083333, lng: 101.7461389 },
+        description: ""
+    },
+    {
+        title: "BUNGO SUKO MENANTI",
+        millCompanyName: "BUNGO SUKO MENANTI",
+        parentCompanyName: "BUNGO SUKO MENANTI",
+        address: "Jl. Lintas Sumatera KM 52 Desa Sirih Sekapur Kec. Jujuhan Kab. Bungo",
+        province: "JAMBI",
+        position: { lat: -1.307395, lng: 101.765191 },
+        description: ""
+    },
+    {
+        title: "CITRA SAWIT HARUM",
+        millCompanyName: "CITRA SAWIT HARUM",
+        parentCompanyName: "HARUM AGRO",
+        address: "Kampung Sekampil, Desa Sungai Beringin, Kecamatan Pelepat, Kabupaten Muara Bungo, Provinsi Jambi",
+        province: "JAMBI",
+        position: { lat: -1.742472222, lng: 102.0544722 },
+        description: ""
+    },
+    {
+        title: "SURYA UTAMA AGROLESTARI",
+        millCompanyName: "SURYA UTAMA AGROLESTARI",
+        parentCompanyName: "SURYA UTAMA AGROLESTARI",
+        address: "Desa Tanjung Pauh Km.39 Kec. Mestong Kab. Muaro Jambi - Jambi",
+        province: "JAMBI",
+        position: { lat: -1.805055556, lng: 103.4305833 },
+        description: ""
+    },
+    {
+        title: "FORTIUS WAJO PERKEBUNAN",
+        millCompanyName: "FORTIUS WAJO PERKEBUNAN",
+        parentCompanyName: "FORTIUS WAJO PERKEBUNAN",
+        address: "Desa Suban Kec. Batang Asam Kab. Tanjung Jabung Barat - Jambi",
+        province: "JAMBI",
+        position: { lat: -1.050972222, lng: 102.9061667 },
+        description: ""
+    },
+    {
+        title: "ASIA SAWIT LESTARI",
+        millCompanyName: "ASIA SAWIT LESTARI",
+        parentCompanyName: "ASIA SAWIT LESTARI",
+        address: "Desa Ladang Peris Kec. Bajubang Kab. Batang Hari - Jambi",
+        province: "JAMBI",
+        position: { lat: -1.837583333, lng: 103.3790278 },
+        description: ""
+    },
+    {
+        title: "ERASAKTI WIRAFORESTAMA 2",
+        millCompanyName: "ERASAKTI WIRAFORESTAMA",
+        parentCompanyName: "KURNIA TUNGGAL",
+        address: "Jembatan Auduri II Desa Kunangan Kec. Taman Raja Kab. Muaro Jambi - Jambi",
+        province: "JAMBI",
+        position: { lat: -1.528944444, lng: 103.6371389 },
+        description: ""
+    },
+    {
+        title: "BUDI NABATI PERKASA",
+        millCompanyName: "BUDI NABATI PERKASA",
+        parentCompanyName: "SUNGAI BUDI",
+        address: "Dusun Sungai Gurun Kecamatan Pelepat, Kabupaten Bungo, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.692028, lng: 102.160547 },
+        description: ""
+    },
+    {
+        title: "PERSADA ALAM JAYA",
+        millCompanyName: "PERSADA ALAM JAYA",
+        parentCompanyName: "PERSADA ALAM JAYA",
+        address: "Desa Suban Kec. Batang Asam Kab. Tanjung Jabung Barat, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.043036, lng: 102.889378 },
+        description: ""
+    },
+    {
+        title: "RUDY AGUNG AGRA LAKSANA",
+        millCompanyName: "RUDY AGUNG AGRA LAKSANA",
+        parentCompanyName: "RUDY AGUNG AGRA LAKSANA",
+        address: "Jl. Lintas Timur Jambi - Pekanbaru Km.73 Desa Dusun Mudo. Kec. Muara Papalik Kab. Tanjung Jabung Barat",
+        province: "JAMBI",
+        position: { lat: -1.276111111, lng: 103.2499444 },
+        description: ""
+    },
+    {
+        title: "SUMBER GUNA NABATI",
+        millCompanyName: "SUMBER GUNA NABATI",
+        parentCompanyName: "SUMBER GUNA NABATI",
+        address: "Desa Bunga Antoi Kec. Tabir Selatan Kab. Merangin - Jambi",
+        province: "JAMBI",
+        position: { lat: -2.006194444, lng: 102.49275 },
+        description: ""
+    },
+    {
+        title: "PALMA JAYA SEJAHTERA",
+        millCompanyName: "PALMA JAYA SEJAHTERA",
+        parentCompanyName: "PALMA JAYA SEJAHTERA",
+        address: "Ds. Suka Damai, Kec. Mestong, Kab. Batanghari, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.874576, lng: 103.560276 },
+        description: ""
+    },
+    {
+        title: "LAMBANG SAWIT PERKASA",
+        millCompanyName: "LAMBANG SAWIT PERKASA",
+        parentCompanyName: "LAMBANG JAYA",
+        address: "Ds. Limbur Tembesi, Kec Bathin VIII, Sarolangun",
+        province: "JAMBI",
+        position: { lat: -2.223756, lng: 102.480456 },
+        description: ""
+    },
+    {
+        title: "SARI ADITYA LOKA 2",
+        millCompanyName: "SARI ADITYA LOKA 2",
+        parentCompanyName: "ASTRA AGRO LESTARI",
+        address: "Ds.Kuamang Kuning, Kec.Pelepat Ilir, Bungo, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.652222, lng: 102.300277 },
+        description: ""
+    },
+    {
+        title: "LANGLING",
+        millCompanyName: "KRESNA DUTA AGROINDO",
+        parentCompanyName: "SMART/GOLDEN AGRI RESOURCES (GAR)",
+        address: "Desa Langling, Kec.Bangko, Kab.Merangin, Jambi",
+        province: "JAMBI",
+        position: { lat: -2.100833333, lng: 102.3744444 },
+        description: ""
+    },
+    {
+        title: "ANGSO DUO SAWIT",
+        millCompanyName: "ANGSO DUO SAWIT",
+        parentCompanyName: "MEWAH GROUP",
+        address: "Jl. Raya Tanjung Pauh Km. 30-31 Muaro Jambi, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.780556, lng: 103.493472 },
+        description: ""
+    },
+    {
+        title: "MITRA SAWIT JAMBI",
+        millCompanyName: "MITRA SAWIT JAMBI",
+        parentCompanyName: "ANUGERAH",
+        address: "Desa Rantau Badak Kec. Merlung Kab. Tanjung Jabung Barat - Jambi",
+        province: "JAMBI",
+        position: { lat: -1.316888889, lng: 103.0860833 },
+        description: ""
+    },
+    {
+        title: "BINA MITRA MAKMUR",
+        millCompanyName: "BINA MITRA MAKMUR",
+        parentCompanyName: "ANUGERAH",
+        address: "Bangko Kec. Muara Bungo Kab. Bungo Tebo - Jambi",
+        province: "JAMBI",
+        position: { lat: -1.497333333, lng: 102.2406667 },
+        description: ""
+    },
+    {
+        title: "TUNGKAL",
+        millCompanyName: "INTI INDOSAWIT SUBUR",
+        parentCompanyName: "ASIAN AGRI",
+        address: "Ds Merlung, Kec.Merlung, Tg. Jabung Barat",
+        province: "JAMBI",
+        position: { lat: -1.301383, lng: 102.97935 },
+        description: ""
+    },
+    {
+        title: "TRIMITRA LESTARI",
+        millCompanyName: "TRIMITRA LESTARI",
+        parentCompanyName: "SIN TEK HUAT",
+        address: "Ds.Tebing Tinggi, Kec.Tungkal Ulu, Tg.Jabung Barat, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.068733, lng: 103.165067 },
+        description: ""
+    },
+    {
+        title: "TANJUNG LEBAR",
+        millCompanyName: "PERKEBUNAN NUSANTARA VI",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Tanjung Lebar Kec. Sei Bahar Kab. Muaro Jambi - Jambi",
+        province: "JAMBI",
+        position: { lat: -2.017127778, lng: 103.545375 },
+        description: ""
+    },
+    {
+        title: "RANTAU BADAK (CKT)",
+        millCompanyName: "CITRA KOPRASINDO TANI",
+        parentCompanyName: "METRO",
+        address: "Desa Dusun Mudo Kecamatan Muara Papalik Tanjung Jabung",
+        province: "JAMBI",
+        position: { lat: -1.293389, lng: 103.145139 },
+        description: ""
+    },
+    {
+        title: "TAMAN RAJA",
+        millCompanyName: "DASA ANUGRAH SEJATI",
+        parentCompanyName: "ASIAN AGRI",
+        address: "Taman Raja Kab. Tanjung Jabung Barat - Jambi",
+        province: "JAMBI",
+        position: { lat: -1.176694444, lng: 103.0078056 },
+        description: ""
+    },
+    {
+        title: "SUNGAI BENGKAL",
+        millCompanyName: "SATYA KISMA USAHA",
+        parentCompanyName: "SMART/GOLDEN AGRI RESOURCES (GAR)",
+        address: "Desa Betung Berdarah Barat Kecamatan Tebo Ilir Kabupaten Tebo, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.572408333, lng: 102.6100417 },
+        description: ""
+    },
+    {
+        title: "SUNGAI BAHAR PASIFIK UTAMA",
+        millCompanyName: "SUNGAI BAHAR PASIFIK UTAMA",
+        parentCompanyName: "SUNGAI BAHAR PASIFIK UTAMA",
+        address: "Kec.Muara Sebo, Kab.Muaro Jambi, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.5362, lng: 103.630567 },
+        description: ""
+    },
+    {
+        title: "SUNGAI AIR JERNIH",
+        millCompanyName: "BAHANA KARYA SEMESTA",
+        parentCompanyName: "SMART/GOLDEN AGRI RESOURCES (GAR)",
+        address: "Pematang Kulim, Dusun Baru, Desa Mentawak Pauh, Kecamatan Air Hitam, Kabupaten Sarolangun, Jambi",
+        province: "JAMBI",
+        position: { lat: -2.086177, lng: 102.801564 },
+        description: ""
+    },
+    {
+        title: "RIMBO DUA",
+        millCompanyName: "PERKEBUNAN NUSANTARA VI",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Karang Dadi Kec. Rimbo Ilir Kab. Tebo - Jambi",
+        province: "JAMBI",
+        position: { lat: -1.381972222, lng: 102.1760556 },
+        description: ""
+    },
+    {
+        title: "RIMBO SATU",
+        millCompanyName: "PERKEBUNAN NUSANTARA VI",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Ds.Pematang Sapat, Kec.Rimbo Bujang, Tebo, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.378667, lng: 102.167833 },
+        description: ""
+    },
+    {
+        title: "RENGAS",
+        millCompanyName: "PERSADA HARAPAN KAHURIPAN",
+        parentCompanyName: "MATAHARI KAHURIPAN INDONESIA",
+        address: "Desa Muara Ketalo Kec. Tebo Ilir, Kab. Tebo - Jambi",
+        province: "JAMBI",
+        position: { lat: -1.595308333, lng: 102.7200247 },
+        description: ""
+    },
+    {
+        title: "PRODUK SAWITINDO JAMBI",
+        millCompanyName: "PRODUK SAWITINDO JAMBI",
+        parentCompanyName: "MATAHARI KAHURIPAN INDONESIA",
+        address: "Ds.Pelabuhan Dagang, Kec.Tungkal Ulu, Tg.Jabung Barat, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.139183, lng: 103.07365 },
+        description: ""
+    },
+    {
+        title: "PINANG TINGGI",
+        millCompanyName: "PERKEBUNAN NUSANTARA VI",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Pinang Tinggi Kec. Bahar Utara Kab. Muaro Jambi - Jambi",
+        province: "JAMBI",
+        position: { lat: -1.962427778, lng: 103.4018222 },
+        description: ""
+    },
+    {
+        title: "PELAKAR",
+        millCompanyName: "KRESNA DUTA AGROINDO",
+        parentCompanyName: "SMART/GOLDEN AGRI RESOURCES (GAR)",
+        address: "Desa Tanjung Kecamatan Bathin VIII Kabupaten Sarolangun, Jambi",
+        province: "JAMBI",
+        position: { lat: -2.185277778, lng: 102.6422222 },
+        description: ""
+    },
+    {
+        title: "SUMBERTAMA NUSA PERTIWI",
+        millCompanyName: "SUMBERTAMA NUSA PERTIWI",
+        parentCompanyName: "BAKRIE SUMATERA PLANTATIONS",
+        address: "Desa Parit Kec. Kumpeh Ulu Kab. Muaro Jambi - Jambi",
+        province: "JAMBI",
+        position: { lat: -1.68, lng: 103.8005556 },
+        description: ""
+    },
+    {
+        title: "PALMA ABADI",
+        millCompanyName: "PALMA ABADI",
+        parentCompanyName: "PALMA ABADI",
+        address: "Ds Dusun Mudo, Kec.Merlung, Tg.Jabung Barat, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.3213, lng: 103.26525 },
+        description: ""
+    },
+    {
+        title: "MUARA BULIAN",
+        millCompanyName: "INTI INDOSAWIT SUBUR",
+        parentCompanyName: "ASIAN AGRI",
+        address: "Kec. Muara Bulian Kab. Batanghari - Jambi",
+        province: "JAMBI",
+        position: { lat: -1.585833333, lng: 103.2055556 },
+        description: ""
+    },
+    {
+        title: "MEKAR SARI",
+        millCompanyName: "RICKY KURNIAWAN KERTAPERSADA",
+        parentCompanyName: "MATAHARI KAHURIPAN INDONESIA",
+        address: "Desa Mekar Sari Kec. Kumpeh Kab. Muaro Jambi - Jambi",
+        province: "JAMBI",
+        position: { lat: -1.494694444, lng: 103.862 },
+        description: ""
+    },
+    {
+        title: "MEGASAWINDO PERKASA",
+        millCompanyName: "MEGASAWINDO PERKASA",
+        parentCompanyName: "INCASI RAYA",
+        address: "Ds.Rantau Keloyang, Kec.Pelepat, Bungo, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.684267, lng: 102.23465 },
+        description: ""
+    },
+    {
+        title: "SARI ADITYA LOKA 1",
+        millCompanyName: "SARI ADITYA LOKA 1",
+        parentCompanyName: "ASTRA AGRO LESTARI",
+        address: "Desa Muara Delang Kec. Tabir Selatan Kab. Merangin - Jambi",
+        province: "JAMBI",
+        position: { lat: -1.960138889, lng: 102.3708611 },
+        description: ""
+    },
+    {
+        title: "KEDATON MULIA PRIMAS",
+        millCompanyName: "KEDATON MULIA PRIMAS",
+        parentCompanyName: "PALMA",
+        address: "Desa Jelutih Kec. Batin XXIV Kab. Batang Hari Jambi",
+        province: "JAMBI",
+        position: { lat: -1.907166667, lng: 103.0136111 },
+        description: ""
+    },
+    {
+        title: "JELATANG",
+        millCompanyName: "KRESNA DUTA AGROINDO",
+        parentCompanyName: "SMART/GOLDEN AGRI RESOURCES (GAR)",
+        address: "Desa Jelatang, Kecamatan Pamenang Kabupaten Merangin, Jambi 37352, Indonesia",
+        province: "JAMBI",
+        position: { lat: -2.072222222, lng: 102.4858333 },
+        description: ""
+    },
+    {
+        title: "JAMIKA RAYA",
+        millCompanyName: "JAMIKA RAYA",
+        parentCompanyName: "INCASI RAYA",
+        address: "Ds.Jujuhan, Kec.Tanah Tumbuh, Bungo, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.439367, lng: 101.750867 },
+        description: ""
+    },
+    {
+        title: "INTI GUNA NABATI",
+        millCompanyName: "INTI GUNA NABATI",
+        parentCompanyName: "DHARMA AGUNG WIJAYA",
+        address: "Desa Lubak Sayak, Kec. Pelawan, Kab. Sarolangun, Jambi",
+        province: "JAMBI",
+        position: { lat: -2.416483, lng: 102.680667 },
+        description: ""
+    },
+    {
+        title: "GRAHACIPTA BANGKO JAYA",
+        millCompanyName: "GRAHACIPTA BANGKO JAYA",
+        parentCompanyName: "MENTARI AGUNG JAYA USAHA",
+        address: "Jl. Lintas Sumatera KM 21 Ds.Karang Anyar, Kec.Pamenang Barat, Merangin, Jambi",
+        province: "JAMBI",
+        position: { lat: -2.08095, lng: 102.43765 },
+        description: ""
+    },
+    {
+        title: "ERASAKTI WIRAFORESTAMA 1",
+        millCompanyName: "ERASAKTI WIRAFORESTAMA",
+        parentCompanyName: "KURNIA TUNGGAL",
+        address: "Ds.Sakean, Kec.Kumpeh Ulu, Muaro Jambi, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.534, lng: 103.724683 },
+        description: ""
+    },
+    {
+        title: "MARO SEBO",
+        millCompanyName: "PETALING MANDRAGUNA",
+        parentCompanyName: "PETALING",
+        address: "Desa Danau Lamo Kec Marosebo Kab Muaro Jambi - Jambi",
+        province: "JAMBI",
+        position: { lat: -1.446536111, lng: 103.6269778 },
+        description: ""
+    },
+    {
+        title: "BUNUT (PN)",
+        millCompanyName: "PERKEBUNAN NUSANTARA VI",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Markanding Kec. Bahar Utara Kab. Muaro Jambi - Jambi",
+        province: "JAMBI",
+        position: { lat: -1.91025, lng: 103.4036111 },
+        description: ""
+    },
+    {
+        title: "BUNGA TEBO",
+        millCompanyName: "RIGUNAS AGRI UTAMA",
+        parentCompanyName: "ASIAN AGRI",
+        address: "Kec. Sumai Kab. Tebo - Jambi",
+        province: "JAMBI",
+        position: { lat: -1.346694444, lng: 102.4561111 },
+        description: ""
+    },
+    {
+        title: "BUKIT BINTANG SAWIT",
+        millCompanyName: "BUKIT BINTANG SAWIT",
+        parentCompanyName: "BUKIT BINTANG SAWIT",
+        address: "Simpang Kuala Tungkal Km 35, Desa Bukit Baling, Kec. Sekernaan, Kab. Muara Jambi, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.385857, lng: 103.495438 },
+        description: ""
+    },
+    {
+        title: "BUKIT BARISAN INDAH PRIMA",
+        millCompanyName: "BUKIT BARISAN INDAH PRIMA",
+        parentCompanyName: "BBIP PALM",
+        address: "Ds.Bukit Baling, Kec.Sekernan, Muaro Jambi, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.339617, lng: 103.455383 },
+        description: ""
+    },
+    {
+        title: "BRAHMA BINABAKTI",
+        millCompanyName: "BRAHMA BINABAKTI",
+        parentCompanyName: "TRIPUTRA AGRO PERSADA",
+        address: "Jl. Lintas Timur Sumatra km 58/72, Desa Sukoawin Jaya, kec. Sekernan, kab. Muaro Jambi",
+        province: "JAMBI",
+        position: { lat: -1.346666667, lng: 103.3258333 },
+        description: ""
+    },
+    {
+        title: "BICCON AGRO MAKMUR",
+        millCompanyName: "BICCON AGRO MAKMUR",
+        parentCompanyName: "BICCON AGRO MAKMUR",
+        address: "Ds.Sungai Gelam, Kec.Sungai Gelam, Muaro Jambi, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.744367, lng: 103.869367 },
+        description: ""
+    },
+    {
+        title: "BATANGHARI SAWIT SEJAHTERA",
+        millCompanyName: "BATANGHARI SAWIT SEJAHTERA",
+        parentCompanyName: "SAWIT MAS/FLORA WAHANA TIRTA/BUKIT BARISAN INDAH PRIMA",
+        address: "Ds.Lubuk Raman, Kec.Maro Sebo, Muaro Jambi, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.349416667, lng: 103.5416389 },
+        description: ""
+    },
+    {
+        title: "LADANG PANJANG",
+        millCompanyName: "BAHARI GEMBIRA RIA",
+        parentCompanyName: "SIME DARBY/MINAMAS",
+        address: "Ds.Ladang Panjang, Kec.Sei Gelam, Muaro Jambi, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.791666, lng: 103.791388 },
+        description: ""
+    },
+    {
+        title: "AUR GADING",
+        millCompanyName: "PERKEBUNAN NUSANTARA VI",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Aur Gading Kec. Batin XXIV Kab. Batang Hari - Jambi",
+        province: "JAMBI",
+        position: { lat: -1.866666667, lng: 103.0166667 },
+        description: ""
+    },
+    {
+        title: "ANEKAPURA MULTIKERTA",
+        millCompanyName: "ANEKAPURA MULTIKERTA",
+        parentCompanyName: "ANEKA PURA MULTI KERTA",
+        address: "Ds.Kampung Baru, Kec.Batang Asam, Tg.Jabung Barat, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.078917, lng: 103.007933 },
+        description: ""
+    },
+    {
+        title: "AGRO MITRA MADANI",
+        millCompanyName: "AGRO MITRA MADANI",
+        parentCompanyName: "BAKRIE SUMATERA PLANTATIONS",
+        address: "Ds. Talang Makmur, Kec. Tebing Tinggi, Tg.Jabung Barat, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.078044444, lng: 103.109075 },
+        description: ""
+    },
+    {
+        title: "AGRINDO INDAH PERSADA 2",
+        millCompanyName: "AGRINDO INDAH PERSADA",
+        parentCompanyName: "WILMAR INTERNATIONAL",
+        address: "Ds.Tambang Baru, Kec.Tabir, Merangin, Jambi",
+        province: "JAMBI",
+        position: { lat: -1.963888, lng: 102.301111 },
+        description: ""
     }
 ];
 window.assets = assets;
