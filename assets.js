@@ -6995,6 +6995,179 @@ const assets = [
         province: "ACEH",
         position: { lat: 4.707777778, lng: 97.83861111 },
         description: ""
+    },
+
+    {
+        title: "PRATAMA UNGGUL SEJAHTERA",
+        millCompanyName: "PRATAMA UNGGUL SEJAHTERA",
+        parentCompanyName: "PRATAMA UNGGUL SEJAHTERA",
+        address: "Bangka Belitung",
+        province: "BANGKA BELITUNG",
+        position: { lat: -2.849591, lng: 107.617261 },
+        description: ""
+    },
+    {
+        title: "Mutiara Hijau Lestari (MHL)",
+        millCompanyName: "Mutiara Hijau Lestari (MHL)",
+        parentCompanyName: "Mutiara Hijau Lestari (MHL)",
+        address: "Guntung, Koba, Kabupaten Bangka Tengah, Kepulauan Bangka Belitung 33778, Indonesia",
+        province: "BANGKA BELITUNG",
+        position: { lat: -2.581249, lng: 106.246435 },
+        description: ""
+    },
+    {
+        title: "TENGAKALAT",
+        millCompanyName: "GUNUNG PELAWAN LESTARI",
+        parentCompanyName: "M.P.EVANS",
+        address: "Dusun Tuing, Desa Mapur, Kecamatan Riau Silip, Kabupaten Bangka, Propinsi Kepulauan Bangka Belitung",
+        province: "BANGKA BELITUNG",
+        position: { lat: -1.623167, lng: 105.989222 },
+        description: ""
+    },
+    {
+        title: "BUMI SAWIT SUKSES PRATAMA",
+        millCompanyName: "BUMI SAWIT SUKSES PRATAMA",
+        parentCompanyName: "TRADISI",
+        address: "Desa Simpang Rimba Kec. Simpang Rimba Kab. Bangka Selatan - Bangka",
+        province: "BANGKA BELITUNG",
+        position: { lat: -2.543894444, lng: 106.0293167 },
+        description: ""
+    },
+    {
+        title: "NEKNANG",
+        millCompanyName: "GEMILANG CAHAYA MENTARI",
+        parentCompanyName: "GEMILANG CAHAYA MENTARI",
+        address: "Desa Neknang Kec. Bakam Kab. Bangka - Bangka",
+        province: "BANGKA BELITUNG",
+        position: { lat: -1.950305556, lng: 105.7893889 },
+        description: ""
+    },
+    {
+        title: "Tata Hamparan Eka Persada",
+        millCompanyName: "Tata Hamparan Eka Persada",
+        parentCompanyName: "Tata Hamparan Eka Persada",
+        address: "Jl. Raya P.Pinang - mentok Km 37. Desa Puding besar, Kec. Puding besar - Kab bangka",
+        province: "BANGKA BELITUNG",
+        position: { lat: -1.98946, lng: 105.89513 },
+        description: ""
+    },
+    {
+        title: "PARIT SEMBADA",
+        millCompanyName: "PARIT SEMBADA",
+        parentCompanyName: "KUALA LUMPUR KEPONG BERHAD",
+        address: "Ds. Padang Kandis, Kec. Membalong, Belitung, Bangka Belitung",
+        province: "BANGKA BELITUNG",
+        position: { lat: -2.740393, lng: 108.001873 },
+        description: ""
+    },
+    {
+        title: "STEELINDO WAHANA PERKASA",
+        millCompanyName: "STEELINDO WAHANA PERKASA",
+        parentCompanyName: "KUALA LUMPUR KEPONG BERHAD",
+        address: "Desa Senyubuk Kec. Kelapa Kampit Kab. Belitung Timur - Belitung",
+        province: "BANGKA BELITUNG",
+        position: { lat: -2.724044444, lng: 108.061775 },
+        description: ""
+    },
+    {
+        title: "REBINMAS JAYA",
+        millCompanyName: "REBINMAS JAYA",
+        parentCompanyName: "TRADISI",
+        address: "Desa Parit Gunung, Badau - Belitung",
+        province: "BANGKA BELITUNG",
+        position: { lat: -2.733527778, lng: 107.9010667 },
+        description: ""
+    },
+    {
+        title: "GUNUNG MARAS LESTARI",
+        millCompanyName: "GUNUNG MARAS LESTARI",
+        parentCompanyName: "ORIENTAL HOLDINGS BERHAD",
+        address: "Ds. Mabat, Kec. Bakam, Bangka, Babel",
+        province: "BANGKA BELITUNG",
+        position: { lat: -1.962155, lng: 105.95208 },
+        description: ""
+    },
+    {
+        title: "TANJUNG KEMBIRI",
+        millCompanyName: "FORESTALESTARI DWIKARYA",
+        parentCompanyName: "SMART/GOLDEN AGRI RESOURCES (GAR)",
+        address: "Desa Kembiri, Kecamatan Membalong, Kabupaten Belitung, Provinsi Kepulauan Bangka Belitung - Babel",
+        province: "BANGKA BELITUNG",
+        position: { lat: -3.03125, lng: 107.7718333 },
+        description: ""
+    },
+    {
+        title: "SWARNA NUSA SENTOSA",
+        millCompanyName: "SWARNA NUSA SENTOSA",
+        parentCompanyName: "SWARNA NUSA SENTOSA",
+        address: "Bangka, Bangka Belitung",
+        province: "BANGKA BELITUNG",
+        position: { lat: -2.482538889, lng: 106.0767444 },
+        description: ""
+    },
+    {
+        title: "SAWINDO KENCANA",
+        millCompanyName: "SAWINDO KENCANA",
+        parentCompanyName: "KENCANA AGRI LIMITED",
+        address: "Jl. Panglima Angin No. 1 Tempilang-bangka Barat, Bangka Barat, Kepulauan Bangka Belitung",
+        province: "BANGKA BELITUNG",
+        position: { lat: -2.076, lng: 105.647933 },
+        description: ""
+    },
+    {
+        title: "SAHABAT MEWAH DAN MAKMUR",
+        millCompanyName: "SAHABAT MEWAH DAN MAKMUR",
+        parentCompanyName: "AUSTINDO NUSANTARA JAYA AGRI",
+        address: "Ds. Jangkang, Kec. Dendang, Belitung Timur, Babel",
+        province: "BANGKA BELITUNG",
+        position: { lat: -2.996917, lng: 107.87665 },
+        description: ""
+    },
+    {
+        title: "PUTRA BANGKA MANDIRI",
+        millCompanyName: "PUTRA BANGKA MANDIRI",
+        parentCompanyName: "PUTRA BANGKA MANDIRI",
+        address: "Ds. Cengkong Abang, Kec. Mendo Barat, Bangka Babel",
+        province: "BANGKA BELITUNG",
+        position: { lat: -2.166067, lng: 106.004517 },
+        description: ""
+    },
+    {
+        title: "MUTIARA ALAM LESTARI",
+        millCompanyName: "MUTIARA ALAM LESTARI",
+        parentCompanyName: "MUTIARA ALAM LESTARI",
+        address: "Ds. Arung Dalam, Kec. Koba, Bangka Tengah, Bangka Belitung",
+        province: "BANGKA BELITUNG",
+        position: { lat: -2.492167, lng: 106.364317 },
+        description: ""
+    },
+    {
+        title: "LEIDONG WEST",
+        millCompanyName: "MASKAPAI PERKEBUNAN LEIDONG WEST",
+        parentCompanyName: "SMART/GOLDEN AGRI RESOURCES (GAR)",
+        address: "Desa Kelapa, Kecamatan Kelapa, Kabupaten Bangka Barat Kepulauan Bangka Belitung 33364",
+        province: "BANGKA BELITUNG",
+        position: { lat: -1.90139, lng: 105.47641 },
+        description: ""
+    },
+    {
+        title: "MAYANG (GBL)",
+        millCompanyName: "GUNUNG SAWIT BINA LESTARI",
+        parentCompanyName: "ORIENTAL HOLDINGS BERHAD",
+        address: "Desa Mayang, Kec. Simpang Teritip, Bangka Barat, Babel",
+        province: "BANGKA BELITUNG",
+        position: { lat: -2.073717, lng: 105.324017 },
+        description: ""
+    },
+    {
+        title: "BUKIT PERAK",
+        millCompanyName: "BUMI PERMAI LESTARI",
+        parentCompanyName: "SMART/GOLDEN AGRI RESOURCES (GAR)",
+        address: "Desa Berang / Ibul Kec. Kelapa Kab. Bangka Barat Kep. Bangka Belitung",
+        province: "BANGKA BELITUNG",
+        position: { lat: -1.820496, lng: 105.551168 },
+        description: ""
     }
+
 ];
 window.assets = assets;
