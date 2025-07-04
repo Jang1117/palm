@@ -213,7 +213,7 @@
         <ul id="millList"></ul>
     </div>
     <div id="map"></div>
-    <button class="global-button" onclick="resetMap()">Indonesia</button>
+    <button class="global-button" onclick="resetMap()>Indonesia</button>
 
     <div class="popup-overlay" id="popupOverlay">
         <div class="popup-content" id="popupContent">
@@ -251,6 +251,13 @@
         function closeSidebar() {
             const sidebar = document.getElementById("sidebar");
             sidebar.classList.remove("open");
+            console.log("Sidebar closed");
+        }
+
+        function toggleSidebar() {
+            const sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("open");
+            console.log("Sidebar toggled, open:", sidebar.classList.contains("open"));
         }
 
         function moveToProvince(province) {
@@ -302,6 +309,9 @@
 
             updateMarkers();
             initializeSidebar();
+
+            // 자산 목록 버튼 이벤트 리스너 등록
+            document.getElementById("toggleSidebar").addEventListener("click", toggleSidebar);
         };
 
         function updateMarkers() {
@@ -520,12 +530,6 @@
                     asset.parentCompanyName.toLowerCase().includes(query)
                 );
                 populateMillList(filteredAssets);
-            });
-
-            document.getElementById("toggleSidebar").addEventListener("click", () => {
-                const sidebar = document.getElementById("sidebar");
-                sidebar.classList.toggle("open");
-                console.log("Sidebar toggled, open:", sidebar.classList.contains("open"));
             });
         }
 
