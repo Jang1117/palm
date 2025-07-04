@@ -17,18 +17,17 @@
         }
         #sidebar {
             position: fixed;
-            top: 150px;
-            right: -300px;
+            top: 110px;
+            right: 0;
             width: 300px;
-            height: calc(100% - 150px);
+            height: calc(100% - 110px);
             background: #f8f8f8;
-            transition: right 0.3s ease;
             overflow-y: auto;
             scrollbar-width: thin;
             padding: 10px;
             box-shadow: -2px 0 5px rgba(0,0,0,0.2);
             z-index: 900;
-            visibility: hidden;
+            visibility: visible;
         }
         #sidebar::-webkit-scrollbar {
             width: 6px;
@@ -40,22 +39,9 @@
         #sidebar::-webkit-scrollbar-track {
             background: #f1f1f1;
         }
-        #sidebar.open {
-            right: 0;
-            visibility: visible;
-        }
         #sidebar h2 {
             font-size: 1.5em;
             margin: 10px 0;
-        }
-        #sidebar .close-button {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-            color: #000;
-            font-weight: bold;
-            font-size: 16px;
         }
         #sidebar input {
             width: calc(100% - 20px);
@@ -87,9 +73,9 @@
             background: #e0e0e0;
             border-radius: 4px;
         }
-        #toggleSidebar {
+        .global-button {
             position: fixed;
-            top: 100px;
+            top: 60px;
             right: 10px;
             background-color: #f0f0f0;
             border: 1px solid #ccc;
@@ -99,7 +85,7 @@
             cursor: pointer;
             z-index: 1000;
         }
-        #toggleSidebar:hover {
+        .global-button:hover {
             background-color: #e0e0e0;
         }
         .popup-overlay {
@@ -143,33 +129,6 @@
             font-weight: bold;
             font-size: 16px;
         }
-        .popup-content .move-button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 8px 16px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 14px;
-        }
-        .popup-content .move-button:hover {
-            background-color: #0056b3;
-        }
-        .global-button {
-            position: fixed;
-            top: 60px;
-            right: 10px;
-            background-color: #f0f0f0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            padding: 8px 12px;
-            font-size: 14px;
-            cursor: pointer;
-            z-index: 1000;
-        }
-        .global-button:hover {
-            background-color: #e0e0e0;
-        }
         .gm-style .gm-label {
             font-size: 12px;
             color: #000;
@@ -187,14 +146,9 @@
         @media (max-width: 600px) {
             #sidebar {
                 width: 250px;
-                right: -250px;
-                height: calc(100% - 150px);
+                height: calc(100% - 110px);
             }
-            #sidebar.open {
-                right: 0;
-                visibility: visible;
-            }
-            #toggleSidebar, .global-button {
+            .global-button {
                 font-size: 12px;
                 padding: 8px;
             }
@@ -205,15 +159,13 @@
     </style>
 </head>
 <body>
-    <button id="toggleSidebar">자산 목록</button>
     <div id="sidebar">
-        <span class="close-button" onclick="closeSidebar()">X</span>
         <h2>Palm Mill Plant</h2>
         <input type="text" id="searchInput" placeholder="자산 이름 검색...">
         <ul id="millList"></ul>
     </div>
     <div id="map"></div>
-    <button class="global-button" onclick="resetMap()>Indonesia</button>
+    <button class="global-button" onclick="resetMap()">Indonesia</button>
 
     <div class="popup-overlay" id="popupOverlay">
         <div class="popup-content" id="popupContent">
@@ -231,7 +183,7 @@
         let selectedProvince = null;
 
         function handleAssetsLoadError() {
-            console.error("assets.js 로드 실패. 파일 경로 또는 구문을 확인하세요.");
+            console.error("assets.js 로드 실패. 파일 경로 또는 구성을 확인하세요.");
             alert("자산 데이터를 로드하지 못했습니다. assets.js 파일을 확인하세요.");
         }
 
@@ -247,18 +199,6 @@
                 alert('Google Maps API를 로드하지 못했습니다. 네트워크 또는 API 키를 확인하세요.');
             }
         });
-
-        function closeSidebar() {
-            const sidebar = document.getElementById("sidebar");
-            sidebar.classList.remove("open");
-            console.log("Sidebar closed");
-        }
-
-        function toggleSidebar() {
-            const sidebar = document.getElementById("sidebar");
-            sidebar.classList.toggle("open");
-            console.log("Sidebar toggled, open:", sidebar.classList.contains("open"));
-        }
 
         function moveToProvince(province) {
             if (!map) {
@@ -305,13 +245,8 @@
                 updateMarkers();
             });
 
-            document.getElementById("sidebar").classList.remove("open");
-
             updateMarkers();
             initializeSidebar();
-
-            // 자산 목록 버튼 이벤트 리스너 등록
-            document.getElementById("toggleSidebar").addEventListener("click", toggleSidebar);
         };
 
         function updateMarkers() {
@@ -532,12 +467,6 @@
                 populateMillList(filteredAssets);
             });
         }
-
-        document.addEventListener("DOMContentLoaded", () => {
-            const sidebar = document.getElementById("sidebar");
-            sidebar.classList.remove("open");
-            sidebar.style.visibility = "hidden";
-        });
 
     </script>
 
