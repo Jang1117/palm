@@ -1743,3 +1743,4 @@ const assets = [
         markerIcon: "new_palm_tree.png"
     }
 ];
+window.assets = assets;
