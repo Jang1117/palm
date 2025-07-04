@@ -29,9 +29,11 @@
             padding: 10px;
             box-shadow: -2px 0 5px rgba(0,0,0,0.2);
             z-index: 900;
+            visibility: hidden;
         }
         #sidebar.open {
             right: 0;
+            visibility: visible;
         }
         #sidebar h2 {
             font-size: 1.5em;
@@ -185,6 +187,7 @@
             }
             #sidebar.open {
                 right: 0;
+                visibility: visible;
             }
             #toggleSidebar, .global-button {
                 font-size: 12px;
@@ -251,6 +254,23 @@
             sidebar.classList.remove("open");
         }
 
+        // 지역별 자산 중심으로 이동
+        function moveToProvince(province) {
+            if (!map) {
+                console.error("지도가 초기화되지 않았습니다.");
+                return;
+            }
+            const provinceAssets = assets.filter(asset => asset.province === province);
+            const bounds = new window.google.maps.LatLngBounds();
+            provinceAssets.forEach(asset => {
+                bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
+            });
+            map.fitBounds(bounds);
+            const currentZoom = map.getZoom();
+            if (currentZoom > 10) map.setZoom(10);
+            if (currentZoom < 7) map.setZoom(7);
+        }
+
         // 지도 초기화 함수
         window.initMap = function() {
             if (typeof window.google === 'undefined' || typeof window.google.maps === 'undefined') {
@@ -300,42 +320,52 @@
             const zoom = map.getZoom();
 
             if (zoom <= 7) {
-                // 줌 레벨 7 이하: 전체 자산의 중심점에 단일 마커 표시
-                let latSum = 0, lngSum = 0;
-                assets.forEach(asset => {
-                    latSum += asset.position.lat;
-                    lngSum += asset.position.lng;
-                });
-                const center = {
-                    lat: latSum / assets.length,
-                    lng: lngSum / assets.length
-                };
-
-                const marker = new window.google.maps.Marker({
-                    position: center,
-                    map: map,
-                    title: `인도네시아: ${assets.length}개 자산`,
-                    icon: {
-                        url: defaultIcon,
-                        scaledSize: new window.google.maps.Size(40, 40),
-                        labelOrigin: new window.google.maps.Point(20, 50)
-                    },
-                    label: {
-                        text: `인도네시아 (${assets.length})`,
-                        fontSize: "12px",
-                        fontWeight: "bold",
-                        color: "#000000",
-                        fontFamily: "Arial, sans-serif"
+                // 줌 레벨 7 이하: 지역별 마커 표시
+                const groupedAssets = assets.reduce((groups, asset) => {
+                    const province = asset.province;
+                    if (!groups[province]) {
+                        groups[province] = [];
                     }
-                });
+                    groups[province].push(asset);
+                    return groups;
+                }, {});
 
-                marker.addListener("click", () => {
-                    showPopup("인도네시아", `인도네시아: ${assets.length}개 자산`, 
-                        `이 지역에는 ${assets.length}개의 팜 오일 자산이 있습니다.`, 
-                        `<button class="move-button" onclick="moveToAssets()">자산 이동</button>`);
-                });
+                Object.keys(groupedAssets).sort().forEach(province => {
+                    const provinceAssets = groupedAssets[province];
+                    let latSum = 0, lngSum = 0;
+                    provinceAssets.forEach(asset => {
+                        latSum += asset.position.lat;
+                        lngSum += asset.position.lng;
+                    });
+                    const center = {
+                        lat: latSum / provinceAssets.length,
+                        lng: lngSum / provinceAssets.length
+                    };
 
-                markers.push(marker);
+                    const marker = new window.google.maps.Marker({
+                        position: center,
+                        map: map,
+                        title: `${province}: ${provinceAssets.length}개 자산`,
+                        icon: {
+                            url: defaultIcon,
+                            scaledSize: new window.google.maps.Size(40, 40),
+                            labelOrigin: new window.google.maps.Point(20, 50)
+                        },
+                        label: {
+                            text: `${province} (${provinceAssets.length})`,
+                            fontSize: "12px",
+                            fontWeight: "bold",
+                            color: "#000000",
+                            fontFamily: "Arial, sans-serif"
+                        }
+                    });
+
+                    marker.addListener("click", () => {
+                        moveToProvince(province);
+                    });
+
+                    markers.push(marker);
+                });
             } else {
                 // 줌 레벨 8 이상: 개별 자산 마커 표시
                 assets.forEach(asset => {
@@ -368,6 +398,8 @@
                             <p><strong>모회사:</strong> ${asset.parentCompanyName}</p>
                             <p><strong>주소:</strong> ${asset.address}</p>
                             <p><strong>지역:</strong> ${asset.province}</p>`);
+                        map.setZoom(15);
+                        map.setCenter(asset.position);
                     });
 
                     markers.push(marker);
@@ -512,7 +544,9 @@
 
         // 페이지 로드 시 사이드바 숨김
         document.addEventListener("DOMContentLoaded", () => {
-            document.getElementById("sidebar").classList.remove("open");
+            const sidebar = document.getElementById("sidebar");
+            sidebar.classList.remove("open");
+            sidebar.style.visibility = "hidden";
         });
     </script>
 
