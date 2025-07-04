@@ -59,16 +59,18 @@
         }
         #toggleSidebar {
             position: fixed;
-            top: 10px;
-            left: 10px;
-            z-index: 1001;
-            padding: 10px;
-            background: #0078A8;
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
+            top: 100px;
+            right: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 8px 12px;
             font-size: 14px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        #toggleSidebar:hover {
+            background-color: #e0e0e0;
         }
         /* 팝업 창 스타일 */
         .popup-overlay {
@@ -124,9 +126,10 @@
         .popup-content .move-button:hover {
             background-color: #0056b3;
         }
-        /* Global, Local 버튼 스타일 */
-        .global-button, .local-button {
+        /* Global 버튼 스타일 */
+        .global-button {
             position: fixed;
+            top: 60px;
             right: 10px;
             background-color: #f0f0f0;
             border: 1px solid #ccc;
@@ -136,13 +139,7 @@
             cursor: pointer;
             z-index: 1000;
         }
-        .global-button {
-            top: 60px;
-        }
-        .local-button {
-            top: 100px;
-        }
-        .global-button:hover, .local-button:hover {
+        .global-button:hover {
             background-color: #e0e0e0;
         }
         /* 마커 라벨 스타일 */
@@ -169,7 +166,7 @@
             #sidebar.open {
                 left: 0;
             }
-            #toggleSidebar, .global-button, .local-button {
+            #toggleSidebar, .global-button {
                 font-size: 12px;
                 padding: 8px;
             }
@@ -188,7 +185,6 @@
     </div>
     <div id="map"></div>
     <button class="global-button" onclick="resetMap()">Global</button>
-    <button class="local-button" onclick="moveToLocal()">Local</button>
 
     <!-- 팝업 창 -->
     <div class="popup-overlay" id="popupOverlay">
@@ -392,20 +388,6 @@
             const currentZoom = map.getZoom();
             if (currentZoom > 10) map.setZoom(10);
             if (currentZoom < 7) map.setZoom(7);
-        }
-
-        // 마지막 자산으로 이동
-        function moveToLocal() {
-            if (!map) {
-                console.error("지도가 초기화되지 않았습니다.");
-                return;
-            }
-            if (lastViewedAsset) {
-                map.setZoom(15);
-                map.setCenter(lastViewedAsset.position);
-            } else {
-                alert("아직 확인한 자산이 없습니다. 자산을 클릭해 주세요.");
-            }
         }
 
         // 지도 초기화 (Global 뷰)
