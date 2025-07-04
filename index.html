@@ -223,7 +223,6 @@
         // 전역 변수 정의
         let map;
         let markers = [];
-        let lastViewedAsset = null;
 
         // assets.js 로드 실패 시 처리
         function handleAssetsLoadError() {
@@ -368,10 +367,7 @@
                             <p><strong>회사명:</strong> ${asset.millCompanyName}</p>
                             <p><strong>모회사:</strong> ${asset.parentCompanyName}</p>
                             <p><strong>주소:</strong> ${asset.address}</p>
-                            <p><strong>지역:</strong> ${asset.province}</p>
-                        `, asset);
-                        map.setZoom(15);
-                        map.setCenter(asset.position);
+                            <p><strong>지역:</strong> ${asset.province}</p>`);
                     });
 
                     markers.push(marker);
@@ -380,7 +376,7 @@
         }
 
         // 팝업 창 표시 함수
-        function showPopup(id, title, description, extraContent, asset = null) {
+        function showPopup(id, title, description, extraContent) {
             const popupOverlay = document.getElementById("popupOverlay");
             const popupTitle = document.getElementById("popupTitle");
             const popupDescription = document.getElementById("popupDescription");
@@ -389,10 +385,6 @@
             popupTitle.textContent = title;
             popupDescription.innerHTML = description;
             popupExtra.innerHTML = extraContent;
-
-            if (asset) {
-                lastViewedAsset = asset;
-            }
 
             popupOverlay.style.display = "block";
         }
@@ -436,6 +428,19 @@
             const millList = document.getElementById("millList");
             const searchInput = document.getElementById("searchInput");
 
+            // 자산을 중복 제거 및 알파벳순 정렬
+            function dedupeAndSortAssets(assets) {
+                const uniqueAssets = [];
+                const seenTitles = new Set();
+                assets.forEach(asset => {
+                    if (!seenTitles.has(asset.title)) {
+                        seenTitles.add(asset.title);
+                        uniqueAssets.push(asset);
+                    }
+                });
+                return uniqueAssets.sort((a, b) => a.title.localeCompare(b.title));
+            }
+
             // 자산을 지역별로 그룹화
             function groupAssetsByProvince(assets) {
                 return assets.reduce((groups, asset) => {
@@ -451,7 +456,8 @@
             // 자산 목록 추가
             function populateMillList(filteredAssets = assets) {
                 millList.innerHTML = "";
-                const groupedAssets = groupAssetsByProvince(filteredAssets);
+                const uniqueAssets = dedupeAndSortAssets(filteredAssets);
+                const groupedAssets = groupAssetsByProvince(uniqueAssets);
 
                 Object.keys(groupedAssets).sort().forEach(province => {
                     const details = document.createElement("details");
@@ -461,7 +467,7 @@
                     details.appendChild(summary);
 
                     const ul = document.createElement("ul");
-                    groupedAssets[province].forEach(asset => {
+                    groupedAssets[province].sort((a, b) => a.title.localeCompare(b.title)).forEach(asset => {
                         const li = document.createElement("li");
                         li.textContent = asset.title;
                         li.addEventListener("click", () => {
@@ -474,8 +480,7 @@
                                 `<p><strong>회사명:</strong> ${asset.millCompanyName}</p>
                                  <p><strong>모회사:</strong> ${asset.parentCompanyName}</p>
                                  <p><strong>주소:</strong> ${asset.address}</p>
-                                 <p><strong>지역:</strong> ${asset.province}</p>`, 
-                                asset);
+                                 <p><strong>지역:</strong> ${asset.province}</p>`);
                         });
                         ul.appendChild(li);
                     });
@@ -504,6 +509,11 @@
                 sidebar.classList.toggle("open");
             });
         }
+
+        // 페이지 로드 시 사이드바 숨김
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("sidebar").classList.remove("open");
+        });
     </script>
 
     <!-- Google Maps JavaScript API 로드 -->
