@@ -182,88 +182,89 @@
 
             updateMarkers();
 
-            function updateMarkers() {
-                markers.forEach(marker => marker.setMap(null));
-                markers = [];
-            
-                const zoom = map.getZoom();
-            
-                if (zoom <= 7) {
-                    // 줌 레벨 7 이하: 전체 자산의 중심점에 단일 마커 표시
-                    let latSum = 0, lngSum = 0;
-                    assets.forEach(asset => {
-                        latSum += asset.position.lat;
-                        lngSum += asset.position.lng;
-                    });
-                    const center = {
-                        lat: latSum / assets.length,
-                        lng: lngSum / assets.length
+        function updateMarkers() {
+            markers.forEach(marker => marker.setMap(null));
+            markers = [];
+        
+            const zoom = map.getZoom();
+        
+            if (zoom <= 7) {
+                // 줌 레벨 7 이하: 전체 자산의 중심점에 단일 마커 표시
+                let latSum = 0, lngSum = 0;
+                assets.forEach(asset => {
+                    latSum += asset.position.lat;
+                    lngSum += asset.position.lng;
+                });
+                const center = {
+                    lat: latSum / assets.length,
+                    lng: lngSum / assets.length
+                };
+        
+                const marker = new window.google.maps.Marker({
+                    position: center,
+                    map: map,
+                    title: `인도네시아: ${assets.length}개 자산`,
+                    icon: {
+                        url: './palm_tree.png', // 기본 아이콘
+                        scaledSize: new window.google.maps.Size(40, 40),
+                        labelOrigin: new window.google.maps.Point(20, 50)
+                    },
+                    label: {
+                        text: `인도네시아 (${assets.length})`,
+                        fontSize: "10px",
+                        fontWeight: "bold",
+                        color: "#000000",
+                        fontFamily: "Arial, sans-serif"
+                    }
+                });
+        
+                marker.addListener("click", () => {
+                    showPopup("인도네시아", `인도네시아: ${assets.length}개 자산`, `이 지역에는 ${assets.length}개의 팜 오일 자산이 있습니다.`, `
+                        <button class="move-button" onclick="moveToAssets()">자산 이동</button>
+                    `);
+                });
+        
+                markers.push(marker);
+            } else {
+                // 줌 레벨 8 이상: 개별 자산 마커 표시
+                assets.forEach(asset => {
+                    const markerIcon = {
+                        url: asset.markerIcon ? `https://jang1117.github.io/palm/${asset.markerIcon}` : './palm_tree.png',
+                        scaledSize: new window.google.maps.Size(40, 40),
+                        labelOrigin: new window.google.maps.Point(20, 50)
                     };
-            
+        
                     const marker = new window.google.maps.Marker({
-                        position: center,
+                        position: asset.position,
                         map: map,
-                        title: `인도네시아: ${assets.length}개 자산`,
-                        icon: {
-                            url: './palm_tree.png', // 기본 아이콘
-                            scaledSize: new window.google.maps.Size(40, 40),
-                            labelOrigin: new window.google.maps.Point(20, 50)
-                        },
+                        title: asset.title,
+                        icon: markerIcon,
                         label: {
-                            text: `인도네시아 (${assets.length})`,
+                            text: asset.title,
                             fontSize: "10px",
                             fontWeight: "bold",
                             color: "#000000",
                             fontFamily: "Arial, sans-serif"
                         }
                     });
-            
+        
                     marker.addListener("click", () => {
-                        showPopup("인도네시아", `인도네시아: ${assets.length}개 자산`, `이 지역에는 ${assets.length}개의 팜 오일 자산이 있습니다.`, `
-                            <button class="move-button" onclick="moveToAssets()">자산 이동</button>
-                        `);
+                        // description이 없으면 기본 정보로 대체
+                        const formattedDesc = asset.description 
+                            ? `${asset.title}은 ${asset.millCompanyName} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName} 그룹의 일원입니다.<br>${asset.description.replace(/, /g, "<br>")}`
+                            : `${asset.title}은 ${asset.millCompanyName} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName} 그룹의 일원입니다.`;
+                        showPopup(asset.title, asset.title, formattedDesc, `
+                            <p><strong>회사명:</strong> ${asset.millCompanyName}</p>
+                            <p><strong>모회사:</strong> ${asset.parentCompanyName}</p>
+                            <p><strong>주소:</strong> ${asset.address}</p>
+                            <p><strong>지역:</strong> ${asset.province}</p>
+                        `, asset);
+                        map.setZoom(15);
+                        map.setCenter(asset.position);
                     });
-            
+        
                     markers.push(marker);
-                } else {
-                    // 줌 레벨 8 이상: 개별 자산 마커 표시
-                    assets.forEach(asset => {
-                        const markerIcon = {
-                            url: asset.markerIcon ? `https://jang1117.github.io/palm/${asset.markerIcon}` : './palm_tree.png',
-                            scaledSize: new window.google.maps.Size(40, 40),
-                            labelOrigin: new window.google.maps.Point(20, 50)
-                        };
-            
-                        const marker = new window.google.maps.Marker({
-                            position: asset.position,
-                            map: map,
-                            title: asset.title,
-                            icon: markerIcon,
-                            label: {
-                                text: asset.title,
-                                fontSize: "10px",
-                                fontWeight: "bold",
-                                color: "#000000",
-                                fontFamily: "Arial, sans-serif"
-                            }
-                        });
-            
-                        marker.addListener("click", () => {
-                            // description이 없으므로 기본 정보로 대체
-                            const formattedDesc = `${asset.title}은 ${asset.millCompanyName} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName} 그룹의 일원입니다.`;
-                            showPopup(asset.title, asset.title, formattedDesc, `
-                                <p><strong>회사명:</strong> ${asset.millCompanyName}</p>
-                                <p><strong>모회사:</strong> ${asset.parentCompanyName}</p>
-                                <p><strong>주소:</strong> ${asset.address}</p>
-                                <p><strong>지역:</strong> ${asset.province}</p>
-                            `, asset);
-                            map.setZoom(15);
-                            map.setCenter(asset.position);
-                        });
-            
-                        markers.push(marker);
-                    });
-                }
+                });
             }
         }
 
