@@ -3949,7 +3949,7 @@ const assets = [
         title: "SEBANGA MULTI SAWIT",
         millCompanyName: "SEBANGA MULTI SAWIT",
         parentCompanyName: "SEBANGA MULTI SAWIT",
-        address: "Jl. Dusun Makmur Desa Harapan Baru Kec. Mandau Kab. Bengkalis - Riau全世界
+        address: "Jl. Dusun Makmur Desa Harapan Baru Kec. Mandau Kab. Bengkalis - Riau",
         province: "RIAU",
         position: { lat: 1.257333333, lng: 101.2921111 },
         description: ""
