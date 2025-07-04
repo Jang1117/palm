@@ -7167,7 +7167,61 @@ const assets = [
         province: "BANGKA BELITUNG",
         position: { lat: -1.820496, lng: 105.551168 },
         description: ""
-    }
+    },
+  {
+    title: "KASUARI",
+    millCompanyName: "SINAR KENCANA INTI PERKASA",
+    parentCompanyName: "GOLDEN AGRI-RESOURCES (GAR)",
+    address: "JAYAPURA",
+    province: "PAPUA",
+    position: { lat: -2.973111111, lng: 140.0299167 },
+    description: ""
+  },
+  {
+    title: "MEDCO PAPUA HIJAU SELARAS",
+    millCompanyName: "MEDCO PAPUA HIJAU SELARAS",
+    parentCompanyName: "THE CAPITOL GROUP",
+    address: "MANOKWARI",
+    province: "PAPUA BARAT",
+    position: { lat: -0.81013, lng: 133.595006 },
+    description: ""
+  },
+  {
+    title: "NABIRE BARU",
+    millCompanyName: "PT NABIRE BARU",
+    parentCompanyName: "GOODHOPE ASIA HOLDINGS LTD",
+    address: "DISTRICT",
+    province: "PAPUA",
+    position: { lat: -3.461528, lng: 135.256462 },
+    description: ""
+  },
+  {
+    title: "PKS 1",
+    millCompanyName: "BIO INTI AGRINDO",
+    parentCompanyName: "BIO INTI AGRINDO",
+    address: "DISTRICT",
+    province: "PAPUA",
+    position: { lat: -6.9625, lng: 140.51393 },
+    description: ""
+  },
+  {
+    title: "PUTERA MANUNGGAL PERKASA",
+    millCompanyName: "PUTERA MANUNGGAL PERKASA",
+    parentCompanyName: "AUSTINDO NUSANTARA JAYA",
+    address: "DISTRICT",
+    province: "PAPUA BARAT",
+    position: { lat: -1.933841, lng: 132.259372 },
+    description: ""
+  },
+  {
+    title: "TULIP",
+    millCompanyName: "TANDAN SAWITA PAPUA",
+    parentCompanyName: "TANDAN SAWITA PAPUA (TSP)",
+    address: "DISTRICT",
+    province: "PAPUA",
+    position: { lat: -2.86758, lng: 140.88036 },
+    description: ""
+  }
 
 ];
 window.assets = assets;
