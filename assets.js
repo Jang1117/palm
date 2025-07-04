@@ -6662,6 +6662,339 @@ const assets = [
         province: "LAMPUNG",
         position: { lat: -5.095458333, lng: 105.1868194 },
         description: ""
+    },
+    {
+        title: "TRI AGRO PALMA TAMIANG",
+        millCompanyName: "TRI AGRO PALMA TAMIANG",
+        parentCompanyName: "TRI AGRO PALMA TAMIANG",
+        address: "Desa Suka Rahmat Kec. Kejuruanmuda Kab. Aceh Timur Aceh",
+        province: "ACEH",
+        position: { lat: 4.186044444, lng: 98.0424 },
+        description: ""
+    },
+    {
+        title: "BEURATA SUBUR PERSADA",
+        millCompanyName: "BEURATA SUBUR PERSADA",
+        parentCompanyName: "BEURATA SUBUR PERSADA",
+        address: "Jalan Meulaboh t. tuan km 12, desa Babah dua, kabupaten Nagan raya",
+        province: "ACEH",
+        position: { lat: 4.125333333, lng: 96.34125 },
+        description: ""
+    },
+    {
+        title: "RUNDING PUTRA PERSADA",
+        millCompanyName: "RUNDING PUTRA PERSADA",
+        parentCompanyName: "RUNDING PUTRA PERSADA",
+        address: "Desa Lae Pinang, Kec. Singhohor, Kab Aceh Singkil",
+        province: "ACEH",
+        position: { lat: 2.463, lng: 97.94 },
+        description: ""
+    },
+    {
+        title: "SEUMANYAM",
+        millCompanyName: "SOCFIN INDONESIA",
+        parentCompanyName: "SOCFIN INDONESIA",
+        address: "Sukaramai, Kab. Nagan Raya, Aceh",
+        province: "ACEH",
+        position: { lat: 3.965278, lng: 96.565278 },
+        description: ""
+    },
+    {
+        title: "SEUNAGAN",
+        millCompanyName: "SOCFIN INDONESIA",
+        parentCompanyName: "SOCFIN INDONESIA",
+        address: "Nagan Raya, Aceh",
+        province: "ACEH",
+        position: { lat: 4.06, lng: 96.262222 },
+        description: ""
+    },
+    {
+        title: "PARASAWITA",
+        millCompanyName: "PARASAWITA",
+        parentCompanyName: "PARASAWITA",
+        address: "Tanah Merah, Kecamatan Seruway",
+        province: "ACEH",
+        position: { lat: 4.354757944, lng: 98.15284444 },
+        description: ""
+    },
+    {
+        title: "SYAUKATH AGRO",
+        millCompanyName: "SYAUKATH AGRO",
+        parentCompanyName: "SYAUKATH AGRO",
+        address: "Aceh",
+        province: "ACEH",
+        position: { lat: 4.575, lng: 95.704 },
+        description: ""
+    },
+    {
+        title: "PERKEBUNAN LEMBAH BAKTI 2",
+        millCompanyName: "PERKEBUNAN LEMBAH BAKTI",
+        parentCompanyName: "ASTRA AGRO LESTARI",
+        address: "Aceh Singkil",
+        province: "ACEH",
+        position: { lat: 2.560627778, lng: 97.94866667 },
+        description: ""
+    },
+    {
+        title: "BUMI DAYA AGROTAMAS",
+        millCompanyName: "BUMI DAYA AGROTAMAS",
+        parentCompanyName: "BUMI DAYA AGROTAMAS",
+        address: "Subulusalam, Aceh",
+        province: "ACEH",
+        position: { lat: 2.583222222, lng: 97.85416667 },
+        description: ""
+    },
+    {
+        title: "TEUPIN LADA",
+        millCompanyName: "BLANG KETUMBA",
+        parentCompanyName: "BLANG KETUMBA",
+        address: "Gampong Blang Gleum, Kecamatan Julok, Kabupaten Aceh Timur, Aceh",
+        province: "ACEH",
+        position: { lat: 5.051111, lng: 97.569722 },
+        description: ""
+    },
+    {
+        title: "ENSEM NAGAN RAYA",
+        millCompanyName: "ENSEM SAWITA",
+        parentCompanyName: "TENERA LESTARI",
+        address: "Nagan Raya, Aceh",
+        province: "ACEH",
+        position: { lat: 4.03418, lng: 96.47494 },
+        description: ""
+    },
+    {
+        title: "IKA BINA AGRO WISESA",
+        millCompanyName: "IKA BINA AGRO WISESA",
+        parentCompanyName: "IKA BINA AGRO WISESA",
+        address: "Meukokreung, Aceh Utara",
+        province: "ACEH",
+        position: { lat: 5.13298, lng: 97.09086 },
+        description: ""
+    },
+    {
+        title: "ALUE KUYUN",
+        millCompanyName: "MOPOLI RAYA II",
+        parentCompanyName: "MOPOLI RAYA",
+        address: "Jl. Meulaboh - tutut, desa alue kuyuen woyla timur aceh barat",
+        province: "ACEH",
+        position: { lat: 4.45727, lng: 96.16054 },
+        description: ""
+    },
+    {
+        title: "ANUGRAH FAJAR REZEKI",
+        millCompanyName: "ANUGRAH FAJAR REZEKI",
+        parentCompanyName: "ANUGERAH FAJAR REZEKI",
+        address: "Ds. Merbau II, Kec. Birem Bayeun, Kab. Aceh Timur, Aceh",
+        province: "ACEH",
+        position: { lat: 4.57432, lng: 97.90967 },
+        description: ""
+    },
+    {
+        title: "BUMI SAMA GANDA",
+        millCompanyName: "BUMI SAMA GANDA",
+        parentCompanyName: "BUMI SAMA GANDA",
+        address: "Ds. Suka Rakyat, Kec. Rantau, Aceh Tamiang, Aceh",
+        province: "ACEH",
+        position: { lat: 4.356517, lng: 98.1062 },
+        description: ""
+    },
+    {
+        title: "BANGUN SEMPURNA LESTARI",
+        millCompanyName: "BANGUN SEMPURNA LESTARI",
+        parentCompanyName: "BANGUN SEMPURNA LESTARI",
+        address: "Jl. Sikelondang, Kel. Sikelondang, Kec. Simpang Kiri, Kota Subulussalam, Aceh Singkil",
+        province: "ACEH",
+        position: { lat: 2.63271, lng: 97.95123 },
+        description: ""
+    },
+    {
+        title: "BLANG KETUMBA",
+        millCompanyName: "BLANG KETUMBA",
+        parentCompanyName: "BLANG KETUMBA",
+        address: "Ds. Suka Tani, Kec. Juli, Bireuen Aceh",
+        province: "ACEH",
+        position: { lat: 4.985, lng: 96.69888889 },
+        description: ""
+    },
+    {
+        title: "COT GIREK",
+        millCompanyName: "PERKEBUNAN NUSANTARA I",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Kec. Lhok Sukon Kab. Aceh Utara Aceh",
+        province: "ACEH",
+        position: { lat: 4.9285, lng: 97.37066667 },
+        description: ""
+    },
+    {
+        title: "DELIMA MAKMUR",
+        millCompanyName: "DELIMA MAKMUR",
+        parentCompanyName: "RISJADSON",
+        address: "Kampung situban makmur danau paris kab. aceh singkil",
+        province: "ACEH",
+        position: { lat: 2.24508, lng: 98.02851 },
+        description: ""
+    },
+    {
+        title: "ENSEM LESTARI",
+        millCompanyName: "ENSEM LESTARI",
+        parentCompanyName: "TENERA LESTARI",
+        address: "Ds. Kuta Tinggi, Kec. Simpang Kanan, Kab. Aceh Singkil (Aceh)",
+        province: "ACEH",
+        position: { lat: 2.456777, lng: 98.06502 },
+        description: ""
+    },
+    {
+        title: "ENSEM SAWITA",
+        millCompanyName: "ENSEM SAWITA",
+        parentCompanyName: "TENERA LESTARI",
+        address: "Ds. Aramiyah, Kec. Birem Bayeun, Aceh Timur Aceh",
+        province: "ACEH",
+        position: { lat: 4.566009, lng: 97.916598 },
+        description: ""
+    },
+    {
+        title: "FAJAR BAIZURY & BROTHERS",
+        millCompanyName: "FAJAR BAIZURY & BROTHERS",
+        parentCompanyName: "FAJAR BAIZURY",
+        address: "Ds. Alue Bata, Kec. Kuala, Nagan Raya, Aceh",
+        province: "ACEH",
+        position: { lat: 4.116180556, lng: 96.44256111 },
+        description: ""
+    },
+    {
+        title: "GEDONG BIARA",
+        millCompanyName: "MOPOLI RAYA I",
+        parentCompanyName: "MOPOLI RAYA",
+        address: "Kampung Perkebunan Gedung Biara, Seruway-Aceh Tamiang - 24473",
+        province: "ACEH",
+        position: { lat: 4.291388889, lng: 98.15222222 },
+        description: ""
+    },
+    {
+        title: "GLOBAL SAWIT SEMESTA",
+        millCompanyName: "GLOBAL SAWIT SEMESTA",
+        parentCompanyName: "SUMATRA PLANTATIONS UNIT / PACIFIC FIBER INDONESIA",
+        address: "Desa Sekelondang Kec. Simpang Kiri Kab. Aceh Selatan Aceh",
+        province: "ACEH",
+        position: { lat: 2.617166667, lng: 98.02738889 },
+        description: ""
+    },
+    {
+        title: "KARYA TANAH SUBUR",
+        millCompanyName: "KARYA TANAH SUBUR",
+        parentCompanyName: "ASTRA AGRO LESTARI",
+        address: "Ds. Padang Sikabu, Kec. Kaway XVI, Aceh Barat, Aceh",
+        province: "ACEH",
+        position: { lat: 4.349780556, lng: 96.165 },
+        description: ""
+    },
+    {
+        title: "LAE BUTAR",
+        millCompanyName: "SOCFIN INDONESIA",
+        parentCompanyName: "SOCFIN INDONESIA",
+        address: "Desa rimo kec. gunung meriah kab. aceh singkil",
+        province: "ACEH",
+        position: { lat: 2.391111111, lng: 97.95666667 },
+        description: ""
+    },
+    {
+        title: "LAE GOMBAR",
+        millCompanyName: "NAFASINDO",
+        parentCompanyName: "NAFASINDO",
+        address: "Ds. Rimo, Kec. Gunung Meriah, Aceh Singkil, Aceh",
+        province: "ACEH",
+        position: { lat: 2.43594, lng: 97.91529 },
+        description: ""
+    },
+    {
+        title: "PERKEBUNAN DAN PERTANIAN PATI SARI",
+        millCompanyName: "PERKEBUNAN DAN PERTANIAN PATI SARI",
+        parentCompanyName: "INDAH PONTJAN",
+        address: "Dusun Lama, Kel. Selamat, Kec. Tenggulun Kab. Aceh Tamiang",
+        province: "ACEH",
+        position: { lat: 4.088527778, lng: 97.96091667 },
+        description: ""
+    },
+    {
+        title: "PERKEBUNAN LEMBAH BAKTI",
+        millCompanyName: "PERKEBUNAN LEMBAH BAKTI",
+        parentCompanyName: "ASTRA AGRO LESTARI",
+        address: "Desa Pandan Sari, Kec Gunung Meriah, Kab Aceh Singkil, Propinsi NAD",
+        province: "ACEH",
+        position: { lat: 2.315613889, lng: 97.99597222 },
+        description: ""
+    },
+    {
+        title: "PULAU TIGA",
+        millCompanyName: "PERKEBUNAN NUSANTARA I",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Jl. Alur Jambu, Kel. Perkebunan Pulau Tiga, Kec. Tamiang Hulu, Kab. Aceh Tamiang",
+        province: "ACEH",
+        position: { lat: 4.18335, lng: 97.93681667 },
+        description: ""
+    },
+    {
+        title: "SAMUDERA SAWIT NABATI",
+        millCompanyName: "SAMUDERA SAWIT NABATI",
+        parentCompanyName: "DUTA MARGA",
+        address: "Jl T. umar singgersing, kec sultan daulat kota subulusallam",
+        province: "ACEH",
+        position: { lat: 2.768916667, lng: 97.93883333 },
+        description: ""
+    },
+    {
+        title: "SAWIT NAGAN RAYA MAKMUR",
+        millCompanyName: "SAWIT NAGAN RAYA MAKMUR",
+        parentCompanyName: "SAWIT NAGAN RAYA MAKMUR",
+        address: "Jalan Meulaboh - Tapaktuan, Kabupaten Nagan Raya, Aceh 23662, Indonesia",
+        province: "ACEH",
+        position: { lat: 4.048779, lng: 96.475073 },
+        description: ""
+    },
+    {
+        title: "SEI LIPUT",
+        millCompanyName: "SOCFIN INDONESIA",
+        parentCompanyName: "SOCFIN INDONESIA",
+        address: "Jl. Medan Banda Aceh, Desa Kebun Sei Liput, Kejuruan Muda, Aceh Tamiang – 24477, Aceh, Indonesia",
+        province: "ACEH",
+        position: { lat: 4.231944, lng: 98.059444 },
+        description: ""
+    },
+    {
+        title: "SISIRAU",
+        millCompanyName: "SISIRAU",
+        parentCompanyName: "RISJADSON",
+        address: "Ds. Sidodadi, Kec. Kejuruan Muda, Aceh Tamiang Aceh",
+        province: "ACEH",
+        position: { lat: 4.201444, lng: 98.06375 },
+        description: ""
+    },
+    {
+        title: "SYAUKATH SEJAHTERA",
+        millCompanyName: "SYAUKATH SEJAHTERA",
+        parentCompanyName: "SYAUKATH SEJAHTERA",
+        address: "Desa Lapang Timu Gandapura, Kab. Bireuen, Aceh",
+        province: "ACEH",
+        position: { lat: 5.226972222, lng: 96.89837222 },
+        description: ""
+    },
+    {
+        title: "TANJUNG SEUMANTOH",
+        millCompanyName: "PERKEBUNAN NUSANTARA I",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Ds. Tg. Seumantoh, Kec. Karang Baru, Aceh Tamiang, Aceh",
+        province: "ACEH",
+        position: { lat: 4.367219, lng: 98.088762 },
+        description: ""
+    },
+    {
+        title: "BLANG SIMPO",
+        millCompanyName: "PERKASA SUBUR SAKTI",
+        parentCompanyName: "SIME DARBY/MINAMAS",
+        address: "Desa Seuneubok Lapang, Kecamatan Peureulak Timur, Kabupaten Aceh Timur/ Provinsi Aceh",
+        province: "ACEH",
+        position: { lat: 4.707777778, lng: 97.83861111 },
+        description: ""
     }
 ];
 window.assets = assets;
