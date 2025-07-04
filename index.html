@@ -25,11 +25,22 @@
             height: calc(100% - 150px);
             background: #f8f8f8;
             transition: right 0.3s ease;
-            overflow-y: hidden;
+            overflow-y: auto;
+            scrollbar-width: thin;
             padding: 10px;
             box-shadow: -2px 0 5px rgba(0,0,0,0.2);
             z-index: 900;
             visibility: hidden;
+        }
+        #sidebar::-webkit-scrollbar {
+            width: 6px;
+        }
+        #sidebar::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 3px;
+        }
+        #sidebar::-webkit-scrollbar-track {
+            background: #f1f1f1;
         }
         #sidebar.open {
             right: 0;
@@ -147,7 +158,7 @@
         .popup-content .move-button:hover {
             background-color: #0056b3;
         }
-        /* Global 버튼 스타일 */
+        /* Indonesia 버튼 스타일 */
         .global-button {
             position: fixed;
             top: 60px;
@@ -208,7 +219,7 @@
         <ul id="millList"></ul>
     </div>
     <div id="map"></div>
-    <button class="global-button" onclick="resetMap()">Global</button>
+    <button class="global-button" onclick="resetMap()">Indonesia</button>
 
     <!-- 팝업 창 -->
     <div class="popup-overlay" id="popupOverlay">
@@ -226,6 +237,7 @@
         // 전역 변수 정의
         let map;
         let markers = [];
+        let selectedProvince = null;
 
         // assets.js 로드 실패 시 처리
         function handleAssetsLoadError() {
@@ -260,6 +272,7 @@
                 console.error("지도가 초기화되지 않았습니다.");
                 return;
             }
+            selectedProvince = province;
             const provinceAssets = assets.filter(asset => asset.province === province);
             const bounds = new window.google.maps.LatLngBounds();
             provinceAssets.forEach(asset => {
@@ -269,6 +282,7 @@
             const currentZoom = map.getZoom();
             if (currentZoom > 10) map.setZoom(10);
             if (currentZoom < 7) map.setZoom(7);
+            updateMarkers();
         }
 
         // 지도 초기화 함수
@@ -318,10 +332,15 @@
             markers = [];
 
             const zoom = map.getZoom();
+            let displayAssets = assets;
+
+            if (selectedProvince && zoom > 7) {
+                displayAssets = assets.filter(asset => asset.province === selectedProvince);
+            }
 
             if (zoom <= 7) {
                 // 줌 레벨 7 이하: 지역별 마커 표시
-                const groupedAssets = assets.reduce((groups, asset) => {
+                const groupedAssets = displayAssets.reduce((groups, asset) => {
                     const province = asset.province;
                     if (!groups[province]) {
                         groups[province] = [];
@@ -368,12 +387,13 @@
                 });
             } else {
                 // 줌 레벨 8 이상: 개별 자산 마커 표시
-                assets.forEach(asset => {
+                displayAssets.forEach(asset => {
                     const markerIcon = {
                         url: defaultIcon,
                         scaledSize: new window.google.maps.Size(40, 40),
                         labelOrigin: new window.google.maps.Point(20, 50)
-                    };
+                    стадии
+                    });
 
                     const marker = new window.google.maps.Marker({
                         position: asset.position,
@@ -433,6 +453,7 @@
                 console.error("지도가 초기화되지 않았습니다.");
                 return;
             }
+            selectedProvince = null;
             const bounds = new window.google.maps.LatLngBounds();
             assets.forEach(asset => {
                 bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
@@ -442,14 +463,16 @@
             const currentZoom = map.getZoom();
             if (currentZoom > 10) map.setZoom(10);
             if (currentZoom < 7) map.setZoom(7);
+            updateMarkers();
         }
 
-        // 지도 초기화 (Global 뷰)
+        // 지도 초기화 (Indonesia 뷰)
         function resetMap() {
             if (!map) {
                 console.error("지도가 초기화되지 않았습니다.");
                 return;
             }
+            selectedProvince = null;
             map.setZoom(7);
             map.setCenter({ lat: -1.5, lng: 101.0 });
             updateMarkers();
@@ -539,6 +562,7 @@
             document.getElementById("toggleSidebar").addEventListener("click", () => {
                 const sidebar = document.getElementById("sidebar");
                 sidebar.classList.toggle("open");
+                console.log("Sidebar toggled, open:", sidebar.classList.contains("open"));
             });
         }
 
