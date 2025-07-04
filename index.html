@@ -135,16 +135,17 @@
         let lastViewedAsset = null;
 
         // 마커 이미지 로드 디버깅
-        const palmTreeIconUrl = './palm_tree.png';
-        const newPalmTreeIconUrl = './new_palm_tree.png'; // 새 자산용 마커
-        const fallbackIconUrl = 'https://www.flaticon.com/svg/vstatic/icons/svg/944/94481.svg?token=exp=1727931432~hmac=8b7b8f8f8f8f8f8f8f8f8f8f8f8f8f8f';
-        const newFallbackIconUrl = 'https://www.flaticon.com/svg/vstatic/icons/svg/2910/2910826.svg?token=exp=1727931432~hmac=9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c'; // 새 자산용 대체
+        const palmTreeIconUrl = 'https://jang1117.github.io/palm/palm_tree.png';
+        const newPalmTreeIconUrl = 'https://jang1117.github.io/palm/new_palm_tree.png';
+        const fallbackIconUrl = 'https://i.ibb.co/0jZ2X0Z/palm-tree.png'; // ImgBB 대체 URL
+        const newFallbackIconUrl = 'https://i.ibb.co/2s3Yk4W/new-palm-tree.png'; // ImgBB 대체 URL
         const img = new Image();
         img.src = palmTreeIconUrl;
         img.onload = () => console.log("기존 마커 이미지가 로드되었습니다: ", palmTreeIconUrl);
         img.onerror = () => {
             console.error("기존 마커 이미지 로드 실패: ", palmTreeIconUrl);
             console.log("대체 이미지 사용: ", fallbackIconUrl);
+            alert("기존 마커 이미지를 로드하지 못했습니다. 관리자에게 문의하세요.");
         };
         const newImg = new Image();
         newImg.src = newPalmTreeIconUrl;
@@ -152,12 +153,14 @@
         newImg.onerror = () => {
             console.error("새 마커 이미지 로드 실패: ", newPalmTreeIconUrl);
             console.log("대체 이미지 사용: ", newFallbackIconUrl);
+            alert("새 마커 이미지를 로드하지 못했습니다. 관리자에게 문의하세요.");
         };
 
         // Google Maps API 로드 오류 디버깅
         window.addEventListener('error', (event) => {
             if (event.message.includes('google is not defined') || event.message.includes('maps')) {
                 console.error('Google Maps API 로드 실패. API 키 또는 HTTP 리퍼러를 확인하세요.');
+                alert('Google Maps API 로드에 실패했습니다. 네트워크 또는 API 키를 확인하세요.');
             }
         });
 
@@ -170,6 +173,7 @@
 
             if (typeof assets === 'undefined') {
                 console.error("assets.js가 로드되지 않았습니다. 파일을 확인하세요.");
+                alert("assets.js 파일을 로드하지 못했습니다. 파일이 있는지 확인하세요.");
                 return;
             }
 
@@ -295,7 +299,7 @@
                         position: center,
                         map: map,
                         title: `인도네시아: ${assets.length}개 자산`,
-                        icon: palmTreeIcon, // 기존 마커 사용
+                        icon: palmTreeIcon,
                         label: {
                             text: `인도네시아 (${assets.length})`,
                             fontSize: "11px",
@@ -409,7 +413,7 @@
     <!-- Google Maps JavaScript API 로드 -->
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKZ64N6aTmQLaU312nCqXeyrNa-lol2IQ&callback=initMap&loading=async"
-        onerror="console.error('Google Maps API 스크립트 로드 실패. 네트워크 또는 API 키를 확인하세요.');">
+        onerror="console.error('Google Maps API 스크립트 로드 실패. 네트워크 또는 API 키를 확인하세요.'); alert('Google Maps API 로드에 실패했습니다. 네트워크를 확인하세요.');">
     </script>
 </body>
 </html>
