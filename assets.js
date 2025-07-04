@@ -6257,6 +6257,267 @@ const assets = [
         province: "JAMBI",
         position: { lat: -1.963888, lng: 102.301111 },
         description: ""
+    },
+    {
+        title: "CIPTAMAS BUMISELARAS",
+        millCompanyName: "CIPTAMAS BUMISELARAS",
+        parentCompanyName: "CIPUTRA PLANTATION",
+        address: "Jl Lintas Barat Sumatera, Kec. Nasal, Kab. Kaur, Bengkulu",
+        province: "BENGKULU",
+        position: { lat: -4.866888889, lng: 103.5342417 },
+        description: ""
+    },
+    {
+        title: "USAHA SAWIT MANDIRI (MUKO MUKO)",
+        millCompanyName: "USAHA SAWIT MANDIRI",
+        parentCompanyName: "USAHA SAWIT MANDIRI",
+        address: "Lubuk Pinang, Kabupaten Mukomuko",
+        province: "BENGKULU",
+        position: { lat: -2.3961, lng: 101.162858 },
+        description: ""
+    },
+    {
+        title: "GAJAH SAKTI SAWIT",
+        millCompanyName: "GAJAH SAKTI SAWIT",
+        parentCompanyName: "SUTOMO/SINAR JAYA AGRO INVESTAMA",
+        address: "Bengkulu",
+        province: "BENGKULU",
+        position: { lat: -2.87, lng: 101.435 },
+        description: ""
+    },
+    {
+        title: "KARYA AGRO SAWITINDO",
+        millCompanyName: "SINAR JAYA AGRO INVESTAMA",
+        parentCompanyName: "SINAR JAYA AGRO INVESTAMA",
+        address: "Desa Pernyah, Kabupaten Mukomuko, Provinsi Bengkulu",
+        province: "BENGKULU",
+        position: { lat: -2.711257, lng: 101.339835 },
+        description: ""
+    },
+    {
+        title: "SURYA ANDALAN PRIMATAMA",
+        millCompanyName: "SURYA ANDALAN PRIMATAMA",
+        parentCompanyName: "SUMBER BUDI AGUNG",
+        address: "Talang Medan, Selagan Raya, Kabupaten Mukomuko, Bengkulu, Indonesia",
+        province: "BENGKULU",
+        position: { lat: -2.582888889, lng: 101.3102222 },
+        description: ""
+    },
+    {
+        title: "MUKO-MUKO",
+        millCompanyName: "AGRO MUKO",
+        parentCompanyName: "SIPEF",
+        address: "Jl. Lintas Bengkulu Padang Kel. Bunga Tanjung Kec. Teramang Jaya Kab. Muko Muko, Bengkulu",
+        province: "BENGKULU",
+        position: { lat: -2.60183, lng: 101.27886 },
+        description: ""
+    },
+    {
+        title: "PULAU PANGGUNG",
+        millCompanyName: "CAHAYA SAWIT LESTARI",
+        parentCompanyName: "CAHAYA SAWIT LESTARI",
+        address: "Desa Pulau Panggung Kec. Talang Empat Kab. Bengkulu Tengah - Bengkulu",
+        province: "BENGKULU",
+        position: { lat: -3.804611111, lng: 102.3975278 },
+        description: ""
+    },
+    {
+        title: "SAWIT MULIA",
+        millCompanyName: "SAWIT MULIA",
+        parentCompanyName: "SAWIT MULIA",
+        address: "Ds. Pasar Bembah, Kec Air Napal, Bengkulu Utara",
+        province: "BENGKULU",
+        position: { lat: -3.634526, lng: 102.212235 },
+        description: ""
+    },
+    {
+        title: "LUBUK BENTO",
+        millCompanyName: "DARIA DHARMA PRATAMA",
+        parentCompanyName: "WIDYA CORPORATION",
+        address: "Ds. Lubuk Bento, Kec. Pondok Suguh, Muko-Muko, Bengkulu",
+        province: "BENGKULU",
+        position: { lat: -2.791944444, lng: 101.4022222 },
+        description: ""
+    },
+    {
+        title: "TANJUNG ALAY",
+        millCompanyName: "KARYA SAWITINDO MAS",
+        parentCompanyName: "SUTOMO/SINAR JAYA AGRO INVESTAMA",
+        address: "Jl. Lintas Bengkulu - Padang Km. 289, Desa Tanjung Alay, Kec. Lubuk Pinang, Kab. Muko-Muko",
+        province: "BENGKULU",
+        position: { lat: -2.461505, lng: 101.123821 },
+        description: ""
+    },
+    {
+        title: "KARANG TINGGI",
+        millCompanyName: "AGRA SAWITINDO",
+        parentCompanyName: "SUTOMO/SINAR JAYA AGRO INVESTAMA",
+        address: "Jl. Raya Bengkulu - Curup Km. 20, Ujung Karang - Karang Tinggi, Bengkulu Utara - Bengkulu",
+        province: "BENGKULU",
+        position: { lat: -3.777583333, lng: 102.4029444 },
+        description: ""
+    },
+    {
+        title: "AIR HITAM",
+        millCompanyName: "BUMI MENTARI KARYA",
+        parentCompanyName: "SUPERVENTURE",
+        address: "Desa Tunggang, Air Hitam, Kec Pondok Suguh, Kab Muko muko - Bengkulu",
+        province: "BENGKULU",
+        position: { lat: -2.875888889, lng: 101.4245278 },
+        description: ""
+    },
+    {
+        title: "TALO PINO",
+        millCompanyName: "PERKEBUNAN NUSANTARA VII",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Piring Baru, Kecamatan Talo Kecil, Kabupaten Seluma, Provinsi Bengkulu",
+        province: "BENGKULU",
+        position: { lat: -4.2459, lng: 102.71283 },
+        description: ""
+    },
+    {
+        title: "SINAR BENGKULU SELATAN",
+        millCompanyName: "SINAR BENGKULU SELATAN",
+        parentCompanyName: "TRINITY INTERLINK",
+        address: "Jalan Lintas Bengkulu Selatan (Desa Nanjungan, Kecamatan Pino Raya), Kota Manna, Propinsi Bengkulu",
+        province: "BENGKULU",
+        position: { lat: -4.3782, lng: 102.840583 },
+        description: ""
+    },
+    {
+        title: "SENTOSA SEJAHTERA SEJATI",
+        millCompanyName: "SENTOSA SEJAHTERA SEJATI",
+        parentCompanyName: "SENTOSA SEJAHTERA SEJATI",
+        address: "Kec. Penarik, Kab. Muko-muko, Bengkulu",
+        province: "BENGKULU",
+        position: { lat: -2.66545, lng: 101.29975 },
+        description: ""
+    },
+    {
+        title: "SAPTA SENTOSA JAYA ABADI",
+        millCompanyName: "SAPTA SENTOSA JAYA ABADI",
+        parentCompanyName: "HERFINTA",
+        address: "Kec. Lubuk Pinang, Muko-muko, Bengkulu",
+        province: "BENGKULU",
+        position: { lat: -2.38483, lng: 101.16282 },
+        description: ""
+    },
+    {
+        title: "SANDABI INDAH LESTARI",
+        millCompanyName: "SANDABI INDAH LESTARI",
+        parentCompanyName: "SANDABI INDAH LESTARI",
+        address: "Lubuk Banyau, Padang Jaya, Bengkulu Utara",
+        province: "BENGKULU",
+        position: { lat: -3.30905, lng: 102.0919806 },
+        description: ""
+    },
+    {
+        title: "PALMA MAS SEJATI",
+        millCompanyName: "PALMA MAS SEJATI",
+        parentCompanyName: "PALMA MAS SEJAHTERA",
+        address: "Ds. Kembang Seri, Kec. Talang Empat, Bengkulu Tengah, Bengkulu",
+        province: "BENGKULU",
+        position: { lat: -3.777933, lng: 102.369 },
+        description: ""
+    },
+    {
+        title: "MUKO-MUKO INDAH LESTARI",
+        millCompanyName: "MUKO-MUKO INDAH LESTARI",
+        parentCompanyName: "SUTOMO/SINAR JAYA AGRO INVESTAMA",
+        address: "Ds. Penarik, Kec. Teras Terunjam, Muko-muko, Bengkulu",
+        province: "BENGKULU",
+        position: { lat: -2.677972, lng: 101.320028 },
+        description: ""
+    },
+    {
+        title: "MITRA PUDING MAS",
+        millCompanyName: "MITRA PUDING MAS",
+        parentCompanyName: "ANGLO EASTERN PLANTATION",
+        address: "Ds. Sebelat, Kec. Putri Hijau, Bengkulu Utara, Bengkulu",
+        province: "BENGKULU",
+        position: { lat: -3.133783333, lng: 101.6016278 },
+        description: ""
+    },
+    {
+        title: "IPUH",
+        millCompanyName: "DARIA DHARMA PRATAMA",
+        parentCompanyName: "WIDYA CORPORATION",
+        address: "Dusun Sibak Ipuh Mukomuko, Bengkulu",
+        province: "BENGKULU",
+        position: { lat: -2.98093, lng: 101.50601 },
+        description: ""
+    },
+    {
+        title: "BUNGA TANJUNG",
+        millCompanyName: "AGRO MUKO",
+        parentCompanyName: "SIPEF",
+        address: "Desa Teruntung Berangan Jaya, Kecamatan Teramang Jaya, Kabupaten Mukomuko, Bengkulu",
+        province: "BENGKULU",
+        position: { lat: -2.71667, lng: 101.37004 },
+        description: ""
+    },
+    {
+        title: "BIO NUSANTARA TEKNOLOGI",
+        millCompanyName: "BIO NUSANTARA TEKNOLOGI",
+        parentCompanyName: "BIO NUSANTARA TEKNOLOGI",
+        address: "Kec. Pondok Kelapa, Bengkulu Tengah, Bengkulu",
+        province: "BENGKULU",
+        position: { lat: -3.64375, lng: 102.240972 },
+        description: ""
+    },
+    {
+        title: "BENGKULU SAWIT LESTARI",
+        millCompanyName: "BENGKULU SAWIT LESTARI",
+        parentCompanyName: "BENGKULU SAWIT LESTARI",
+        address: "Jl. Lintas Barat Bengkulu Lampung, Ds. Air Sulau, Kec. Kedurang Ilir, Bengkulu Selatan, Bengkulu",
+        province: "BENGKULU",
+        position: { lat: -4.533458333, lng: 103.0570028 },
+        description: ""
+    },
+    {
+        title: "ANUGERAH PELANGI SUKSES",
+        millCompanyName: "ANUGERAH PELANGI SUKSES",
+        parentCompanyName: "ANUGERAH PELANGI SUKSES",
+        address: "Ds. Beriang Tinggi, Kec. Tanjung Kemuning, Kaur, Bengkulu",
+        province: "BENGKULU",
+        position: { lat: -4.5632, lng: 103.1132 },
+        description: ""
+    },
+    {
+        title: "SUMINDO",
+        millCompanyName: "ALNO AGRO UTAMA",
+        parentCompanyName: "ANGLO EASTERN PLANTATION",
+        address: "Desa Bukit Berlian Kec. Napal Putih Bengkulu Utara, Bengkulu",
+        province: "BENGKULU",
+        position: { lat: -3.13358, lng: 101.87569 },
+        description: ""
+    },
+    {
+        title: "AGRINDO INDAH PERSADA 3",
+        millCompanyName: "AGRINDO INDAH PERSADA",
+        parentCompanyName: "WILMAR INTERNATIONAL",
+        address: "Ds. Tumbuan, Kec. Lubuk Sandi, Bengkulu",
+        province: "BENGKULU",
+        position: { lat: -4.010267, lng: 102.496717 },
+        description: ""
+    },
+    {
+        title: "AGRICINAL",
+        millCompanyName: "AGRICINAL",
+        parentCompanyName: "AGRICINAL",
+        address: "Talang Arah Putri Hijau North Bengkulu, Bengkulu",
+        province: "BENGKULU",
+        position: { lat: -3.200972222, lng: 101.6301389 },
+        description: ""
+    },
+    {
+        title: "AGRI ANDALAS",
+        millCompanyName: "AGRI ANDALAS",
+        parentCompanyName: "AGRI ANDALAS",
+        address: "Ds. Dermayu, Kec. Air Periukan, Seluma, Bengkulu",
+        province: "BENGKULU",
+        position: { lat: -3.998716, lng: 102.429673 },
+        description: ""
     }
 ];
 window.assets = assets;
