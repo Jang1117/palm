@@ -19,16 +19,16 @@
         /* 사이드바 스타일 */
         #sidebar {
             position: fixed;
-            top: 0;
+            top: 150px;
             right: -300px;
             width: 300px;
-            height: 100%;
+            height: calc(100% - 150px);
             background: #f8f8f8;
             transition: right 0.3s ease;
             overflow-y: hidden;
             padding: 10px;
             box-shadow: -2px 0 5px rgba(0,0,0,0.2);
-            z-index: 1000;
+            z-index: 900;
         }
         #sidebar.open {
             right: 0;
@@ -36,6 +36,15 @@
         #sidebar h2 {
             font-size: 1.5em;
             margin: 10px 0;
+        }
+        #sidebar .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            color: #000000;
+            font-weight: bold;
+            font-size: 16px;
         }
         #sidebar input {
             width: calc(100% - 20px);
@@ -172,6 +181,7 @@
             #sidebar {
                 width: 250px;
                 right: -250px;
+                height: calc(100% - 150px);
             }
             #sidebar.open {
                 right: 0;
@@ -189,6 +199,7 @@
 <body>
     <button id="toggleSidebar">자산 목록</button>
     <div id="sidebar">
+        <span class="close-button" onclick="closeSidebar()">X</span>
         <h2>Palm Mill Plant</h2>
         <input type="text" id="searchInput" placeholder="자산 이름 검색...">
         <ul id="millList"></ul>
@@ -235,6 +246,12 @@
             }
         });
 
+        // 사이드바 닫기 함수
+        function closeSidebar() {
+            const sidebar = document.getElementById("sidebar");
+            sidebar.classList.remove("open");
+        }
+
         // 지도 초기화 함수
         window.initMap = function() {
             if (typeof window.google === 'undefined' || typeof window.google.maps === 'undefined') {
@@ -264,6 +281,9 @@
                 console.log(`줌 레벨 변경: ${map.getZoom()}`);
                 updateMarkers();
             });
+
+            // 사이드바 초기 숨김
+            document.getElementById("sidebar").classList.remove("open");
 
             // 초기 마커 업데이트
             updateMarkers();
