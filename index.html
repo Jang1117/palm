@@ -76,7 +76,6 @@
         .global-button {
             position: fixed;
             top: 20px;
-            right: 10px;
             background-color: #f0f0f0;
             border: 1px solid #ccc;
             border-radius: 4px;
@@ -84,6 +83,15 @@
             font-size: 14px;
             cursor: pointer;
             z-index: 1000;
+        }
+        .global-button#homeBtn {
+            right: 10px;
+        }
+        .global-button#hideSidebarBtn {
+            right: 100px;
+        }
+        .global-button#showSidebarBtn {
+            right: 10px;
         }
         .global-button:hover {
             background-color: #e0e0e0;
@@ -152,6 +160,9 @@
                 font-size: 12px;
                 padding: 8px;
             }
+            .global-button#hideSidebarBtn {
+                right: 80px;
+            }
             .popup-content {
                 width: 300px;
             }
@@ -160,12 +171,14 @@
 </head>
 <body>
     <div id="sidebar">
-        <h2>Palm Mill Plant (102)</h2>
+        <h2>CPO Mill Plant (<span id="millCount"></span>)</h2>
         <input type="text" id="searchInput" placeholder="자산 이름 검색...">
         <ul id="millList"></ul>
     </div>
     <div id="map"></div>
-    <button class="global-button" onclick="showHome()">Home</button>
+    <button class="global-button" id="homeBtn" onclick="showHome()">Home</button>
+    <button class="global-button" id="hideSidebarBtn" onclick="hideSidebar()">Hide Sidebar</button>
+    <button class="global-button" id="showSidebarBtn" onclick="showSidebar()" style="display: none;">Show Sidebar</button>
 
     <div class="popup-overlay" id="popupOverlay">
         <div class="popup-content" id="popupContent">
@@ -247,6 +260,26 @@
             map.setZoom(6);
             updateMarkers();
             console.log("Home 중심:", center);
+        }
+
+        function hideSidebar() {
+            document.getElementById("sidebar").style.visibility = "hidden";
+            document.getElementById("map").style.width = "100%";
+            document.getElementById("hideSidebarBtn").style.display = "none";
+            document.getElementById("showSidebarBtn").style.display = "block";
+            if (map) {
+                google.maps.event.trigger(map, "resize");
+            }
+        }
+
+        function showSidebar() {
+            document.getElementById("sidebar").style.visibility = "visible";
+            document.getElementById("map").style.width = "100%";
+            document.getElementById("hideSidebarBtn").style.display = "block";
+            document.getElementById("showSidebarBtn").style.display = "none";
+            if (map) {
+                google.maps.event.trigger(map, "resize");
+            }
         }
 
         function updateMarkers() {
@@ -385,6 +418,12 @@
         function initializeSidebar() {
             const millList = document.getElementById("millList");
             const searchInput = document.getElementById("searchInput");
+            const millCount = document.getElementById("millCount");
+            if (millCount && assets) {
+                millCount.textContent = assets.length;
+            } else {
+                console.error("millCount 요소 또는 assets 데이터가 없음");
+            }
 
             function dedupeAndSortAssets(assets) {
                 const uniqueAssets = [];
@@ -416,7 +455,6 @@
 
                 Object.keys(groupedAssets).sort().forEach(province => {
                     const details = document.createElement("details");
-                    details.open = true;
                     const summary = document.createElement("summary");
                     summary.textContent = `${province} (${groupedAssets[province].length})`;
                     details.appendChild(summary);
