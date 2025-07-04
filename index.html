@@ -30,6 +30,13 @@
             box-shadow: 2px 0 5px rgba(0,0,0,0.2);
             z-index: 1000;
         }
+        #sidebar::-webkit-scrollbar {
+            display: none; /* Webkit 브라우저에서 스크롤바 숨김 */
+        }
+        #sidebar {
+            -ms-overflow-style: none; /* IE 및 Edge */
+            scrollbar-width: none; /* Firefox */
+        }
         #sidebar.open {
             left: 0;
         }
@@ -56,6 +63,16 @@
         }
         #sidebar li:hover {
             background: #e0e0e0;
+        }
+        #sidebar details {
+            margin-bottom: 10px;
+        }
+        #sidebar summary {
+            font-weight: bold;
+            padding: 8px;
+            cursor: pointer;
+            background: #e0e0e0;
+            border-radius: 4px;
         }
         #toggleSidebar {
             position: fixed;
@@ -241,7 +258,7 @@
 
             // 지도 중심 설정 (인도네시아 서부 수마트라)
             map = new window.google.maps.Map(document.getElementById("map"), {
-                zoom: 8,
+                zoom: 7,
                 center: { lat: -1.5, lng: 101.0 },
                 fullscreenControl: false,
                 mapTypeId: window.google.maps.MapTypeId.ROADMAP
@@ -396,7 +413,7 @@
                 console.error("지도가 초기화되지 않았습니다.");
                 return;
             }
-            map.setZoom(8);
+            map.setZoom(7);
             map.setCenter({ lat: -1.5, lng: 101.0 });
             updateMarkers();
         }
@@ -406,26 +423,51 @@
             const millList = document.getElementById("millList");
             const searchInput = document.getElementById("searchInput");
 
+            // 자산을 지역별로 그룹화
+            function groupAssetsByProvince(assets) {
+                return assets.reduce((groups, asset) => {
+                    const province = asset.province;
+                    if (!groups[province]) {
+                        groups[province] = [];
+                    }
+                    groups[province].push(asset);
+                    return groups;
+                }, {});
+            }
+
             // 자산 목록 추가
             function populateMillList(filteredAssets = assets) {
                 millList.innerHTML = "";
-                filteredAssets.forEach(asset => {
-                    const li = document.createElement("li");
-                    li.textContent = asset.title;
-                    li.addEventListener("click", () => {
-                        map.setCenter(asset.position);
-                        map.setZoom(15);
-                        showPopup(asset.title, asset.title, 
-                            asset.description 
-                                ? `${asset.title}은 ${asset.millCompanyName} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName} 그룹의 일원입니다.<br>${asset.description.replace(/, /g, "<br>")}`
-                                : `${asset.title}은 ${asset.millCompanyName} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName} 그룹의 일원입니다.`, 
-                            `<p><strong>회사명:</strong> ${asset.millCompanyName}</p>
-                             <p><strong>모회사:</strong> ${asset.parentCompanyName}</p>
-                             <p><strong>주소:</strong> ${asset.address}</p>
-                             <p><strong>지역:</strong> ${asset.province}</p>`, 
-                            asset);
+                const groupedAssets = groupAssetsByProvince(filteredAssets);
+
+                Object.keys(groupedAssets).sort().forEach(province => {
+                    const details = document.createElement("details");
+                    details.open = true; // 기본적으로 열려 있음
+                    const summary = document.createElement("summary");
+                    summary.textContent = `${province} (${groupedAssets[province].length})`;
+                    details.appendChild(summary);
+
+                    const ul = document.createElement("ul");
+                    groupedAssets[province].forEach(asset => {
+                        const li = document.createElement("li");
+                        li.textContent = asset.title;
+                        li.addEventListener("click", () => {
+                            map.setCenter(asset.position);
+                            map.setZoom(15);
+                            showPopup(asset.title, asset.title, 
+                                asset.description 
+                                    ? `${asset.title}은 ${asset.millCompanyName} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName} 그룹의 일원입니다.<br>${asset.description.replace(/, /g, "<br>")}`
+                                    : `${asset.title}은 ${asset.millCompanyName} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName} 그룹의 일원입니다.`, 
+                                `<p><strong>회사명:</strong> ${asset.millCompanyName}</p>
+                                 <p><strong>모회사:</strong> ${asset.parentCompanyName}</p>
+                                 <p><strong>주소:</strong> ${asset.address}</p>
+                                 <p><strong>지역:</strong> ${asset.province}</p>`, 
+                                asset);
+                        });
+                        ul.appendChild(li);
                     });
-                    millList.appendChild(li);
+                    details.appendChild(ul);
+                    millList.appendChild(details);
                 });
             }
 
