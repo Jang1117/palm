@@ -4871,6 +4871,690 @@ const assets = [
         province: "RIAU",
         position: { lat: -0.792916667, lng: 102.5963 },
         description: ""
+    },
+    {
+        title: "TELUK SONO",
+        millCompanyName: "HUTAHAEAN",
+        parentCompanyName: "HUTAHAEAN",
+        address: "Ds.Teluk Sono, Kec.Bonai Darussalam, Rohul, Riau",
+        province: "RIAU",
+        position: { lat: 1.059537, lng: 100.757836 },
+        description: ""
+    },
+    {
+        title: "SINARSIAK DIANPERMAI",
+        millCompanyName: "SINARSIAK DIANPERMAI",
+        parentCompanyName: "WILMAR INTERNATIONAL",
+        address: "Ds.Sikijang, Kec.Pangkalan Kerinci, Pelalawan, Riau",
+        province: "RIAU",
+        position: { lat: 0.449367, lng: 101.621217 },
+        description: ""
+    },
+    {
+        title: "SINAR PERDANA CARAKA",
+        millCompanyName: "SINAR PERDANA CARAKA",
+        parentCompanyName: "WILMAR INTERNATIONAL",
+        address: "Ds.Balai Jaya, Kec.Bagan Sinembah, Rokan Hilir, Riau",
+        province: "RIAU",
+        position: { lat: 1.69439, lng: 100.5582 },
+        description: ""
+    },
+    {
+        title: "SIMPANG KANAN LESTARINDO",
+        millCompanyName: "SIMPANG KANAN LESTARINDO",
+        parentCompanyName: "DUTA MARGA",
+        address: "Ds. Simpang kanan, Kec.Simpang Kanan, Rokan Hilir, Riau",
+        province: "RIAU",
+        position: { lat: 1.851433, lng: 100.295583 },
+        description: ""
+    },
+    {
+        title: "SIBERIDA",
+        millCompanyName: "NIKMAT HALONA REKSA",
+        parentCompanyName: "NIKMAT HALONA REKSA",
+        address: "Desa Siberida Kec. Batang Gansal Kab. Indragiri Hulu - Riau",
+        province: "RIAU",
+        position: { lat: -0.734611111, lng: 102.5251111 },
+        description: ""
+    },
+    {
+        title: "SIAK PRIMA SAKTI",
+        millCompanyName: "SIAK PRIMA SAKTI",
+        parentCompanyName: "WILMAR INTERNATIONAL",
+        address: "Ds.Pangkalan Pisang, Kec.Koto Gasib, Siak Sri Indrapura, Riau",
+        province: "RIAU",
+        position: { lat: 0.651217, lng: 101.75405 },
+        description: ""
+    },
+    {
+        title: "TAPUNG KANAN",
+        millCompanyName: "SEKAR BUMI ALAM LESTARI",
+        parentCompanyName: "KUALA LUMPUR KEPONG BERHAD",
+        address: "Kota Garo Village, Tapung Hilir Subdistrict, Kampar District, Riau Province",
+        province: "RIAU",
+        position: { lat: 0.757222222, lng: 101.2197222 },
+        description: ""
+    },
+    {
+        title: "SEI TAPUNG",
+        millCompanyName: "PERKEBUNAN NUSANTARA V",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Bono Tapung Kec. Tandun Kab. Rokan Hulu - Riau",
+        province: "RIAU",
+        position: { lat: 0.5984439, lng: 100.6177 },
+        description: ""
+    },
+    {
+        title: "SEI ROKAN",
+        millCompanyName: "PERKEBUNAN NUSANTARA V",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Pagaran Tapah Kec. Pagaran Tapah Kab. Rokan Hulu - Riau",
+        province: "RIAU",
+        position: { lat: 0.7258617, lng: 100.5788 },
+        description: ""
+    },
+    {
+        title: "TANJUNG PAUH",
+        millCompanyName: "INTI INDOSAWIT SUBUR",
+        parentCompanyName: "ASIAN AGRI",
+        address: "Kec. Singingi Hilir Kab. Kuantan Singingi - Riau",
+        province: "RIAU",
+        position: { lat: -0.09765, lng: 101.29788 },
+        description: ""
+    },
+    {
+        title: "SEI PAGAR",
+        millCompanyName: "PERKEBUNAN NUSANTARA V",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Pantai Raja Kec. Hang Tuah Kab. Kampar - Riau",
+        province: "RIAU",
+        position: { lat: 0.326138889, lng: 101.3523333 },
+        description: ""
+    },
+    {
+        title: "PUJUD KARYA SAWIT",
+        millCompanyName: "PUJUD KARYA SAWIT",
+        parentCompanyName: "GRAHA",
+        address: "Desa Sei Meranti Kec. Tanjung Medan Kab. Rokan Hilir - Riau",
+        province: "RIAU",
+        position: { lat: 1.374861111, lng: 100.5278333 },
+        description: ""
+    },
+    {
+        title: "SEI INTAN",
+        millCompanyName: "PERKEBUNAN NUSANTARA V",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Tanah Datar Kec. Kunto Darussalam Kab. Rokan Hulu - Riau",
+        province: "RIAU",
+        position: { lat: 0.7839358, lng: 100.6115 },
+        description: ""
+    },
+    {
+        title: "SEI GARO",
+        millCompanyName: "PERKEBUNAN NUSANTARA V",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Gading Sari Kec. Siak Hulu Kab. Kampar - Riau",
+        province: "RIAU",
+        position: { lat: 0.643722222, lng: 101.1100556 },
+        description: ""
+    },
+    {
+        title: "SEI GALUH",
+        millCompanyName: "PERKEBUNAN NUSANTARA V",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Pantai Cermin Kec. Tapung Kab. Kampar - Riau",
+        province: "RIAU",
+        position: { lat: 0.546777778, lng: 101.2289167 },
+        description: ""
+    },
+    {
+        title: "SEI BUATAN",
+        millCompanyName: "PERKEBUNAN NUSANTARA V",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Sawit Permai Kec. Siak Kab. Siak Sri Indrapura - Riau",
+        province: "RIAU",
+        position: { lat: 0.653861111, lng: 101.8648056 },
+        description: ""
+    },
+    {
+        title: "SEGATI",
+        millCompanyName: "MITRA UNGGUL PUSAKA",
+        parentCompanyName: "ASIAN AGRI",
+        address: "Desa Langkan/Penarikan/Tambak/Sotol, Kecamatan Langgam, Kabupaten Pelalawan, Riau",
+        province: "RIAU",
+        position: { lat: 0.141388889, lng: 101.6466667 },
+        description: ""
+    },
+    {
+        title: "SAWIT ASAHAN INDAH",
+        millCompanyName: "SAWIT ASAHAN INDAH",
+        parentCompanyName: "ASTRA AGRO LESTARI",
+        address: "Jl. Simpang Eka Dura Km. 6 Kel. Sungai Kuning Kec. Rambah Samo Kab. Rokan Hulu, Riau",
+        province: "RIAU",
+        position: { lat: 0.761580556, lng: 100.519 },
+        description: ""
+    },
+    {
+        title: "SAWIT ANUGRAH SEJAHTERA",
+        millCompanyName: "SAWIT ANUGRAH SEJAHTERA",
+        parentCompanyName: "MAHKOTA",
+        address: "Ds.Muara Basung, Kec.Pinggir, Kab.Bengkalis, Riau",
+        province: "RIAU",
+        position: { lat: 1.151667, lng: 101.276717 },
+        description: ""
+    },
+    {
+        title: "SARI LEMBAH SUBUR 1",
+        millCompanyName: "SARI LEMBAH SUBUR",
+        parentCompanyName: "ASTRA AGRO LESTARI",
+        address: "Ds.Genduang, Kec.Pkl.Lesung, Pelalawan, Riau",
+        province: "RIAU",
+        position: { lat: -0.05455, lng: 102.236383 },
+        description: ""
+    },
+    {
+        title: "SARI LEMBAH SUBUR 2",
+        millCompanyName: "SARI LEMBAH SUBUR",
+        parentCompanyName: "ASTRA AGRO LESTARI",
+        address: "Desa Kerumutan, Kecamatan Kerumutan Kabupaten Pelelawan Propinsi Riau - Riau",
+        province: "RIAU",
+        position: { lat: -0.002077778, lng: 102.1964167 },
+        description: ""
+    },
+    {
+        title: "KOTO KAMPAR",
+        millCompanyName: "PADASA ENAM UTAMA",
+        parentCompanyName: "PADASA ENAM UTAMA",
+        address: "Ds.Sibiruang, Kec.Koto Kampar Hulu, Kampar, Riau",
+        province: "RIAU",
+        position: { lat: 0.394933, lng: 100.616133 },
+        description: ""
+    },
+    {
+        title: "RAMIN",
+        millCompanyName: "LEMBAGA TABUNG HAJI",
+        parentCompanyName: "TH INDO PLANTATIONS",
+        address: "Kompleks PT Multigambut Industri, Saka Pasir, Ulu Sg Guntung, Kateman Sub District, Indragiri Hilir District",
+        province: "RIAU",
+        position: { lat: 0.24593, lng: 102.9784 },
+        description: ""
+    },
+    {
+        title: "RAMA-RAMA",
+        millCompanyName: "RAMAJAYA PRAMUKTI",
+        parentCompanyName: "SMART/GOLDEN AGRI RESOURCES (GAR)",
+        address: "Desa Petapahan Kecamatan Tapung Kabupaten Kampar - Riau",
+        province: "RIAU",
+        position: { lat: 0.533617, lng: 101.076383 },
+        description: ""
+    },
+    {
+        title: "PULAI",
+        millCompanyName: "LEMBAGA TABUNG HAJI",
+        parentCompanyName: "TH INDO PLANTATIONS",
+        address: "Kompleks PT Multigambut Industri, Saka Pasir, Ulu Sg Guntung, Kateman Sub District, Indragiri Hilir District",
+        province: "RIAU",
+        position: { lat: 0.22091, lng: 103.16424 },
+        description: ""
+    },
+    {
+        title: "PERDANA INTISAWIT PERKASA 1",
+        millCompanyName: "PERDANA INTISAWIT PERKASA",
+        parentCompanyName: "FIRST RESOURCES",
+        address: "Desa Kepenuhan Barat Kec. Kepenuhan Kab. Rokan Hulu - Riau",
+        province: "RIAU",
+        position: { lat: 1.140611111, lng: 100.4944167 },
+        description: ""
+    },
+    {
+        title: "PERANAP",
+        millCompanyName: "RIGUNAS AGRI UTAMA",
+        parentCompanyName: "ASIAN AGRI",
+        address: "Desa Semelinang Tebing, Kecamatan Peranap dan Pasir Penyu, Indragiri Hulu, Riau",
+        province: "RIAU",
+        position: { lat: -0.584694444, lng: 102.0193889 },
+        description: ""
+    },
+    {
+        title: "PELINTUNG",
+        millCompanyName: "MURINI SAM-SAM 2",
+        parentCompanyName: "WILMAR INTERNATIONAL",
+        address: "Ds. Pelintung, Kec.Medang Kampai, Kota Dumai, Riau",
+        province: "RIAU",
+        position: { lat: 1.649133, lng: 101.643517 },
+        description: ""
+    },
+    {
+        title: "BANGUN TENERA RIAU",
+        millCompanyName: "BANGUN TENERA RIAU",
+        parentCompanyName: "INDAH",
+        address: "JL. Lintas Pekanbaru - Lipat Kain Km. 27 Desa Pantai Raja, Kec. Perhentian Raja, Kab. Kampar",
+        province: "RIAU",
+        position: { lat: 0.289166667, lng: 101.4169444 },
+        description: ""
+    },
+    {
+        title: "NYATO",
+        millCompanyName: "LEMBAGA TABUNG HAJI",
+        parentCompanyName: "TH INDO PLANTATIONS",
+        address: "Kompleks PT Multigambut Industri, Saka Pasir, Ulu Sg Guntung, Kateman Sub District, Indragiri Hilir District",
+        province: "RIAU",
+        position: { lat: 0.13149, lng: 103.1546 },
+        description: ""
+    },
+    {
+        title: "NILO 2",
+        millCompanyName: "ADEI PLANTATION AND INDUSTRY",
+        parentCompanyName: "KUALA LUMPUR KEPONG BERHAD",
+        address: "Village of Sungai Buluh, Subdistrict of Bunut, District of Pelalawan, Province of Riau",
+        province: "RIAU",
+        position: { lat: 0.35869, lng: 102.095263 },
+        description: ""
+    },
+    {
+        title: "NILO 1",
+        millCompanyName: "ADEI PLANTATION AND INDUSTRY",
+        parentCompanyName: "KUALA LUMPUR KEPONG BERHAD",
+        address: "Telayap Village, Pelalawan Subdistrict, Pelalawan District, Riau Province",
+        province: "RIAU",
+        position: { lat: 0.34806, lng: 101.97167 },
+        description: ""
+    },
+    {
+        title: "NAPAL",
+        millCompanyName: "INDRIPLANT",
+        parentCompanyName: "SALIM IVOMAS PRATAMA",
+        address: "Desa Pauhranap Kec. Peranap Kab. Indragiri Hulu - Riau",
+        province: "RIAU",
+        position: { lat: -0.677472222, lng: 101.9135833 },
+        description: ""
+    },
+    {
+        title: "NAGAMAS AGRO MULIA",
+        millCompanyName: "NAGAMAS AGRO MULIA",
+        parentCompanyName: "LINGGA TIGA SAWIT",
+        address: "Dusun III Tanjung Medan, Tambusai Utara, Rokan Hulu, Riau",
+        province: "RIAU",
+        position: { lat: 1.3011, lng: 100.3977 },
+        description: ""
+    },
+    {
+        title: "NAGA SAKTI",
+        millCompanyName: "BUANA WIRA LESTARI MAS",
+        parentCompanyName: "SMART/GOLDEN AGRI RESOURCES (GAR)",
+        address: "Desa Sekijang Kec Tapung Hilir Kabupaten Kampar, Provinsi Riau",
+        province: "RIAU",
+        position: { lat: 0.783222222, lng: 101.0502778 },
+        description: ""
+    },
+    {
+        title: "MURINIWOOD INDAH INDUSTRY",
+        millCompanyName: "MURINIWOOD INDAH INDUSTRY",
+        parentCompanyName: "FIRST RESOURCES",
+        address: "Sp.Panam, Ds.Bumbung, Kec.Mandau, Bengkalis, Riau",
+        province: "RIAU",
+        position: { lat: 1.39225, lng: 101.3014722 },
+        description: ""
+    },
+    {
+        title: "MURINI SAM-SAM",
+        millCompanyName: "MURINI SAM-SAM",
+        parentCompanyName: "WILMAR INTERNATIONAL",
+        address: "Ds.Sam-Sam, Kec.Kandis, Siak, Riau",
+        province: "RIAU",
+        position: { lat: 1.056883, lng: 101.24015 },
+        description: ""
+    },
+    {
+        title: "MULTI AGRO SENTOSA",
+        millCompanyName: "MULTI AGRO SENTOSA",
+        parentCompanyName: "MULTI AGRO SENTOSA",
+        address: "Desa Danau Lancang, Kecamatan Tapung Hulu, Kabupaten Kampar, Propinsi Riau",
+        province: "RIAU",
+        position: { lat: 0.770833, lng: 100.885283 },
+        description: ""
+    },
+    {
+        title: "SUMBER ALAM MAKMUR SENTOSA",
+        millCompanyName: "SUMBER ALAM MAKMUR SENTOSA",
+        parentCompanyName: "PADASA ENAM UTAMA",
+        address: "Desa Muara Dilam, Kec. Kunto Darussalam, Kab. Rokan Hulu, Riau",
+        province: "RIAU",
+        position: { lat: 0.959467, lng: 100.723783 },
+        description: ""
+    },
+    {
+        title: "MESKOM AGRO SARIMAS",
+        millCompanyName: "MESKOM AGRO SARIMAS",
+        parentCompanyName: "SARIMAS",
+        address: "Ds.Meskom, Kec.Bengkalis, Bengkalis, Riau",
+        province: "RIAU",
+        position: { lat: 1.548638889, lng: 102.0896667 },
+        description: ""
+    },
+    {
+        title: "MAKMUR ANDALAN SAWIT",
+        millCompanyName: "MAKMUR ANDALAN SAWIT",
+        parentCompanyName: "BUKIT BINTANG SAWIT",
+        address: "Kec.Pangkalan Lesung, Kab.Pelalawan, Riau",
+        province: "RIAU",
+        position: { lat: 0.069361111, lng: 102.1248056 },
+        description: ""
+    },
+    {
+        title: "LUBUK DALAM",
+        millCompanyName: "PERKEBUNAN NUSANTARA V",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        address: "Desa Pembantu Tualang Kec. Lubuk Dalam Kab. Siak Sri Indrapura - Riau",
+        province: "RIAU",
+        position: { lat: 0.629944444, lng: 101.7795556 },
+        description: ""
+    },
+    {
+        title: "LANGGAM INTI HIBRINDO",
+        millCompanyName: "LANGGRAM INTI HIBRINDO",
+        parentCompanyName: "PROVIDENT AGRO",
+        address: "Ds.Kemang, Kec.Sering Barat, Pelalawan, Riau",
+        province: "RIAU",
+        position: { lat: 0.307417, lng: 101.905667 },
+        description: ""
+    },
+    {
+        title: "BINA PITRI JAYA",
+        millCompanyName: "BINA PITRI JAYA",
+        parentCompanyName: "ANGLO EASTERN PLANTATION",
+        address: "Jl. Lintas Gelombang km 5 Desa Kota Garo Kec. Kota Garo Kec. Tapung Hilir Kab. Kampar - Riau",
+        province: "RIAU",
+        position: { lat: 0.808503, lng: 101.278989 },
+        description: ""
+    },
+    {
+        title: "KIJANG",
+        millCompanyName: "BUANA WIRA LESTARI MAS",
+        parentCompanyName: "SMART/GOLDEN AGRI RESOURCES (GAR)",
+        address: "Ds.Kijang Makmur, Kec.Tapung Hilir, Kampar, Riau",
+        province: "RIAU",
+        position: { lat: 0.833933, lng: 101.044283 },
+        description: ""
+    },
+    {
+        title: "KEBUN PANTAI RAJA",
+        millCompanyName: "KEBUN PANTAI RAJA",
+        parentCompanyName: "UNI SERAYA",
+        address: "Ds.Tg.Pauh, Kec.Sengigi Hilir, Kuantan Singingi, Riau",
+        province: "RIAU",
+        position: { lat: -0.05745, lng: 101.24185 },
+        description: ""
+    },
+    {
+        title: "KALIANTA 2",
+        millCompanyName: "PADASA ENAM UTAMA",
+        parentCompanyName: "PADASA ENAM UTAMA",
+        address: "Desa Aliantan Kec. Kabun, Kab. Rokan Hulu, Riau",
+        province: "RIAU",
+        position: { lat: 0.529027778, lng: 100.7769722 },
+        description: ""
+    },
+    {
+        title: "KALIANTA 1",
+        millCompanyName: "PADASA ENAM UTAMA",
+        parentCompanyName: "PADASA ENAM UTAMA",
+        address: "Kec. Tandun, Kab. Kampar, Riau",
+        province: "RIAU",
+        position: { lat: 0.457083333, lng: 100.8034444 },
+        description: ""
+    },
+    {
+        title: "JATIMJAYA PERKASA",
+        millCompanyName: "JATIMJAYA PERKASA",
+        parentCompanyName: "GAMA/KPN PLANTATION",
+        address: "Jl. Simpang Damar, Desa Sei Majo, kec. Kubu darussalam, kab. Rokan hilir-riau",
+        province: "RIAU",
+        position: { lat: 1.947383, lng: 100.737117 },
+        description: ""
+    },
+    {
+        title: "INECDA PLANTATIONS",
+        millCompanyName: "INECDA PLANTATIONS",
+        parentCompanyName: "SAMSUNG & GANDA",
+        address: "Desa Tani Makmur Kec. Rengat Barat INHU Riau",
+        province: "RIAU",
+        position: { lat: -0.49381, lng: 102.36723 },
+        description: ""
+    },
+    {
+        title: "INDRASAKTI",
+        millCompanyName: "MEGANUSA INTISAWIT",
+        parentCompanyName: "SMART/GOLDEN AGRI RESOURCES (GAR)",
+        address: "Desa Talang Sukamaju, Kecamatan Rakit Kulim, Kabupaten Indragiri Hulu, Provinsi Riau",
+        province: "RIAU",
+        position: { lat: -0.570944444, lng: 102.3051667 },
+        description: ""
+    },
+    {
+        title: "IBUL",
+        millCompanyName: "TRIBAKTI SARI MAS 2",
+        parentCompanyName: "AGRO SARIMAS INDONESIA (SARIMAS)",
+        address: "Ds.Ibul, Kec.Kuantan Mudik, Kuantan Singingi, Riau",
+        province: "RIAU",
+        position: { lat: -0.859457, lng: 101.751168 },
+        description: ""
+    },
+    {
+        title: "GUNTUNG IDAMAN NUSA 1",
+        millCompanyName: "GUNTUNG IDAMAN NUSA",
+        parentCompanyName: "BERKAT SAWIT SEJATI",
+        address: "Desa Simpang Kateman Kec. Kateman Kab. Indragiri Hilir Riau",
+        province: "RIAU",
+        position: { lat: 0.161611111, lng: 103.2895833 },
+        description: ""
+    },
+    {
+        title: "GUNA AGUNG SEMESTA",
+        millCompanyName: "GUNA AGUNG SEMESTA",
+        parentCompanyName: "GUNA AGUNG SEMESTA",
+        address: "Kec.Mandau (dekat MSS), Bengkalis, Riau",
+        province: "RIAU",
+        position: { lat: 0.988058333, lng: 101.24345 },
+        description: ""
+    },
+    {
+        title: "GELIGA BAGAN RIAU",
+        millCompanyName: "GELIGA BAGAN RIAU",
+        parentCompanyName: "KUALA MAS",
+        address: "Dusun Bhakti, Desa Bahtera Makmur, Bagan Sinembah, Kab. Rokan Hilir - Riau",
+        province: "RIAU",
+        position: { lat: 1.601666667, lng: 100.4216667 },
+        description: ""
+    },
+    {
+        title: "UKUI II (GH)",
+        millCompanyName: "GANDAERAH HENDANA",
+        parentCompanyName: "SAMSUNG & GANDA",
+        address: "Desa Ukui II Kec. Ukui Sorek Kab. Pelalawan - Riau",
+        province: "RIAU",
+        position: { lat: -0.15638, lng: 102.20624 },
+        description: ""
+    },
+    {
+        title: "GANDA BUANINDO",
+        millCompanyName: "GANDA BUANINDO",
+        parentCompanyName: "GANDA BUANINDO",
+        address: "Lipat Kain, Kec.Kampar Kiri, Kampar, Riau",
+        province: "RIAU",
+        position: { lat: 0.006217, lng: 101.237517 },
+        description: ""
+    },
+    {
+        title: "EKA DURA INDONESIA",
+        millCompanyName: "EKA DURA INDONESIA",
+        parentCompanyName: "ASTRA AGRO LESTARI",
+        address: "Jl. Sei Manding Kel. Kota Lama Kec. Kunto Darussalam Kab. Rokan Hulu - Riau",
+        province: "RIAU",
+        position: { lat: 0.88357, lng: 100.61293 },
+        description: ""
+    },
+    {
+        title: "DWI MITRA DAYA RIAU",
+        millCompanyName: "DWI MITRA DAYA RIAU",
+        parentCompanyName: "KUALA MAS",
+        address: "Dsn.Bukit Badak II, Ds.Kota Paret, Kec.Simpang Kanan, Rokan Hilir, Riau",
+        province: "RIAU",
+        position: { lat: 1.813562, lng: 100.397978 },
+        description: ""
+    },
+    {
+        title: "DHARMA WUNGU GUNA",
+        millCompanyName: "DHARMA WUNGU GUNA",
+        parentCompanyName: "WILMAR INTERNATIONAL",
+        address: "Ds.Bagan Sinembah, Kec.Bagan Sinembah, Rokan Hilir, Riau",
+        province: "RIAU",
+        position: { lat: 1.768799, lng: 100.494004 },
+        description: ""
+    },
+    {
+        title: "CITRA RIAU SARANA 3",
+        millCompanyName: "CITRA RIAU SARANA 3",
+        parentCompanyName: "CITRA RIAU SARANA",
+        address: "Ds.Giri Sako, Kec.Logas Tanah Darat, Kuantan Singingi, Riau",
+        province: "RIAU",
+        position: { lat: -0.243333, lng: 101.583633 },
+        description: ""
+    },
+    {
+        title: "CITRA RIAU SARANA 2",
+        millCompanyName: "CITRA RIAU SARANA 2",
+        parentCompanyName: "CITRA RIAU SARANA",
+        address: "Ds.Muara Langsat, Kec.Benai, Kuantan Singingi, Riau",
+        province: "RIAU",
+        position: { lat: -0.322533, lng: 101.558217 },
+        description: ""
+    },
+    {
+        title: "CITRA RIAU SARANA 1",
+        millCompanyName: "CITRA RIAU SARANA 1",
+        parentCompanyName: "CITRA RIAU SARANA",
+        address: "Ds.Kuantan Sako, Kec.Logas Tanah Darat, Kuantan Singingi, Riau",
+        province: "RIAU",
+        position: { lat: -0.21335, lng: 101.474317 },
+        description: ""
+    },
+    {
+        title: "CITRA BUMI AGRO",
+        millCompanyName: "CITRA BUMI AGRO",
+        parentCompanyName: "SEPTA",
+        address: "Kec.Kepenuhan, Kab.Rokan Hulu, Riau",
+        province: "RIAU",
+        position: { lat: 0.995767, lng: 100.6169 },
+        description: ""
+    },
+    {
+        title: "CILIANDRA PERKASA",
+        millCompanyName: "CILIANDRA PERKASA",
+        parentCompanyName: "FIRST RESOURCES",
+        address: "Kec.Bangkinang Barat, Kampar, Riau",
+        province: "RIAU",
+        position: { lat: 0.160861111, lng: 101.05425 },
+        description: ""
+    },
+    {
+        title: "CIPTA AGRO SEJATI",
+        millCompanyName: "CIPTA AGRO SEJATI",
+        parentCompanyName: "ANUGERAH TANJUNG MEDAN",
+        address: "Kec.Simpang Kanan, Kab.Rokan Hilir, Riau",
+        province: "RIAU",
+        position: { lat: 1.8712, lng: 100.4310333 },
+        description: ""
+    },
+    {
+        title: "KAMPAR",
+        millCompanyName: "BUMI MENTARI KARYA",
+        parentCompanyName: "SUPERVENTURE",
+        address: "Ds.Pantai Cermin, Kec.Tapung, Kampar, Riau",
+        province: "RIAU",
+        position: { lat: 0.626717, lng: 101.138583 },
+        description: ""
+    },
+    {
+        title: "BUKIT PAYUNG",
+        millCompanyName: "TRIBAKTI SARIMAS",
+        parentCompanyName: "AGRO SARIMAS INDONESIA (SARIMAS)",
+        address: "Desa Pantai, Kec. Kuantan Mudik Kab. Kuantan Singgigi Riau",
+        province: "RIAU",
+        position: { lat: -0.73028, lng: 101.64111 },
+        description: ""
+    },
+    {
+        title: "BUATAN II",
+        millCompanyName: "INTI INDOSAWIT SUBUR",
+        parentCompanyName: "ASIAN AGRI",
+        address: "Kec. Pangkalan Kerinci Kab. Pelalawan - Riau",
+        province: "RIAU",
+        position: { lat: 0.456694444, lng: 101.8688889 },
+        description: ""
+    },
+    {
+        title: "BUATAN I",
+        millCompanyName: "INTI INDOSAWIT SUBUR",
+        parentCompanyName: "ASIAN AGRI",
+        address: "Kec. Pangkalan Kerinci Kab. Pelalawan - Riau",
+        province: "RIAU",
+        position: { lat: 0.434389, lng: 101.825 },
+        description: ""
+    },
+    {
+        title: "BUMI PALMA",
+        millCompanyName: "BUMIPALMA LESTARIPERSADA",
+        parentCompanyName: "SMART/GOLDEN AGRI RESOURCES (GAR)",
+        address: "Desa Sungai Rukam Kec. Enok Kab. Indragiri Hilir Riau",
+        province: "RIAU",
+        position: { lat: -0.601105556, lng: 102.9833056 },
+        description: ""
+    },
+    {
+        title: "BATANG KULIM",
+        millCompanyName: "MUSIM MAS",
+        parentCompanyName: "MUSIM MAS",
+        address: "Desa Batang Kulim, Kec. Pangkalan Kuras, kab. Pelalawan, Riau",
+        province: "RIAU",
+        position: { lat: 0.077041667, lng: 102.0308361 },
+        description: ""
+    },
+    {
+        title: "ARINDO TRI SEJAHTERA",
+        millCompanyName: "ARINDO TRISEJAHTERA",
+        parentCompanyName: "FIRST RESOURCES",
+        address: "Ds.Petapahan, Kec.Tapung Hulu, Kampar, Riau",
+        province: "RIAU",
+        position: { lat: 0.580944444, lng: 100.9246944 },
+        description: ""
+    },
+    {
+        title: "ALUR DUMAI",
+        millCompanyName: "LAHAN TANI SAKTI",
+        parentCompanyName: "SIME DARBY/MINAMAS",
+        address: "Village of Sri Kayangan, Sub district of Pondok Kresek/ Bagan Sinembah, District of Rokan Hilir",
+        province: "RIAU",
+        position: { lat: 1.561111, lng: 100.541667 },
+        description: ""
+    },
+    {
+        title: "AGRO SARIMAS INDONESIA",
+        millCompanyName: "AGRO SARIMAS INDONESIA",
+        parentCompanyName: "SARIMAS",
+        address: "Jl.Lintas Rengat-Tembilahan, S.Sejuk, Kec.Kempas, Inhil, Riau",
+        province: "RIAU",
+        position: { lat: -0.521267, lng: 102.9207 },
+        description: ""
+    },
+    {
+        title: "MANDAU",
+        millCompanyName: "ADEI PLANTATION AND INDUSTRY",
+        parentCompanyName: "KUALA LUMPUR KEPONG BERHAD",
+        address: "Desa Mandau Kec. Pinggir Kab. Bengkalis - Riau",
+        province: "RIAU",
+        position: { lat: 1.08225, lng: 101.3330833 },
+        description: ""
     }
 ];
 window.assets = assets;
