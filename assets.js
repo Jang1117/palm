@@ -3581,7 +3581,7 @@ const assets = [
         millCompanyName: "AGRO MEKAR LESTARI",
         parentCompanyName: "AGRO MEKAR LESTARI",
         address: "Kundur, Kundur Bar., Kabupaten Karimun",
-        province: "KEPULAUAN RIAU",
+        province: "RIAU",
         position: { lat: 0.829467, lng: 103.376017 },
         description: ""
     },
