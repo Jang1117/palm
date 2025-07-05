@@ -217,7 +217,7 @@
         function calculateCenter() {
             if (!assets || assets.length === 0) {
                 console.error("assets 데이터가 없거나 로드되지 않음");
-                return { lat: -3.87, lng: 116.3 }; // 기본값 -3.8730053707176806, 116.3399942018522
+                return { lat: -3.81, lng: 119.9 }; // 기본값 -3.8730053707176806, 116.3399942018522
             }
             const total = assets.reduce((acc, asset) => {
                 return {
@@ -508,7 +508,7 @@
                 return;
             }
 
-            const center = { lat: -3.87, lng: 116.3 }; // calculateCenter();
+            const center = { lat: -3.81, lng: 119.9 }; // calculateCenter(); 
             map = new window.google.maps.Map(document.getElementById("map"), {
                 zoom: 5,
                 center: center,
