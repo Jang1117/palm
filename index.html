@@ -217,7 +217,7 @@
         function calculateCenter() {
             if (!assets || assets.length === 0) {
                 console.error("assets 데이터가 없거나 로드되지 않음");
-                return { lat: 0, lng: 102 }; // 기본값
+                return { lat: -3.87, lng: 116.3 }; // 기본값 -3.8730053707176806, 116.3399942018522
             }
             const total = assets.reduce((acc, asset) => {
                 return {
