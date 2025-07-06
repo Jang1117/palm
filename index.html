@@ -252,10 +252,12 @@
                     lng: acc.lng + asset.position.lng
                 };
             }, { lat: 0, lng: 0 });
-            return {
+            const center = {
                 lat: total.lat / window.assets.length,
                 lng: total.lng / window.assets.length
             };
+            console.log("계산된 중심점:", center);
+            return center;
         }
 
         // 지역 이동 함수
@@ -296,7 +298,7 @@
             // 사이드바 표시 및 팝업 닫기
             showSidebar();
             closePopup();
-            console.log("Home 중심:", center);
+            console.log("Home 버튼 클릭 - 중심점:", center);
         }
 
         // 사이드바 숨기기
