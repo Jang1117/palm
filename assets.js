@@ -4990,6 +4990,622 @@ const assets = [
         province: "LAMPUNG",
         country: "INDONESIA",
         position: { lat: -4.446305556, lng: 104.4220556 }
+    },
+    {
+        title: "ADIMULIA PALMO LESTARI",
+        millCompanyName: "ADIMULIA PALMO LESTARI",
+        parentCompanyName: "ADIMULIA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.706111111, lng: 102.7822222 }
+    },
+    {
+        title: "AGRINDO INDAH PERSADA 2",
+        millCompanyName: "AGRINDO INDAH PERSADA",
+        parentCompanyName: "WILMAR INTERNATIONAL",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.963888, lng: 102.301111 }
+    },
+    {
+        title: "AGRO MITRA MADANI",
+        millCompanyName: "AGRO MITRA MADANI",
+        parentCompanyName: "BAKRIE SUMATERA PLANTATIONS",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.078044444, lng: 103.109075 }
+    },
+    {
+        title: "AGRO WIJAYA INDUSTRI",
+        millCompanyName: "AGRO WIJAYA INDUSTRI",
+        parentCompanyName: "AGRO WIJAYA INDUSTRI",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.761472222, lng: 102.244 }
+    },
+    {
+        title: "ANEKAPURA MULTIKERTA",
+        millCompanyName: "ANEKAPURA MULTIKERTA",
+        parentCompanyName: "ANEKA PURA MULTI KERTA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.078917, lng: 103.007933 }
+    },
+    {
+        title: "ANGSO DUO SAWIT",
+        millCompanyName: "ANGSO DUO SAWIT",
+        parentCompanyName: "MEWAH GROUP",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.780556, lng: 103.493472 }
+    },
+    {
+        title: "ASIA SAWIT LESTARI",
+        millCompanyName: "ASIA SAWIT LESTARI",
+        parentCompanyName: "ASIA SAWIT LESTARI",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.837583333, lng: 103.3790278 }
+    },
+    {
+        title: "AUR GADING",
+        millCompanyName: "PERKEBUNAN NUSANTARA VI",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.866666667, lng: 103.0166667 }
+    },
+    {
+        title: "BATANGHARI SAWIT SEJAHTERA",
+        millCompanyName: "BATANGHARI SAWIT SEJAHTERA",
+        parentCompanyName: "BUKIT BARISAN INDAH PRIMA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.349416667, lng: 103.5416389 }
+    },
+    {
+        title: "BICCON AGRO MAKMUR",
+        millCompanyName: "BICCON AGRO MAKMUR",
+        parentCompanyName: "BICCON AGRO MAKMUR",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.744367, lng: 103.869367 }
+    },
+    {
+        title: "BINA MITRA MAKMUR",
+        millCompanyName: "BINA MITRA MAKMUR",
+        parentCompanyName: "ANUGERAH",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.497333333, lng: 102.2406667 }
+    },
+    {
+        title: "BRAHMA BINABAKTI",
+        millCompanyName: "BRAHMA BINABAKTI",
+        parentCompanyName: "TRIPUTRA AGRO PERSADA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.346666667, lng: 103.3258333 }
+    },
+    {
+        title: "BUDI NABATI PERKASA",
+        millCompanyName: "BUDI NABATI PERKASA",
+        parentCompanyName: "BUDI NABATI PERKASA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.692028, lng: 102.160547 }
+    },
+    {
+        title: "BUKIT BARISAN INDAH PRIMA",
+        millCompanyName: "BUKIT BARISAN INDAH PRIMA",
+        parentCompanyName: "BBIP PALM",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.339617, lng: 103.455383 }
+    },
+    {
+        title: "BUKIT BINTANG SAWIT",
+        millCompanyName: "BUKIT BINTANG SAWIT",
+        parentCompanyName: "BUKIT BINTANG SAWIT",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.385857, lng: 103.495438 }
+    },
+    {
+        title: "BUNGA TEBO",
+        millCompanyName: "RIGUNAS AGRI UTAMA",
+        parentCompanyName: "ASIAN AGRI",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.346694444, lng: 102.4561111 }
+    },
+    {
+        title: "BUNGO LIMBUR",
+        millCompanyName: "BUNGO LIMBUR",
+        parentCompanyName: "BUNGO LIMBUR",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.376795, lng: 101.88791 }
+    },
+    {
+        title: "BUNGO SUKO MENANTI",
+        millCompanyName: "BUNGO SUKO MENANTI",
+        parentCompanyName: "BUNGO SUKO MENANTI",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.307395, lng: 101.765191 }
+    },
+    {
+        title: "BUNUT (PN)",
+        millCompanyName: "PERKEBUNAN NUSANTARA VI",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.91025, lng: 103.4036111 }
+    },
+    {
+        title: "CITRA SAWIT HARUM",
+        millCompanyName: "CITRA SAWIT HARUM",
+        parentCompanyName: "HARUM AGRO",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.742472222, lng: 102.0544722 }
+    },
+    {
+        title: "DHARMASRAYA PALMA SEJAHTERA",
+        millCompanyName: "DHARMASRAYA PALMA SEJAHTERA",
+        parentCompanyName: "JAWA POS AGRO",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.646226, lng: 102.925742 }
+    },
+    {
+        title: "DUA SEMERU PUTRA MANDIRI",
+        millCompanyName: "DUA SEMERU PUTRA MANDIRI",
+        parentCompanyName: "DUA SEMERU PUTRA MANDIRI",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -2.287484, lng: 102.676254 }
+    },
+    {
+        title: "ERASAKTI WIRAFORESTAMA 1",
+        millCompanyName: "ERASAKTI WIRAFORESTAMA",
+        parentCompanyName: "KURNIA TUNGGAL NUGRAHA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.534, lng: 103.724683 }
+    },
+    {
+        title: "ERASAKTI WIRAFORESTAMA 2",
+        millCompanyName: "ERASAKTI WIRAFORESTAMA",
+        parentCompanyName: "KURNIA TUNGGAL NUGRAHA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.528944444, lng: 103.6371389 }
+    },
+    {
+        title: "ERASAKTI WIRAFORESTAMA 3",
+        millCompanyName: "ERASAKTI WIRAFORESTAMA",
+        parentCompanyName: "KURNIA TUNGGAL NUGRAHA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.518944, lng: 103.637139 }
+    },
+    {
+        title: "FORTIUS WAJO PERKEBUNAN",
+        millCompanyName: "FORTIUS WAJO PERKEBUNAN",
+        parentCompanyName: "FORTIUS WAJO PERKEBUNAN",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.050972222, lng: 102.9061667 }
+    },
+    {
+        title: "GIRI PURNO MILL",
+        millCompanyName: "SELARAS MITRA SARIMBA",
+        parentCompanyName: "SELARAS MITRA SARIMBA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.4104, lng: 102.26582 }
+    },
+    {
+        title: "HUTAN ALAM LESTARI",
+        millCompanyName: "HUTAN ALAM LESTARI",
+        parentCompanyName: "HUTAN ALAM LESTARI",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.610917, lng: 103.342417 }
+    },
+    {
+        title: "INTI GUNA NABATI",
+        millCompanyName: "INTI GUNA NABATI",
+        parentCompanyName: "DHARMA AGUNG WIJAYA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -2.416483, lng: 102.680667 }
+    },
+    {
+        title: "JAMIKA RAYA",
+        millCompanyName: "JAMIKA RAYA",
+        parentCompanyName: "INCASI RAYA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.439367, lng: 101.750867 }
+    },
+    {
+        title: "JELATANG",
+        millCompanyName: "KRESNA DUTA AGROINDO",
+        parentCompanyName: "GOLDEN AGRI-RESOURCES (GAR)",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -2.072222222, lng: 102.4858333 }
+    },
+    {
+        title: "KEDATON MULIA PRIMAS",
+        millCompanyName: "KEDATON MULIA PRIMAS",
+        parentCompanyName: "PALMA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.907166667, lng: 103.0136111 }
+    },
+    {
+        title: "KURNIA BATANG HARI BERJAYA",
+        millCompanyName: "KURNIA BATANG HARI BERJAYA",
+        parentCompanyName: "KURNIA BATANG HARI BERJAYA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.788731, lng: 103.079706 }
+    },
+    {
+        title: "KURNIA PALMA AGUNG LESTARI",
+        millCompanyName: "KURNIA PALMA AGUNG LESTARI",
+        parentCompanyName: "KURNIA PALMA AGUNG LESTARI",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.790405, lng: 102.259331 }
+    },
+    {
+        title: "KURNIA TUNGGAL NUGRAHA",
+        millCompanyName: "KURNIA TUNGGAL NUGRAHA",
+        parentCompanyName: "KURNIA TUNGGAL NUGRAHA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.50855, lng: 103.6639 }
+    },
+    {
+        title: "LADANG PANJANG",
+        millCompanyName: "BAHARI GEMBIRA RIA",
+        parentCompanyName: "SIME DARBY/MINAMAS",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.791666, lng: 103.791388 }
+    },
+    {
+        title: "LAMBANG SAWIT PERKASA",
+        millCompanyName: "LAMBANG SAWIT PERKASA",
+        parentCompanyName: "LAMBANG JAYA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -2.223756, lng: 102.480456 }
+    },
+    {
+        title: "LANGLING",
+        millCompanyName: "KRESNA DUTA AGROINDO",
+        parentCompanyName: "GOLDEN AGRI-RESOURCES (GAR)",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -2.100833333, lng: 102.3744444 }
+    },
+    {
+        title: "MARO SEBO",
+        millCompanyName: "PETALING MANDRAGUNA",
+        parentCompanyName: "PETALING",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.446536111, lng: 103.6269778 }
+    },
+    {
+        title: "MEGASAWINDO PERKASA",
+        millCompanyName: "MEGASAWINDO PERKASA",
+        parentCompanyName: "INCASI RAYA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.684267, lng: 102.23465 }
+    },
+    {
+        title: "MERLUNG INTI LESTARI",
+        millCompanyName: "MERLUNG INTI LESTARI",
+        parentCompanyName: "MERLUNG INTI LESTARI",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.32864, lng: 103.27372 }
+    },
+    {
+        title: "MITRA SAWIT JAMBI",
+        millCompanyName: "MITRA SAWIT JAMBI",
+        parentCompanyName: "ANUGERAH",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.316888889, lng: 103.0860833 }
+    },
+    {
+        title: "MUARA BULIAN",
+        millCompanyName: "INTI INDOSAWIT SUBUR",
+        parentCompanyName: "ASIAN AGRI",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.585833333, lng: 103.2055556 }
+    },
+    {
+        title: "MUTIARA SAWIT SEMESTA",
+        millCompanyName: "MUTIARA SAWIT SEMESTA",
+        parentCompanyName: "MUTIARA SAWIT SEMESTA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.607917, lng: 102.863222 }
+    },
+    {
+        title: "PALMA ABADI",
+        millCompanyName: "PALMA ABADI",
+        parentCompanyName: "PALMA ABADI",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.3213, lng: 103.26525 }
+    },
+    {
+        title: "PALMA GEMILANG KENCANA",
+        millCompanyName: "PALMA GEMILANG KENCANA",
+        parentCompanyName: "PALMA GEMILANG KENCANA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.299176, lng: 103.48658 }
+    },
+    {
+        title: "PALMA JAYA SEJAHTERA",
+        millCompanyName: "PALMA JAYA SEJAHTERA",
+        parentCompanyName: "PALMA JAYA SEJAHTERA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.874576, lng: 103.560276 }
+    },
+    {
+        title: "PELAKAR",
+        millCompanyName: "KRESNA DUTA AGROINDO",
+        parentCompanyName: "GOLDEN AGRI-RESOURCES (GAR)",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -2.185277778, lng: 102.6422222 }
+    },
+    {
+        title: "PENGABUAN",
+        millCompanyName: "KREASI CIPTA INDOTAMA",
+        parentCompanyName: "KREASI CIPTA INDOTAMA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.253734, lng: 102.954144 }
+    },
+    {
+        title: "PERSADA ALAM JAYA",
+        millCompanyName: "PERSADA ALAM JAYA",
+        parentCompanyName: "PERSADA ALAM JAYA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.043036, lng: 102.889378 }
+    },
+    {
+        title: "PINANG TINGGI",
+        millCompanyName: "PERKEBUNAN NUSANTARA VI",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.962427778, lng: 103.4018222 }
+    },
+    {
+        title: "PRIMA MAS LESTARI",
+        millCompanyName: "PRIMA MAS LESTARI",
+        parentCompanyName: "PRIMA MAS LESTARI",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.707144, lng: 102.160727 }
+    },
+    {
+        title: "PRODUK SAWITINDO JAMBI",
+        millCompanyName: "PRODUK SAWITINDO JAMBI",
+        parentCompanyName: "MATAHARI KAHURIPAN INDONESIA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.139183, lng: 103.07365 }
+    },
+    {
+        title: "PUBRIK SUKSES INTI PALMA",
+        millCompanyName: "PUBRIK SUKSES INTI PALMA",
+        parentCompanyName: "PUBRIK SUKSES INTI PALMA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.886859088, lng: 103.5106122 }
+    },
+    {
+        title: "RANTAU BADAK (CKT)",
+        millCompanyName: "CITRA KOPRASINDO TANI",
+        parentCompanyName: "METRO",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.293389, lng: 103.145139 }
+    },
+    {
+        title: "RANTAU GEDANG",
+        millCompanyName: "SAWIT JAMBI LESTARI",
+        parentCompanyName: "ASIAN AGRI",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.735995, lng: 102.964954 }
+    },
+    {
+        title: "RENGAS",
+        millCompanyName: "PERSADA HARAPAN KAHURIPAN",
+        parentCompanyName: "MATAHARI KAHURIPAN INDONESIA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.595308333, lng: 102.7200247 }
+    },
+    {
+        title: "RIMBO DUA",
+        millCompanyName: "PERKEBUNAN NUSANTARA VI",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.381972222, lng: 102.1760556 }
+    },
+    {
+        title: "RUDY AGUNG AGRA LAKSANA",
+        millCompanyName: "RUDY AGUNG AGRA LAKSANA",
+        parentCompanyName: "RUDY AGUNG AGRA LAKSANA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.276111111, lng: 103.2499444 }
+    },
+    {
+        title: "SARI ADITYA LOKA 1",
+        millCompanyName: "SARI ADITYA LOKA 1",
+        parentCompanyName: "ASTRA AGRO LESTARI",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.960138889, lng: 102.3708611 }
+    },
+    {
+        title: "SARI ADITYA LOKA 2",
+        millCompanyName: "SARI ADITYA LOKA 2",
+        parentCompanyName: "ASTRA AGRO LESTARI",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.652222, lng: 102.300277 }
+    },
+    {
+        title: "SEI KANDANG",
+        millCompanyName: "ASIATIC PERSADA",
+        parentCompanyName: "ASIATIC PERSADA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -2.04295, lng: 103.34671 }
+    },
+    {
+        title: "SEKAPUR SIRIH",
+        millCompanyName: "SAWIT JUJUHAN ABADI",
+        parentCompanyName: "ASIAN AGRI",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.242083333, lng: 101.7461389 }
+    },
+    {
+        title: "SUKSES GEMILANG PALEM",
+        millCompanyName: "SUKSES GEMILANG PALEM",
+        parentCompanyName: "SUKSES GEMILANG PALEM",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -2.267556, lng: 102.547056 }
+    },
+    {
+        title: "SUMBER GUNA NABATI",
+        millCompanyName: "SUMBER GUNA NABATI",
+        parentCompanyName: "SUMBER GUNA NABATI",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -2.006194444, lng: 102.49275 }
+    },
+    {
+        title: "SUMBERTAMA NUSA PERTIWI",
+        millCompanyName: "SUMBERTAMA NUSA PERTIWI",
+        parentCompanyName: "BAKRIE SUMATERA PLANTATIONS",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.68, lng: 103.8005556 }
+    },
+    {
+        title: "SUNGAI AIR JERNIH",
+        millCompanyName: "BAHANA KARYA SEMESTA",
+        parentCompanyName: "GOLDEN AGRI-RESOURCES (GAR)",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -2.086177, lng: 102.801564 }
+    },
+    {
+        title: "SUNGAI BAHAR PASIFIK UTAMA",
+        millCompanyName: "SUNGAI BAHAR PASIFIK UTAMA",
+        parentCompanyName: "SUNGAI BAHAR PASIFIK UTAMA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.5362, lng: 103.630567 }
+    },
+    {
+        title: "SUNGAI BENGKAL",
+        millCompanyName: "SATYA KISMA USAHA",
+        parentCompanyName: "GOLDEN AGRI-RESOURCES (GAR)",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.572408333, lng: 102.6100417 }
+    },
+    {
+        title: "SURYA GEMILANG AGRO MANDIRI",
+        millCompanyName: "SURYA GEMILANG AGRO MANDIRI",
+        parentCompanyName: "SURYA GEMILANG AGRO MANDIRI",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.271232, lng: 103.814442 }
+    },
+    {
+        title: "SURYA SUMBER SAWIT ABADI",
+        millCompanyName: "SURYA SUMBER SAWIT ABADI",
+        parentCompanyName: "SURYA SUMBER SAWIT ABADI",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.471122, lng: 102.62099 }
+    },
+    {
+        title: "SURYA UTAMA AGROLESTARI",
+        millCompanyName: "SURYA UTAMA AGROLESTARI",
+        parentCompanyName: "SURYA UTAMA AGROLESTARI",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.805055556, lng: 103.4305833 }
+    },
+    {
+        title: "TAMAN RAJA",
+        millCompanyName: "DASA ANUGRAH SEJATI",
+        parentCompanyName: "ASIAN AGRI",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.176694444, lng: 103.0078056 }
+    },
+    {
+        title: "TANJUNG LEBAR",
+        millCompanyName: "PERKEBUNAN NUSANTARA VI",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -2.017127778, lng: 103.545375 }
+    },
+    {
+        title: "TEBO INDAH",
+        millCompanyName: "TEBO INDAH",
+        parentCompanyName: "TEBO INDAH",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.500694, lng: 102.578667 }
+    },
+    {
+        title: "TRIMITRA LESTARI",
+        millCompanyName: "TRIMITRA LESTARI",
+        parentCompanyName: "SIN TEK HUAT",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.068733, lng: 103.165067 }
+    },
+    {
+        title: "TUNGKAL ULU",
+        millCompanyName: "INTI INDOSAWIT SUBUR",
+        parentCompanyName: "ASIAN AGRI",
+        province: "JAMBI",
+        country: "INDONESIA",
+        position: { lat: -1.301383, lng: 102.97935 }
     }
 ];
 window.assets = assets;
