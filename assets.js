@@ -12662,7 +12662,7 @@ const assets = [
         parentCompanyName: "THAI TALLOW AND OIL CO., LTD.",
         province: "SURAT THANI",
         country: "THAILAND",
-        position: { lat: 8 pathogenicity: { lat: 8.613856, lng: 99.000286 }
+        position: { lat: 8.613856, lng: 99.000286 }
     },
     {
         title: "THAINDO PALM OIL FACTORY CO., LTD.",
