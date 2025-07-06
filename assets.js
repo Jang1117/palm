@@ -5606,6 +5606,206 @@ const assets = [
         province: "JAMBI",
         country: "INDONESIA",
         position: { lat: -1.301383, lng: 102.97935 }
+    },
+    {
+        title: "BANGKA AGRO MANDIRI",
+        millCompanyName: "BANGKA AGRO MANDIRI",
+        parentCompanyName: "BANGKA AGRO MANDIRI",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -2.34716, lng: 106.108031 }
+    },
+    {
+        title: "BUKIT PERAK",
+        millCompanyName: "BUMI PERMAI LESTARI",
+        parentCompanyName: "GOLDEN AGRI-RESOURCES (GAR)",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -1.820496, lng: 105.551168 }
+    },
+    {
+        title: "BUMI SAWIT SUKSES PRATAMA",
+        millCompanyName: "BUMI SAWIT SUKSES PRATAMA",
+        parentCompanyName: "ORIENTAL HOLDINGS BERHAD",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -2.543894444, lng: 106.0293167 }
+    },
+    {
+        title: "FENYEN AGRO LESTARI",
+        millCompanyName: "FENYEN AGRO LESTARI",
+        parentCompanyName: "FENYEN AGRO LESTARI",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -1.80783, lng: 105.97722 }
+    },
+    {
+        title: "JANGKANG",
+        millCompanyName: "SAHABAT MEWAH DAN MAKMUR",
+        parentCompanyName: "AUSTINDO NUSANTARA JAYA",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -2.996917, lng: 107.87665 }
+    },
+    {
+        title: "LEIDONG WEST",
+        millCompanyName: "MASKAPAI PERKEBUNAN LEIDONG WEST INDONESIA",
+        parentCompanyName: "GOLDEN AGRI-RESOURCES (GAR)",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -1.90139, lng: 105.47641 }
+    },
+    {
+        title: "MABAT",
+        millCompanyName: "GUNUNG MARAS LESTARI",
+        parentCompanyName: "ORIENTAL HOLDINGS BERHAD",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -1.962155, lng: 105.95208 }
+    },
+    {
+        title: "MAYANG",
+        millCompanyName: "GUNUNG SAWIT BINA LESTARI",
+        parentCompanyName: "ORIENTAL HOLDINGS BERHAD",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -2.073717, lng: 105.324017 }
+    },
+    {
+        title: "MENTARI SAWIT MAKMUR",
+        millCompanyName: "MENTARI SAWIT MAKMUR",
+        parentCompanyName: "NAGAMAS GROUP",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -2.614273, lng: 106.335227 }
+    },
+    {
+        title: "MITRA AGRO SEMBADA",
+        millCompanyName: "MITRA AGRO SEMBADA",
+        parentCompanyName: "MITRA AGRO SEMBADA",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -2.038122, lng: 105.897357 }
+    },
+    {
+        title: "MUTIARA ALAM LESTARI",
+        millCompanyName: "MUTIARA ALAM LESTARI",
+        parentCompanyName: "MUTIARA ALAM LESTARI",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -2.492167, lng: 106.364317 }
+    },
+    {
+        title: "MUTIARA HIJAU LESTARI (MHL)",
+        millCompanyName: "MUTIARA HIJAU LESTARI (MHL)",
+        parentCompanyName: "MUTIARA HIJAU LESTARI (MHL)",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -2.581249, lng: 106.246435 }
+    },
+    {
+        title: "NEKNANG",
+        millCompanyName: "GEMILANG CAHAYA MENTARI",
+        parentCompanyName: "GEMILANG CAHAYA MENTARI",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -1.950305556, lng: 105.7893889 }
+    },
+    {
+        title: "PARIT SEMBADA",
+        millCompanyName: "PARIT SEMBADA",
+        parentCompanyName: "KUALA LUMPUR KEPONG BERHAD",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -2.740393, lng: 108.001873 }
+    },
+    {
+        title: "PAYUNG MITRA JAYA MANDIRI",
+        millCompanyName: "PAYUNG MITRA JAYA MANDIRI",
+        parentCompanyName: "PAYUNG MITRA JAYA MANDIRI",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -1.91937, lng: 105.70951 }
+    },
+    {
+        title: "PRATAMA UNGGUL SEJAHTERA",
+        millCompanyName: "PRATAMA UNGGUL SEJAHTERA",
+        parentCompanyName: "PRATAMA UNGGUL SEJAHTERA",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -2.849591, lng: 107.617261 }
+    },
+    {
+        title: "PUTRA BANGKA MANDIRI",
+        millCompanyName: "PUTRA BANGKA MANDIRI",
+        parentCompanyName: "PUTRA BANGKA MANDIRI",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -2.166067, lng: 106.004517 }
+    },
+    {
+        title: "PUTRA BANGKA TANI",
+        millCompanyName: "PUTRA BANGKA TANI",
+        parentCompanyName: "PUTRA BANGKA TANI",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -2.355277, lng: 106.20916 }
+    },
+    {
+        title: "REBINMAS JAYA",
+        millCompanyName: "REBINMAS JAYA",
+        parentCompanyName: "TRADISI",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -2.733527778, lng: 107.9010667 }
+    },
+    {
+        title: "SAWINDO KENCANA",
+        millCompanyName: "SAWINDO KENCANA",
+        parentCompanyName: "KENCANA AGRI LIMITED",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -2.076, lng: 105.647933 }
+    },
+    {
+        title: "STEELINDO WAHANA PERKASA",
+        millCompanyName: "STEELINDO WAHANA PERKASA",
+        parentCompanyName: "KUALA LUMPUR KEPONG BERHAD",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -2.724044444, lng: 108.061775 }
+    },
+    {
+        title: "SWARNA NUSA SENTOSA",
+        millCompanyName: "SWARNA NUSA SENTOSA",
+        parentCompanyName: "SWARNA NUSA SENTOSA",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -2.482538889, lng: 106.0767444 }
+    },
+    {
+        title: "TANJUNG KEMBIRI",
+        millCompanyName: "FORESTALESTARI DWIKARYA",
+        parentCompanyName: "GOLDEN AGRI-RESOURCES (GAR)",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -3.03125, lng: 107.7718333 }
+    },
+    {
+        title: "TATA HAMPARAN EKA PERSADA",
+        millCompanyName: "TATA HAMPARAN EKA PERSADA",
+        parentCompanyName: "SAMTAN CO. LTD.",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -1.98946, lng: 105.89513 }
+    },
+    {
+        title: "TENGAKALAT",
+        millCompanyName: "GUNUNG PELAWAN LESTARI",
+        parentCompanyName: "M.P.EVANS",
+        province: "BANGKA BELITUNG",
+        country: "INDONESIA",
+        position: { lat: -1.623167, lng: 105.989222 }
     }
 ];
 window.assets = assets;
