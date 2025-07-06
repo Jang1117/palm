@@ -383,6 +383,245 @@ const assets = [
         province: "ACEH",
         country: "INDONESIA",
         position: { lat: 4.186044444, lng: 98.0424 }
+    },
+    {
+        title: "AGRI ANDALAS",
+        millCompanyName: "AGRI ANDALAS",
+        parentCompanyName: "AGRI ANDALAS",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -3.998716, lng: 102.429673 }
+    },
+    {
+        title: "AGRICINAL",
+        millCompanyName: "AGRICINAL",
+        parentCompanyName: "AGRICINAL",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -3.200972222, lng: 101.6301389 }
+    },
+    {
+        title: "AGRINDO INDAH PERSADA",
+        millCompanyName: "AGRINDO INDAH PERSADA",
+        parentCompanyName: "WILMAR INTERNATIONAL",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -4.010267, lng: 102.496717 }
+    },
+    {
+        title: "ANUGERAH PELANGI SUKSES",
+        millCompanyName: "ANUGERAH PELANGI SUKSES",
+        parentCompanyName: "ANUGERAH PELANGI SUKSES",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -4.5632, lng: 103.1132 }
+    },
+    {
+        title: "BENGKULU SAWIT LESTARI",
+        millCompanyName: "BENGKULU SAWIT LESTARI",
+        parentCompanyName: "BENGKULU SAWIT LESTARI",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -4.533458333, lng: 103.0570028 }
+    },
+    {
+        title: "BIO NUSANTARA TEKNOLOGI",
+        millCompanyName: "BIO NUSANTARA TEKNOLOGI",
+        parentCompanyName: "BIO NUSANTARA TEKNOLOGI",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -3.64375, lng: 102.240972 }
+    },
+    {
+        title: "BUMI ANUGERAH SAWIT",
+        millCompanyName: "BUMI ANUGERAH SAWIT",
+        parentCompanyName: "BUMI ANUGERAH SAWIT",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -3.367947, lng: 101.900074 }
+    },
+    {
+        title: "BUMI MENTARI KARYA",
+        millCompanyName: "BUMI MENTARI KARYA",
+        parentCompanyName: "SUPERVENTURE",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -2.875888889, lng: 101.4245278 }
+    },
+    {
+        title: "AGRO MUKO",
+        millCompanyName: "AGRO MUKO",
+        parentCompanyName: "SIPEF",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -2.716ಸ
+
+        title: "AGRO MUKO",
+        millCompanyName: "AGRO MUKO",
+        parentCompanyName: "SIPEF",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -2.60183, lng: 101.27886 }
+    },
+    {
+        title: "CAHAYA SAWIT LESTARI",
+        millCompanyName: "CAHAYA SAWIT LESTARI",
+        parentCompanyName: "CAHAYA SAWIT LESTARI",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -3.804611111, lng: 102.3975278 }
+    },
+    {
+        title: "CIPTAMAS BUMISELARAS",
+        millCompanyName: "CIPTAMAS BUMISELARAS",
+        parentCompanyName: "CIPUTRA PLANTATION",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -4.866888889, lng: 103.5342417 }
+    },
+    {
+        title: "DARIA DHARMA PRATAMA",
+        millCompanyName: "DARIA DHARMA PRATAMA",
+        parentCompanyName: "WIDYA CORPORATION",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -2.98093, lng: 101.50601 }
+    },
+    {
+        title: "DARIA DHARMA PRATAMA",
+        millCompanyName: "DARIA DHARMA PRATAMA",
+        parentCompanyName: "WIDYA CORPORATION",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -2.791944444, lng: 101.4022222 }
+    },
+    {
+        title: "GAJAH SAKTI SAWIT",
+        millCompanyName: "GAJAH SAKTI SAWIT",
+        parentCompanyName: "SUTOMO/SINAR JAYA AGRO INVESTAMA",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -2.87, lng: 101.435 }
+    },
+    {
+        title: "KARYA SAWITINDO MAS",
+        millCompanyName: "KARYA SAWITINDO MAS",
+        parentCompanyName: "SUTOMO/SINAR JAYA AGRO INVESTAMA",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -2.461505, lng: 101.123821 }
+    },
+    {
+        title: "MITRA PUDING MAS",
+        millCompanyName: "MITRA PUDING MAS",
+        parentCompanyName: "ANGLO EASTERN PLANTATION",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -3.133783333, lng: 101.6016278 }
+    },
+    {
+        title: "MUKO PANEN RAYA ABADI",
+        millCompanyName: "MUKO PANEN RAYA ABADI",
+        parentCompanyName: "VIGOUR",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -2.7561, lng: 101.39197 }
+    },
+    {
+        title: "MUKO-MUKO INDAH LESTARI",
+        millCompanyName: "MUKO-MUKO INDAH LESTARI",
+        parentCompanyName: "SUTOMO/SINAR JAYA AGRO INVESTAMA",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -2.677972, lng: 101.320028 }
+    },
+    {
+        title: "PALMA MAS SEJATI",
+        millCompanyName: "PALMA MAS SEJATI",
+        parentCompanyName: "PALMA MAS SEJAHTERA",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -3.777933, lng: 102.369 }
+    },
+    {
+        title: "SANDABI INDAH LESTARI",
+        millCompanyName: "SANDABI INDAH LESTARI",
+        parentCompanyName: "SANDABI INDAH LESTARI",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -3.30905, lng: 102.0919806 }
+    },
+    {
+        title: "SAPTA SENTOSA JAYA ABADI",
+        millCompanyName: "SAPTA SENTOSA JAYA ABADI",
+        parentCompanyName: "HERFINTA",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -2.38483, lng: 101.16282 }
+    },
+    {
+        title: "SAWIT MULIA",
+        millCompanyName: "SAWIT MULIA",
+        parentCompanyName: "SAWIT MULIA",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -3.634526, lng: 102.212235 }
+    },
+    {
+        title: "SENTOSA SEJAHTERA SEJATI",
+        millCompanyName: "SENTOSA SEJAHTERA SEJATI",
+        parentCompanyName: "SENTOSA SEJAHTERA SEJATI",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -2.66545, lng: 101.29975 }
+    },
+    {
+        title: "SINAR BENGKULU SELATAN",
+        millCompanyName: "SINAR BENGKULU SELATAN",
+        parentCompanyName: "TRINITY INTERLINK",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -4.3782, lng: 102.840583 }
+    },
+    {
+        title: "SURYA ANDALAN PRIMATAMA",
+        millCompanyName: "SURYA ANDALAN PRIMATAMA",
+        parentCompanyName: "SUMBER BUDI AGUNG",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -2.582888889, lng: 101.3102222 }
+    },
+    {
+        title: "PERKEBUNAN NUSANTARA VII",
+        millCompanyName: "PERKEBUNAN NUSANTARA VII",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -4.2459, lng: 102.71283 }
+    },
+    {
+        title: "ALNO AGRO UTAMA",
+        millCompanyName: "ALNO AGRO UTAMA",
+        parentCompanyName: "ANGLO EASTERN PLANTATION",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -3.13358, lng: 101.87569 }
+    },
+    {
+        title: "AGRA SAWITINDO",
+        millCompanyName: "AGRA SAWITINDO",
+        parentCompanyName: "SUTOMO/SINAR JAYA AGRO INVESTAMA",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -3.777583333, lng: 102.4029444 }
+    },
+    {
+        title: "SINAR JAYA AGRO INVESTAMA",
+        millCompanyName: "SINAR JAYA AGRO INVESTAMA",
+        parentCompanyName: "SINAR JAYA AGRO INVESTAMA",
+        province: "BENGKULU",
+        country: "INDONESIA",
+        position: { lat: -2.711257, lng: 101.339835 }
     }
 ];
 window.assets = assets;
