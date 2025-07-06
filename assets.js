@@ -12567,6 +12567,1428 @@ const assets = [
         province: "RIAU",
         country: "INDONESIA",
         position: { lat: 0.829467, lng: 103.376017 }
+    },
+    {
+        title: "CPA",
+        millCompanyName: "AGROPALMA S.A",
+        parentCompanyName: "AGROPALMA GROUP",
+        province: "PARA",
+        country: "BRAZIL",
+        position: { lat: -2.253972222, lng: -48.58771389 },
+        description: "Located in DISTRICT, UML ID: PO1000000017"
+    },
+    {
+        title: "CRAI-AGROPAR",
+        millCompanyName: "AGROPALMA S.A",
+        parentCompanyName: "AGROPALMA GROUP",
+        province: "PARA",
+        country: "BRAZIL",
+        position: { lat: -2.524463889, lng: -48.7965 },
+        description: "Located in DISTRICT, UML ID: PO1000000407"
+    },
+    {
+        title: "PARAPALMA",
+        millCompanyName: "AGROPALMA S.A",
+        parentCompanyName: "AGROPALMA GROUP",
+        province: "PARA",
+        country: "BRAZIL",
+        position: { lat: -2.542672222, lng: -48.70518611 },
+        description: "Located in DISTRICT, UML ID: PO1000004955"
+    },
+    {
+        title: "ANLONG KROPEU PALM OIL MILL",
+        millCompanyName: "MONG RETHTHY INVESTMENT CAMBODIA OIL PALM CO., L",
+        parentCompanyName: "MONG RETHTHY INVESTMENT CAMBODIA OIL PALM CO., LTD",
+        province: "PREAH SIHANOUK",
+        country: "CAMBODIA",
+        position: { lat: 10.95969, lng: 103.90783 },
+        description: "Located in DISTRICT, UML ID: PO1000000223"
+    },
+    {
+        title: "MRICOP",
+        millCompanyName: "MONG RETHTHY INVESTMENT CAMBODIA OIL PALM CO., L",
+        parentCompanyName: "MONG RETHTHY INVESTMENT CAMBODIA OIL PALM CO., LTD",
+        province: "PREAH SIHANOUK",
+        country: "CAMBODIA",
+        position: { lat: 10.9111, lng: 103.8304 },
+        description: "Located in DISTRICT, UML ID: PO1000003115"
+    },
+    {
+        title: "SAFACAM",
+        millCompanyName: "SAFACAM",
+        parentCompanyName: "SOCFIN",
+        province: "LITTORAL",
+        country: "CAMEROON",
+        position: { lat: 3.73979, lng: 9.98864 },
+        description: "Located in DISTRICT, UML ID: PO1000009357"
+    },
+    {
+        title: "ACEITES LAS COLOMBIANAS",
+        millCompanyName: "ACEITES LAS COLOMBIANAS (ALASCOL) S.A.S.",
+        parentCompanyName: "ACEITES LAS COLOMBIANAS (ALASCOL) S.A.S.",
+        province: "META",
+        country: "COLOMBIA",
+        position: { lat: 4.079083, lng: -73.693639 },
+        description: "Located in DISTRICT, UML ID: PO1000003994"
+    },
+    {
+        title: "ACEITES MANUELITA S.A. (YAGUARITO)",
+        millCompanyName: "ACEITES MANUELITA",
+        parentCompanyName: "MANUELITA",
+        province: "META",
+        country: "COLOMBIA",
+        position: { lat: 3.883139, lng: -73.339917 },
+        description: "Located in DISTRICT, UML ID: PO1000005117"
+    },
+    {
+        title: "ACEITES MORICHAL",
+        millCompanyName: "ACEITES MORICHAL S.A.",
+        parentCompanyName: "ACEITES MORICHAL S.A.",
+        province: "META",
+        country: "COLOMBIA",
+        position: { lat: 3.92985, lng: -73.242775 },
+        description: "Located in DISTRICT, UML ID: PO1000003988"
+    },
+    {
+        title: "ACEITES S.A.",
+        millCompanyName: "ACEITES S.A.",
+        parentCompanyName: "ACEITES S.A.",
+        province: "MAGDALENA",
+        country: "COLOMBIA",
+        position: { lat: 10.56788889, lng: -74.20816667 },
+        description: "Located in DISTRICT, UML ID: PO1000003979"
+    },
+    {
+        title: "ACEITES Y GRASAS DEL CATATUMBO SAS",
+        millCompanyName: "ACEITES Y GRASAS DEL CATATUMBO SAS",
+        parentCompanyName: "ACEITES Y GRASAS DEL CATATUMBO SAS",
+        province: "NORTE DE SANTANDER",
+        country: "COLOMBIA",
+        position: { lat: 8.502247, lng: -72.639977 },
+        description: "Located in DISTRICT, UML ID: PO1000007953"
+    },
+    {
+        title: "AGROINCE LTDA Y CIA SCA",
+        millCompanyName: "AGROINCE LTDA Y CIA SCA",
+        parentCompanyName: "AGROINDUSTRIAS DEL SUR DEL CESAR LIMITADA",
+        province: "CESAR",
+        country: "COLOMBIA",
+        position: { lat: 8.110308, lng: -73.574628 },
+        description: "Located in DISTRICT, UML ID: PO1000007434"
+    },
+    {
+        title: "ALIANZA DEL HUMEA S.A.S.",
+        millCompanyName: "ALIANZA DEL HUMEA S.A.S.",
+        parentCompanyName: "INPARME S.A.",
+        province: "META",
+        country: "COLOMBIA",
+        position: { lat: 4.267895, lng: -72.982742 },
+        description: "Located in DISTRICT, UML ID: PO1000006178"
+    },
+    {
+        title: "ALIANZA ORIENTAL S.A.",
+        millCompanyName: "ALIANZA ORIENTAL S.A.",
+        parentCompanyName: "ALIANZA ORIENTAL S.A.",
+        province: "META",
+        country: "COLOMBIA",
+        position: { lat: 3.995075, lng: -73.58075 },
+        description: "Located in DISTRICT, UML ID: PO1000003992"
+    },
+    {
+        title: "BIOPLANTA PALMERA",
+        millCompanyName: "BIOPLANTA PALMERA PARA EL DESARROLLO S.A.",
+        parentCompanyName: "BIOPLANTA PALMERA PARA EL DESARROLLO S.A.",
+        province: "ANTIOQUIA",
+        country: "COLOMBIA",
+        position: { lat: 7.56925, lng: -76.618222 },
+        description: "Located in DISTRICT, UML ID: PO1000007483"
+    },
+    {
+        title: "CASTILLA",
+        millCompanyName: "RIOPAILA CASTILLA S.A.",
+        parentCompanyName: "GRUPO AGROINDUSTRIAL RIOPAILA CASTILLA",
+        province: "VALLE DEL CAUCA",
+        country: "COLOMBIA",
+        position: { lat: 3.367247, lng: -76.286729 },
+        description: "Located in DISTRICT, UML ID: PO1000009560"
+    },
+    {
+        title: "COOPAR LTDA",
+        millCompanyName: "COOPERATIVA PALMAS DE RISARALDA LTDA",
+        parentCompanyName: "COOPERATIVA PALMAS DE RISARALDA LTDA",
+        province: "NORTE DE SANTANDER",
+        country: "COLOMBIA",
+        position: { lat: 8.20255, lng: -72.548675 },
+        description: "Located in DISTRICT, UML ID: PO1000004019"
+    },
+    {
+        title: "ENTREPALMAS S.A.S.",
+        millCompanyName: "ENTREPALMAS S.A.S.",
+        parentCompanyName: "ENTREPALMAS S.A.S.",
+        province: "META",
+        country: "COLOMBIA",
+        position: { lat: 3.564583, lng: -73.579417 },
+        description: "Located in DISTRICT, UML ID: PO1000003983"
+    },
+    {
+        title: "EXTRACTORA CENTRAL S.A.",
+        millCompanyName: "EXTRACTORA CENTRAL S.A.",
+        parentCompanyName: "EXTRACTORA CENTRAL S.A.",
+        province: "SANTANDER",
+        country: "COLOMBIA",
+        position: { lat: 7.280972, lng: -73.618778 },
+        description: "Located in DISTRICT, UML ID: PO1000004010"
+    },
+    {
+        title: "EXTRACTORA DEL SUR DE CASANARE S.A.S.",
+        millCompanyName: "EXTRACTORA DEL SUR DE CASANARE S.A.S.",
+        parentCompanyName: "PALMAR DEL ORIENTE / ALIANZA TEAM",
+        province: "CASANARE",
+        country: "COLOMBIA",
+        position: { lat: 4.492861, lng: -72.84445 },
+        description: "Located in DISTRICT, UML ID: PO1000003177"
+    },
+    {
+        title: "EXTRACTORA EL ESTERO",
+        millCompanyName: "EXTRACTORA EL ESTERO",
+        parentCompanyName: "EXTRACTORA EL ESTERO",
+        province: "CASANARE",
+        country: "COLOMBIA",
+        position: { lat: 4.608389, lng: -72.27297 },
+        description: "Located in DISTRICT, UML ID: None"
+    },
+    {
+        title: "EXTRACTORA EL ROBLE S.A.",
+        millCompanyName: "EL ROBLE S.A",
+        parentCompanyName: "FAMAR S.A.",
+        province: "MAGDALENA",
+        country: "COLOMBIA",
+        position: { lat: 10.672722, lng: -74.214806 },
+        description: "Located in DISTRICT, UML ID: PO1000004030"
+    },
+    {
+        title: "EXTRACTORA LA PAZ S.A.",
+        millCompanyName: "EXTRACTORA LA PAZ S.A.",
+        parentCompanyName: "EXTRACTORA LA PAZ S.A.",
+        province: "META",
+        country: "COLOMBIA",
+        position: { lat: 3.71144, lng: -73.272138 },
+        description: "Located in DISTRICT, UML ID: PO1000003985"
+    },
+    {
+        title: "EXTRACTORA LOMA FRESCA SUR DEL BOLIVAR S.A.S.",
+        millCompanyName: "EXTRACTORA LOMA FRESCA SUR DEL BOLIVAR S.A.S.",
+        parentCompanyName: "EXTRACTORA LOMA FRESCA SUR DEL BOLIVAR S.A.S.",
+        province: "BOLIVAR",
+        country: "COLOMBIA",
+        position: { lat: 7.528445, lng: -73.93647 },
+        description: "Located in DISTRICT, UML ID: PO1000010886"
+    },
+    {
+        title: "EXTRACTORA MARIA LA BAJA S.A.",
+        millCompanyName: "EXTRACTORA MARIA LA BAJA S.A.",
+        parentCompanyName: "OLEOFLORES",
+        province: "BOLIVAR",
+        country: "COLOMBIA",
+        position: { lat: 9.923369, lng: -75.32757 },
+        description: "Located in DISTRICT, UML ID: PO1000007502"
+    },
+    {
+        title: "EXTRACTORA MONTERREY S.A.",
+        millCompanyName: "EXTRACTORA MONTERREY S.A.",
+        parentCompanyName: "SACEITES",
+        province: "SANTANDER",
+        country: "COLOMBIA",
+        position: { lat: 7.298556, lng: -73.883722 },
+        description: "Located in DISTRICT, UML ID: PO1000004012"
+    },
+    {
+        title: "EXTRACTORA RIO PAILA CASTILLA",
+        millCompanyName: "RIOPAILA CASTILLA S.A.",
+        parentCompanyName: "GRUPO AGROINDUSTRIAL RIOPAILA CASTILLA",
+        province: "VICHADA",
+        country: "COLOMBIA",
+        position: { lat: 5.03109, lng: -70.84156 },
+        description: "Located in DISTRICT, UML ID: PO1000010035"
+    },
+    {
+        title: "EXTRACTORA SAN FERNANDO S.A.",
+        millCompanyName: "EXTRACTORA SAN FERNANDO S.A.",
+        parentCompanyName: "EXTRACTORA SAN FERNANDO S.A.",
+        province: "SANTANDER",
+        country: "COLOMBIA",
+        position: { lat: 7.320306, lng: -73.598789 },
+        description: "Located in DISTRICT, UML ID: PO1000007666"
+    },
+    {
+        title: "EXTRACTORA SICARARE LTDA",
+        millCompanyName: "EXTRACTORA SICARARE LTDA",
+        parentCompanyName: "EXTRACTORA SICARARE LTDA",
+        province: "CESAR",
+        country: "COLOMBIA",
+        position: { lat: 9.931944, lng: -73.262494 },
+        description: "Located in DISTRICT, UML ID: PO1000004026"
+    },
+    {
+        title: "EXTRACTORA TEQUENDAMA",
+        millCompanyName: "C.I. TEQUENDAMA S.A.S.",
+        parentCompanyName: "DAABON GROUP",
+        province: "MAGDALENA",
+        country: "COLOMBIA",
+        position: { lat: 10.548583, lng: -74.181556 },
+        description: "Located in DISTRICT, UML ID: PO1000000123"
+    },
+    {
+        title: "EXTRACTORA VIZCAYAS S.A.S.",
+        millCompanyName: "EXTRACTORA VIZCAYAS S.A.S.",
+        parentCompanyName: "EXTRACTORA VIZCAYAS S.A.S.",
+        province: "BOLIVAR",
+        country: "COLOMBIA",
+        position: { lat: 7.5755, lng: -73.950836 },
+        description: "Located in DISTRICT, UML ID: PO1000004016"
+    },
+    {
+        title: "GUAICARAMO S.A.",
+        millCompanyName: "GUAICARAMO S.A.",
+        parentCompanyName: "INPARME S.A.",
+        province: "META",
+        country: "COLOMBIA",
+        position: { lat: 4.478544, lng: -72.960689 },
+        description: "Located in DISTRICT, UML ID: PO1000004751"
+    },
+    {
+        title: "HACIENDA LA CABAÑA S.A.",
+        millCompanyName: "HACIENDA LA CABAÑA S.A.",
+        parentCompanyName: "INPARME S.A.",
+        province: "META",
+        country: "COLOMBIA",
+        position: { lat: 4.301261, lng: -73.3561 },
+        description: "Located in DISTRICT, UML ID: PO1000003999"
+    },
+    {
+        title: "INDUSTRIAL ACEITERA DE CASANARE S.A.",
+        millCompanyName: "INDUSTRIAL ACEITERA DE CASANARE S.A. SUCURSAL COLO",
+        parentCompanyName: "INDUSTRIAL ACEITERA DE CASANARE S.A. SUCURSAL COLOM",
+        province: "CASANARE",
+        country: "COLOMBIA",
+        position: { lat: 5.087917, lng: -71.959972 },
+        description: "Located in DISTRICT, UML ID: PO1000008301"
+    },
+    {
+        title: "INVERSIONES LA MEJORANA S.A.S",
+        millCompanyName: "INVERSIONES LA MEJORANA S.A.S",
+        parentCompanyName: "INVERSIONES LA MEJORANA S.A.S",
+        province: "META",
+        country: "COLOMBIA",
+        position: { lat: 3.961281, lng: -73.626778 },
+        description: "Located in DISTRICT, UML ID: PO1000003990"
+    },
+    {
+        title: "OLEAGINOSAS SAN MARCOS S.A.",
+        millCompanyName: "OLEAGINOSAS SAN MARCOS S.A.",
+        parentCompanyName: "OLEAGINOSAS SAN MARCOS S.A.",
+        province: "META",
+        country: "COLOMBIA",
+        position: { lat: 3.733154, lng: -73.341972 },
+        description: "Located in DISTRICT, UML ID: PO1000007667"
+    },
+    {
+        title: "OLEOFLORES",
+        millCompanyName: "GRUPO OLEOFLORES",
+        parentCompanyName: "OLEOFLORES",
+        province: "CESAR",
+        country: "COLOMBIA",
+        position: { lat: 10.09650478, lng: -73.23711634 },
+        description: "Located in DISTRICT, UML ID: PO1000003324"
+    },
+    {
+        title: "OLEOINVERSIONES ZOMAC",
+        millCompanyName: "OLEOINVERSIONES ZOMAC",
+        parentCompanyName: "OLEOINVERSIONES ZOMAC",
+        province: "CASANARE",
+        country: "COLOMBIA",
+        position: { lat: 4.689, lng: -72.081 },
+        description: "Located in DISTRICT, UML ID: PO1000010809"
+    },
+    {
+        title: "OLEONORTE S.A.S",
+        millCompanyName: "OLEONORTE S.A.S",
+        parentCompanyName: "OLEAGINOSAS DEL NORTE DE SANTANDER S.A.S",
+        province: "NORTE DE SANTANDER",
+        country: "COLOMBIA",
+        position: { lat: 8.201625, lng: -72.550875 },
+        description: "Located in DISTRICT, UML ID: None"
+    },
+    {
+        title: "OLIOMAPI",
+        millCompanyName: "POLIGROW COLOMBIA SAS",
+        parentCompanyName: "POLIGROW COLOMBIA SAS",
+        province: "META",
+        country: "COLOMBIA",
+        position: { lat: 3.012917, lng: -72.202833 },
+        description: "Located in DISTRICT, UML ID: PO1000010169"
+    },
+    {
+        title: "PALMA Y TRABAJO S.A.S.",
+        millCompanyName: "PALMA Y TRABAJO S.A.S.",
+        parentCompanyName: "DAABON GROUP",
+        province: "SANTANDER",
+        country: "COLOMBIA",
+        position: { lat: 7.237922, lng: -73.799558 },
+        description: "Located in DISTRICT, UML ID: PO1000006312"
+    },
+    {
+        title: "PALMACEITE S.A.",
+        millCompanyName: "PALMACEITE S.A.",
+        parentCompanyName: "PALMACEITE S.A.",
+        province: "MAGDALENA",
+        country: "COLOMBIA",
+        position: { lat: 10.618553, lng: -74.168908 },
+        description: "Located in DISTRICT, UML ID: PO1000004029"
+    },
+    {
+        title: "PALMAGRO",
+        millCompanyName: "PALMAGRO S.A.",
+        parentCompanyName: "PALMAGRO S.A.",
+        province: "CESAR",
+        country: "COLOMBIA",
+        position: { lat: 9.651447, lng: -73.566231 },
+        description: "Located in DISTRICT, UML ID: PO1000004025"
+    },
+    {
+        title: "PALMAR DE ALTAMIRA S.A.S.",
+        millCompanyName: "PALMAR DE ALTAMIRA S.A.S.",
+        parentCompanyName: "MANUELITA",
+        province: "CASANARE",
+        country: "COLOMBIA",
+        position: { lat: 4.750511, lng: -71.68246 },
+        description: "Located in DISTRICT, UML ID: PO1000004007"
+    },
+    {
+        title: "PALMAR EL QUITEBE S.A.S",
+        millCompanyName: "PALMAR EL QUITEBE S.A.S",
+        parentCompanyName: "PALMAR EL QUITEBE S.A.S",
+        province: "CASANARE",
+        country: "COLOMBIA",
+        position: { lat: 5.543793, lng: -71.980161 },
+        description: "Located in DISTRICT, UML ID: None"
+    },
+    {
+        title: "PALMAS DE TUMACO S.A.S.",
+        millCompanyName: "PALMAS DE TUMACO S.A.S.",
+        parentCompanyName: "PALMAS DE TUMACO S.A.S.",
+        province: "NARINO",
+        country: "COLOMBIA",
+        position: { lat: 1.525728, lng: -78.735344 },
+        description: "Located in DISTRICT, UML ID: PO1000008289"
+    },
+    {
+        title: "PALMAS DEL CESAR",
+        millCompanyName: "PALMAS DEL CESAR S.A.",
+        parentCompanyName: "PALMAS DEL CESAR S.A.",
+        province: "CESAR",
+        country: "COLOMBIA",
+        position: { lat: 7.886, lng: -73.466683 },
+        description: "Located in DISTRICT, UML ID: PO1000004752"
+    },
+    {
+        title: "PALMEIRAS",
+        millCompanyName: "PALMEIRAS COLOMBIA S.A.",
+        parentCompanyName: "PALMEIRAS COLOMBIA S.A.",
+        province: "NARINO",
+        country: "COLOMBIA",
+        position: { lat: 1.458574, lng: -78.686958 },
+        description: "Located in DISTRICT, UML ID: PO1000010950"
+    },
+    {
+        title: "PALMERAS DE LA COSTA",
+        millCompanyName: "PALMERAS DE LA COSTA S.A.",
+        parentCompanyName: "PALMERAS DE LA COSTA S.A.",
+        province: "CESAR",
+        country: "COLOMBIA",
+        position: { lat: 10.101889, lng: -74.011028 },
+        description: "Located in DISTRICT, UML ID: PO1000003031"
+    },
+    {
+        title: "PALMERAS DE PUERTO WILCHES S.A.",
+        millCompanyName: "PALMERAS DE PUERTO WILCHES S.A.",
+        parentCompanyName: "PALMERAS DE PUERTO WILCHES S.A.",
+        province: "SANTANDER",
+        country: "COLOMBIA",
+        position: { lat: 7.339056, lng: -73.837389 },
+        description: "Located in DISTRICT, UML ID: PO1000004014"
+    },
+    {
+        title: "PALMERAS DEL LLANO S.A.",
+        millCompanyName: "PALMERAS DEL LLANO S.A.",
+        parentCompanyName: "PALMERAS DEL LLANO S.A.",
+        province: "META",
+        country: "COLOMBIA",
+        position: { lat: 3.9609, lng: -73.62768 },
+        description: "Located in DISTRICT, UML ID: None"
+    },
+    {
+        title: "PALMICULTORES DEL NORTE (PALNORTE) S.A.S.",
+        millCompanyName: "PALMICULTORES DEL NORTE S.A.S.",
+        parentCompanyName: "PALMICULTORES DEL NORTE S.A.S.",
+        province: "NORTE DE SANTANDER",
+        country: "COLOMBIA",
+        position: { lat: 8.535072222, lng: -72.63561667 },
+        description: "Located in DISTRICT, UML ID: PO1000007531"
+    },
+    {
+        title: "PLANTA DE BENEFICIO AGROPECUARIA SANTAMARIA S.A",
+        millCompanyName: "AGROPECUARIA SANTAMARIA S.A",
+        parentCompanyName: "AGROPECUARIA SANTAMARIA S.A",
+        province: "META",
+        country: "COLOMBIA",
+        position: { lat: 3.516145, lng: -73.558441 },
+        description: "Located in DISTRICT, UML ID: PO1000003981"
+    },
+    {
+        title: "PLANTA DE BENIFICIO ACEITES CIMARRONES ZONA S.A.S",
+        millCompanyName: "AGROPECUARIA SANTAMARIA S.A.",
+        parentCompanyName: "AGROPECUARIA SANTAMARIA S.A.",
+        province: "META",
+        country: "COLOMBIA",
+        position: { lat: 3.035594, lng: -73.111466 },
+        description: "Located in DISTRICT, UML ID: PO1000008385"
+    },
+    {
+        title: "UNIPALMA S.A.",
+        millCompanyName: "UNIPALMA S.A.",
+        parentCompanyName: "UNIPALMA S.A.",
+        province: "META",
+        country: "COLOMBIA",
+        position: { lat: 4.2258333, lng: -73.247222 },
+        description: "Located in DISTRICT, UML ID: PO1000006350"
+    },
+    {
+        title: "COOPEAGROPAL EL ROBEL",
+        millCompanyName: "COOPERATIVA AGROINDUSTRIAL DE PRODUCTORES DE PAL",
+        parentCompanyName: "COOPERATIVA AGROINDUSTRIAL DE PRODUCTORES DE PALM",
+        province: "PUNTARENAS",
+        country: "COSTA RICA",
+        position: { lat: 8.4358333, lng: -82.94469444 },
+        description: "Located in DISTRICT, UML ID: PO1000003982"
+    },
+    {
+        title: "COOPEAGROPAL LA GUARIA",
+        millCompanyName: "COOPERATIVA AGROINDUSTRIAL DE PRODUCTORES DE PAL",
+        parentCompanyName: "COOPERATIVA AGROINDUSTRIAL DE PRODUCTORES DE PALM",
+        province: "PUNTARENAS",
+        country: "COSTA RICA",
+        position: { lat: 8.7548, lng: -83.2082 },
+        description: "Located in DISTRICT, UML ID: PO1000008627"
+    },
+    {
+        title: "COTO 54 AGUIRRE, NARANJO MILL",
+        millCompanyName: "COMPAÑÍA INDUSTRIAL ACEITERA COTO 54 S.A.",
+        parentCompanyName: "GRUPO NUMAR",
+        province: "PUNTARENAS",
+        country: "COSTA RICA",
+        position: { lat: 9.407408, lng: -84.086653 },
+        description: "Located in DISTRICT, UML ID: PO1000002767"
+    },
+    {
+        title: "COTO 54 GUAYCARA, COTO MILL",
+        millCompanyName: "COMPAÑÍA INDUSTRIAL ACEITERA COTO 54 S.A.",
+        parentCompanyName: "GRUPO NUMAR",
+        province: "PUNTARENAS",
+        country: "COSTA RICA",
+        position: { lat: 8.629417, lng: -83.003667 },
+        description: "Located in DISTRICT, UML ID: PO1000002746"
+    },
+    {
+        title: "PALESEMA",
+        millCompanyName: "PALMAR DE LOS ESTEROS EMA S.A.",
+        parentCompanyName: "PALMAR DE LOS ESTEROS EMA S.A.",
+        province: "ESMERALDAS",
+        country: "ECUADOR",
+        position: { lat: 1.308638, lng: -78.730805 },
+        description: "Located in DISTRICT, UML ID: PO1000008415"
+    },
+    {
+        title: "AWALA PALM OIL MILL",
+        millCompanyName: "OLAM PALM GABON SA",
+        parentCompanyName: "OLAM INTERNATIONAL LTD",
+        province: "ESTUAIRE",
+        country: "GABON",
+        position: { lat: -0.021987, lng: 10.197727 },
+        description: "Located in DISTRICT, UML ID: PO1000002779"
+    },
+    {
+        title: "BILALA PALM OIL MILL",
+        millCompanyName: "OLAM PALM GABON SA",
+        parentCompanyName: "OLAM INTERNATIONAL LTD",
+        province: "NGOUNIE",
+        country: "GABON",
+        position: { lat: -1.652155, lng: 10.854527 },
+        description: "Located in DISTRICT, UML ID: PO1000006576"
+    },
+    {
+        title: "BOPP",
+        millCompanyName: "BENSO OIL PALM PLANTATION PLC",
+        parentCompanyName: "WILMAR AFRICA LIMITED",
+        province: "WESTERN",
+        country: "GHANA",
+        position: { lat: 5.108472, lng: -1.914469 },
+        description: "Located in WASSA EAST, UML ID: PO1000001677"
+    },
+    {
+        title: "GOPDC",
+        millCompanyName: "GOPDC",
+        parentCompanyName: "SIAT",
+        province: "EASTERN",
+        country: "GHANA",
+        position: { lat: 6.256111, lng: -0.943889 },
+        description: "Located in DISTRICT, UML ID: PO1000002358"
+    },
+    {
+        title: "NORPALM MILL",
+        millCompanyName: "NORPALM GHANA LIMITED",
+        parentCompanyName: "NORPALM AS",
+        province: "WESTERN",
+        country: "GHANA",
+        position: { lat: 4.928056, lng: -1.896389 },
+        description: "Located in WASSA WEST, UML ID: PO1000005484"
+    },
+    {
+        title: "SRI",
+        millCompanyName: "SRI",
+        parentCompanyName: "SRI",
+        province: "EASTERN",
+        country: "GHANA",
+        position: { lat: 6.179805, lng: -1.154861 },
+        description: "Located in BIRIM NORTH, UML ID: PO1000007632"
+    },
+    {
+        title: "TWIFO OIL PALM PLANTATION (TOPP)",
+        millCompanyName: "TWIFO OIL PALM PLANTATIONS LIMITED",
+        parentCompanyName: "UNILEVER GHANA/ GOVERNMENT",
+        province: "CENTRAL",
+        country: "GHANA",
+        position: { lat: 5.543333, lng: -1.542833 },
+        description: "Located in TWIFO, UML ID: PO1000002917"
+    },
+    {
+        title: "VOLTA RED MILL",
+        millCompanyName: "VOLTA RED COMPANY LIMITED",
+        parentCompanyName: "VOLTA RED LIMITED",
+        province: "OTI",
+        country: "GHANA",
+        position: { lat: 7.717778, lng: 0.535 },
+        description: "Located in KADJEBI, UML ID: PO1000012639"
+    },
+    {
+        title: "AGROINDUSTRIA PALMERA SAN ROMAN, S.A.",
+        millCompanyName: "AGROINDUSTRIA PALMERA SAN ROMAN, S.A.",
+        parentCompanyName: "BRADEN GROUP, S.A.",
+        province: "PETEN",
+        country: "GUATEMALA",
+        position: { lat: 16.183143, lng: -90.422729 },
+        description: "Located in DISTRICT, UML ID: PO1000009242"
+    },
+    {
+        title: "ATLANTIDA",
+        millCompanyName: "ATLANTIDA S.A.",
+        parentCompanyName: "GRUPO HAME",
+        province: "SAN MARCOS",
+        country: "GUATEMALA",
+        position: { lat: 14.636667, lng: -92.148417 },
+        description: "Located in DISTRICT, UML ID: PO1000006136"
+    },
+    {
+        title: "EXTRACTORA DEL ATLANTICO",
+        millCompanyName: "AGROCARIBE S.A.",
+        parentCompanyName: "AGROAMERICA TROPICAL OIL HOLDING CORP",
+        province: "IZABAL",
+        country: "GUATEMALA",
+        position: { lat: 15.582917, lng: -88.559944 },
+        description: "Located in DISTRICT, UML ID: PO1000001431"
+    },
+    {
+        title: "EXTRACTORA LA FRANCIA",
+        millCompanyName: "AGROCARIBE S.A.",
+        parentCompanyName: "AGROAMERICA TROPICAL OIL HOLDING CORP",
+        province: "IZABAL",
+        country: "GUATEMALA",
+        position: { lat: 15.468472, lng: -88.809417 },
+        description: "Located in DISTRICT, UML ID: PO1000003997"
+    },
+    {
+        title: "FRAY BARTOLOME",
+        millCompanyName: "NATURACEITES S.A.",
+        parentCompanyName: "NATURACEITES S.A.",
+        province: "ALTA VERAPAZ",
+        country: "GUATEMALA",
+        position: { lat: 15.787694, lng: -89.847944 },
+        description: "Located in DISTRICT, UML ID: PO1000004000"
+    },
+    {
+        title: "INDUSTRIA CHIQUIBUL S.A.",
+        millCompanyName: "INDUSTRIA CHIQUIBUL S.A.",
+        parentCompanyName: "UNISOURCE HOLDING INC.",
+        province: "ALTA VERAPAZ",
+        country: "GUATEMALA",
+        position: { lat: 16.015547, lng: -90.393789 },
+        description: "Located in DISTRICT, UML ID: PO1000008338"
+    },
+    {
+        title: "NAISA",
+        millCompanyName: "NACIONAL AGRO INDUSTRIAL S.A.",
+        parentCompanyName: "KH REGIONAL GROUP INC.",
+        province: "PETEN",
+        country: "GUATEMALA",
+        position: { lat: 16.227913, lng: -90.152902 },
+        description: "Located in DISTRICT, UML ID: PO1000007305"
+    },
+    {
+        title: "PAHOSA",
+        millCompanyName: "PALMAS DEL HORIZONTE S.A. (PAHOSA)",
+        parentCompanyName: "GRUPO HAME",
+        province: "QUETZALTENANGO",
+        country: "GUATEMALA",
+        position: { lat: 14.564833, lng: -91.938944 },
+        description: "Located in DISTRICT, UML ID: PO1000007504"
+    },
+    {
+        title: "PALMA SUR S.A.",
+        millCompanyName: "PALMA SUR S.A.",
+        parentCompanyName: "PALMA SUR S.A.",
+        province: "PETEN",
+        country: "GUATEMALA",
+        position: { lat: 16.428333, lng: -90.341889 },
+        description: "Located in DISTRICT, UML ID: PO1000006316"
+    },
+    {
+        title: "PALMAS DEL IXCAN LTDA.",
+        millCompanyName: "PALMAS DEL IXCAN LTDA.",
+        parentCompanyName: "BRADEN GROUP, S.A.",
+        province: "ALTA VERAPAZ",
+        country: "GUATEMALA",
+        position: { lat: 15.987576, lng: -90.468721 },
+        description: "Located in DISTRICT, UML ID: PO1000008418"
+    },
+    {
+        title: "PALMAS DEL MACHAQUILA",
+        millCompanyName: "AGROPECUARIA NUEVO SAN CARLOS S.A.",
+        parentCompanyName: "FRUIT OIL",
+        province: "PETEN",
+        country: "GUATEMALA",
+        position: { lat: 16.11815, lng: -89.948667 },
+        description: "Located in DISTRICT, UML ID: PO1000008568"
+    },
+    {
+        title: "PANACTE",
+        millCompanyName: "NATURACEITES S.A.",
+        parentCompanyName: "NATURACEITES S.A.",
+        province: "IZABAL",
+        country: "GUATEMALA",
+        position: { lat: 15.306554, lng: -89.61771 },
+        description: "Located in DISTRICT, UML ID: PO1000005560"
+    },
+    {
+        title: "PATAXTE",
+        millCompanyName: "NATURACEITES S.A.",
+        parentCompanyName: "NATURACEITES S.A.",
+        province: "IZABAL",
+        country: "GUATEMALA",
+        position: { lat: 15.345136, lng: -89.291849 },
+        description: "Located in DISTRICT, UML ID: PO1000002872"
+    },
+    {
+        title: "REPSA I",
+        millCompanyName: "REFORESTADORA DE PALMA DEL PETEN S.A. (REPSA)",
+        parentCompanyName: "GRUPO HAME",
+        province: "PETEN",
+        country: "GUATEMALA",
+        position: { lat: 16.114556, lng: -90.075556 },
+        description: "Located in DISTRICT, UML ID: PO1000003998"
+    },
+    {
+        title: "REPSA II",
+        millCompanyName: "REFORESTADORA DE PALMA DEL PETEN S.A. (REPSA)",
+        parentCompanyName: "GRUPO HAME",
+        province: "PETEN",
+        country: "GUATEMALA",
+        position: { lat: 16.140028, lng: -90.166222 },
+        description: "Located in DISTRICT, UML ID: PO1000004002"
+    },
+    {
+        title: "SANTA ROSA I",
+        millCompanyName: "SANTA ROSA S.A.",
+        parentCompanyName: "GRUPO HAME",
+        province: "ESCUINTLA",
+        country: "GUATEMALA",
+        position: { lat: 14.218639, lng: -91.398472 },
+        description: "Located in DISTRICT, UML ID: PO1000006138"
+    },
+    {
+        title: "UNIACEITES",
+        millCompanyName: "UNIACEITES",
+        parentCompanyName: "UNIACEITES",
+        province: "PETEN",
+        country: "GUATEMALA",
+        position: { lat: 16.53629292, lng: -89.86288009 },
+        description: "Located in DISTRICT, UML ID: PO1000010814"
+    },
+    {
+        title: "ACEITES Y DERIVADOS S.A. (ACEYDESA)",
+        millCompanyName: "ACEITES Y DERIVADOS S.A.",
+        parentCompanyName: "ACEITES Y DERIVADOS S.A.",
+        province: "COLON",
+        country: "HONDURAS",
+        position: { lat: 15.825861, lng: -85.896861 },
+        description: "Located in DISTRICT, UML ID: PO1000002459"
+    },
+    {
+        title: "AGRICOLA TORNABE SA DE CV (AGROTOR)",
+        millCompanyName: "AGRICOLA TORNABE SA DE CV (AGROTOR)",
+        parentCompanyName: "GRUPO JAREMAR",
+        province: "ATLANTIDA",
+        country: "HONDURAS",
+        position: { lat: 15.732602, lng: -87.589275 },
+        description: "Located in DISTRICT, UML ID: PO1000003117"
+    },
+    {
+        title: "AGROINDUSTRIAL PALMA REAL S.A. DE C.V. (AGROPALM)",
+        millCompanyName: "AGROINDUSTRIAL PALMA REAL S.A. DE C.V.",
+        parentCompanyName: "GRUPO JAREMAR",
+        province: "COLON",
+        country: "HONDURAS",
+        position: { lat: 15.849086, lng: -85.875642 },
+        description: "Located in DISTRICT, UML ID: PO1000004004"
+    },
+    {
+        title: "ASOCIACION AGROINDUSTRIAL DE PALMICUTORES DE SA",
+        millCompanyName: "ASOCIACIÓN AGROINDUSTRIAL DE PALMICUTORES DE SABA",
+        parentCompanyName: "ASOCIACIÓN AGROINDUSTRIAL DE PALMICUTORES DE SABA",
+        province: "COLON",
+        country: "HONDURAS",
+        position: { lat: 15.54505, lng: -86.180154 },
+        description: "Located in DISTRICT, UML ID: PO1000008336"
+    },
+    {
+        title: "COAPALMA-ECARA",
+        millCompanyName: "COAPALMA-ECARA (EMPRESA CAMPESINA AGROINDUSTRIAL)",
+        parentCompanyName: "COAPALMA-ECARA (EMPRESA CAMPESINA AGROINDUSTRIAL)",
+        province: "COLON",
+        country: "HONDURAS",
+        position: { lat: 15.588917, lng: -86.112827 },
+        description: "Located in DISTRICT, UML ID: PO1000004768"
+    },
+    {
+        title: "COMPAÑÍA AGRICOLA INDUSTRIAL CEIBEÑA S.A. (CAIC)",
+        millCompanyName: "COMPAÑÍA AGRICOLA INDUSTRIAL CEIBEÑA S.A. (CAICES)",
+        parentCompanyName: "GRUPO JAREMAR",
+        province: "ATLANTIDA",
+        country: "HONDURAS",
+        position: { lat: 15.68872, lng: -87.06511 },
+        description: "Located in DISTRICT, UML ID: PO1000003116"
+    },
+    {
+        title: "COOPERATIVA SALAMA",
+        millCompanyName: "COOPERATIVA DE PRODUCCION AGROPECUARIA SALAMA LIM",
+        parentCompanyName: "COOPERATIVA DE PRODUCCION AGROPECUARIA SALAMA LIM",
+        province: "COLON",
+        country: "HONDURAS",
+        position: { lat: 15.70538, lng: -85.940972 },
+        description: "Located in DISTRICT, UML ID: PO1000008337"
+    },
+    {
+        title: "HONDUPALMA",
+        millCompanyName: "PALMAS ACEITERAS DE HONDURAS EMPRESA CAMPESINA",
+        parentCompanyName: "PALMAS ACEITERAS DE HONDURAS EMPRESA CAMPESINA A",
+        province: "YORO",
+        country: "HONDURAS",
+        position: { lat: 15.574189, lng: -87.692946 },
+        description: "Located in DISTRICT, UML ID: PO1000004754"
+    },
+    {
+        title: "PALMEROS DE AGUAN S.A. (PALMASA)",
+        millCompanyName: "PALMEROS DE AGUAN S.A. (PALMASA)",
+        parentCompanyName: "PALMEROS DE AGUAN S.A. (PALMASA)",
+        province: "COLON",
+        country: "HONDURAS",
+        position: { lat: 15.761913, lng: -85.767979 },
+        description: "Located in DISTRICT, UML ID: PO1000004008"
+    },
+    {
+        title: "PLANTA EXTRACTORA AGUAN",
+        millCompanyName: "EXPORTADORA DEL ATLANTICO (DINANT)",
+        parentCompanyName: "DINANT",
+        province: "COLON",
+        country: "HONDURAS",
+        position: { lat: 15.728889, lng: -85.857472 },
+        description: "Located in DISTRICT, UML ID: PO1000004009"
+    },
+    {
+        title: "PLANTA EXTRACTORA LEAN",
+        millCompanyName: "EXPORTADORA DEL ATLANTICO (DINANT)",
+        parentCompanyName: "DINANT",
+        province: "ATLANTIDA",
+        country: "HONDURAS",
+        position: { lat: 15.598056, lng: -87.393333 },
+        description: "Located in DISTRICT, UML ID: PO1000004011"
+    },
+    {
+        title: "PLANTA EXTRACTORA PALCASA",
+        millCompanyName: "PALMAS CENTROAMERICANAS S.A. DE C.V. (PALCASA)",
+        parentCompanyName: "PALMAS CENTROAMERICANAS S.A. DE C.V. (PALCASA)",
+        province: "YORO",
+        country: "HONDURAS",
+        position: { lat: 15.498858, lng: -87.703643 },
+        description: "Located in DISTRICT, UML ID: PO1000004755"
+    },
+    {
+        title: "3F OIL PALM AGROTECH",
+        millCompanyName: "3F OIL PALM AGROTECH",
+        parentCompanyName: "3F OIL PALM AGROTECH",
+        province: "ANDHRA PRADESH",
+        country: "INDIA",
+        position: { lat: 17.00352, lng: 81.46973 },
+        description: "Located in DISTRICT, UML ID: PO1000008590"
+    },
+    {
+        title: "AMPAPURAM PALM OIL MILL",
+        millCompanyName: "RUCHI SOYA INDUSTRIES LIMITED",
+        parentCompanyName: "RUCHI SOYA INDUSTRIES LIMITED",
+        province: "ANDHRA PRADESH",
+        country: "INDIA",
+        position: { lat: 16.59829, lng: 80.900442 },
+        description: "Located in DISTRICT, UML ID: PO1000007624"
+    },
+    {
+        title: "CH POTHEPALLI",
+        millCompanyName: "GODREJ AGROVET LTD",
+        parentCompanyName: "GODREJ GROUP",
+        province: "ANDHRA PRADESH",
+        country: "INDIA",
+        position: { lat: 17.003407, lng: 81.26 },
+        description: "Located in DISTRICT, UML ID: PO1000007670"
+    },
+    {
+        title: "CHINTAMPALLI",
+        millCompanyName: "GODREJ AGROVET LTD",
+        parentCompanyName: "GODREJ GROUP",
+        province: "ANDHRA PRADESH",
+        country: "INDIA",
+        position: { lat: 17.20973, lng: 80.94 },
+        description: "Located in DISTRICT, UML ID: PO1000007490"
+    },
+    {
+        title: "NAVABHARAT",
+        millCompanyName: "NAVA BHARAT PALM OIL MILL",
+        parentCompanyName: "NAVA BHARAT PALM OIL MILL",
+        province: "ANDHRA PRADESH",
+        country: "INDIA",
+        position: { lat: 17.131924, lng: 81.274595 },
+        description: "Located in DISTRICT, UML ID: PO1000008344"
+    },
+    {
+        title: "YEROOR PALM OIL MILL",
+        millCompanyName: "OIL PALM INDIA LIMITED",
+        parentCompanyName: "OIL PALM INDIA LIMITED",
+        province: "KERALA",
+        country: "INDIA",
+        position: { lat: 8.949866, lng: 76.997287 },
+        description: "Located in DISTRICT, UML ID: PO1000011157"
+    },
+    {
+        title: "BOLO POM",
+        millCompanyName: "SIPEFCI",
+        parentCompanyName: "SIPEFCI",
+        province: "BAS-SASSANDRA",
+        country: "IVORY COAST (COTE D'IVOIRE)",
+        position: { lat: 5.302095, lng: -6.037242 },
+        description: "Located in DISTRICT, UML ID: PO1000009960"
+    },
+    {
+        title: "OTTAWA POM",
+        millCompanyName: "SIPEFCI",
+        parentCompanyName: "SIPEFCI",
+        province: "BAS-SASSANDRA",
+        country: "IVORY COAST (COTE D'IVOIRE)",
+        position: { lat: 5.668834, lng: -6.273929 },
+        description: "Located in DISTRICT, UML ID: PO1000002366"
+    },
+    {
+        title: "PALMCI ANTENNE 1",
+        millCompanyName: "PALMCI",
+        parentCompanyName: "SIFCA",
+        province: "COMOE",
+        country: "IVORY COAST (COTE D'IVOIRE)",
+        position: { lat: 5.200496, lng: -3.038008 },
+        description: "Located in DISTRICT, UML ID: PO1000004777"
+    },
+    {
+        title: "PALMCI ANTENNE 2",
+        millCompanyName: "PALMCI",
+        parentCompanyName: "SIFCA",
+        province: "COMOE",
+        country: "IVORY COAST (COTE D'IVOIRE)",
+        position: { lat: 5.295208, lng: -3.053104 },
+        description: "Located in DISTRICT, UML ID: PO1000004778"
+    },
+    {
+        title: "PALMCI BLIDOUBA",
+        millCompanyName: "PALMCI",
+        parentCompanyName: "SIFCA",
+        province: "BAS-SASSANDRA",
+        country: "IVORY COAST (COTE D'IVOIRE)",
+        position: { lat: 4.565744, lng: -7.512478 },
+        description: "Located in DISTRICT, UML ID: PO1000005226"
+    },
+    {
+        title: "PALMCI BOUBO",
+        millCompanyName: "PALMCI",
+        parentCompanyName: "SIFCA",
+        province: "GOH-DJIBOUA",
+        country: "IVORY COAST (COTE D'IVOIRE)",
+        position: { lat: 5.657416, lng: -5.267201 },
+        description: "Located in DISTRICT, UML ID: PO1000011199"
+    },
+    {
+        title: "PALMCI EHANIA",
+        millCompanyName: "PALMCI",
+        parentCompanyName: "SIFCA",
+        province: "COMOE",
+        country: "IVORY COAST (COTE D'IVOIRE)",
+        position: { lat: 5.2005, lng: -3.03801 },
+        description: "Located in DISTRICT, UML ID: PO1000005223"
+    },
+    {
+        title: "PALMCI GBAPET",
+        millCompanyName: "PALMCI",
+        parentCompanyName: "SIFCA",
+        province: "BAS-SASSANDRA",
+        country: "IVORY COAST (COTE D'IVOIRE)",
+        position: { lat: 4.969579, lng: -7.50486 },
+        description: "Located in DISTRICT, UML ID: PO1000004773"
+    },
+    {
+        title: "PALMCI IBOKE",
+        millCompanyName: "PALMCI",
+        parentCompanyName: "SIFCA",
+        province: "BAS-SASSANDRA",
+        country: "IVORY COAST (COTE D'IVOIRE)",
+        position: { lat: 4.683995, lng: -7.413256 },
+        description: "Located in DISTRICT, UML ID: PO1000005225"
+    },
+    {
+        title: "PALMCI IROBO",
+        millCompanyName: "PALMCI",
+        parentCompanyName: "SIFCA",
+        province: "LAGUNES",
+        country: "IVORY COAST (COTE D'IVOIRE)",
+        position: { lat: 5.296819, lng: -4.796083 },
+        description: "Located in DISTRICT, UML ID: PO1000005224"
+    },
+    {
+        title: "PALMCI NEKA",
+        millCompanyName: "PALMCI",
+        parentCompanyName: "SIFCA",
+        province: "BAS-SASSANDRA",
+        country: "IVORY COAST (COTE D'IVOIRE)",
+        position: { lat: 5.235953, lng: -7.399638 },
+        description: "Located in DISTRICT, UML ID: PO1000004774"
+    },
+    {
+        title: "PALMCI TOUMANGUIE",
+        millCompanyName: "PALMCI",
+        parentCompanyName: "SIFCA",
+        province: "COMOE",
+        country: "IVORY COAST (COTE D'IVOIRE)",
+        position: { lat: 5.366642, lng: -3.379213 },
+        description: "Located in DISTRICT, UML ID: PO1000004771"
+    },
+    {
+        title: "SOGB GRAND BEREBI",
+        millCompanyName: "SOGB",
+        parentCompanyName: "SOCFIN",
+        province: "BAS-SASSANDRA",
+        country: "IVORY COAST (COTE D'IVOIRE)",
+        position: { lat: 4.6895, lng: -7.090056 },
+        description: "Located in DISTRICT, UML ID: PO1000008420"
+    },
+    {
+        title: "GOLDEN SIFCA",
+        millCompanyName: "GOLDEN SIFCA",
+        parentCompanyName: "JV GOLDEN VEROLEUM LIBERIA INC (GVL)/MARYLAND OIL PA",
+        province: "MARYLAND",
+        country: "LIBERIA",
+        position: { lat: 4.538338, lng: -7.726503 },
+        description: "Located in DISTRICT, UML ID: None"
+    },
+    {
+        title: "EXTRACEITE",
+        millCompanyName: "PALMAS SAN JOSÉ",
+        parentCompanyName: "PALMAS SAN JOSÉ",
+        province: "ATLANTICO SUR",
+        country: "NICARAGUA",
+        position: { lat: 12.20317669, lng: -84.23234336 },
+        description: "Located in DISTRICT, UML ID: PO1000010803"
+    },
+    {
+        title: "CALARO PALM OIL MILL",
+        millCompanyName: "BIASE PLANTATIONS LIMITED (BPL)",
+        parentCompanyName: "WILMAR AFRICA INVESTMENT LTD",
+        province: "CROSS RIVER",
+        country: "NIGERIA",
+        position: { lat: 5.290837, lng: 8.29839 },
+        description: "Located in DISTRICT, UML ID: None"
+    },
+    {
+        title: "MONICA INTEGRATED",
+        millCompanyName: "MONICA INTEGRATED",
+        parentCompanyName: "MONICA INTEGRATED",
+        province: "ABIA",
+        country: "NIGERIA",
+        position: { lat: 5.49549, lng: 7.484921 },
+        description: "Located in UMUAHIA, UML ID: None"
+    },
+    {
+        title: "OKOMU OIL MILL",
+        millCompanyName: "OKOMU OIL PALM COMPANY PLC",
+        parentCompanyName: "SOCFIN",
+        province: "EDO",
+        country: "NIGERIA",
+        position: { lat: 6.396, lng: 5.272 },
+        description: "Located in DISTRICT, UML ID: PO1000009990"
+    },
+    {
+        title: "PRESCO PLC",
+        millCompanyName: "PRESCO PLC",
+        parentCompanyName: "SIAT",
+        province: "EDO",
+        country: "NIGERIA",
+        position: { lat: 6.1392444, lng: 5.713375 },
+        description: "Located in DISTRICT, UML ID: PO1000005719"
+    },
+    {
+        title: "SNL",
+        millCompanyName: "SIAT NIGERIA LTD (SNL)",
+        parentCompanyName: "SIAT",
+        province: "RIVERS",
+        country: "NIGERIA",
+        position: { lat: 5.164564, lng: 6.917433 },
+        description: "Located in DISTRICT, UML ID: PO1000008490"
+    },
+    {
+        title: "EXTRACTORA AGROPALMA DE INVERSIONES",
+        millCompanyName: "AGROPALMA DE INVERSIONES S.A.",
+        parentCompanyName: "AGROAMERICA TROPICAL OIL HOLDING CORP",
+        province: "CHIRIQUI",
+        country: "PANAMA",
+        position: { lat: 8.385939, lng: -82.741869 },
+        description: "Located in DISTRICT, UML ID: PO1000008576"
+    },
+    {
+        title: "BAREMA PALM OIL MILL",
+        millCompanyName: "HARGY OIL PALM LIMITED",
+        parentCompanyName: "SIPEF",
+        province: "WEST NEW BRITAIN",
+        country: "PAPUA NEW GUINEA",
+        position: { lat: -5.219, lng: 151.134003 },
+        description: "Located in DISTRICT, UML ID: PO1000001655"
+    },
+    {
+        title: "ERAP PALM OIL MILL",
+        millCompanyName: "MARKHAM FARMING COMPANY LIMITED",
+        parentCompanyName: "SIME DARBY PLANTATION BHD",
+        province: "MOROBE",
+        country: "PAPUA NEW GUINEA",
+        position: { lat: -6.58087, lng: 146.64222 },
+        description: "Located in DISTRICT, UML ID: PO1000010727"
+    },
+    {
+        title: "GUSAP",
+        millCompanyName: "RAMU AGRI INDUSTRIES",
+        parentCompanyName: "NBPOL",
+        province: "MOROBE",
+        country: "PAPUA NEW GUINEA",
+        position: { lat: -6.0731944, lng: 145.984444 },
+        description: "Located in DISTRICT, UML ID: PO1000000102"
+    },
+    {
+        title: "HAGITA",
+        millCompanyName: "KULA PALM OIL LTD - MILNE BAY ESTATES",
+        parentCompanyName: "NBPOL",
+        province: "MILNE BAY",
+        country: "PAPUA NEW GUINEA",
+        position: { lat: -10.316286, lng: 150.286521 },
+        description: "Located in DISTRICT, UML ID: PO1000000521"
+    },
+    {
+        title: "HARGY MILL",
+        millCompanyName: "HARGY OIL PALM LIMITED",
+        parentCompanyName: "SIPEF",
+        province: "WEST NEW BRITAIN",
+        country: "PAPUA NEW GUINEA",
+        position: { lat: -5.311111, lng: 151.01097 },
+        description: "Located in DISTRICT, UML ID: PO1000000053"
+    },
+    {
+        title: "KAPIURA",
+        millCompanyName: "NEW BRITAIN PALM OIL",
+        parentCompanyName: "NBPOL",
+        province: "WEST NEW BRITAIN",
+        country: "PAPUA NEW GUINEA",
+        position: { lat: -5.623944, lng: 150.684658 },
+        description: "Located in DISTRICT, UML ID: PO1000007539"
+    },
+    {
+        title: "KUMBANGO",
+        millCompanyName: "NEW BRITAIN PALM OIL",
+        parentCompanyName: "NBPOL",
+        province: "WEST NEW BRITAIN",
+        country: "PAPUA NEW GUINEA",
+        position: { lat: -5.5918611, lng: 150.21278 },
+        description: "Located in DISTRICT, UML ID: PO1000007582"
+    },
+    {
+        title: "MAMBA",
+        millCompanyName: "KULA PALM OIL LTD - HIGATURU OIL PALMS",
+        parentCompanyName: "NBPOL",
+        province: "NORTHERN",
+        country: "PAPUA NEW GUINEA",
+        position: { lat: -8.854667, lng: 147.707033 },
+        description: "Located in DISTRICT, UML ID: PO1000000520"
+    },
+    {
+        title: "MOSA",
+        millCompanyName: "NEW BRITAIN PALM OIL",
+        parentCompanyName: "NBPOL",
+        province: "WEST NEW BRITAIN",
+        country: "PAPUA NEW GUINEA",
+        position: { lat: -5.625194, lng: 150.23681 },
+        description: "Located in DISTRICT, UML ID: PO1000000020"
+    },
+    {
+        title: "NAVO MILL",
+        millCompanyName: "HARGY OIL PALM LIMITED",
+        parentCompanyName: "SIPEF",
+        province: "WEST NEW BRITAIN",
+        country: "PAPUA NEW GUINEA",
+        position: { lat: -5.094164, lng: 151.224489 },
+        description: "Located in DISTRICT, UML ID: PO1000000105"
+    },
+    {
+        title: "NUMUNDO",
+        millCompanyName: "NEW BRITAIN PALM OIL",
+        parentCompanyName: "NBPOL",
+        province: "WEST NEW BRITAIN",
+        country: "PAPUA NEW GUINEA",
+        position: { lat: -5.5226527, lng: 150.034427 },
+        description: "Located in DISTRICT, UML ID: PO1000007478"
+    },
+    {
+        title: "POLIAMBA",
+        millCompanyName: "NEW BRITAIN PALM OIL",
+        parentCompanyName: "NBPOL",
+        province: "NEW IRELAND",
+        country: "PAPUA NEW GUINEA",
+        position: { lat: -2.87445, lng: 151.275333 },
+        description: "Located in DISTRICT, UML ID: PO1000000202"
+    },
+    {
+        title: "SANGARA",
+        millCompanyName: "KULA PALM OIL LTD - HIGATURU OIL PALMS",
+        parentCompanyName: "NBPOL",
+        province: "NORTHERN",
+        country: "PAPUA NEW GUINEA",
+        position: { lat: -8.74066, lng: 148.199471 },
+        description: "Located in DISTRICT, UML ID: PO1000006356"
+    },
+    {
+        title: "VANIMO GREEN PALM OIL MILL",
+        millCompanyName: "VANIMO GREEN PALM OIL MILL LTD",
+        parentCompanyName: "PNG PLANTATIONS DEVELOPMENT SDN BHD",
+        province: "SANDAUN",
+        country: "PAPUA NEW GUINEA",
+        position: { lat: -2.919815, lng: 141.432631 },
+        description: "Located in DISTRICT, UML ID: None"
+    },
+    {
+        title: "WARASTON",
+        millCompanyName: "NEW BRITAIN PALM OIL",
+        parentCompanyName: "NBPOL",
+        province: "WEST NEW BRITAIN",
+        country: "PAPUA NEW GUINEA",
+        position: { lat: -5.4857, lng: 150.08534 },
+        description: "Located in DISTRICT, UML ID: PO1000007522"
+    },
+    {
+        title: "MANAT PALM OIL MILL",
+        millCompanyName: "AGUMIL PHILIPPINES",
+        parentCompanyName: "AGUSAN PLANTATIONS INC",
+        province: "AGUSAN DEL SUR",
+        country: "PHILIPPINES",
+        position: { lat: 8.092218, lng: 126.084907 },
+        description: "Located in DISTRICT, UML ID: PO1000011915"
+    },
+    {
+        title: "TETERE",
+        millCompanyName: "GUADALCANAL PLAINS PALM OIL LTD",
+        parentCompanyName: "SIME DARBY NBPOL",
+        province: "GUADALCANAL",
+        country: "SOLOMON ISLANDS",
+        position: { lat: -9.442422, lng: 160.21841 },
+        description: "Located in DISTRICT, UML ID: PO1000000131"
+    },
+    {
+        title: "AGRICULTURE BASIN PALM OIL MILL",
+        millCompanyName: "AGRICULTURE BASIN CO. LTD.",
+        parentCompanyName: "AGRICULTURE BASIN CO. LTD.",
+        province: "NAKHON SI THAMMARAT",
+        country: "THAILAND",
+        position: { lat: 8.319239, lng: 99.977429 },
+        description: "Located in DISTRICT, UML ID: PO1000008325"
+    },
+    {
+        title: "BANG SAWAN PALM OIL",
+        millCompanyName: "SAIKUENG BANSAWAN COMMUNITY ENTERPRISE",
+        parentCompanyName: "SAIKUENG BANSAWAN COMMUNITY ENTERPRISE",
+        province: "SURAT THANI",
+        country: "THAILAND",
+        position: { lat: 8.62947, lng: 98.96396 },
+        description: "Located in PRASAENG, UML ID: None"
+    },
+    {
+        title: "CPI MILL",
+        millCompanyName: "CHUMPORN PALM OIL INDUSTRY PUBLIC COMPANY LIMITED",
+        parentCompanyName: "CHUMPORN PALM OIL INDUSTRY PUBLIC COMPANY LIMITED",
+        province: "CHUMPHON",
+        country: "THAILAND",
+        position: { lat: 10.841216, lng: 99.222813 },
+        description: "Located in DISTRICT, UML ID: PO1000003038"
+    },
+    {
+        title: "EASTERN PALM OIL",
+        millCompanyName: "EASTERN PALM OIL CO.,LTD.",
+        parentCompanyName: "THAI EASTERN GROUP HOLDINGS (TEGH)",
+        province: "CHON BURI",
+        country: "THAILAND",
+        position: { lat: 13.081036, lng: 101.401069 },
+        description: "Located in DISTRICT, UML ID: PO1000007644"
+    },
+    {
+        title: "GREENGLORY CO",
+        millCompanyName: "GREENGLORY CO.",
+        parentCompanyName: "GREENGLORY CO.",
+        province: "SURAT THANI",
+        country: "THAILAND",
+        position: { lat: 9.325573, lng: 99.109998 },
+        description: "Located in DISTRICT, UML ID: PO1000006339"
+    },
+    {
+        title: "KIMKEEKIJCHAROEN CO.",
+        millCompanyName: "KIMKEEKIJCHAROEN CO.",
+        parentCompanyName: "KIMKEEKIJCHAROEN CO.",
+        province: "SAMUT SAKHON",
+        country: "THAILAND",
+        position: { lat: 13.585988, lng: 100.228202 },
+        description: "Located in DISTRICT, UML ID: None"
+    },
+    {
+        title: "LAMTHAP MILL",
+        millCompanyName: "UNIVANICH PALM OIL",
+        parentCompanyName: "UNIVANICH PALM OIL",
+        province: "KRABI",
+        country: "THAILAND",
+        position: { lat: 8.000322, lng: 99.330686 },
+        description: "Located in DISTRICT, UML ID: PO1000000614"
+    },
+    {
+        title: "MITR CHAROEN OIL",
+        millCompanyName: "MITR CHAROEN OIL",
+        parentCompanyName: "MITR CHAROEN OIL",
+        province: "SAMUT SONGKHRAM",
+        country: "THAILAND",
+        position: { lat: 13.471153, lng: 99.940442 },
+        description: "Located in DISTRICT, UML ID: None"
+    },
+    {
+        title: "OTACO",
+        millCompanyName: "OTACO CO.",
+        parentCompanyName: "OTACO CO.",
+        province: "TRANG",
+        country: "THAILAND",
+        position: { lat: 7.723061, lng: 99.324489 },
+        description: "Located in DISTRICT, UML ID: PO1000010884"
+    },
+    {
+        title: "P.C. PALM (2550)",
+        millCompanyName: "P.C. PALM (2550)",
+        parentCompanyName: "P.C. SIAM GROUP",
+        province: "SURAT THANI",
+        country: "THAILAND",
+        position: { lat: 9.24689, lng: 99.666326 },
+        description: "Located in DISTRICT, UML ID: PO1000008575"
+    },
+    {
+        title: "P.PANIT RUNGRUENG PALM OIL CO.,LTD.",
+        millCompanyName: "P.PANIT RUNGRUENG PALM OIL CO.,LTD.",
+        parentCompanyName: "P.PANIT RUNGRUENG PALM OIL CO.,LTD.",
+        province: "SURAT THANI",
+        country: "THAILAND",
+        position: { lat: 8.434029, lng: 99.069302 },
+        description: "Located in DISTRICT, UML ID: PO1000008329"
+    },
+    {
+        title: "PABON",
+        millCompanyName: "UNIVANICH PALM OIL",
+        parentCompanyName: "UNIVANICH PALM OIL",
+        province: "PHATTHALUNG",
+        country: "THAILAND",
+        position: { lat: 7.325066, lng: 100.149997 },
+        description: "Located in DISTRICT, UML ID: PO1000012067"
+    },
+    {
+        title: "PALM D SRINAKHON CO., LTD.",
+        millCompanyName: "PALM D SRINAKHON CO., LTD.",
+        parentCompanyName: "PALM D SRINAKHON CO., LTD.",
+        province: "NAKHON SI THAMMARAT",
+        country: "THAILAND",
+        position: { lat: 8.050376, lng: 100.207763 },
+        description: "Located in DISTRICT, UML ID: PO1000011162"
+    },
+    {
+        title: "PITAK PALM OIL CO.",
+        millCompanyName: "PITAK PALM OIL CO.",
+        parentCompanyName: "PITAK PALM OIL CO.",
+        province: "TRANG",
+        country: "THAILAND",
+        position: { lat: 7.74324, lng: 99.309558 },
+        description: "Located in DISTRICT, UML ID: PO1000003666"
+    },
+    {
+        title: "S.C. KERNEL CO.",
+        millCompanyName: "S.C. KERNEL CO.",
+        parentCompanyName: "S.C. KERNEL CO.",
+        province: "CHUMPHON",
+        country: "THAILAND",
+        position: { lat: 10.40071, lng: 99.123722 },
+        description: "Located in DISTRICT, UML ID: None"
+    },
+    {
+        title: "SAENGSIRI AGRO-INDUSTRIES CO. LTD",
+        millCompanyName: "SAENGSIRI AGRO-INDUSTRIES CO. LTD",
+        parentCompanyName: "SAENGSIRI AGRO-INDUSTRIES CO. LTD",
+        province: "SURAT THANI",
+        country: "THAILAND",
+        position: { lat: 9.084571, lng: 99.428184 },
+        description: "Located in DISTRICT, UML ID: PO1000004015"
+    },
+    {
+        title: "SIAM MILL",
+        millCompanyName: "UNIVANICH PALM OIL",
+        parentCompanyName: "UNIVANICH PALM OIL",
+        province: "KRABI",
+        country: "THAILAND",
+        position: { lat: 8.385622, lng: 98.729131 },
+        description: "Located in DISTRICT, UML ID: PO1000000695"
     }
 ];
 window.assets = assets;
