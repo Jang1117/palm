@@ -2415,6 +2415,638 @@ const assets = [
         province: "SUMATERA BARAT",
         country: "INDONESIA",
         position: { lat: 0.305, lng: 99.44721 }
+    },
+    {
+        title: "AGRO PALINDO SAKTI",
+        millCompanyName: "AGRO PALINDO SAKTI",
+        parentCompanyName: "WILMAR INTERNATIONAL",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.711058889, lng: 104.3430056 }
+    },
+    {
+        title: "ANDIRA AGRO",
+        millCompanyName: "ANDIRA AGRO",
+        parentCompanyName: "META EPSI",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.820965, lng: 104.966879 }
+    },
+    {
+        title: "ARSI GRIYA PLANTATIONS",
+        millCompanyName: "ARSI GRIYA PLANTATIONS",
+        parentCompanyName: "ARSI GROUP",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.86129, lng: 104.940941 }
+    },
+    {
+        title: "BANYUASIN NUSANTARA SEJAHTERA",
+        millCompanyName: "BANYUASIN NUSANTARA SEJAHTERA",
+        parentCompanyName: "BANYUASIN NUSANTARA SEJAHTERA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.878338, lng: 104.727277 }
+    },
+    {
+        title: "BANYUASIN SAWIT LESTARI",
+        millCompanyName: "BANYUASIN SAWIT LESTARI",
+        parentCompanyName: "BANYUASIN SAWIT LESTARI",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.6077, lng: 104.37862 }
+    },
+    {
+        title: "BASTIAN OLAH SAWIT",
+        millCompanyName: "BASTIAN OLAH SAWIT",
+        parentCompanyName: "INDAH",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.352617, lng: 103.909866 }
+    },
+    {
+        title: "BAYUNG AGRO SAWITA",
+        millCompanyName: "BAYUNG AGRO SAWITA",
+        parentCompanyName: "ADRGROUP",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.008928333, lng: 103.7050478 }
+    },
+    {
+        title: "BELIDA",
+        millCompanyName: "AEK TARUM",
+        parentCompanyName: "SAMPOERNA AGRO",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.838980556, lng: 104.9715581 }
+    },
+    {
+        title: "BERKAT SAWIT SEJAHTERA",
+        millCompanyName: "BERKAT SAWIT SEJAHTERA",
+        parentCompanyName: "BERKAT SAWIT SEJAHTERA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.829976, lng: 104.737064 }
+    },
+    {
+        title: "BERKAT SAWIT SEJATI",
+        millCompanyName: "BERKAT SAWIT SEJATI",
+        parentCompanyName: "MUSIM MAS",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.320361, lng: 103.708667 }
+    },
+    {
+        title: "BERKAT SAWIT SUKAMAJU",
+        millCompanyName: "BERKAT SAWIT SUKAMAJU",
+        parentCompanyName: "BERKAT SAWIT SUKAMAJU",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.674503, lng: 104.079356 }
+    },
+    {
+        title: "BETUNG (PN)",
+        millCompanyName: "PERKEBUNAN NUSANTARA VII",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.848944444, lng: 104.1649444 }
+    },
+    {
+        title: "BULUH CAWANG PLANTATION",
+        millCompanyName: "BULUH CAWANG PLANTATION",
+        parentCompanyName: "WILMAR INTERNATIONAL",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.948633, lng: 104.957367 }
+    },
+    {
+        title: "BUMI KHATULISTIWA MANDIRI",
+        millCompanyName: "BUMI KHATULISTIWA MANDIRI",
+        parentCompanyName: "BUMI KHATULISTIWA MANDIRI",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.27903889, lng: 105.8116667 }
+    },
+    {
+        title: "BUMI MEKAR TANI",
+        millCompanyName: "BUMI MEKAR TANI",
+        parentCompanyName: "TUDUNG AGRI/GARUDAFOOD",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.494944, lng: 102.875972 }
+    },
+    {
+        title: "BUMI SAWINDO PERMAI",
+        millCompanyName: "BUMI SAWINDO PERMAI",
+        parentCompanyName: "MUTIARA UNGGUL LESTARI",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.851717, lng: 103.80405 }
+    },
+    {
+        title: "BUMI SAWIT",
+        millCompanyName: "BUMI SAWIT PERMAI",
+        parentCompanyName: "GOLDEN AGRI-RESOURCES (GAR)",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.525365, lng: 104.345655 }
+    },
+    {
+        title: "BUNGA MAYANG",
+        millCompanyName: "WANA KARYA MULYA KAHURIPAN",
+        parentCompanyName: "MATAHARI KAHURIPAN INDONESIA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -4.471613889, lng: 104.2559444 }
+    },
+    {
+        title: "CIPTA FUTURA",
+        millCompanyName: "CIPTA FUTURA",
+        parentCompanyName: "CIPTA FUTURA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.43852, lng: 103.6996 }
+    },
+    {
+        title: "CIPTA LESTARI SAWIT",
+        millCompanyName: "CIPTA LESTARI SAWIT",
+        parentCompanyName: "CIPTA LESTARI SAWIT",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.651361, lng: 104.534425 }
+    },
+    {
+        title: "DAYA SEMESTA AGRO PERSADA",
+        millCompanyName: "DAYA SEMESTA AGRO PERSADA",
+        parentCompanyName: "PASIFIK AGRO SENTOSA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.963166667, lng: 104.9175833 }
+    },
+    {
+        title: "DENDYMARKER INDAH LESTARI",
+        millCompanyName: "DENDYMARKER INDAH LESTARI",
+        parentCompanyName: "SIPEF",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.795033, lng: 102.944683 }
+    },
+    {
+        title: "EKAJAYA MULTIPERKASA",
+        millCompanyName: "EKAJAYA MULTIPERKASA",
+        parentCompanyName: "BUKIT BARISAN INDAH PRIMA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.55315, lng: 103.30196 }
+    },
+    {
+        title: "GASING SAWIT ABADI",
+        millCompanyName: "GASING SAWIT ABADI",
+        parentCompanyName: "GASING SAWIT ABADI",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.555194, lng: 104.767111 }
+    },
+    {
+        title: "GELUMBANG AGRO SENTOSA",
+        millCompanyName: "GELUMBANG AGRO SENTOSA",
+        parentCompanyName: "GELUMBANG AGRO SENTOSA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.2285, lng: 104.4672 }
+    },
+    {
+        title: "GOLDEN BLOSSOM SUMATRA",
+        millCompanyName: "GOLDEN BLOSSOM SUMATRA",
+        parentCompanyName: "SURYA BUMI",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.067688, lng: 104.204637 }
+    },
+    {
+        title: "GOLDEN OILINDO NUSANTARA",
+        millCompanyName: "GOLDEN OILINDO NUSANTARA",
+        parentCompanyName: "MODESPHIL",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.119195, lng: 104.694516 }
+    },
+    {
+        title: "GUNUNG TUA ABADI",
+        millCompanyName: "GUNUNG TUA ABADI",
+        parentCompanyName: "SAMPOERNA AGRO",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.808166667, lng: 105.1717778 }
+    },
+    {
+        title: "INDRALAYA AGRO LESTARI",
+        millCompanyName: "INDRALAYA",
+        parentCompanyName: "INDRALAYA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.07425, lng: 104.5885 }
+    },
+    {
+        title: "KARANG AGUNG",
+        millCompanyName: "BANYU KAHURIPAN INDONESIA",
+        parentCompanyName: "DHANISTHA SURYA NUSANTARA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.261, lng: 104.3126944 }
+    },
+    {
+        title: "KARYA INDO SEJATITAMA",
+        millCompanyName: "KARYA INDO SEJATITAMA",
+        parentCompanyName: "ANUGERAH",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.997861111, lng: 102.7867222 }
+    },
+    {
+        title: "KARYA SAWIT LESTARI",
+        millCompanyName: "KARYA SAWIT LESTARI",
+        parentCompanyName: "KARYA SAWIT LESTARI",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.848567, lng: 104.26545 }
+    },
+    {
+        title: "KASIH AGRO MANDIRI",
+        millCompanyName: "KASIH AGRO MANDIRI",
+        parentCompanyName: "ADRGROUP",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.84472, lng: 104.32972 }
+    },
+    {
+        title: "KELANTAN SAKTI",
+        millCompanyName: "KELANTAN SAKTI",
+        parentCompanyName: "KELANTAN SAKTI",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.50618, lng: 104.94046 }
+    },
+    {
+        title: "LALAN",
+        millCompanyName: "BANYU KAHURIPAN INDONESIA",
+        parentCompanyName: "DHANISTHA SURYA NUSANTARA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.23413, lng: 104.332258 }
+    },
+    {
+        title: "MALUAI INDAH",
+        millCompanyName: "CAMPANG TIGA",
+        parentCompanyName: "CAMPANG TIGA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.76419, lng: 104.73926 }
+    },
+    {
+        title: "MANGSANG",
+        millCompanyName: "BINAKARYA ERAMANDIRI",
+        parentCompanyName: "BINAKARYA ERAMANDIRI",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.173, lng: 103.987 }
+    },
+    {
+        title: "MINANGA OGAN (SOGM)",
+        millCompanyName: "MINANGA OGAN",
+        parentCompanyName: "MINANGA OGAN",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -4.063333333, lng: 104.1302778 }
+    },
+    {
+        title: "MITRA ANEKA REZEKI - BANYUASIN",
+        millCompanyName: "MITRA ANEKA REZEKI",
+        parentCompanyName: "PASIFIK AGRO SENTOSA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.721588889, lng: 104.3590056 }
+    },
+    {
+        title: "MUARA BAHAR",
+        millCompanyName: "MITRA AGROLIKA SEJAHTERA",
+        parentCompanyName: "MITRA AGROLIKA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -1.96278, lng: 103.61547 }
+    },
+    {
+        title: "MUARA KANDIS",
+        millCompanyName: "DJUANDASAWIT LESTARI",
+        parentCompanyName: "GOLDEN AGRI-RESOURCES (GAR)",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.900166667, lng: 103.1763889 }
+    },
+    {
+        title: "MUKUT",
+        millCompanyName: "HINDOLI",
+        parentCompanyName: "CARGILL",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.441002, lng: 104.426761 }
+    },
+    {
+        title: "MUSI BANYUASIN INDAH",
+        millCompanyName: "MUSI BANYUASIN INDAH",
+        parentCompanyName: "WILMAR INTERNATIONAL",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.627033, lng: 103.818533 }
+    },
+    {
+        title: "PALEMBANG",
+        millCompanyName: "BERLIAN INTI MEKAR",
+        parentCompanyName: "MAHKOTA GROUP",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.22145, lng: 104.470717 }
+    },
+    {
+        title: "PANGKALAN PANJI",
+        millCompanyName: "SAWIT MAS SEJAHTERA",
+        parentCompanyName: "GOLDEN AGRI-RESOURCES (GAR)",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.947957, lng: 104.466609 }
+    },
+    {
+        title: "PERKEBUNAN HASIL MUSI LESTARI",
+        millCompanyName: "PERKEBUNAN HASIL MUSI LESTARI",
+        parentCompanyName: "SINAR PANDAWA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.254102, lng: 103.238561 }
+    },
+    {
+        title: "PERMATA BUNDA",
+        millCompanyName: "MUTIARA BUNDA JAYA",
+        parentCompanyName: "SAMPOERNA AGRO",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.942694444, lng: 105.1104444 }
+    },
+    {
+        title: "PINAGO UTAMA",
+        millCompanyName: "PINAGO UTAMA",
+        parentCompanyName: "PINAGO UTAMA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.738527778, lng: 103.5673611 }
+    },
+    {
+        title: "PINANG WITMAS SEJATI",
+        millCompanyName: "PINANG WITMAS SEJATI",
+        parentCompanyName: "LADANG LEKIR SDN BHD",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.223666667, lng: 104.1796667 }
+    },
+    {
+        title: "PKMS UPANG JAYA",
+        millCompanyName: "TRANSPACIFIC AGRO INDUSTRY",
+        parentCompanyName: "SUMBER TANI AGUNG",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.8025, lng: 104.8969444 }
+    },
+    {
+        title: "PRATAMA PALM ABADI",
+        millCompanyName: "PRATAMA PALM ABADI",
+        parentCompanyName: "ORIENTAL HOLDINGS BERHAD",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.76413, lng: 103.25555 }
+    },
+    {
+        title: "RANTAU PANJANG (GPI)",
+        millCompanyName: "GUTHRIE PECCONINA INDONESIA",
+        parentCompanyName: "SIME DARBY/MINAMAS",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.916183, lng: 103.750833 }
+    },
+    {
+        title: "SAWIT NUSANTARA INDONESIA",
+        millCompanyName: "SAWIT NUSANTARA INDONESIA",
+        parentCompanyName: "SAWIT NUSANTARA INDONESIA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.463378, lng: 103.0519078 }
+    },
+    {
+        title: "SEJATI PALMA SEJAHTERA",
+        millCompanyName: "SEJATI PALMA SEJAHTERA",
+        parentCompanyName: "SEJATI PALMA SEJAHTERA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.212233, lng: 103.800117 }
+    },
+    {
+        title: "SELAPAN JAYA",
+        millCompanyName: "SAMPOERNA AGRO",
+        parentCompanyName: "SAMPOERNA AGRO",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.70709, lng: 105.09926 }
+    },
+    {
+        title: "SELATAN AGRO MAKMUR LESTARI",
+        millCompanyName: "SELATAN AGRO MAKMUR LESTARI",
+        parentCompanyName: "SRIWIJAYA PALM OIL",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.692214, lng: 105.219246 }
+    },
+    {
+        title: "SELATAN AGUNG SEJAHTERA",
+        millCompanyName: "SELATAN AGUNG SEJAHTERA",
+        parentCompanyName: "KUALA MAS",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.0509, lng: 103.2188 }
+    },
+    {
+        title: "SENTOSA AGRI PRIMA",
+        millCompanyName: "SENTOSA AGRI PRIMA",
+        parentCompanyName: "SENTOSA AGRI PRIMA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.557745037, lng: 105.2597341 }
+    },
+    {
+        title: "SENTOSA BAHAGIA BERSAMA",
+        millCompanyName: "SENTOSA BAHAGIA BERSAMA",
+        parentCompanyName: "SENTOSA MULIA BAHAGIA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.369967, lng: 103.969733 }
+    },
+    {
+        title: "SERASAN SEKUNDANG SAWITMAS",
+        millCompanyName: "SERASAN SEKUNDANG SAWITMAS",
+        parentCompanyName: "SUTOMO/SINAR JAYA AGRO INVESTAMA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.89291027, lng: 104.0956053 }
+    },
+    {
+        title: "SRI ANDALAN LESTARI",
+        millCompanyName: "SRI ANDALAN LESTARI",
+        parentCompanyName: "BUANA SRIWIJAYA SEJAHTERA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.786283, lng: 104.363683 }
+    },
+    {
+        title: "SRIWIJAYA PALM OIL INDONESIA",
+        millCompanyName: "SRIWIJAYA PALM OIL INDONESIA",
+        parentCompanyName: "SRIWIJAYA PALM OIL",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.824422222, lng: 104.7283361 }
+    },
+    {
+        title: "SUN SAWIT",
+        millCompanyName: "SINAR UTAMA NABATI",
+        parentCompanyName: "INDAH GROUP",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.169472, lng: 104.893222 }
+    },
+    {
+        title: "SUNGAI KIKIM",
+        millCompanyName: "SAWIT MAS SEJAHTERA",
+        parentCompanyName: "GOLDEN AGRI-RESOURCES (GAR)",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.634733, lng: 103.2188 }
+    },
+    {
+        title: "SUNGAI LENGI",
+        millCompanyName: "PERKEBUNAN NUSANTARA VII",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.548361111, lng: 103.8448611 }
+    },
+    {
+        title: "SUNGAI LILIN",
+        millCompanyName: "HINDOLI",
+        parentCompanyName: "CARGILL",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.612777778, lng: 104.12825 }
+    },
+    {
+        title: "SUNGAI LILIN (CCL)",
+        millCompanyName: "CAHAYA CEMERLANG LESTARI",
+        parentCompanyName: "RGM",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.535817, lng: 104.150283 }
+    },
+    {
+        title: "SUNGAI NIRU",
+        millCompanyName: "PERKEBUNAN NUSANTARA VII",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.487916667, lng: 104.0363611 }
+    },
+    {
+        title: "SUNGAI PINANG",
+        millCompanyName: "BINA SAINS CEMERLANG",
+        parentCompanyName: "SIME DARBY/MINAMAS",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.986383, lng: 103.407283 }
+    },
+    {
+        title: "SURYABUMI AGRO LANGGENG",
+        millCompanyName: "SURYABUMI AGRO LANGGENG",
+        parentCompanyName: "GOZCO PLANTATIONS",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.33805, lng: 103.911133 }
+    },
+    {
+        title: "SUTOPO LESTARI JAYA",
+        millCompanyName: "SUTOPO LESTARI JAYA",
+        parentCompanyName: "SUTOPO LESTARI JAYA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.795, lng: 104.736 }
+    },
+    {
+        title: "SWADAYA INDOPALMA",
+        millCompanyName: "SWADAYA INDOPALMA",
+        parentCompanyName: "KPN PLANTATION",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.765881, lng: 104.63151 }
+    },
+    {
+        title: "TALANG SAWIT",
+        millCompanyName: "PERKEBUNAN NUSANTARA VII",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.968333333, lng: 104.1211389 }
+    },
+    {
+        title: "TANIA SELATAN",
+        millCompanyName: "TANIA SELATAN",
+        parentCompanyName: "WILMAR INTERNATIONAL",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.627, lng: 104.869467 }
+    },
+    {
+        title: "TANJUNG DALAM",
+        millCompanyName: "HINDOLI",
+        parentCompanyName: "CARGILL",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.549611111, lng: 103.944 }
+    },
+    {
+        title: "TEBENAN",
+        millCompanyName: "PERKEBUNAN NUSANTARA VII",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.869715, lng: 104.191838 }
+    },
+    {
+        title: "TELAGA HIKMAH",
+        millCompanyName: "TELAGA HIKMAH",
+        parentCompanyName: "SAMPOERNA AGRO",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.598555556, lng: 105.0600278 }
+    },
+    {
+        title: "WAIMUSI AGRO INDAH",
+        millCompanyName: "WAIMUSI AGRO INDAH",
+        parentCompanyName: "WAIMUSI AGRO INDAH",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -3.671662, lng: 105.067917 }
+    },
+    {
+        title: "WANAPOTENSI GUNA",
+        millCompanyName: "WANAPOTENSI GUNA",
+        parentCompanyName: "WANA POTENSI GUNA",
+        province: "SUMATERA SELATAN",
+        country: "INDONESIA",
+        position: { lat: -2.821718, lng: 103.444369 }
     }
 ];
 window.assets = assets;
