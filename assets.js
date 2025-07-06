@@ -6686,6 +6686,590 @@ const assets = [
         "province": "KALIMANTAN BARAT",
         "country": "INDONESIA",
         "position": { "lat": 0.01184, "lng": 111.55973 }
+    },
+    {
+        "title": "ADHYAKSA DHARMASATYA",
+        "millCompanyName": "ADHYAKSA DHARMASATYA",
+        "parentCompanyName": "EAGLE HIGH PLANTATION",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -1.588933, "lng": 112.861883 }
+    },
+    {
+        "title": "AGRI BUMI SENTOSA",
+        "millCompanyName": "AGRI BUMI SENTOSA",
+        "parentCompanyName": "JA WATTIE (JAW)",
+        "province": "KALIMANTAN SELATAN",
+        "country": "INDONESIA",
+        "position": { "lat": -2.96285, "lng": 114.711301 }
+    },
+    {
+        "title": "AGRINDO SAWIT MANDIRI",
+        "millCompanyName": "AGRINDO SAWIT MANDIRI",
+        "parentCompanyName": "AGRINDO SAWIT MANDIRI",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.345481, "lng": 112.306181 }
+    },
+    {
+        "title": "AGRO WANA LESTARI",
+        "millCompanyName": "AGRO WANA LESTARI",
+        "parentCompanyName": "GOODHOPE ASIA HOLDINGS LTD",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -1.857639, "lng": 112.397722 }
+    },
+    {
+        "title": "ALAMRAYA KENCANA MAS",
+        "millCompanyName": "ALAMRAYA KENCANA MAS",
+        "parentCompanyName": "KENCANA AGRI LIMITED",
+        "province": "KALIMANTAN SELATAN",
+        "country": "INDONESIA",
+        "position": { "lat": -2.400317, "lng": 115.988167 }
+    },
+    {
+        "title": "ANGSANA",
+        "millCompanyName": "LADANGRUMPUN SUBURABADI",
+        "parentCompanyName": "SIME DARBY/MINAMAS",
+        "province": "KALIMANTAN SELATAN",
+        "country": "INDONESIA",
+        "position": { "lat": -3.614444444, "lng": 115.6108333 }
+    },
+    {
+        "title": "ANTANG GANDA UTAMA",
+        "millCompanyName": "ANTANG GANDA UTAMA",
+        "parentCompanyName": "DHANISTA SURYA NUSANTARA",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -1.113111111, "lng": 114.8883056 }
+    },
+    {
+        "title": "ARCHIPELAGO TIMUR ABADI",
+        "millCompanyName": "ARCHIPELAGO TIMUR ABADI",
+        "parentCompanyName": "AGRINDO",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -1.152312, "lng": 113.955868 }
+    },
+    {
+        "title": "ARJUNA UTAMA SAWIT",
+        "millCompanyName": "ARJUNA UTAMA SAWIT",
+        "parentCompanyName": "ARJUNA UTAMA SAWIT",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.253034, "lng": 113.379145 }
+    },
+    {
+        "title": "BANGKIT GIAT USAHA MANDIRI",
+        "millCompanyName": "BANGKIT GIAT USAHA MANDIRI",
+        "parentCompanyName": "BANGKIT GIAT USAHA MANDIRI",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -1.475826, "lng": 112.748864 }
+    },
+    {
+        "title": "BATANG KULUR",
+        "millCompanyName": "WIJAYA BORNEO TIGANNA",
+        "parentCompanyName": "WIJAYA BORNEO TIGANNA",
+        "province": "KALIMANTAN SELATAN",
+        "country": "INDONESIA",
+        "position": { "lat": -2.84269495, "lng": 116.0513244 }
+    },
+    {
+        "title": "BATU AMPAR",
+        "millCompanyName": "SINAR MAS AGRO RESOURCES AND TECHNOLOGY",
+        "parentCompanyName": "GOLDEN AGRI-RESOURCES (GAR)",
+        "province": "KALIMANTAN SELATAN",
+        "country": "INDONESIA",
+        "position": { "lat": -3.198055556, "lng": 116.0219444 }
+    },
+    {
+        "title": "BATU BULAN",
+        "millCompanyName": "SURYABUMI TUNGGAL PERKASA",
+        "parentCompanyName": "EAGLE HIGH PLANTATION",
+        "province": "KALIMANTAN SELATAN",
+        "country": "INDONESIA",
+        "position": { "lat": -3.337111, "lng": 115.771 }
+    },
+    {
+        "title": "BEBUNGA",
+        "millCompanyName": "LANGGENG MUARA MAKMUR",
+        "parentCompanyName": "SIME DARBY/MINAMAS",
+        "province": "KALIMANTAN SELATAN",
+        "country": "INDONESIA",
+        "position": { "lat": -2.373833333, "lng": 116.3297222 }
+    },
+    {
+        "title": "BEDAUN",
+        "millCompanyName": "BUMILANGGENG PERDANATRADA",
+        "parentCompanyName": "EAGLE HIGH PLANTATION",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.718472, "lng": 111.823668 }
+    },
+    {
+        "title": "BENUA LAWAS LESTARI",
+        "millCompanyName": "BENUA LAWAS LESTARI",
+        "parentCompanyName": "DUTA MARGA",
+        "province": "KALIMANTAN SELATAN",
+        "country": "INDONESIA",
+        "position": { "lat": -2.9981944, "lng": 115.956777 }
+    },
+    {
+        "title": "BERKALA MAJU BERSAMA",
+        "millCompanyName": "BERKALA MAJU BERSAMA",
+        "parentCompanyName": "BERKALA MAJU BERSAMA",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -1.456, "lng": 113.397222 }
+    },
+    {
+        "title": "BETUNG",
+        "millCompanyName": "LAGUNA MANDIRI",
+        "parentCompanyName": "SIME DARBY/MINAMAS",
+        "province": "KALIMANTAN SELATAN",
+        "country": "INDONESIA",
+        "position": { "lat": -2.379417, "lng": 116.20325 }
+    },
+    {
+        "title": "BISMA DHARMA KENCANA",
+        "millCompanyName": "BISMA DHARMA KENCANA",
+        "parentCompanyName": "BISMA DHARMA KENCANA",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -1.801, "lng": 113.1817 }
+    },
+    {
+        "title": "BORNEO SAWIT PERSADA",
+        "millCompanyName": "BORNEO SAWIT PERSADA",
+        "parentCompanyName": "BORNEO SAWIT PERSADA",
+        "province": "KALIMANTAN SELATAN",
+        "country": "INDONESIA",
+        "position": { "lat": -3.02058, "lng": 115.9467 }
+    },
+    {
+        "title": "BUANA KARYA BHAKTI",
+        "millCompanyName": "BUANA KARYA BHAKTI",
+        "parentCompanyName": "GAGAH PUTERA SATRIA",
+        "province": "KALIMANTAN SELATAN",
+        "country": "INDONESIA",
+        "position": { "lat": -3.673, "lng": 115.481 }
+    },
+    {
+        "title": "BUKIT KAPUR",
+        "millCompanyName": "SINAR MAS AGRO RESOURCES",
+        "parentCompanyName": "GOLDEN AGRI-RESOURCES (GAR)",
+        "province": "KALIMANTAN SELATAN",
+        "country": "INDONESIA",
+        "position": { "lat": -2.942661, "lng": 116.047451 }
+    },
+    {
+        "title": "BUKIT MAKMUR",
+        "millCompanyName": "KARYA MAKMUR BAHAGIA",
+        "parentCompanyName": "BUMITAMA AGRI",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -1.567778, "lng": 112.721111 }
+    },
+    {
+        "title": "BUMI SAWIT KENCANA",
+        "millCompanyName": "BUMI SAWIT KENCANA",
+        "parentCompanyName": "WILMAR INTERNATIONAL",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.230183, "lng": 112.49125 }
+    },
+    {
+        "title": "BUMIHUTANI LESTARI",
+        "millCompanyName": "BUMIHUTANI LESTARI",
+        "parentCompanyName": "EAGLE HIGH PLANTATION",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -1.678055556, "lng": 112.9369444 }
+    },
+    {
+        "title": "BUMITAMA GUNAJAYA ABADI",
+        "millCompanyName": "BUMITAMA GUNAJAYA ABADI",
+        "parentCompanyName": "BUMITAMA AGRI",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.39095, "lng": 111.37337 }
+    },
+    {
+        "title": "CANDI ARTHA",
+        "millCompanyName": "CANDI ARTHA",
+        "parentCompanyName": "CANDI ARTHA",
+        "province": "KALIMANTAN SELATAN",
+        "country": "INDONESIA",
+        "position": { "lat": -3.94174, "lng": 114.816068 }
+    },
+    {
+        "title": "CANTUNG",
+        "millCompanyName": "FAJAR AGRO SEJAHTERA",
+        "parentCompanyName": "FAJAR AGRO SEJAHTERA",
+        "province": "KALIMANTAN SELATAN",
+        "country": "INDONESIA",
+        "position": { "lat": -2.970028, "lng": 115.955028 }
+    },
+    {
+        "title": "CEMPAKA SAKTI",
+        "millCompanyName": "SINAR CITRA CEMERLANG",
+        "parentCompanyName": "ZONERGY (TIANJIN) COMPANY LIMITED",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.133, "lng": 112.906 }
+    },
+    {
+        "title": "CIPTATANI KUMAI SEJAHTERA",
+        "millCompanyName": "API METRA PALMA",
+        "parentCompanyName": "MEDCO AGRO",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.1839, "lng": 112.034267 }
+    },
+    {
+        "title": "CITRAPUTRA KEBUNASRI",
+        "millCompanyName": "CITRAPUTRA KEBUNASRI",
+        "parentCompanyName": "CITRAPUTRA KEBUNASRI",
+        "province": "KALIMANTAN SELATAN",
+        "country": "INDONESIA",
+        "position": { "lat": -3.943611111, "lng": 114.9533333 }
+    },
+    {
+        "title": "FIRST LAMANDAU TIMBER INTERNATIONAL",
+        "millCompanyName": "FIRST LAMANDAU TIMBER INTERNATIONAL",
+        "parentCompanyName": "TRIPUTRA AGRO PERSADA",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -1.85017, "lng": 111.46939 }
+    },
+    {
+        "title": "GADING SAWIT KENCANA",
+        "millCompanyName": "GADING SAWIT KENCANA",
+        "parentCompanyName": "BGP",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.509162, "lng": 112.55679 }
+    },
+    {
+        "title": "GAWI BAHANDEP SAWIT MEKAR",
+        "millCompanyName": "GAWI BAHANDEP SAWIT MEKAR",
+        "parentCompanyName": "TRIPUTRA AGRO PERSADA",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.950277778, "lng": 112.3483333 }
+    },
+    {
+        "title": "GEMAREKSA MEKARSARI",
+        "millCompanyName": "GEMAREKSA MEKARSARI",
+        "parentCompanyName": "TRURICH RESOURCES",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.126251, "lng": 111.556405 }
+    },
+    {
+        "title": "GLOBALINDO ALAM PERKASA",
+        "millCompanyName": "GLOBALINDO ALAM PERKASA",
+        "parentCompanyName": "MUSIM MAS",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.667978475, "lng": 112.7721584 }
+    },
+    {
+        "title": "GLOBALINDO OIL MILL",
+        "millCompanyName": "GLOBALINDO AGUNG LESTARI",
+        "parentCompanyName": "GENTING PLANTATIONS BERHAD",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.58494444, "lng": 114.5944167 }
+    },
+    {
+        "title": "GOLDEN HILL OIL MILL",
+        "millCompanyName": "DWIE WARNA KARYA",
+        "parentCompanyName": "GENTING PLANTATIONS BERHAD",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -0.841944444, "lng": 114.08 }
+    },
+    {
+        "title": "GRAHA CAKRA MULIA",
+        "millCompanyName": "GRAHA CAKRA MULIA",
+        "parentCompanyName": "UNION SAMPOERNA AGRO TRIPUTRA PERSADA",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.134444, "lng": 111.1825 }
+    },
+    {
+        "title": "GUNUNG ARU",
+        "millCompanyName": "BERSAMA SEJAHTERA SAKTI",
+        "parentCompanyName": "SIME DARBY/MINAMAS",
+        "province": "KALIMANTAN SELATAN",
+        "country": "INDONESIA",
+        "position": { "lat": -3.494133, "lng": 116.166533 }
+    },
+    {
+        "title": "GUNUNG MAKMUR",
+        "millCompanyName": "KARYA MAKMUR BAHAGIA",
+        "parentCompanyName": "BUMITAMA AGRI",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -1.758916667, "lng": 112.5971639 }
+    },
+    {
+        "title": "GUNUNG SEJAHTERA DUA INDAH",
+        "millCompanyName": "GUNUNG SEJAHTERA DUA INDAH",
+        "parentCompanyName": "ASTRA AGRO LESTARI",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.30085, "lng": 111.837333 }
+    },
+    {
+        "title": "GUNUNG SEJAHTERA IBU PERTIWI",
+        "millCompanyName": "GUNUNG SEJAHTERA IBU PERTIWI",
+        "parentCompanyName": "ASTRA AGRO LESTARI",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.419706, "lng": 111.786931 }
+    },
+    {
+        "title": "GUNUNG SEJAHTERA PUTI PESONA",
+        "millCompanyName": "GUNUNG SEJAHTERA PUTI PESONA",
+        "parentCompanyName": "ASTRA AGRO LESTARI",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.365452, "lng": 111.954875 }
+    },
+    {
+        "title": "HANAU",
+        "millCompanyName": "TAPIAN NADENGGAN",
+        "parentCompanyName": "GOLDEN AGRI-RESOURCES (GAR)",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.360861111, "lng": 112.1096944 }
+    },
+    {
+        "title": "HANAU PANEN RAYA SEJAHTERA",
+        "millCompanyName": "HANAU PANEN RAYA SEJAHTERA",
+        "parentCompanyName": "HANAU PANEN RAYA SEJAHTERA",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.363904, "lng": 112.144937 }
+    },
+    {
+        "title": "HASNUR CITRA TERPADU",
+        "millCompanyName": "HASNUR CITRA TERPADU",
+        "parentCompanyName": "HASNUR",
+        "province": "KALIMANTAN SELATAN",
+        "country": "INDONESIA",
+        "position": { "lat": -2.961638889, "lng": 114.9871667 }
+    },
+    {
+        "title": "HUTAN SAWIT LESTARI",
+        "millCompanyName": "HUTAN SAWIT LESTARI",
+        "parentCompanyName": "HUTANINDO LESTARI",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -1.699055556, "lng": 112.8771944 }
+    },
+    {
+        "title": "INDOTRUBA TENGAH",
+        "millCompanyName": "INDOTRUBA TENGAH",
+        "parentCompanyName": "SIME DARBY/MINAMAS",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.442972222, "lng": 112.0076944 }
+    },
+    {
+        "title": "INTIGA PRABHAKARA KAHURIPAN",
+        "millCompanyName": "INTIGA PRABHAKARA KAHURIPAN",
+        "parentCompanyName": "MATAHARI KAHURIPAN INDONESIA",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.0253, "lng": 112.673 }
+    },
+    {
+        "title": "JALEMO",
+        "millCompanyName": "AGROLESTARI SENTOSA",
+        "parentCompanyName": "GOLDEN AGRI-RESOURCES (GAR)",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -1.3482, "lng": 113.5022 }
+    },
+    {
+        "title": "JORONG",
+        "millCompanyName": "GAWI MAKMUR KALIMANTAN",
+        "parentCompanyName": "WINGS AGRO",
+        "province": "KALIMANTAN SELATAN",
+        "country": "INDONESIA",
+        "position": { "lat": -3.82362, "lng": 114.96322 }
+    },
+    {
+        "title": "KABUAU",
+        "millCompanyName": "LOUIS DREYFUS",
+        "parentCompanyName": "LOUIS DREYFUS COMMODITY",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.109888889, "lng": 112.7458056 }
+    },
+    {
+        "title": "KALIMANTAN SAWIT KUSUMA",
+        "millCompanyName": "KALIMANTAN SAWIT KUSUMA",
+        "parentCompanyName": "KALIMANTAN SAWIT KUSUMA",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.28805, "lng": 111.167833 }
+    },
+    {
+        "title": "KARUNIA KENCANA PERMAISEJATI",
+        "millCompanyName": "KARUNIA KENCANA PERMAISEJATI",
+        "parentCompanyName": "WILMAR INTERNATIONAL",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.23985, "lng": 112.63045 }
+    },
+    {
+        "title": "KARYA MAKMUR ABADI",
+        "millCompanyName": "KARYA MAKMUR ABADI",
+        "parentCompanyName": "KUALA LUMPUR KEPONG BERHAD",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.041666667, "lng": 112.4833333 }
+    },
+    {
+        "title": "KARYA MAKMUR SEJAHTERA",
+        "millCompanyName": "KARYA MAKMUR SEJAHTERA",
+        "parentCompanyName": "GOODHOPE ASIA HOLDINGS LTD",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -1.922451, "lng": 112.293768 }
+    },
+    {
+        "title": "KATARI AGRO",
+        "millCompanyName": "WINDU NABATINDO LESTARI",
+        "parentCompanyName": "BUMITAMA AGRI",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.101111111, "lng": 113.0333333 }
+    },
+    {
+        "title": "KATINGAN CENTRAL",
+        "millCompanyName": "KARYA DEWI PUTRA",
+        "parentCompanyName": "AGROSUBUR",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -1.438333333, "lng": 112.8738889 }
+    },
+    {
+        "title": "KATINGAN INDAH UTAMA",
+        "millCompanyName": "KATINGAN INDAH UTAMA",
+        "parentCompanyName": "MATAHARI KAHURIPAN INDONESIA",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.11044, "lng": 112.74684 }
+    },
+    {
+        "title": "KERRY SAWIT INDONESIA 1",
+        "millCompanyName": "KERRY SAWIT INDONESIA",
+        "parentCompanyName": "WILMAR INTERNATIONAL",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.784633, "lng": 112.509533 }
+    },
+    {
+        "title": "KERRY SAWIT INDONESIA 2",
+        "millCompanyName": "KERRY SAWIT INDONESIA",
+        "parentCompanyName": "WILMAR INTERNATIONAL",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.69695, "lng": 112.483083 }
+    },
+    {
+        "title": "KHARISMA ALAM PERSADA",
+        "millCompanyName": "KHARISMA ALAM PERSADA",
+        "parentCompanyName": "KHARISMA ALAM PERSADA",
+        "province": "KALIMANTAN SELATAN",
+        "country": "INDONESIA",
+        "position": { "lat": -2.929653, "lng": 114.9518 }
+    },
+    {
+        "title": "KHATULISTIWA SINERGI OMNIDAYA",
+        "millCompanyName": "KHATULISTIWA SINERGI OMNIDAYA",
+        "parentCompanyName": "KHATULISTIWA SINERGI OMNIDAYA",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.220317, "lng": 111.458467 }
+    },
+    {
+        "title": "KINTAP JAYA WATTINDO",
+        "millCompanyName": "KINTAP JAYA WATTINDO",
+        "parentCompanyName": "JA WATTIE (JAW)",
+        "province": "KALIMANTAN SELATAN",
+        "country": "INDONESIA",
+        "position": { "lat": -3.898654, "lng": 115.205041 }
+    },
+    {
+        "title": "KISARAN",
+        "millCompanyName": "ASTRA AGRO LESTARI",
+        "parentCompanyName": "ASTRA AGRO LESTARI",
+        "province": "KALIMANTAN SELATAN",
+        "country": "INDONESIA",
+        "position": { "lat": -1.99055, "lng": 115.509267 }
+    },
+    {
+        "title": "KIU OIL MILL",
+        "millCompanyName": "KHARISMA INTI USAHA",
+        "parentCompanyName": "GENTING PLANTATIONS BERHAD",
+        "province": "KALIMANTAN SELATAN",
+        "country": "INDONESIA",
+        "position": { "lat": -3.00375, "lng": 114.9357778 }
+    },
+    {
+        "title": "KUAYAN",
+        "millCompanyName": "AGROKARYA PRIMALESTARI",
+        "parentCompanyName": "GOLDEN AGRI-RESOURCES (GAR)",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -1.970503, "lng": 112.3703222 }
+    },
+    {
+        "title": "LIFERE AGRO KAPUAS",
+        "millCompanyName": "LIFERE AGRO KAPUAS",
+        "parentCompanyName": "UNITED MALACCA BERHAD",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.740389, "lng": 114.456711 }
+    },
+    {
+        "title": "MAJU ANEKA SAWIT",
+        "millCompanyName": "MAJU ANEKA SAWIT",
+        "parentCompanyName": "MUSIM MAS",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.480351, "lng": 112.652746 }
+    },
+    {
+        "title": "MALATA",
+        "millCompanyName": "TANJUNG SAWIT ABADI",
+        "parentCompanyName": "SAWIT SUMBERMAS SARANA",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -1.912533, "lng": 111.600383 }
+    },
+    {
+        "title": "MANUSUP",
+        "millCompanyName": "GRAHA INTI JAYA",
+        "parentCompanyName": "JULONG GROUP (TIANJIN JULONG)",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.672533, "lng": 114.377633 }
+    },
+    {
+        "title": "MENTAYA SAWIT MAS",
+        "millCompanyName": "MENTAYA SAWIT MAS",
+        "parentCompanyName": "WILMAR INTERNATIONAL",
+        "province": "KALIMANTAN TENGAH",
+        "country": "INDONESIA",
+        "position": { "lat": -2.16469, "lng": 112.56942 }
     }
 ];
 window.assets = assets;
