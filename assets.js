@@ -9366,6 +9366,286 @@ const assets = [
     "province": "JAMBI",
     "country": "INDONESIA",
     "position": { "lat": -1.068733, "lng": 103.165067 }
-  }
+  },
+    {
+        title: "ARAH KAWASAN",
+        millCompanyName: "ARAH KAWASAN SDN BHD",
+        parentCompanyName: "ARAH KAWASAN SDN BHD",
+        province: "KEDAH",
+        country: "MALAYSIA",
+        position: { lat: 5.279539, lng: 100.686035 }
+    },
+    {
+        title: "ARING A",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "KELANTAN",
+        country: "MALAYSIA",
+        position: { lat: 4.939937, lng: 102.36303 }
+    },
+    {
+        title: "BATU LINTANG",
+        millCompanyName: "KUALA LUMPUR KEPONG BERHAD",
+        parentCompanyName: "KUALA LUMPUR KEPONG BERHAD",
+        province: "KEDAH",
+        country: "MALAYSIA",
+        position: { lat: 5.19361, lng: 100.62861 }
+    },
+    {
+        title: "BELL SRI LINGGA",
+        millCompanyName: "BELL SRI LINGGA SDN BHD",
+        parentCompanyName: "BELL GROUP",
+        province: "MELAKA",
+        country: "MALAYSIA",
+        position: { lat: 2.3773, lng: 101.985113 }
+    },
+    {
+        title: "BELL-KSL",
+        millCompanyName: "BELL-KSL SDN BHD",
+        parentCompanyName: "BELL GROUP",
+        province: "NEGERI SEMBILAN",
+        country: "MALAYSIA",
+        position: { lat: 2.468224, lng: 101.993165 }
+    },
+    {
+        title: "CHIKU",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "KELANTAN",
+        country: "MALAYSIA",
+        position: { lat: 4.942128, lng: 102.202469 }
+    },
+    {
+        title: "CLASSIC",
+        millCompanyName: "CLASSIC PALM OIL MILL SDN BHD",
+        parentCompanyName: "CLASSIC PALM OIL MILL SDN BHD",
+        province: "NEGERI SEMBILAN",
+        country: "MALAYSIA",
+        position: { lat: 2.6009, lng: 102.6246 }
+    },
+    {
+        title: "DIAMOND JUBILEE (SOU 18)",
+        millCompanyName: "SIME DARBY PLANTATION BHD",
+        parentCompanyName: "SIME DARBY PLANTATION BHD",
+        province: "MELAKA",
+        country: "MALAYSIA",
+        position: { lat: 2.324933, lng: 102.483099 }
+    },
+    {
+        title: "GEDOK MAS",
+        millCompanyName: "DUPONT & LEOSK ENTERPRISES SDN BHD",
+        parentCompanyName: "DUPONT & LEOSK ENTERPRISES SDN BHD",
+        province: "NEGERI SEMBILAN",
+        country: "MALAYSIA",
+        position: { lat: 2.576686, lng: 102.423813 }
+    },
+    {
+        title: "GUA MUSANG",
+        millCompanyName: "CHIN TECK PLANTATIONS BERHAD",
+        parentCompanyName: "CHIN TECK PLANTATIONS BERHAD",
+        province: "KELANTAN",
+        country: "MALAYSIA",
+        position: { lat: 4.836874, lng: 102.004151 }
+    },
+    {
+        title: "JERAM PADANG",
+        millCompanyName: "KUALA LUMPUR KEPONG BERHAD",
+        parentCompanyName: "KUALA LUMPUR KEPONG BERHAD",
+        province: "NEGERI SEMBILAN",
+        country: "MALAYSIA",
+        position: { lat: 2.73511, lng: 102.4085 }
+    },
+    {
+        title: "KEMAHANG",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "KELANTAN",
+        country: "MALAYSIA",
+        position: { lat: 5.864953, lng: 102.005508 }
+    },
+    {
+        title: "KEMPAS (SOU 17)",
+        millCompanyName: "SIME DARBY PLANTATION BHD",
+        parentCompanyName: "SIME DARBY PLANTATION BHD",
+        province: "MELAKA",
+        country: "MALAYSIA",
+        position: { lat: 2.24459, lng: 102.480821 }
+    },
+    {
+        title: "KILANG SAWIT SUNGAI TERAH",
+        millCompanyName: "SYARIKAT LADANG SUNGAI TERAH SDN BHD",
+        parentCompanyName: "KUMPULAN PERLADANGAN PKINK BHD",
+        province: "KELANTAN",
+        country: "MALAYSIA",
+        position: { lat: 4.977872, lng: 101.955083 }
+    },
+    {
+        title: "KILANG SAWIT TAPIS",
+        millCompanyName: "LADANG TAPIS SDN BHD (LTSB)",
+        parentCompanyName: "KUMPULAN PERLADANGAN PKINK BHD",
+        province: "KELANTAN",
+        country: "MALAYSIA",
+        position: { lat: 5.51014, lng: 101.934635 }
+    },
+    {
+        title: "KOK FOH (SOU 16)",
+        millCompanyName: "SIME DARBY PLANTATION BHD",
+        parentCompanyName: "SIME DARBY PLANTATION BHD",
+        province: "NEGERI SEMBILAN",
+        country: "MALAYSIA",
+        position: { lat: 2.786647, lng: 102.503489 }
+    },
+    {
+        title: "KUALA PERTANG",
+        millCompanyName: "KUALA LUMPUR KEPONG BERHAD",
+        parentCompanyName: "KUALA LUMPUR KEPONG BERHAD",
+        province: "KELANTAN",
+        country: "MALAYSIA",
+        position: { lat: 5.62306, lng: 102.23806 }
+    },
+    {
+        title: "LABU (SOU 13)",
+        millCompanyName: "SIME DARBY PLANTATION BHD",
+        parentCompanyName: "SIME DARBY PLANTATION BHD",
+        province: "NEGERI SEMBILAN",
+        country: "MALAYSIA",
+        position: { lat: 2.748953, lng: 101.804641 }
+    },
+    {
+        title: "LIQUID PALM MILLER",
+        millCompanyName: "LIQUID PALM MILLER SDN BHD",
+        parentCompanyName: "IKHASAS GROUP",
+        province: "KELANTAN",
+        country: "MALAYSIA",
+        position: { lat: 4.872433, lng: 101.805973 }
+    },
+    {
+        title: "MAWAR MENTARI",
+        millCompanyName: "MAWAR MENTARI SDN BHD",
+        parentCompanyName: "MAWAR MENTARI SDN BHD",
+        province: "NEGERI SEMBILAN",
+        country: "MALAYSIA",
+        position: { lat: 2.867207, lng: 102.316333 }
+    },
+    {
+        title: "NAM BEE",
+        millCompanyName: "NAM BEE COMPANY SDN BHD",
+        parentCompanyName: "MELAKA TONG BEE SDN BHD",
+        province: "NEGERI SEMBILAN",
+        country: "MALAYSIA",
+        position: { lat: 2.49667, lng: 102.49058 }
+    },
+    {
+        title: "PALOH 3",
+        millCompanyName: "KESEDAR PERKILANGAN SDN BHD",
+        parentCompanyName: "KESEDAR",
+        province: "KELANTAN",
+        country: "MALAYSIA",
+        position: { lat: 4.999311, lng: 102.274694 }
+    },
+    {
+        title: "PASIR BESAR",
+        millCompanyName: "THP GEMAS SDN BHD",
+        parentCompanyName: "TH PLANTATIONS BERHAD",
+        province: "NEGERI SEMBILAN",
+        country: "MALAYSIA",
+        position: { lat: 2.619818, lng: 102.512278 }
+    },
+    {
+        title: "PASOH",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "NEGERI SEMBILAN",
+        country: "MALAYSIA",
+        position: { lat: 3.013612, lng: 102.285727 }
+    },
+    {
+        title: "PROSPER",
+        millCompanyName: "PROSPER PALM OIL MILL SDN BHD",
+        parentCompanyName: "FAR EAST HOLDINGS BERHAD",
+        province: "NEGERI SEMBILAN",
+        country: "MALAYSIA",
+        position: { lat: 2.889902, lng: 102.522788 }
+    },
+    {
+        title: "SERASA",
+        millCompanyName: "LADANG SERASA SDN BHD",
+        parentCompanyName: "TRADEWINDS PLANTATION BERHAD",
+        province: "KELANTAN",
+        country: "MALAYSIA",
+        position: { lat: 5.099657, lng: 102.175762 }
+    },
+    {
+        title: "SERTING",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "NEGERI SEMBILAN",
+        country: "MALAYSIA",
+        position: { lat: 2.901232, lng: 102.44604 }
+    },
+    {
+        title: "SERTING HILIR",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "NEGERI SEMBILAN",
+        country: "MALAYSIA",
+        position: { lat: 2.993321, lng: 102.479926 }
+    },
+    {
+        title: "SETIA KAWAN",
+        millCompanyName: "SETIA KAWAN KILANG KELAPA SAWIT SDN BHD",
+        parentCompanyName: "SETIA KAWAN KILANG KELAPA SAWIT SDN BHD",
+        province: "KEDAH",
+        country: "MALAYSIA",
+        position: { lat: 5.446494, lng: 100.628536 }
+    },
+    {
+        title: "SOLID ORIENT",
+        millCompanyName: "SOLID ORIENT HOLDINGS SDN BHD",
+        parentCompanyName: "SOLID ORIENT HOLDINGS SDN BHD",
+        province: "KEDAH",
+        country: "MALAYSIA",
+        position: { lat: 5.569814, lng: 100.699833 }
+    },
+    {
+        title: "SUA BETONG (SOU 15)",
+        millCompanyName: "SIME DARBY PLANTATION BHD",
+        parentCompanyName: "SIME DARBY PLANTATION BHD",
+        province: "NEGERI SEMBILAN",
+        country: "MALAYSIA",
+        position: { lat: 2.528569, lng: 101.897005 }
+    },
+    {
+        title: "SUNGAI DINGIN (SOU 1)",
+        millCompanyName: "SIME DARBY PLANTATION BHD",
+        parentCompanyName: "SIME DARBY PLANTATION BHD",
+        province: "KEDAH",
+        country: "MALAYSIA",
+        position: { lat: 5.394817, lng: 100.71102 }
+    },
+    {
+        title: "TACLICO",
+        millCompanyName: "TACLICO COMPANY SDN BHD",
+        parentCompanyName: "TACLICO COMPANY SDN BHD",
+        province: "KEDAH",
+        country: "MALAYSIA",
+        position: { lat: 5.508448, lng: 100.599018 }
+    },
+    {
+        title: "TANAH MERAH (SOU 14)",
+        millCompanyName: "SIME DARBY PLANTATION BHD",
+        parentCompanyName: "SIME DARBY PLANTATION BHD",
+        province: "NEGERI SEMBILAN",
+        country: "MALAYSIA",
+        position: { lat: 2.654224, lng: 101.792186 }
+    },
+    {
+        title: "ULU KANCHONG",
+        millCompanyName: "GAN TENG SIEW REALTY SDN BHD",
+        parentCompanyName: "GAN TENG SIEW REALTY SDN BHD",
+        province: "NEGERI SEMBILAN",
+        country: "MALAYSIA",
+        position: { lat: 2.583486, lng: 101.998102 }
+    }
 ];
 window.assets = assets;
