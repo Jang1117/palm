@@ -13533,7 +13533,7 @@ const assets = [
         millCompanyName: "SIPEFCI",
         parentCompanyName: "SIPEFCI",
         province: "BAS-SASSANDRA",
-        country: "IVORY COAST (COTE D'IVOIRE)",
+        country: "IVORY COAST",
         position: { lat: 5.302095, lng: -6.037242 }
     },
     {
@@ -13541,7 +13541,7 @@ const assets = [
         millCompanyName: "SIPEFCI",
         parentCompanyName: "SIPEFCI",
         province: "BAS-SASSANDRA",
-        country: "IVORY COAST (COTE D'IVOIRE)",
+        country: "IVORY COAST",
         position: { lat: 5.668834, lng: -6.273929 }
     },
     {
@@ -13549,7 +13549,7 @@ const assets = [
         millCompanyName: "PALMCI",
         parentCompanyName: "SIFCA",
         province: "COMOE",
-        country: "IVORY COAST (COTE D'IVOIRE)",
+        country: "IVORY COAST",
         position: { lat: 5.200496, lng: -3.038008 }
     },
     {
@@ -13557,7 +13557,7 @@ const assets = [
         millCompanyName: "PALMCI",
         parentCompanyName: "SIFCA",
         province: "COMOE",
-        country: "IVORY COAST (COTE D'IVOIRE)",
+        country: "IVORY COAST",
         position: { lat: 5.295208, lng: -3.053104 }
     },
     {
@@ -13565,7 +13565,7 @@ const assets = [
         millCompanyName: "PALMCI",
         parentCompanyName: "SIFCA",
         province: "BAS-SASSANDRA",
-        country: "IVORY COAST (COTE D'IVOIRE)",
+        country: "IVORY COAST",
         position: { lat: 4.565744, lng: -7.512478 }
     },
     {
@@ -13573,7 +13573,7 @@ const assets = [
         millCompanyName: "PALMCI",
         parentCompanyName: "SIFCA",
         province: "GOH-DJIBOUA",
-        country: "IVORY COAST (COTE D'IVOIRE)",
+        country: "IVORY COAST",
         position: { lat: 5.657416, lng: -5.267201 }
     },
     {
@@ -13581,7 +13581,7 @@ const assets = [
         millCompanyName: "PALMCI",
         parentCompanyName: "SIFCA",
         province: "COMOE",
-        country: "IVORY COAST (COTE D'IVOIRE)",
+        country: "IVORY COAST",
         position: { lat: 5.2005, lng: -3.03801 }
     },
     {
@@ -13589,7 +13589,7 @@ const assets = [
         millCompanyName: "PALMCI",
         parentCompanyName: "SIFCA",
         province: "BAS-SASSANDRA",
-        country: "IVORY COAST (COTE D'IVOIRE)",
+        country: "IVORY COAST",
         position: { lat: 4.969579, lng: -7.50486 }
     },
     {
@@ -13597,7 +13597,7 @@ const assets = [
         millCompanyName: "PALMCI",
         parentCompanyName: "SIFCA",
         province: "BAS-SASSANDRA",
-        country: "IVORY COAST (COTE D'IVOIRE)",
+        country: "IVORY COAST",
         position: { lat: 4.683995, lng: -7.413256 }
     },
     {
@@ -13605,7 +13605,7 @@ const assets = [
         millCompanyName: "PALMCI",
         parentCompanyName: "SIFCA",
         province: "LAGUNES",
-        country: "IVORY COAST (COTE D'IVOIRE)",
+        country: "IVORY COAST",
         position: { lat: 5.296819, lng: -4.796083 }
     },
     {
@@ -13613,7 +13613,7 @@ const assets = [
         millCompanyName: "PALMCI",
         parentCompanyName: "SIFCA",
         province: "BAS-SASSANDRA",
-        country: "IVORY COAST (COTE D'IVOIRE)",
+        country: "IVORY COAST",
         position: { lat: 5.235953, lng: -7.399638 }
     },
     {
@@ -13621,7 +13621,7 @@ const assets = [
         millCompanyName: "PALMCI",
         parentCompanyName: "SIFCA",
         province: "COMOE",
-        country: "IVORY COAST (COTE D'IVOIRE)",
+        country: "IVORY COAST",
         position: { lat: 5.366642, lng: -3.379213 }
     },
     {
@@ -13629,7 +13629,7 @@ const assets = [
         millCompanyName: "SOGB",
         parentCompanyName: "SOCFIN",
         province: "BAS-SASSANDRA",
-        country: "IVORY COAST (COTE D'IVOIRE)",
+        country: "IVORY COAST",
         position: { lat: 4.6895, lng: -7.090056 }
     },
     {
