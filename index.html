@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -201,6 +200,7 @@
         let map;
         let markers = [];
         let selectedProvince = null;
+        let selectedCountry = null;
         const defaultIcon = 'https://jang1117.github.io/palm/palm_tree.png';
 
         // 마커 이미지 로드 확인
@@ -260,6 +260,31 @@
             return center;
         }
 
+        // 국가 이동 함수
+        function moveToCountry(country) {
+            if (!map) {
+                console.error("지도가 초기화되지 않았습니다.");
+                return;
+            }
+            selectedCountry = country;
+            selectedProvince = null; // 지역 필터 초기화
+            const countryAssets = window.assets.filter(asset => asset.country === country);
+            if (countryAssets.length === 0) {
+                console.warn(`국가 ${country}에 해당하는 자산이 없습니다.`);
+                return;
+            }
+            const bounds = new window.google.maps.LatLngBounds();
+            countryAssets.forEach(asset => {
+                bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
+            });
+            map.fitBounds(bounds);
+            const currentZoom = map.getZoom();
+            if (currentZoom > 10) map.setZoom(10);
+            if (currentZoom < 7) map.setZoom(7);
+            updateMarkers();
+            console.log(`국가 ${country}로 이동, 자산 수: ${countryAssets.length}`);
+        }
+
         // 지역 이동 함수
         function moveToProvince(province) {
             if (!map) {
@@ -267,6 +292,7 @@
                 return;
             }
             selectedProvince = province;
+            selectedCountry = null; // 국가 필터 초기화
             const provinceAssets = window.assets.filter(asset => asset.province === province);
             const bounds = new window.google.maps.LatLngBounds();
             provinceAssets.forEach(asset => {
@@ -286,6 +312,7 @@
                 return;
             }
             selectedProvince = null;
+            selectedCountry = null;
             const center = calculateCenter();
             map.setCenter(center);
             map.setZoom(5);
@@ -336,12 +363,14 @@
             const zoom = map.getZoom();
             let displayAssets = window.assets;
 
-            if (selectedProvince && zoom > 7) {
+            if (selectedCountry) {
+                displayAssets = window.assets.filter(asset => asset.country === selectedCountry);
+            } else if (selectedProvince && zoom > 7) {
                 displayAssets = window.assets.filter(asset => asset.province === selectedProvince);
             }
 
             if (zoom <= 7) {
-                const groupedAssets = window.assets.reduce((groups, asset) => {
+                const groupedAssets = displayAssets.reduce((groups, asset) => {
                     const province = asset.province || "Unknown Province";
                     if (!groups[province]) {
                         groups[province] = [];
@@ -453,6 +482,7 @@
                 return;
             }
             selectedProvince = null;
+            selectedCountry = null;
             const bounds = new window.google.maps.LatLngBounds();
             window.assets.forEach(asset => {
                 bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
@@ -521,6 +551,10 @@
                     const countrySummary = document.createElement("summary");
                     countrySummary.textContent = `${country} (${Object.values(groupedAssets[country]).flat().length})`;
                     countrySummary.classList.add("country-summary");
+                    // 국가 클릭 이벤트 추가
+                    countrySummary.addEventListener("click", () => {
+                        moveToCountry(country);
+                    });
                     countryDetails.appendChild(countrySummary);
 
                     const countryUl = document.createElement("ul");
