@@ -12454,6 +12454,110 @@ const assets = [
         province: "SABAH",
         country: "MALAYSIA",
         position: { lat: 4.776764, lng: 117.934449 }
+    },
+    {
+        title: "BUKIT BANDI",
+        millCompanyName: "LADANG RAKYAT TERENGGANU SDN BHD",
+        parentCompanyName: "LADANG RAKYAT TERENGGANU SDN BHD",
+        province: "TERENGGANU",
+        country: "MALAYSIA",
+        position: { lat: 4.141113, lng: 103.219033 }
+    },
+    {
+        title: "BUKIT KAPAH",
+        millCompanyName: "VILA SUTERA SDN BHD",
+        parentCompanyName: "VILA SUTERA SDN BHD",
+        province: "TERENGGANU",
+        country: "MALAYSIA",
+        position: { lat: 5.1094, lng: 102.897 }
+    },
+    {
+        title: "CHALOK",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "TERENGGANU",
+        country: "MALAYSIA",
+        position: { lat: 5.45379, lng: 102.782505 }
+    },
+    {
+        title: "JABOR (SOU 12)",
+        millCompanyName: "SIME DARBY PLANTATION BHD",
+        parentCompanyName: "SIME DARBY PLANTATION BHD",
+        province: "TERENGGANU",
+        country: "MALAYSIA",
+        position: { lat: 3.960271, lng: 103.308585 }
+    },
+    {
+        title: "JERANGAU BARAT",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "TERENGGANU",
+        country: "MALAYSIA",
+        position: { lat: 4.915932, lng: 103.134513 }
+    },
+    {
+        title: "JERANGAU BARU",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "TERENGGANU",
+        country: "MALAYSIA",
+        position: { lat: 4.934968, lng: 103.182959 }
+    },
+    {
+        title: "KEMAMAN",
+        millCompanyName: "TDM PLANTATION SDN BHD",
+        parentCompanyName: "TDM BERHAD",
+        province: "TERENGGANU",
+        country: "MALAYSIA",
+        position: { lat: 4.403, lng: 103.248 }
+    },
+    {
+        title: "KERTEH",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "TERENGGANU",
+        country: "MALAYSIA",
+        position: { lat: 4.626387, lng: 103.332239 }
+    },
+    {
+        title: "NERAM",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "TERENGGANU",
+        country: "MALAYSIA",
+        position: { lat: 4.005156, lng: 103.289007 }
+    },
+    {
+        title: "PANJI ALAM",
+        millCompanyName: "KILANG SAWIT PANJI ALAM SDN BHD",
+        parentCompanyName: "KETENGAH HOLDINGS SDN BHD",
+        province: "TERENGGANU",
+        country: "MALAYSIA",
+        position: { lat: 4.375553, lng: 103.348999 }
+    },
+    {
+        title: "RAKYAT KETENGAH PERWIRA",
+        millCompanyName: "RAKYAT KETENGAH PERWIRA SDN BHD",
+        parentCompanyName: "KETENGAH HOLDINGS SDN BHD",
+        province: "TERENGGANU",
+        country: "MALAYSIA",
+        position: { lat: 4.119266, lng: 103.202564 }
+    },
+    {
+        title: "RISDA DURIAN MAS",
+        millCompanyName: "RISDA ESTATES SDN BHD",
+        parentCompanyName: "RISDA ESTATES SDN BHD",
+        province: "TERENGGANU",
+        country: "MALAYSIA",
+        position: { lat: 4.595844, lng: 103.202271 }
+    },
+    {
+        title: "SUNGAI TONG",
+        millCompanyName: "TDM PLANTATION SDN BHD",
+        parentCompanyName: "TDM BERHAD",
+        province: "TERENGGANU",
+        country: "MALAYSIA",
+        position: { lat: 5.3083, lng: 102.9105 }
     }
 ];
 window.assets = assets;
