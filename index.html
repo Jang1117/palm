@@ -140,7 +140,7 @@
             cursor: pointer;
             color: #000;
             font-weight: bold;
-            font的设计: 16px;
+            font-size: 16px;
         }
         .gm-style .gm-label {
             font-size: 12px;
@@ -194,16 +194,24 @@
         </div>
     </div>
 
-    <script src="https://jang1117.github.io/palm/assets.js?t=20250704" onerror="handleAssetsLoadError()"></script>
     <script>
+        // assets.js를 동기적으로 로드하여 initMap 호출 전에 데이터가 로드되도록 보장
+        let assets = null;
+        const assetsScript = document.createElement("script");
+        assetsScript.src = "https://jang1117.github.io/palm/assets.js?t=20250704";
+        assetsScript.async = false; // 동기 로드
+        assetsScript.onerror = function() {
+            console.error("assets.js 로드 실패. 파일 경로 또는 구성을 확인하세요.");
+            alert("자산 데이터를 로드하지 못했습니다. assets.js 파일을 확인하세요.");
+        };
+        assetsScript.onload = function() {
+            console.log("assets.js 로드 완료, 자산 수:", assets ? assets.length : 0);
+        };
+        document.head.appendChild(assetsScript);
+
         let map;
         let markers = [];
         let selectedProvince = null;
-
-        function handleAssetsLoadError() {
-            console.error("assets.js 로드 실패. 파일 경로 또는 구성을 확인하세요.");
-            alert("자산 데이터를 로드하지 못했습니다. assets.js 파일을 확인하세요.");
-        }
 
         const defaultIcon = 'https://jang1117.github.io/palm/palm_tree.png';
         const img = new Image();
@@ -248,9 +256,7 @@
                 bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
             });
             map.fitBounds(bounds);
-            const currentZoom = map.getZoom
-
-();
+            const currentZoom = map.getZoom();
             if (currentZoom > 10) map.setZoom(10);
             if (currentZoom < 7) map.setZoom(7);
             updateMarkers();
@@ -302,7 +308,7 @@
 
             if (zoom <= 7) {
                 const groupedAssets = assets.reduce((groups, asset) => {
-                    const province = asset.province;
+                    const province = asset.province || "Unknown Province";
                     if (!groups[province]) {
                         groups[province] = [];
                     }
@@ -327,7 +333,7 @@
                         map: map,
                         title: `${province}: ${provinceAssets.length}개 자산`,
                         icon: {
-                            url patchwork: url: defaultIcon,
+                            url: defaultIcon,
                             scaledSize: new window.google.maps.Size(40, 40),
                             labelOrigin: new window.google.maps.Point(20, 50)
                         },
@@ -431,6 +437,8 @@
                 console.log(`자산 수: ${assets.length}`);
             } else {
                 console.error("millCount 요소 또는 assets 데이터가 없음");
+                millList.innerHTML = "<li>자산 데이터를 로드하지 못했습니다.</li>";
+                return;
             }
 
             function dedupeAndSortAssets(assets) {
@@ -492,18 +500,18 @@
                         const provinceUl = document.createElement("ul");
                         groupedAssets[country][province].sort((a, b) => a.title.localeCompare(b.title)).forEach(asset => {
                             const li = document.createElement("li");
-                            li.textContent = asset.title;
+                            li.textContent = asset.title || "Unknown Title";
                             li.addEventListener("click", () => {
                                 map.setCenter(asset.position);
                                 map.setZoom(15);
-                                showPopup(asset.title, asset.title, 
+                                showPopup(asset.title || "Unknown Title", asset.title || "Unknown Title", 
                                     asset.description 
-                                        ? `${asset.title}은 ${asset.millCompanyName} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName} 그룹의 일원입니다.<br>${asset.description.replace(/, /g, "<br>")}`
-                                        : `${asset.title}은 ${asset.millCompanyName} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName} 그룹의 일원입니다.`, 
-                                    `<p><strong>회사명:</strong> ${asset.millCompanyName}</p>
-                                     <p><strong>모회사:</strong> ${asset.parentCompanyName}</p>
-                                     <p><strong>지역:</strong> ${asset.province}</p>
-                                     <p><strong>국가:</strong> ${asset.country}</p>`);
+                                        ? `${asset.title || "Unknown Title"}은 ${asset.millCompanyName || "Unknown Company"} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName || "Unknown Parent"} 그룹의 일원입니다.<br>${asset.description.replace(/, /g, "<br>")}`
+                                        : `${asset.title || "Unknown Title"}은 ${asset.millCompanyName || "Unknown Company"} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName || "Unknown Parent"} 그룹의 일원입니다.`, 
+                                    `<p><strong>회사명:</strong> ${asset.millCompanyName || "Unknown Company"}</p>
+                                     <p><strong>모회사:</strong> ${asset.parentCompanyName || "Unknown Parent"}</p>
+                                     <p><strong>지역:</strong> ${asset.province || "Unknown Province"}</p>
+                                     <p><strong>국가:</strong> ${asset.country || "Unknown Country"}</p>`);
                             });
                             provinceUl.appendChild(li);
                         });
@@ -536,7 +544,7 @@
                 return;
             }
 
-            if (typeof assets === 'undefined') {
+            if (typeof assets === 'undefined' || assets === null) {
                 console.error("assets.js가 로드되지 않았습니다. 파일을 확인하세요.");
                 alert("자산 데이터를 로드하지 못했습니다. assets.js 파일을 확인하세요.");
                 return;
