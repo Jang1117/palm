@@ -6454,6 +6454,238 @@ const assets = [
         province: "KALIMANTAN BARAT",
         country: "INDONESIA",
         position: { lat: 1.354166, lng: 109.384088 }
+    },
+    {
+        "title": "SASMITA BUMI WIJAYA",
+        "millCompanyName": "SASMITA BUMI WIJAYA",
+        "parentCompanyName": "DHARMA AGUNG WIJAYA",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": 0.303138889, "lng": 110.3012222 }
+    },
+    {
+        "title": "SATRIA MULTI SUKSES",
+        "millCompanyName": "SATRIA MULTI SUKSES",
+        "parentCompanyName": "POKPHAND",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": 0.22145, "lng": 109.531167 }
+    },
+    {
+        "title": "SEBAWI FAJAR",
+        "millCompanyName": "SAUDARA KUSUMA KURNIA ASIA BERHAD/KALIMANTAN SAWIT KUSUMA",
+        "parentCompanyName": "SAUDARA KUSUMA KURNIA ASIA BERHAD",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": 1.26659, "lng": 109.22532 }
+    },
+    {
+        "title": "SEI KERANDI",
+        "millCompanyName": "ANDES AGRO INVESTAMA",
+        "parentCompanyName": "CARGILL",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": -2.3138, "lng": 110.42766 }
+    },
+    {
+        "title": "SEI PINANG",
+        "millCompanyName": "JALIN VANEO PASIFIK",
+        "parentCompanyName": "AGRO SENTOSA",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": -0.991196146, "lng": 110.1813691 }
+    },
+    {
+        "title": "SEJAHTERA GRAND UTAMA",
+        "millCompanyName": "MANDIRI LX INTERNATIONAL",
+        "parentCompanyName": "MANDIRI LX INTERNATIONAL",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": 0.469886111, "lng": 111.2115333 }
+    },
+    {
+        "title": "SEMPIDAN SABAN",
+        "millCompanyName": "SAWIT SUBUR",
+        "parentCompanyName": "HPI AGRO",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": -0.03376, "lng": 110.06693 }
+    },
+    {
+        "title": "SENTOSA BUMI WIJAYA",
+        "millCompanyName": "SENTOSA BUMI WIJAYA",
+        "parentCompanyName": "DHARMA AGUNG WIJAYA",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": 1.044221, "lng": 109.579533 }
+    },
+    {
+        "title": "SEPANJANG INTI SURYA UTAMA 2",
+        "millCompanyName": "SEPANJANG INTI SURYA UTAMA 2",
+        "parentCompanyName": "DHANISTA SURYA NUSANTARA",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": 0.822423, "lng": 110.660192 }
+    },
+    {
+        "title": "SERARAS PERMATA HIJAU",
+        "millCompanyName": "SARANA MULTI PRIMA ENTAKAI",
+        "parentCompanyName": "SARANA MULTI PRIMA ENTAKAI",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": 0.044466667, "lng": 111.0251111 }
+    },
+    {
+        "title": "SIMBA SINTANG",
+        "millCompanyName": "AGRO MANDIRI",
+        "parentCompanyName": "MULTI PRIMA ENTAKAI",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": 0.141666667, "lng": 111.4855556 }
+    },
+    {
+        "title": "SIMPANG HULU BARAT",
+        "millCompanyName": "ADITYA AGROINDO",
+        "parentCompanyName": "AGRINDO",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": -0.4393, "lng": 110.23474 }
+    },
+    {
+        "title": "SINAR DINAMIKA KAPUAS",
+        "millCompanyName": "SINAR DINAMIKA KAPUAS",
+        "parentCompanyName": "LYMAN AGRO",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": -0.308388, "lng": 111.598663 }
+    },
+    {
+        "title": "SINTANG MILL",
+        "millCompanyName": "SUMBER HASIL PRIMA",
+        "parentCompanyName": "GOODHOPE ASIA HOLDINGS LTD",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": -0.297767, "lng": 112.437275 }
+    },
+    {
+        "title": "SINTANG RAYA",
+        "millCompanyName": "SINTANG RAYA",
+        "parentCompanyName": "MIWON",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": -0.451774, "lng": 109.265283 }
+    },
+    {
+        "title": "SIRIHAM",
+        "millCompanyName": "POLIPLANT SEJAHTERA",
+        "parentCompanyName": "CARGILL",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": -2.28375, "lng": 110.868267 }
+    },
+    {
+        "title": "SRIGUNTING",
+        "millCompanyName": "BUANA HIJAU ABADI",
+        "parentCompanyName": "HPI AGRO",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": 0.519902778, "lng": 111.5890667 }
+    },
+    {
+        "title": "SUKSES KARYA SAWIT",
+        "millCompanyName": "SUKSES KARYA SAWIT",
+        "parentCompanyName": "IOI CORPORATION BERHAD",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": -2.801034, "lng": 110.59375 }
+    },
+    {
+        "title": "SUMATERA JAYA AGRO LESTARI",
+        "millCompanyName": "SUMATERA JAYA AGRO LESTARI",
+        "parentCompanyName": "INCASI RAYA (GUNAS)",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": -0.41106, "lng": 110.18269 }
+    },
+    {
+        "title": "SUMATERA MAKMUR LESTARI",
+        "millCompanyName": "SUMATERA MAKMUR LESTARI",
+        "parentCompanyName": "INCASI RAYA (GUNAS)",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": -0.121622, "lng": 110.758455 }
+    },
+    {
+        "title": "SUNGAI ADONG",
+        "millCompanyName": "PATIWARE",
+        "parentCompanyName": "KPN PLANTATION",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": 0.740717, "lng": 108.941867 }
+    },
+    {
+        "title": "SUNGAI KUMBAH",
+        "millCompanyName": "WAWASAN KEBUN NUSANTARA",
+        "parentCompanyName": "KPN PLANTATION",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": 1.266894, "lng": 109.817129 }
+    },
+    {
+        "title": "SUNGAI MELAYU",
+        "millCompanyName": "LIMPAH SEJAHTERA",
+        "parentCompanyName": "FIRST RESOURCES",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": -1.716225, "lng": 110.3543694 }
+    },
+    {
+        "title": "SWADAYA MUKTI PRAKARSA",
+        "millCompanyName": "SWADAYA MUKTI PRAKARSA",
+        "parentCompanyName": "FIRST RESOURCES",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": -1.081555556, "lng": 110.3835556 }
+    },
+    {
+        "title": "TAYAN BUKIT SAWIT",
+        "millCompanyName": "TAYAN BUKIT SAWIT",
+        "parentCompanyName": "SUPERVENTURE",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": 0.543488889, "lng": 110.4238194 }
+    },
+    {
+        "title": "TULIP TANDAN SAWITA PAPUA",
+        "millCompanyName": "TANDAN SAWITA PAPUA (TSP)",
+        "parentCompanyName": "TANDAN SAWITA PAPUA (TSP)",
+        "province": "PAPUA",
+        "country": "INDONESIA",
+        "position": { "lat": -2.86758, "lng": 140.88036 }
+    },
+    {
+        "title": "UMEKAH SARIPRATAMA",
+        "millCompanyName": "UMEKAH SARIPRATAMA",
+        "parentCompanyName": "FIRST RESOURCES",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": -2.145, "lng": 110.992 }
+    },
+    {
+        "title": "USAHA AGRO INDONESIA",
+        "millCompanyName": "USAHA AGRO INDONESIA",
+        "parentCompanyName": "SAMPOERNA AGRO",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": -2.683788, "lng": 110.975226 }
+    },
+    {
+        "title": "WAHANA PLANTATION & PRODUCTS",
+        "millCompanyName": "WAHANA PLANTATION & PRODUCTS",
+        "parentCompanyName": "JULONG GROUP (TIANJIN JULONG)",
+        "province": "KALIMANTAN BARAT",
+        "country": "INDONESIA",
+        "position": { "lat": 0.01184, "lng": 111.55973 }
     }
 ];
 window.assets = assets;
