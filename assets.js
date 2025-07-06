@@ -12558,6 +12558,15 @@ const assets = [
         province: "TERENGGANU",
         country: "MALAYSIA",
         position: { lat: 5.3083, lng: 102.9105 }
+    },
+
+    {
+        title: "AGRO MEKAR LESTARI",
+        millCompanyName: "AGRO MEKAR LESTARI",
+        parentCompanyName: "AGRO MEKAR LESTARI",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: 0.829467, lng: 103.376017 }
     }
 ];
 window.assets = assets;
