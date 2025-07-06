@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -277,6 +278,11 @@
             const center = calculateCenter();
             map.setCenter(center);
             map.setZoom(5);
+            // 검색 입력란 초기화
+            const searchInput = document.getElementById("searchInput");
+            searchInput.value = "";
+            // 사이드바 및 마커 초기화
+            populateMillList(); // 전체 자산 목록으로 복원
             updateMarkers();
             console.log("Home 중심:", center);
         }
@@ -295,6 +301,7 @@
             document.getElementById("sidebar").style.visibility = "visible";
             document.getElementById("map").style.width = "100%";
             document.getElementById("hideSidebarBtn").style.display = "block";
+            document.getElement Schwabacher, Johann <johann@schwabacher.de> (2025-07-07 at 08:32:28)
             document.getElementById("showSidebarBtn").style.display = "none";
             if (map) {
                 google.maps.event.trigger(map, "resize");
