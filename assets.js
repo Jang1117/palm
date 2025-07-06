@@ -8838,6 +8838,534 @@ const assets = [
         province: "SULAWESI TENGGARA",
         country: "INDONESIA",
         position: { lat: -3.97229, lng: 122.27391 }
-    }
+    },
+  {
+    "title": "ADELA",
+    "millCompanyName": "FGV PALM INDUSTRIES SDN BHD",
+    "parentCompanyName": "FGV HOLDINGS BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.551459, "lng": 104.187235 }
+  },
+  {
+    "title": "AIR TAWAR",
+    "millCompanyName": "FGV PALM INDUSTRIES SDN BHD",
+    "parentCompanyName": "FGV HOLDINGS BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.667081, "lng": 104.029104 }
+  },
+  {
+    "title": "ALAF",
+    "millCompanyName": "YPJ PLANTATIONS SDN BHD",
+    "parentCompanyName": "YPJ PLANTATIONS SDN BHD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.719619, "lng": 103.781704 }
+  },
+  {
+    "title": "BAN DUNG",
+    "millCompanyName": "BAN DUNG PALM OIL INDUSTRIES SDN BHD",
+    "parentCompanyName": "BAN DUNG PALM OIL INDUSTRIES SDN BHD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.046146, "lng": 102.880125 }
+  },
+  {
+    "title": "BELITONG",
+    "millCompanyName": "FGV PALM INDUSTRIES SDN BHD",
+    "parentCompanyName": "FGV HOLDINGS BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.938333, "lng": 103.498611 }
+  },
+  {
+    "title": "BELL PALM INDUSTRIES",
+    "millCompanyName": "BELL PALM INDUSTRIES SDN BHD",
+    "parentCompanyName": "BELL GROUP",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.916662, "lng": 102.8929 }
+  },
+  {
+    "title": "BINTANG PALM OIL MILL",
+    "millCompanyName": "BELL PALM RESOURCES SDN BHD",
+    "parentCompanyName": "BELL GROUP",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.158853, "lng": 103.121832 }
+  },
+  {
+    "title": "BUKIT BENUT (SOU 22)",
+    "millCompanyName": "SIME DARBY PLANTATION BHD",
+    "parentCompanyName": "SIME DARBY PLANTATION BHD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.930719, "lng": 103.347351 }
+  },
+  {
+    "title": "BUKIT LAWIANG",
+    "millCompanyName": "TH PLANTATIONS BERHAD",
+    "parentCompanyName": "TH PLANTATIONS BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.965796, "lng": 103.434802 }
+  },
+  {
+    "title": "BUKIT PASIR",
+    "millCompanyName": "HOK HUAT OIL MILL SDN BHD",
+    "parentCompanyName": "HOK HUAT GROUP SDN BHD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.0851, "lng": 102.6976 }
+  },
+  {
+    "title": "CHAAH (SOU 20)",
+    "millCompanyName": "SIME DARBY PLANTATION BHD",
+    "parentCompanyName": "SIME DARBY PLANTATION BHD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.1486, "lng": 102.9738 }
+  },
+  {
+    "title": "CLASSIC SEGAMAT PALM OIL MILL",
+    "millCompanyName": "CLASSIC SEGAMAT PALM OIL MILL SDN BHD",
+    "parentCompanyName": "CLASSIC SEGAMAT PALM OIL MILL SDN BHD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.6663, "lng": 102.807 }
+  },
+  {
+    "title": "CORONATION",
+    "millCompanyName": "KIAN HOE PLANTATIONS BHD",
+    "parentCompanyName": "KIAN HOE PLANTATIONS BHD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.023279, "lng": 103.266887 }
+  },
+  {
+    "title": "FELCRA BUKIT KEPONG",
+    "millCompanyName": "FELCRA PROCESSING & ENGINEERING SDN BHD",
+    "parentCompanyName": "FELCRA BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.389502, "lng": 102.882494 }
+  },
+  {
+    "title": "FELCRA SUNGAI MELIKAI",
+    "millCompanyName": "FELCRA PROCESSING & ENGINEERING SDN BHD",
+    "parentCompanyName": "FELCRA BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.38988, "lng": 103.800717 }
+  },
+  {
+    "title": "GENTING AYER ITEM",
+    "millCompanyName": "GENTING OIL MILL SDN. BHD.",
+    "parentCompanyName": "GENTING PLANTATIONS BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.856848, "lng": 103.209947 }
+  },
+  {
+    "title": "GOMALI",
+    "millCompanyName": "IOI CORPORATION BERHAD",
+    "parentCompanyName": "IOI CORPORATION BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.611875, "lng": 102.678584 }
+  },
+  {
+    "title": "GUNUNG MAS (SOU 21)",
+    "millCompanyName": "SIME DARBY PLANTATION BHD",
+    "parentCompanyName": "SIME DARBY PLANTATION BHD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.242059, "lng": 103.1394 }
+  },
+  {
+    "title": "HADAPAN (SOU 24)",
+    "millCompanyName": "SIME DARBY PLANTATION BHD",
+    "parentCompanyName": "SIME DARBY PLANTATION BHD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.762618, "lng": 103.448209 }
+  },
+  {
+    "title": "JERNIH KEMBOJA",
+    "millCompanyName": "JERNIH KEMBOJA SDN BHD",
+    "parentCompanyName": "JERNIH KEMBOJA SDN BHD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.489, "lng": 102.9363 }
+  },
+  {
+    "title": "JOHOR LABIS",
+    "millCompanyName": "ACHI JAYA PLANTATIONS SDN BHD",
+    "parentCompanyName": "ACHI JAYA PLANTATIONS SDN BHD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.2533, "lng": 103.0496 }
+  },
+  {
+    "title": "KAHANG",
+    "millCompanyName": "FGV PALM INDUSTRIES SDN BHD",
+    "parentCompanyName": "FGV HOLDINGS BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.075216, "lng": 103.494691 }
+  },
+  {
+    "title": "KAHANG",
+    "millCompanyName": "KAHANG PALM OIL MILL SDN BHD",
+    "parentCompanyName": "JENG HUAT (BAHAU) REALTY SDN BHD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.3423, "lng": 103.4384 }
+  },
+  {
+    "title": "KEKAYAAN",
+    "millCompanyName": "KUALA LUMPUR KEPONG BERHAD",
+    "parentCompanyName": "KUALA LUMPUR KEPONG BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.20498, "lng": 103.2703 }
+  },
+  {
+    "title": "KILANG KELAPA SAWIT PALOH",
+    "millCompanyName": "MSHK ENGINEERING SDN BHD",
+    "parentCompanyName": "MSHK ENGINEERING SDN BHD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.211246, "lng": 103.213124 }
+  },
+  {
+    "title": "KIM LOONG",
+    "millCompanyName": "KIM LOONG PALM OIL MILLS SDN BHD",
+    "parentCompanyName": "KIM LOONG RESOURCES BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.808908, "lng": 103.961831 }
+  },
+  {
+    "title": "KLUANG",
+    "millCompanyName": "HOK HUAT OIL MILL SDN BHD",
+    "parentCompanyName": "HOK HUAT GROUP SDN BHD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.0587, "lng": 103.3616 }
+  },
+  {
+    "title": "KULAI",
+    "millCompanyName": "FGV PALM INDUSTRIES SDN BHD",
+    "parentCompanyName": "FGV HOLDINGS BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.739348, "lng": 103.647556 }
+  },
+  {
+    "title": "KULAI MAS",
+    "millCompanyName": "PALM DISCOVERY SDN BHD",
+    "parentCompanyName": "DUPONT & LEOSK ENTERPRISES SDN BHD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.8021, "lng": 103.6238 }
+  },
+  {
+    "title": "LADANG PADANG KAHANG",
+    "millCompanyName": "SEONG THYE PLANTATIONS SDN BHD",
+    "parentCompanyName": "SEONG THYE PLANTATIONS SDN BHD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.3096, "lng": 103.5292 }
+  },
+  {
+    "title": "LENGA",
+    "millCompanyName": "LENGA PALMOIL INDUSTRIES SDN BHD",
+    "parentCompanyName": "LENGA PALMOIL INDUSTRIES SDN BHD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.226553, "lng": 102.569423 }
+  },
+  {
+    "title": "LOK HENG",
+    "millCompanyName": "FGV PALM INDUSTRIES SDN BHD",
+    "parentCompanyName": "FGV HOLDINGS BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.720551, "lng": 104.119916 }
+  },
+  {
+    "title": "MAOKIL",
+    "millCompanyName": "FGV PALM INDUSTRIES SDN BHD",
+    "parentCompanyName": "FGV HOLDINGS BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.290373, "lng": 102.995604 }
+  },
+  {
+    "title": "MASAI",
+    "millCompanyName": "KECK SENG (M) BERHAD",
+    "parentCompanyName": "KECK SENG (M) BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.540277, "lng": 103.964502 }
+  },
+  {
+    "title": "MILIK MESTIKA",
+    "millCompanyName": "MILIK MESTIKA SDN BHD",
+    "parentCompanyName": "DUPONT & LEOSK ENTERPRISES SDN BHD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.40157, "lng": 102.66721 }
+  },
+  {
+    "title": "MUAR",
+    "millCompanyName": "KILANG SAWIT MUAR BHD",
+    "parentCompanyName": "KILANG SAWIT MUAR BHD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.0103, "lng": 102.681568 }
+  },
+  {
+    "title": "NITAR",
+    "millCompanyName": "FGV PALM INDUSTRIES SDN BHD",
+    "parentCompanyName": "FGV HOLDINGS BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.405993, "lng": 103.657754 }
+  },
+  {
+    "title": "PAGOH (SOU 19)",
+    "millCompanyName": "SIME DARBY PLANTATION BHD",
+    "parentCompanyName": "SIME DARBY PLANTATION BHD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.077885, "lng": 102.719992 }
+  },
+  {
+    "title": "PALONG COCOA",
+    "millCompanyName": "MAHAMURNI PLANTATIONS SDN BHD",
+    "parentCompanyName": "KULIM (MALAYSIA) BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.70623, "lng": 102.786605 }
+  },
+  {
+    "title": "PALONG TIMOR",
+    "millCompanyName": "FGV PALM INDUSTRIES SDN BHD",
+    "parentCompanyName": "FGV HOLDINGS BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.740596, "lng": 102.704005 }
+  },
+  {
+    "title": "PAMOL KLUANG",
+    "millCompanyName": "IOI CORPORATION BERHAD",
+    "parentCompanyName": "IOI CORPORATION BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.109713, "lng": 103.393413 }
+  },
+  {
+    "title": "PASIR PANJANG",
+    "millCompanyName": "MAHAMURNI PLANTATIONS SDN BHD",
+    "parentCompanyName": "KULIM (MALAYSIA) BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.018014, "lng": 103.948575 }
+  },
+  {
+    "title": "PENGGELI",
+    "millCompanyName": "FGV PALM INDUSTRIES SDN BHD",
+    "parentCompanyName": "FGV HOLDINGS BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.82764, "lng": 103.63949 }
+  },
+  {
+    "title": "PH PALM EXPRESS",
+    "millCompanyName": "PH PALM EXPRESS SDN BHD",
+    "parentCompanyName": "PH PALM EXPRESS CORPORATION",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.633611, "lng": 104.218889 }
+  },
+  {
+    "title": "PPNJ BUKIT BUJANG",
+    "millCompanyName": "PERTUBUHAN PELADANG NEGERI JOHOR (PPNJ)",
+    "parentCompanyName": "PERTUBUHAN PELADANG NEGERI JOHOR (PPNJ)",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.800356, "lng": 102.757667 }
+  },
+  {
+    "title": "PPNJ KAHANG",
+    "millCompanyName": "PERTUBUHAN PELADANG NEGERI JOHOR (PPNJ)",
+    "parentCompanyName": "PERTUBUHAN PELADANG NEGERI JOHOR (PPNJ)",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.171455, "lng": 103.480925 }
+  },
+  {
+    "title": "RISDA SG AMBAT",
+    "millCompanyName": "RISDA ESTATES SDN BHD",
+    "parentCompanyName": "RISDA ESTATES SDN BHD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.19475, "lng": 103.87798 }
+  },
+  {
+    "title": "SEDENAK",
+    "millCompanyName": "EPA MANAGEMENT SDN BHD",
+    "parentCompanyName": "KULIM (MALAYSIA) BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.729876, "lng": 103.539423 }
+  },
+  {
+    "title": "SEMENCHU",
+    "millCompanyName": "FGV PALM INDUSTRIES SDN BHD",
+    "parentCompanyName": "FGV HOLDINGS BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.578428, "lng": 104.102655 }
+  },
+  {
+    "title": "SINDORA",
+    "millCompanyName": "SINDORA BERHAD",
+    "parentCompanyName": "KULIM (MALAYSIA) BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.985372, "lng": 103.462311 }
+  },
+  {
+    "title": "SOUTHERN MALAY",
+    "millCompanyName": "VICTORY ENGHOE PLANTATIONS SDN BHD",
+    "parentCompanyName": "VICTORY ENGHOE PLANTATIONS SDN BHD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.790929, "lng": 103.361759 }
+  },
+  {
+    "title": "SUNGAI KACHUR",
+    "millCompanyName": "LADANG PETRI TENGGARA SDN BHD",
+    "parentCompanyName": "TRADEWINDS PLANTATION BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.782222, "lng": 103.762806 }
+  },
+  {
+    "title": "SUNGEI KAHANG",
+    "millCompanyName": "SUNGEI KAHANG PALM OIL SDN BHD",
+    "parentCompanyName": "BUNGA GROUP",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.22896, "lng": 103.527158 }
+  },
+  {
+    "title": "SUNGKIT ENTERPRISES SDN BHD",
+    "millCompanyName": "KIM LOONG RESOURCES BERHAD",
+    "parentCompanyName": "KIM LOONG RESOURCES BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.776651, "lng": 103.92027 }
+  },
+  {
+    "title": "SYARIKAT PERUSAHAAN KELAPA SAWIT",
+    "millCompanyName": "SYARIKAT PERUSAHAAN KELAPA SAWIT SDN BHD",
+    "parentCompanyName": "BELL GROUP",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.166967, "lng": 103.058453 }
+  },
+  {
+    "title": "TAI TAK",
+    "millCompanyName": "LADANG TAI TAK (KOTA TINGGI) SDN BHD",
+    "parentCompanyName": "LADANG TAI TAK (KOTA TINGGI) SDN BHD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.6933, "lng": 103.8593 }
+  },
+  {
+    "title": "TELOK SENGAT",
+    "millCompanyName": "BOUSTEAD TELOK SENGAT SDN BHD",
+    "parentCompanyName": "BOUSTEAD PLANTATIONS BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.566934, "lng": 104.044935 }
+  },
+  {
+    "title": "TENGGAROH",
+    "millCompanyName": "FGV PALM INDUSTRIES SDN BHD",
+    "parentCompanyName": "FGV HOLDINGS BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.05401, "lng": 103.933 }
+  },
+  {
+    "title": "TENGGAROH TIMOR",
+    "millCompanyName": "FGV PALM INDUSTRIES SDN BHD",
+    "parentCompanyName": "FGV HOLDINGS BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.08237, "lng": 104.0082 }
+  },
+  {
+    "title": "TEREH",
+    "millCompanyName": "EPA MANAGEMENT SDN BHD",
+    "parentCompanyName": "KULIM (MALAYSIA) BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 2.217508, "lng": 103.352507 }
+  },
+  {
+    "title": "TUNJUK LAUT",
+    "millCompanyName": "AWAN TIMUR MANAGEMENT SDN BHD",
+    "parentCompanyName": "AWAN TIMUR GROUP",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.966667, "lng": 103.966667 }
+  },
+  {
+    "title": "ULU REMIS (SOU 23)",
+    "millCompanyName": "SIME DARBY PLANTATION BHD",
+    "parentCompanyName": "SIME DARBY PLANTATION BHD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.83551, "lng": 103.461871 }
+  },
+  {
+    "title": "ULU SEBOL",
+    "millCompanyName": "LADANG PETRI TENGGARA SDN BHD",
+    "parentCompanyName": "TRADEWINDS PLANTATION BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.889296, "lng": 103.622662 }
+  },
+  {
+    "title": "UNITED BELLL",
+    "millCompanyName": "KILANG SAWIT UNITED BELL SDN BHD",
+    "parentCompanyName": "BELL GROUP",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.566804, "lng": 103.468124 }
+  },
+  {
+    "title": "WA HA",
+    "millCompanyName": "FGV PALM INDUSTRIES SDN BHD",
+    "parentCompanyName": "FGV HOLDINGS BERHAD",
+    "province": "JOHOR",
+    "country": "MALAYSIA",
+    "position": { "lat": 1.79167, "lng": 104.074068 }
+  },
+  {
+    "title": "TRIMITRA LESTARI",
+    "millCompanyName": "TRIMITRA LESTARI",
+    "parentCompanyName": "SIN TEK HUAT",
+    "province": "JAMBI",
+    "country": "INDONESIA",
+    "position": { "lat": -1.068733, "lng": 103.165067 }
+  }
 ];
 window.assets = assets;
