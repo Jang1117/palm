@@ -4862,6 +4862,134 @@ const assets = [
         province: "RIAU",
         country: "INDONESIA",
         position: { lat: -0.026010716, lng: 101.189494 }
+    },
+    {
+        title: "AMAN JAYA PERDANA",
+        millCompanyName: "AMAN JAYA PERDANA",
+        parentCompanyName: "AMAN JAYA PERDANA",
+        province: "LAMPUNG",
+        country: "INDONESIA",
+        position: { lat: -5.42529, lng: 105.328394 }
+    },
+    {
+        title: "ANAKTUHA SAWIT MANDIRI",
+        millCompanyName: "ANAKTUHA SAWIT MANDIRI",
+        parentCompanyName: "SUTOMO/SINAR JAYA AGRO INVESTAMA",
+        province: "LAMPUNG",
+        country: "INDONESIA",
+        position: { lat: -5.095458333, lng: 105.1868194 }
+    },
+    {
+        title: "ASIA ARTHA PERKASA",
+        millCompanyName: "MITRA PATI MAS",
+        parentCompanyName: "MITRA PATI MAS",
+        province: "LAMPUNG",
+        country: "INDONESIA",
+        position: { lat: -4.85765, lng: 105.42181 }
+    },
+    {
+        title: "BEKRI",
+        millCompanyName: "PERKEBUNAN NUSANTARA VII",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        province: "LAMPUNG",
+        country: "INDONESIA",
+        position: { lat: -5.07314, lng: 105.13487 }
+    },
+    {
+        title: "GARUDA BUMI PERKASA",
+        millCompanyName: "GARUDA BUMI PERKASA",
+        parentCompanyName: "TUDUNG AGRI/GARUDAFOOD",
+        province: "LAMPUNG",
+        country: "INDONESIA",
+        position: { lat: -4.029933, lng: 105.158833 }
+    },
+    {
+        title: "KALIREJO LESTARI",
+        millCompanyName: "KALIREJO LESTARI",
+        parentCompanyName: "SUTOMO/SINAR JAYA AGRO INVESTAMA",
+        province: "LAMPUNG",
+        country: "INDONESIA",
+        position: { lat: -5.228708333, lng: 104.9482111 }
+    },
+    {
+        title: "KRIYA SWARNA PUBIAN",
+        millCompanyName: "KRIYA SWARNA PUBIAN",
+        parentCompanyName: "MEDCO AGRO",
+        province: "LAMPUNG",
+        country: "INDONESIA",
+        position: { lat: -5.06187, lng: 104.88018 }
+    },
+    {
+        title: "LAMBANG BUMI PERKASA",
+        millCompanyName: "LAMBANG BUMI PERKASA",
+        parentCompanyName: "LAMBANG BUMI PERKASA",
+        province: "LAMPUNG",
+        country: "INDONESIA",
+        position: { lat: -4.701791, lng: 105.372801 }
+    },
+    {
+        title: "MENGGALA SAWITINDO",
+        millCompanyName: "MENGGALA SAWITINDO",
+        parentCompanyName: "SUTOMO/SINAR JAYA AGRO INVESTAMA",
+        province: "LAMPUNG",
+        country: "INDONESIA",
+        position: { lat: -4.350847, lng: 105.270936 }
+    },
+    {
+        title: "PALM LAMPUNG PERSADA",
+        millCompanyName: "PALM LAMPUNG PERSADA",
+        parentCompanyName: "KUD SUMBER PANGAN",
+        province: "LAMPUNG",
+        country: "INDONESIA",
+        position: { lat: -4.372722222, lng: 104.5998056 }
+    },
+    {
+        title: "REJOSARI",
+        millCompanyName: "PERKEBUNAN NUSANTARA VII",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        province: "LAMPUNG",
+        country: "INDONESIA",
+        position: { lat: -5.29388, lng: 105.15746 }
+    },
+    {
+        title: "SINAR JAYA INTI MULYA",
+        millCompanyName: "SINAR JAYA INTI MULYA",
+        parentCompanyName: "SUTOMO/SINAR JAYA AGRO INVESTAMA",
+        province: "LAMPUNG",
+        country: "INDONESIA",
+        position: { lat: -5.066528, lng: 105.301972 }
+    },
+    {
+        title: "SUNGAI BUAYA",
+        millCompanyName: "SUMBER INDAH PERKASA",
+        parentCompanyName: "GOLDEN AGRI-RESOURCES (GAR)",
+        province: "LAMPUNG",
+        country: "INDONESIA",
+        position: { lat: -4.136388889, lng: 105.4427778 }
+    },
+    {
+        title: "SUNGAI MERAH",
+        millCompanyName: "SUMBER INDAH PERKASA",
+        parentCompanyName: "GOLDEN AGRI-RESOURCES (GAR)",
+        province: "LAMPUNG",
+        country: "INDONESIA",
+        position: { lat: -4.218444444, lng: 105.5887778 }
+    },
+    {
+        title: "SURYA UTAMA NABATI",
+        millCompanyName: "SURYA UTAMA NABATI",
+        parentCompanyName: "SURYA UTAMA NABATI",
+        province: "LAMPUNG",
+        country: "INDONESIA",
+        position: { lat: -4.186025, lng: 105.216925 }
+    },
+    {
+        title: "WAY KANAN SAWITINDO MAS",
+        millCompanyName: "WAY KANAN SAWITINDO MAS",
+        parentCompanyName: "SUTOMO/SINAR JAYA AGRO INVESTAMA",
+        province: "LAMPUNG",
+        country: "INDONESIA",
+        position: { lat: -4.446305556, lng: 104.4220556 }
     }
 ];
 window.assets = assets;
