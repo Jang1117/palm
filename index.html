@@ -206,6 +206,12 @@
         };
         assetsScript.onload = function() {
             console.log("assets.js 로드 완료, 자산 수:", window.assets ? window.assets.length : 0);
+            // 데이터 무결성 검증
+            window.assets.forEach((asset, index) => {
+                if (!asset.country || !asset.province || !asset.title) {
+                    console.warn(`자산 ${index}에 누락된 필드:`, asset);
+                }
+            });
         };
         document.head.appendChild(assetsScript);
 
@@ -445,8 +451,7 @@
                 return;
             }
 
-            millCount.textContent = window.assets.length;
-            console.log(`자산 수: ${window.assets.length}`);
+            console.log(`초기 자산 수: ${window.assets.length}`);
 
             function dedupeAndSortAssets(assets) {
                 const uniqueAssets = [];
@@ -474,7 +479,12 @@
                     groups[country][province].push(asset);
                     return groups;
                 }, {});
+                // 국가별 자산 수 디버깅
+                const totalGroupedAssets = Object.values(groups).reduce((total, provinces) => {
+                    return total + Object.values(provinces).flat().length;
+                }, 0);
                 console.log("그룹핑된 자산:", groups);
+                console.log(`그룹핑된 총 자산 수: ${totalGroupedAssets}, 원본 자산 수: ${assets.length}`);
                 return groups;
             }
 
@@ -483,6 +493,9 @@
                 millList.innerHTML = "";
                 const uniqueAssets = dedupeAndSortAssets(filteredAssets);
                 const groupedAssets = groupAssetsByCountryAndProvince(uniqueAssets);
+
+                // millCount 갱신
+                millCount.textContent = uniqueAssets.length;
 
                 if (Object.keys(groupedAssets).length === 0) {
                     console.warn("그룹핑된 자산이 없음");
