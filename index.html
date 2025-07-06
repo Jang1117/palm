@@ -73,6 +73,11 @@
             background: #e0e0e0;
             border-radius: 4px;
         }
+        #sidebar .country-summary {
+            background: #4CAF50;
+            color: white;
+            border-radius: 4px;
+        }
         .global-button {
             position: fixed;
             top: 20px;
@@ -194,7 +199,6 @@
         let map;
         let markers = [];
         let selectedProvince = null;
-        let selectedCountry = null;
 
         function handleAssetsLoadError() {
             console.error("assets.js 로드 실패. 파일 경로 또는 구성을 확인하세요.");
@@ -232,32 +236,12 @@
             };
         }
 
-        function moveToCountry(country) {
-            if (!map) {
-                console.error("지도가 초기화되지 않았습니다.");
-                return;
-            }
-            selectedCountry = country;
-            selectedProvince = null;
-            const countryAssets = assets.filter(asset => asset.country === country);
-            const bounds = new window.google.maps.LatLngBounds();
-            countryAssets.forEach(asset => {
-                bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
-            });
-            map.fitBounds(bounds);
-            const currentZoom = map.getZoom();
-            if (currentZoom > 7) map.setZoom(7);
-            if (currentZoom < 5) map.setZoom(5);
-            updateMarkers();
-        }
-
         function moveToProvince(province) {
             if (!map) {
                 console.error("지도가 초기화되지 않았습니다.");
                 return;
             }
             selectedProvince = province;
-            selectedCountry = null;
             const provinceAssets = assets.filter(asset => asset.province === province);
             const bounds = new window.google.maps.LatLngBounds();
             provinceAssets.forEach(asset => {
@@ -276,7 +260,6 @@
                 return;
             }
             selectedProvince = null;
-            selectedCountry = null;
             const center = calculateCenter();
             map.setCenter(center);
             map.setZoom(5);
@@ -313,57 +296,9 @@
 
             if (selectedProvince && zoom > 7) {
                 displayAssets = assets.filter(asset => asset.province === selectedProvince);
-            } else if (selectedCountry && zoom > 5) {
-                displayAssets = assets.filter(asset => asset.country === selectedCountry);
             }
 
-            if (zoom <= 5) {
-                const groupedAssets = assets.reduce((groups, asset) => {
-                    const country = asset.country;
-                    if (!groups[country]) {
-                        groups[country] = [];
-                    }
-                    groups[country].push(asset);
-                    return groups;
-                }, {});
-
-                Object.keys(groupedAssets).sort().forEach(country => {
-                    const countryAssets = groupedAssets[country];
-                    let latSum = 0, lngSum = 0;
-                    countryAssets.forEach(asset => {
-                        latSum += asset.position.lat;
-                        lngSum += asset.position.lng;
-                    });
-                    const center = {
-                        lat: latSum / countryAssets.length,
-                        lng: lngSum / countryAssets.length
-                    };
-
-                    const marker = new window.google.maps.Marker({
-                        position: center,
-                        map: map,
-                        title: `${country}: ${countryAssets.length}개 자산`,
-                        icon: {
-                            url: defaultIcon,
-                            scaledSize: new window.google.maps.Size(40, 40),
-                            labelOrigin: new window.google.maps.Point(20, 50)
-                        },
-                        label: {
-                            text: `${country} (${countryAssets.length})`,
-                            fontSize: "12px",
-                            fontWeight: "bold",
-                            color: "#000",
-                            fontFamily: "Arial, sans-serif"
-                        }
-                    });
-
-                    marker.addListener("click", () => {
-                        moveToCountry(country);
-                    });
-
-                    markers.push(marker);
-                });
-            } else if (zoom <= 7) {
+            if (zoom <= 7) {
                 const groupedAssets = assets.reduce((groups, asset) => {
                     const province = asset.province;
                     if (!groups[province]) {
@@ -473,7 +408,6 @@
                 return;
             }
             selectedProvince = null;
-            selectedCountry = null;
             const bounds = new window.google.maps.LatLngBounds();
             assets.forEach(asset => {
                 bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
@@ -482,7 +416,7 @@
 
             const currentZoom = map.getZoom();
             if (currentZoom > 10) map.setZoom(10);
-            if (currentZoom < 5) map.setZoom(5);
+            if (currentZoom < 7) map.setZoom(7);
             updateMarkers();
         }
 
@@ -531,11 +465,8 @@
                 Object.keys(groupedAssets).sort().forEach(country => {
                     const countryDetails = document.createElement("details");
                     const countrySummary = document.createElement("summary");
-                    const countryAssets = Object.values(groupedAssets[country]).flat();
-                    countrySummary.textContent = `${country} (${countryAssets.length})`;
-                    countrySummary.addEventListener("click", () => {
-                        moveToCountry(country);
-                    });
+                    countrySummary.textContent = `${country} (${Object.values(groupedAssets[country]).flat().length})`;
+                    countrySummary.classList.add("country-summary");
                     countryDetails.appendChild(countrySummary);
 
                     const countryUl = document.createElement("ul");
@@ -563,7 +494,7 @@
                             });
                             provinceUl.appendChild(li);
                         });
-                        provinceDetails.appendChild(provinceUl);
+                        province/guinceDetails.appendChild(provinceUl);
                         countryUl.appendChild(provinceDetails);
                     });
                     countryDetails.appendChild(countryUl);
