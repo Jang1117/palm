@@ -501,29 +501,31 @@
                 alert('Google Maps API 로드에 실패했습니다. API 키를 확인하세요.');
                 return;
             }
-
+        
             if (typeof assets === 'undefined') {
                 console.error("assets.js가 로드되지 않았습니다. 파일을 확인하세요.");
                 alert("자산 데이터를 로드하지 못했습니다. assets.js 파일을 확인하세요.");
                 return;
             }
-
-            const center = { lat: -3.81, lng: 119.9 };
+        
             map = new window.google.maps.Map(document.getElementById("map"), {
                 zoom: 5,
-                center: center,
+                center: calculateCenter(), // 초기 중심 설정
                 fullscreenControl: false,
                 mapTypeId: window.google.maps.MapTypeId.ROADMAP
             });
-
-            console.log("초기 중심:", center);
+        
+            console.log("초기 중심:", calculateCenter());
             console.log(`지도 초기화 완료. 줌 레벨: ${map.getZoom()}`);
-
+        
+            // 모든 자산을 포함하도록 경계 설정
+            moveToAssets(); // 초기화 시 모든 자산을 포함하는 뷰로 설정
+        
             map.addListener("zoom_changed", () => {
                 console.log(`줌 레벨 변경: ${map.getZoom()}`);
                 updateMarkers();
             });
-
+        
             updateMarkers();
             initializeSidebar();
         };
