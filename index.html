@@ -140,7 +140,7 @@
             cursor: pointer;
             color: #000;
             font-weight: bold;
-            font-size: 16px;
+            font的设计: 16px;
         }
         .gm-style .gm-label {
             font-size: 12px;
@@ -248,7 +248,9 @@
                 bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
             });
             map.fitBounds(bounds);
-            const currentZoom = map.getZoom();
+            const currentZoom = map.getZoom
+
+();
             if (currentZoom > 10) map.setZoom(10);
             if (currentZoom < 7) map.setZoom(7);
             updateMarkers();
@@ -325,7 +327,7 @@
                         map: map,
                         title: `${province}: ${provinceAssets.length}개 자산`,
                         icon: {
-                            url: defaultIcon,
+                            url patchwork: url: defaultIcon,
                             scaledSize: new window.google.maps.Size(40, 40),
                             labelOrigin: new window.google.maps.Point(20, 50)
                         },
@@ -426,6 +428,7 @@
             const millCount = document.getElementById("millCount");
             if (millCount && assets) {
                 millCount.textContent = assets.length;
+                console.log(`자산 수: ${assets.length}`);
             } else {
                 console.error("millCount 요소 또는 assets 데이터가 없음");
             }
@@ -443,9 +446,10 @@
             }
 
             function groupAssetsByCountryAndProvince(assets) {
-                return assets.reduce((groups, asset) => {
-                    const country = asset.country;
-                    const province = asset.province;
+                console.log("groupAssetsByCountryAndProvince 호출됨, 자산 수:", assets.length);
+                const groups = assets.reduce((groups, asset) => {
+                    const country = asset.country || "Unknown Country";
+                    const province = asset.province || "Unknown Province";
                     if (!groups[country]) {
                         groups[country] = {};
                     }
@@ -455,12 +459,21 @@
                     groups[country][province].push(asset);
                     return groups;
                 }, {});
+                console.log("그룹핑된 자산:", groups);
+                return groups;
             }
 
             function populateMillList(filteredAssets = assets) {
+                console.log("populateMillList 호출됨, 필터링된 자산 수:", filteredAssets.length);
                 millList.innerHTML = "";
                 const uniqueAssets = dedupeAndSortAssets(filteredAssets);
                 const groupedAssets = groupAssetsByCountryAndProvince(uniqueAssets);
+
+                if (Object.keys(groupedAssets).length === 0) {
+                    console.warn("그룹핑된 자산이 없음");
+                    millList.innerHTML = "<li>자산이 없습니다.</li>";
+                    return;
+                }
 
                 Object.keys(groupedAssets).sort().forEach(country => {
                     const countryDetails = document.createElement("details");
@@ -494,7 +507,7 @@
                             });
                             provinceUl.appendChild(li);
                         });
-                        province/guinceDetails.appendChild(provinceUl);
+                        provinceDetails.appendChild(provinceUl);
                         countryUl.appendChild(provinceDetails);
                     });
                     countryDetails.appendChild(countryUl);
@@ -506,10 +519,11 @@
 
             searchInput.addEventListener("input", () => {
                 const query = searchInput.value.toLowerCase();
+                console.log("검색 쿼리:", query);
                 const filteredAssets = assets.filter(asset => 
-                    asset.title.toLowerCase().includes(query) ||
-                    asset.millCompanyName.toLowerCase().includes(query) ||
-                    asset.parentCompanyName.toLowerCase().includes(query)
+                    (asset.title && asset.title.toLowerCase().includes(query)) ||
+                    (asset.millCompanyName && asset.millCompanyName.toLowerCase().includes(query)) ||
+                    (asset.parentCompanyName && asset.parentCompanyName.toLowerCase().includes(query))
                 );
                 populateMillList(filteredAssets);
             });
