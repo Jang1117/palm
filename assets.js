@@ -9646,6 +9646,950 @@ const assets = [
         province: "NEGERI SEMBILAN",
         country: "MALAYSIA",
         position: { lat: 2.583486, lng: 101.998102 }
+    },
+    {
+        title: "ACE OIL MILL",
+        millCompanyName: "ACE OIL MILL SDN BHD",
+        parentCompanyName: "ACE AGRICULTURAL SDN BHD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 2.912294, lng: 102.779122 }
+    },
+    {
+        title: "ANSON OIL INDUSTRIES",
+        millCompanyName: "ANSON OIL INDUSTRIES SDN BHD",
+        parentCompanyName: "MHC PLANTATIONS BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 3.957826, lng: 101.191412 }
+    },
+    {
+        title: "ASTANA ENDAH",
+        millCompanyName: "ASTANA ENDAH SDN BHD",
+        parentCompanyName: "ASTANA ENDAH SDN BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.191511, lng: 100.813342 }
+    },
+    {
+        title: "AWAN TIMUR",
+        millCompanyName: "AWAN TIMUR PALM OIL MILL RESOURCES (PERAK) SDN BH",
+        parentCompanyName: "AWAN TIMUR GROUP",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.53148, lng: 100.73058 }
+    },
+    {
+        title: "BESOUT",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 3.88088, lng: 101.27585 }
+    },
+    {
+        title: "BUKIT BEREMBUN",
+        millCompanyName: "SOUTHERN KERATONG PLANTATIONS SDN BHD",
+        parentCompanyName: "SOUTHERN KERATONG PLANTATIONS SDN BHD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.07544, lng: 102.76615 }
+    },
+    {
+        title: "BUKIT KEPAYANG",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.346308, lng: 102.597472 }
+    },
+    {
+        title: "BUKIT LEELAU",
+        millCompanyName: "IOI CORPORATION BERHAD",
+        parentCompanyName: "IOI CORPORATION BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.302408, lng: 103.13692 }
+    },
+    {
+        title: "BUKIT MENDI",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.196341, lng: 102.300844 }
+    },
+    {
+        title: "BUKIT PUTERI (SOU 10)",
+        millCompanyName: "SIME DARBY PLANTATION BHD",
+        parentCompanyName: "SIME DARBY PLANTATION BHD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 4.202149, lng: 101.862644 }
+    },
+    {
+        title: "BUKIT SAGU",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.966318, lng: 103.147314 }
+    },
+    {
+        title: "BUKIT SENORANG",
+        millCompanyName: "SYARIKAT PENANAMAN BUKIT SENORANG SDN BHD",
+        parentCompanyName: "UNITED MALACCA BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.097522, lng: 102.426471 }
+    },
+    {
+        title: "CAHAYA MUDA PERAK",
+        millCompanyName: "SYARIKAT CAHAYA MUDA PERAK (OIL MILL) SDN BHD",
+        parentCompanyName: "NGAN & NGAN HOLDINGS SDN BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.159395, lng: 101.280501 }
+    },
+    {
+        title: "CAROTINO",
+        millCompanyName: "CAROTINO SDN BHD",
+        parentCompanyName: "JC CHANG (PTE) LTD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.815783, lng: 102.817429 }
+    },
+    {
+        title: "CENDERAWASIH",
+        millCompanyName: "F.E. RANGKAIAN SDN BHD",
+        parentCompanyName: "FAR EAST HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 2.778114, lng: 102.961974 }
+    },
+    {
+        title: "CENTRAL",
+        millCompanyName: "CENTRAL PALM OIL MILL SDN BHD",
+        parentCompanyName: "CAM RESOURCES BERHAD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.8915, lng: 100.669 }
+    },
+    {
+        title: "CHANGKAT CHERMIN",
+        millCompanyName: "KUALA LUMPUR KEPONG BERHAD",
+        parentCompanyName: "KUALA LUMPUR KEPONG BERHAD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.27527, lng: 100.78498 }
+    },
+    {
+        title: "CHARUK PUTTING",
+        millCompanyName: "KILANG SAWIT C.P. SDN BHD",
+        parentCompanyName: "BELL GROUP",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.439792, lng: 102.490874 }
+    },
+    {
+        title: "CHEEKAH-KEMAYAN",
+        millCompanyName: "CHEEKAH-KEMAYAN PLANTATIONS SDN BHD",
+        parentCompanyName: "PROSPER GROUP",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.147808, lng: 102.47451 }
+    },
+    {
+        title: "CHERSONESE (SOU 2)",
+        millCompanyName: "SIME DARBY PLANTATION BHD",
+        parentCompanyName: "SIME DARBY PLANTATION BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.977525, lng: 100.461475 }
+    },
+    {
+        title: "CHINI 3",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.366163, lng: 102.93123 }
+    },
+    {
+        title: "CINI 2",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.395431, lng: 102.968122 }
+    },
+    {
+        title: "DARA LAM SOON",
+        millCompanyName: "DARA LAM SOON SDN BHD",
+        parentCompanyName: "LAM SOON (M) BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.157017, lng: 103.163633 }
+    },
+    {
+        title: "DOMINION SQUARE",
+        millCompanyName: "DOMINION SQUARE SDN BHD",
+        parentCompanyName: "LKPP CORPORATION SDN BHD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.620067, lng: 103.160592 }
+    },
+    {
+        title: "ELPHIL (SOU 3)",
+        millCompanyName: "SIME DARBY PLANTATION BHD",
+        parentCompanyName: "SIME DARBY PLANTATION BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.890178, lng: 101.093874 }
+    },
+    {
+        title: "ENDAU",
+        millCompanyName: "ENDAU PALM OIL MILL SDN BHD",
+        parentCompanyName: "FAR EAST HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 2.67994, lng: 103.50536 }
+    },
+    {
+        title: "FELCRA MARAN",
+        millCompanyName: "FELCRA PROCESSING & ENGINEERING SDN BHD",
+        parentCompanyName: "FELCRA BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.571804, lng: 102.685164 }
+    },
+    {
+        title: "FELCRA NASARUDDIN",
+        millCompanyName: "FELCRA PROCESSING & ENGINEERING SDN BHD",
+        parentCompanyName: "FELCRA BERHAD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.324178, lng: 100.941418 }
+    },
+    {
+        title: "FELCRA PROCESSING & ENGINEERING",
+        millCompanyName: "FELCRA PROCESSING & ENGINEERING SDN BHD",
+        parentCompanyName: "FELCRA BERHAD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 3.998554, lng: 101.16719 }
+    },
+    {
+        title: "FELCRA SEBERANG PERAK",
+        millCompanyName: "FELCRA PROCESSING & ENGINEERING SDN BHD",
+        parentCompanyName: "FELCRA BERHAD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.148555, lng: 100.83981 }
+    },
+    {
+        title: "FLEMINGTON (SOU 4)",
+        millCompanyName: "SIME DARBY PLANTATION BHD",
+        parentCompanyName: "SIME DARBY PLANTATION BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 3.928953, lng: 100.856816 }
+    },
+    {
+        title: "FOONG LEE SAWI MINYAK",
+        millCompanyName: "FOONG LEE SAWI MINYAK SDN BHD",
+        parentCompanyName: "FOONG LEE SAWI MINYAK SDN BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.925431, lng: 101.103357 }
+    },
+    {
+        title: "HAVYS",
+        millCompanyName: "HAVYS OIL MILL SDN BHD",
+        parentCompanyName: "HAVYS OIL MILL SDN BHD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 2.894425, lng: 102.661323 }
+    },
+    {
+        title: "JAYAPUTRA",
+        millCompanyName: "FELCRA JAYAPUTRA SDN BHD",
+        parentCompanyName: "FELCRA BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.983527, lng: 102.22128 }
+    },
+    {
+        title: "JENDARATA",
+        millCompanyName: "UNITED PLANTATIONS BERHAD",
+        parentCompanyName: "UNITED PLANTATIONS BERHAD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 3.853889, lng: 100.968333 }
+    },
+    {
+        title: "JENG HUAT",
+        millCompanyName: "JENG HUAT (BAHAU) REALTY SDN BHD",
+        parentCompanyName: "JENG HUAT (BAHAU) REALTY SDN BHD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.1038, lng: 102.4581 }
+    },
+    {
+        title: "JENGKA 21",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.740236, lng: 102.489625 }
+    },
+    {
+        title: "JENGKA 3",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.694107, lng: 102.595186 }
+    },
+    {
+        title: "JENGKA 8",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.824443, lng: 102.508351 }
+    },
+    {
+        title: "JERANTUT",
+        millCompanyName: "KILANG KELAPA SAWIT JERANTUT SDN BHD",
+        parentCompanyName: "KILANG KELAPA SAWIT JERANTUT SDN BHD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.863856, lng: 102.345506 }
+    },
+    {
+        title: "KAMPUNG GAJAH",
+        millCompanyName: "PERAK AGRO MILLS SDN BHD",
+        parentCompanyName: "PERAK AGRO OIL FARM SDN BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.245234, lng: 100.969515 }
+    },
+    {
+        title: "KAMUNTING",
+        millCompanyName: "KILANG MINYAK SAWIT KAMUNTING SDN BHD",
+        parentCompanyName: "NGAN & NGAN HOLDINGS SDN BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.923085, lng: 100.71938 }
+    },
+    {
+        title: "KECHAU A",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 4.292928, lng: 102.076614 }
+    },
+    {
+        title: "KECHAU B",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 4.242099, lng: 102.102777 }
+    },
+    {
+        title: "KEMA DEVELOPMENT",
+        millCompanyName: "KEMA DEVELOPMENT SDN BHD",
+        parentCompanyName: "KEMA DEVELOPMENT SDN BHD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.72928, lng: 102.88877 }
+    },
+    {
+        title: "KEMASUL",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.273686, lng: 102.232828 }
+    },
+    {
+        title: "KERATONG",
+        millCompanyName: "CHIN TECK PLANTATIONS BERHAD",
+        parentCompanyName: "CHIN TECK PLANTATIONS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.29464, lng: 102.822793 }
+    },
+    {
+        title: "KERATONG 2",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 2.919558, lng: 102.871747 }
+    },
+    {
+        title: "KERATONG 3",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 2.928713, lng: 102.934487 }
+    },
+    {
+        title: "KERATONG 9",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 2.96889, lng: 102.958 }
+    },
+    {
+        title: "KERDAU (SOU 11)",
+        millCompanyName: "SIME DARBY PLANTATION BHD",
+        parentCompanyName: "SIME DARBY PLANTATION BHD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.569449, lng: 102.280084 }
+    },
+    {
+        title: "KILANG KELAPA SAWIT BERUAS",
+        millCompanyName: "PERTUBUHAN PELADANG NEGERI PERAK (PPNP)",
+        parentCompanyName: "PERTUBUHAN PELADANG NEGERI PERAK (PPNP)",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.458307, lng: 100.770431 }
+    },
+    {
+        title: "KOSFARM",
+        millCompanyName: "KILANG KOSFARM SDN BHD",
+        parentCompanyName: "FAR EAST HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 2.9934, lng: 102.82 }
+    },
+    {
+        title: "KOSMA",
+        millCompanyName: "WUJUD WAWASAN SDN BHD",
+        parentCompanyName: "FAR EAST HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.033934, lng: 102.840363 }
+    },
+    {
+        title: "KOTA BAHAGIA",
+        millCompanyName: "THP KOTA BAHAGIA SDN BHD",
+        parentCompanyName: "TH PLANTATIONS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 2.986505, lng: 102.927032 }
+    },
+    {
+        title: "KOTA GELANGGI",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.921389, lng: 102.489722 }
+    },
+    {
+        title: "KRAU",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.647357, lng: 101.977069 }
+    },
+    {
+        title: "KUANTAN TRADING",
+        millCompanyName: "KUANTAN TRADING OIL MILL SDN BHD",
+        parentCompanyName: "KUANTAN TRADING OIL MILL SDN BHD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 2.729077, lng: 102.941634 }
+    },
+    {
+        title: "LADANG GULA",
+        millCompanyName: "ENG THYE PLANTATIONS BERHAD",
+        parentCompanyName: "NEGRI SEMBILAN OIL PALMS BOARD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.954957, lng: 100.468919 }
+    },
+    {
+        title: "LADANG MARAN",
+        millCompanyName: "TIMOR OIL PALM PLANTATION BERHAD",
+        parentCompanyName: "NEGRI SEMBILAN OIL PALMS BOARD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.634314, lng: 102.765629 }
+    },
+    {
+        title: "LADANG ROMPIN",
+        millCompanyName: "SEONG THYE PLANTATIONS SDN BHD",
+        parentCompanyName: "SEONG THYE PLANTATIONS SDN BHD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 2.939, lng: 103.2438 }
+    },
+    {
+        title: "LANGKAP",
+        millCompanyName: "GABUNGAN PERUSAHAAN MINYAK LANGKAP SDN BHD",
+        parentCompanyName: "JOHAWAKI PLANTATION SDN BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.057, lng: 101.1392 }
+    },
+    {
+        title: "LCSB LEPAR",
+        millCompanyName: "LKPP CORPORATION SDN BHD",
+        parentCompanyName: "LKPP CORPORATION SDN BHD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.592298, lng: 103.083423 }
+    },
+    {
+        title: "LEKIR",
+        millCompanyName: "KILANG KELAPA SAWIT LEKIR SDN BHD",
+        parentCompanyName: "JOHAWAKI PLANTATION SDN BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.151494, lng: 100.780476 }
+    },
+    {
+        title: "LEMBING",
+        millCompanyName: "KILANG SAWIT LEMBING SDN BHD",
+        parentCompanyName: "YUWANG GROUP",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.8927, lng: 103.0996 }
+    },
+    {
+        title: "LEPAR HILIR",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.643862, lng: 103.011869 }
+    },
+    {
+        title: "LEPAR UTARA 4",
+        millCompanyName: "FELDA PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FELDA GLOBAL VENTURES",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.873063, lng: 102.816263 }
+    },
+    {
+        title: "LEPAR UTARA 6",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.970986, lng: 102.6918 }
+    },
+    {
+        title: "LUM",
+        millCompanyName: "KILANG MINYAK KELAPA SAWIT LUM SDN BHD",
+        parentCompanyName: "NG CHIN SIU & SONS GROUP",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 2.743432, lng: 102.938883 }
+    },
+    {
+        title: "MALMAJU BINA",
+        millCompanyName: "MALMAJU BINA SDN BHD",
+        parentCompanyName: "MALMAJU BINA SDN BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 5.174115, lng: 100.673393 }
+    },
+    {
+        title: "MEMPAGA",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.526424, lng: 101.97902 }
+    },
+    {
+        title: "MERCHONG PALM OIL MILL SDN BHD",
+        millCompanyName: "MERCHONG PALM OIL MILL SDN BHD",
+        parentCompanyName: "PROSPER GROUP",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 2.80355, lng: 103.306237 }
+    },
+    {
+        title: "MINSAWI",
+        millCompanyName: "MINSAWI INDUSTRIES (KUALA KANGSAR) SDN BHD",
+        parentCompanyName: "MINSAWI INDUSTRIES (KUALA KANGSAR) SDN BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.904767, lng: 100.906924 }
+    },
+    {
+        title: "PADANG PIOL",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 4.024036, lng: 102.388405 }
+    },
+    {
+        title: "PANCHING",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.824203, lng: 103.167218 }
+    },
+    {
+        title: "PANTAI REMIS",
+        millCompanyName: "PANTAI REMIS PALM OIL MILL SDN BHD",
+        parentCompanyName: "PANTAI REMIS PALM OIL MILL SDN BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.366346, lng: 100.697871 }
+    },
+    {
+        title: "PERAK MOTOR",
+        millCompanyName: "PERAK MOTOR COMPANY SDN BHD",
+        parentCompanyName: "PERAK MOTOR COMPANY SDN BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 3.965531, lng: 101.178107 }
+    },
+    {
+        title: "PINEHILL",
+        millCompanyName: "PINEHILL PLANTATIONS (MALAYSIA) SDN BHD",
+        parentCompanyName: "PINEHILL PACIFIC BERHAD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 3.969835, lng: 101.09669 }
+    },
+    {
+        title: "PUJAAN MAKMUR",
+        millCompanyName: "PUJAAN MAKMUR OIL MILL SDN BHD",
+        parentCompanyName: "TIAN SIANG HOLDINGS SDN BHD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.182665, lng: 102.458804 }
+    },
+    {
+        title: "PUKIN",
+        millCompanyName: "SYARIKAT PUKIN LADANG KELAPA SAWIT SDN BHD",
+        parentCompanyName: "IOI CORPORATION BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 2.72171, lng: 102.909644 }
+    },
+    {
+        title: "RAUB",
+        millCompanyName: "RAUB OIL MILL SDN BHD",
+        parentCompanyName: "RAUB MINING & DEVELOPMENT COMPANY S/B",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.843154, lng: 101.855473 }
+    },
+    {
+        title: "RISDA ULU KERATONG",
+        millCompanyName: "RISDA ESTATES SDN BHD",
+        parentCompanyName: "RISDA ESTATES SDN BHD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 2.73747, lng: 102.91056 }
+    },
+    {
+        title: "ROMPIN",
+        millCompanyName: "ROMPIN PALM OIL MILL SDN BHD",
+        parentCompanyName: "FAR EAST HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.077543, lng: 103.172411 }
+    },
+    {
+        title: "SAWIRA MAKMUR",
+        millCompanyName: "KILANG SAWIRA MAKMUR SDN BHD",
+        parentCompanyName: "FAR EAST HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 2.967337, lng: 103.092177 }
+    },
+    {
+        title: "SELABA (SOU 5)",
+        millCompanyName: "SIME DARBY PLANTATION BHD",
+        parentCompanyName: "SIME DARBY PLANTATION BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 3.988419, lng: 101.081487 }
+    },
+    {
+        title: "SELAMA",
+        millCompanyName: "NGAN & NGAN HOLDINGS SDN BHD",
+        parentCompanyName: "FELCRA BERHAD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 5.178291, lng: 100.716671 }
+    },
+    {
+        title: "SELANCAR 2A",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 2.653799, lng: 103.018315 }
+    },
+    {
+        title: "SELANCAR 2B",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 2.63818, lng: 103.000374 }
+    },
+    {
+        title: "SELENDANG",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 2.70529, lng: 103.441553 }
+    },
+    {
+        title: "SEMANTAN",
+        millCompanyName: "KILANG MINYAK KELAPA SAWIT SEMANTAN SDN BHD",
+        parentCompanyName: "NG CHIN SIU & SONS GROUP",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.469233, lng: 102.313714 }
+    },
+    {
+        title: "SERI INTAN (SOU 5)",
+        millCompanyName: "SIME DARBY PLANTATION BHD",
+        parentCompanyName: "SIME DARBY PLANTATION BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 3.969973, lng: 100.985869 }
+    },
+    {
+        title: "SEROJA",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.590385, lng: 102.559338 }
+    },
+    {
+        title: "SOUTHERN PERAK",
+        millCompanyName: "SOUTHERN PERAK PLANTATIONS SDN BHD",
+        parentCompanyName: "SOUTHERN GROUP",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 3.80607, lng: 101.029527 }
+    },
+    {
+        title: "SRI GANDA",
+        millCompanyName: "SRI GANDA OIL MILL SDN BHD",
+        parentCompanyName: "RADIANT RESPONSE SDN BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 3.91324, lng: 101.198977 }
+    },
+    {
+        title: "SRI JELUTUNG",
+        millCompanyName: "SRI JELUTUNG PALM OIL MILL SDN BHD",
+        parentCompanyName: "IKHASAS GROUP",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.350448, lng: 103.127926 }
+    },
+    {
+        title: "SRI SENGGORA",
+        millCompanyName: "SRI SENGGORA KILANG KELAPA SAWIT SDN BHD",
+        parentCompanyName: "SERN LEE ENTERPRISE SDN BHD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.6037, lng: 102.9179 }
+    },
+    {
+        title: "ST PALM OIL MILL",
+        millCompanyName: "ST PALM OIL MILL SDN BHD",
+        parentCompanyName: "SERN LEE ENTERPRISE SDN BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 3.8342, lng: 101.1745 }
+    },
+    {
+        title: "SUBURBAN PROPERTIES",
+        millCompanyName: "SUBURBAN PROPERTIES SDN BHD",
+        parentCompanyName: "SUBURBAN PROPERTIES SDN BHD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 2.74837, lng: 102.989103 }
+    },
+    {
+        title: "SUNGAI JERNIH",
+        millCompanyName: "BOUSTEAD PLANTATIONS BERHAD",
+        parentCompanyName: "BOUSTEAD PLANTATIONS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.338458, lng: 103.099921 }
+    },
+    {
+        title: "SUNGAI KERANG",
+        millCompanyName: "SUNGAI KERANG DEVELOPMENT SDN BHD",
+        parentCompanyName: "SUNGAI KERANG DEVELOPMENT SDN BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.404711, lng: 100.835706 }
+    },
+    {
+        title: "SYARIKAT PELADANG & PERUSAHAAN MINYAK",
+        millCompanyName: "SYARIKAT PELADANG & PERUSAHAAN MINYAK SDN BHD",
+        parentCompanyName: "SYARIKAT PELADANG & PERUSAHAAN MINYAK SDN BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 3.979449, lng: 100.989699 }
+    },
+    {
+        title: "TALI AYER",
+        millCompanyName: "HILLTOP PALMS SDN BHD",
+        parentCompanyName: "HILLTOP PALMS SDN BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 5.052258, lng: 100.5156 }
+    },
+    {
+        title: "TEE TEH",
+        millCompanyName: "TEE TEH SDN BHD",
+        parentCompanyName: "TEE TEH SDN BHD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 2.839942, lng: 102.866036 }
+    },
+    {
+        title: "TEMENTI",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.263555, lng: 102.598278 }
+    },
+    {
+        title: "TEMERLOH",
+        millCompanyName: "TEMERLOH MILL SDN BHD",
+        parentCompanyName: "NGAN & NGAN HOLDINGS SDN BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.647872, lng: 100.69551 }
+    },
+    {
+        title: "TERSANG",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 4.105752, lng: 101.799901 }
+    },
+    {
+        title: "TG TUALANG",
+        millCompanyName: "KILANG MINYAK SAWIT TG TUALANG (1997) SDN BHD",
+        parentCompanyName: "KILANG MINYAK SAWIT TG TUALANG (1997) SDN BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.305112, lng: 101.039045 }
+    },
+    {
+        title: "TIAN SIANG AIR KUNING",
+        millCompanyName: "TIAN SIANG OILL MILL (AIR KUNING) SDN BHD",
+        parentCompanyName: "TIAN SIANG HOLDINGS SDN BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.161684, lng: 101.160521 }
+    },
+    {
+        title: "TIAN SIANG PAHANG",
+        millCompanyName: "TIAN SIANG OILL MILL (PAHANG) SDN BHD",
+        parentCompanyName: "TIAN SIANG HOLDINGS SDN BHD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.986423, lng: 101.790405 }
+    },
+    {
+        title: "TIAN SIANG PERAK",
+        millCompanyName: "TIAN SIANG OILL MILL (PERAK) SDN BHD",
+        parentCompanyName: "TIAN SIANG HOLDINGS SDN BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.59319, lng: 100.732109 }
+    },
+    {
+        title: "TOPAZ EMAS",
+        millCompanyName: "TOPAZ EMAS SDN BHD",
+        parentCompanyName: "HOK HUAT GROUP SDN BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.553367, lng: 100.725591 }
+    },
+    {
+        title: "TRIANG",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PAHANG",
+        country: "MALAYSIA",
+        position: { lat: 3.2692, lng: 102.5799 }
+    },
+    {
+        title: "TROLAK",
+        millCompanyName: "FGV PALM INDUSTRIES SDN BHD",
+        parentCompanyName: "FGV HOLDINGS BERHAD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 3.938386, lng: 101.351286 }
+    },
+    {
+        title: "TRONG OIL MILL",
+        millCompanyName: "BOUSTEAD PLANTATIONS BERHAD",
+        parentCompanyName: "BOUSTEAD PLANTATIONS BERHAD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.67356, lng: 100.708154 }
+    },
+    {
+        title: "UIE",
+        millCompanyName: "UNITED INTERNATIONAL ENTERPRISES (M) SDN BHD",
+        parentCompanyName: "UNITED PLANTATIONS BERHAD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.447703, lng: 100.721981 }
+    },
+    {
+        title: "ULU BASIR",
+        millCompanyName: "UNITED PLANTATIONS BERHAD",
+        parentCompanyName: "UNITED PLANTATIONS BERHAD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 3.724444, lng: 101.255833 }
+    },
+    {
+        title: "ULU BERNAM OPTIMILL",
+        millCompanyName: "UNITED PLANTATIONS BERHAD",
+        parentCompanyName: "UNITED PLANTATIONS BERHAD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 3.771944, lng: 101.220556 }
+    },
+    {
+        title: "YEE LEE",
+        millCompanyName: "YEE LEE PALM OIL INDUSTRIES SDN BHD",
+        parentCompanyName: "YEE LEE CORPORATION BHD",
+        province: "PERAK",
+        country: "MALAYSIA",
+        position: { lat: 4.086544, lng: 101.278894 }
     }
 ];
 window.assets = assets;
