@@ -217,7 +217,7 @@
         function calculateCenter() {
             if (!assets || assets.length === 0) {
                 console.error("assets 데이터가 없거나 로드되지 않음");
-                return { lat: -3.81, lng: 119.9 }; // 기본값 -3.8730053707176806, 116.3399942018522
+                return { lat: -3.81, lng: 119.9 }; // 기본값
             }
             const total = assets.reduce((acc, asset) => {
                 return {
@@ -368,8 +368,8 @@
                         showPopup(asset.title, asset.title, formattedDesc, `
                             <p><strong>회사명:</strong> ${asset.millCompanyName}</p>
                             <p><strong>모회사:</strong> ${asset.parentCompanyName}</p>
-                            <p><strong>주소:</strong> ${asset.address}</p>
-                            <p><strong>지역:</strong> ${asset.province}</p>`);
+                            <p><strong>지역:</strong> ${asset.province}</p>
+                            <p><strong>국가:</strong> ${asset.country}</p>`);
                         map.setZoom(15);
                         map.setCenter(asset.position);
                     });
@@ -472,8 +472,8 @@
                                     : `${asset.title}은 ${asset.millCompanyName} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName} 그룹의 일원입니다.`, 
                                 `<p><strong>회사명:</strong> ${asset.millCompanyName}</p>
                                  <p><strong>모회사:</strong> ${asset.parentCompanyName}</p>
-                                 <p><strong>주소:</strong> ${asset.address}</p>
-                                 <p><strong>지역:</strong> ${asset.province}</p>`);
+                                 <p><strong>지역:</strong> ${asset.province}</p>
+                                 <p><strong>국가:</strong> ${asset.country}</p>`);
                         });
                         ul.appendChild(li);
                     });
@@ -508,7 +508,7 @@
                 return;
             }
 
-            const center = { lat: -3.81, lng: 119.9 }; // calculateCenter(); 
+            const center = { lat: -3.81, lng: 119.9 };
             map = new window.google.maps.Map(document.getElementById("map"), {
                 zoom: 5,
                 center: center,
