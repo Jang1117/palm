@@ -8814,6 +8814,30 @@ const assets = [
         province: "SULAWESI TENGAH",
         country: "INDONESIA",
         position: { lat: -2.222777778, lng: 121.5636111 }
+    },
+    {
+        title: "SULTRA PRIMA LESTARI",
+        millCompanyName: "SULTRA PRIMA LESTARI",
+        parentCompanyName: "CAPITOL",
+        province: "SULAWESI TENGGARA",
+        country: "INDONESIA",
+        position: { lat: -3.451, lng: 122.168 }
+    },
+    {
+        title: "TANI PRIMA MAKMUR",
+        millCompanyName: "TANI PRIMA MAKMUR",
+        parentCompanyName: "TANI PRIMA MAKMUR",
+        province: "SULAWESI TENGGARA",
+        country: "INDONESIA",
+        position: { lat: -3.764794, lng: 122.070314 }
+    },
+    {
+        title: "UTAMA AGRINDO MAS",
+        millCompanyName: "UTAMA AGRINDO MAS",
+        parentCompanyName: "SINAR JAYA AGRO INVESTAMA",
+        province: "SULAWESI TENGGARA",
+        country: "INDONESIA",
+        position: { lat: -3.97229, lng: 122.27391 }
     }
 ];
 window.assets = assets;
