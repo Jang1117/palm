@@ -4663,6 +4663,206 @@ const assets = [
         province: "RIAU",
         country: "INDONESIA",
         position: { lat: -0.530467, lng: 101.417183 }
+    },
+    {
+        title: "TANAH PUTIH",
+        millCompanyName: "PERKEBUNAN NUSANTARA V",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: 1.744166667, lng: 100.5111667 }
+    },
+    {
+        title: "TANAH PUTIH (DGS)",
+        millCompanyName: "DJAYA GLOBALINDO SENTOSA",
+        parentCompanyName: "DJAYA GLOBALINDO SENTOSA",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: 1.694611, lng: 101.043 }
+    },
+    {
+        title: "TANDUN",
+        millCompanyName: "PERKEBUNAN NUSANTARA V",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: 0.5987244, lng: 100.6937 }
+    },
+    {
+        title: "TANJUNG MEDAN",
+        millCompanyName: "PERKEBUNAN NUSANTARA V",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: 1.584444, lng: 100.589205 }
+    },
+    {
+        title: "TAPUNG KANAN",
+        millCompanyName: "SEKAR BUMI ALAM LESTARI",
+        parentCompanyName: "KUALA LUMPUR KEPONG BERHAD",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: 0.757222222, lng: 101.2197222 }
+    },
+    {
+        title: "TELUK BAKAU",
+        millCompanyName: "BHUMIREKSA NUSA SEJATI",
+        parentCompanyName: "SIME DARBY/MINAMAS",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: 0.2565, lng: 103.58883 }
+    },
+    {
+        title: "TELUK MEGA",
+        millCompanyName: "SAWIT RIAU MAKMUR",
+        parentCompanyName: "SAWIT RIAU MAKMUR",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: 1.533719444, lng: 100.9928611 }
+    },
+    {
+        title: "TELUK SIAK",
+        millCompanyName: "ANEKA INTI PERSADA",
+        parentCompanyName: "SIME DARBY/MINAMAS",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: 0.591388889, lng: 101.6588889 }
+    },
+    {
+        title: "TELUK SONO",
+        millCompanyName: "HUTAHAEAN",
+        parentCompanyName: "HUTAHAEAN",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: 1.059537, lng: 100.757836 }
+    },
+    {
+        title: "TEMBUSU",
+        millCompanyName: "TH INDO PLANTATIONS",
+        parentCompanyName: "KPN PLANTATION",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: 0.19693, lng: 103.00981 }
+    },
+    {
+        title: "TERANTAM",
+        millCompanyName: "PERKEBUNAN NUSANTARA V",
+        parentCompanyName: "PERKEBUNAN NUSANTARA",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: 0.578805556, lng: 100.7508056 }
+    },
+    {
+        title: "TESO 1",
+        millCompanyName: "CITRA RIAU SARANA 1",
+        parentCompanyName: "KPN PLANTATION",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: -0.21335, lng: 101.474317 }
+    },
+    {
+        title: "TESO 2",
+        millCompanyName: "CITRA RIAU SARANA 2",
+        parentCompanyName: "KPN PLANTATION",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: -0.322533, lng: 101.558217 }
+    },
+    {
+        title: "TESO 3",
+        millCompanyName: "CITRA RIAU SARANA 3",
+        parentCompanyName: "KPN PLANTATION",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: -0.243333, lng: 101.583633 }
+    },
+    {
+        title: "TOPAZ",
+        millCompanyName: "TUNGGAL YUNUS ESTATE",
+        parentCompanyName: "ASIAN AGRI",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: 0.689388889, lng: 100.935 }
+    },
+    {
+        title: "TUNGGAL PERKASA PLANTATION",
+        millCompanyName: "TUNGGAL PERKASA PLANTATION",
+        parentCompanyName: "ASTRA AGRO LESTARI",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: -0.30297, lng: 102.27347 }
+    },
+    {
+        title: "UJUNG TANJUNG",
+        millCompanyName: "IVO MAS TUNGGAL",
+        parentCompanyName: "GOLDEN AGRI-RESOURCES (GAR)",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: 0.96996, lng: 101.26491 }
+    },
+    {
+        title: "UKUI I",
+        millCompanyName: "INTI INDOSAWIT SUBUR",
+        parentCompanyName: "ASIAN AGRI",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: -0.2232, lng: 102.095 }
+    },
+    {
+        title: "UKUI II",
+        millCompanyName: "INTI INDOSAWIT SUBUR",
+        parentCompanyName: "ASIAN AGRI",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: -0.276888889, lng: 102.1168889 }
+    },
+    {
+        title: "UKUI II (GH)",
+        millCompanyName: "GANDAERAH HENDANA",
+        parentCompanyName: "SAMSUNG & GANDA",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: -0.15638, lng: 102.20624 }
+    },
+    {
+        title: "USAHA KITA MAKMUR",
+        millCompanyName: "USAHA KITA MAKMUR",
+        parentCompanyName: "MEDCO AGRO",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: -0.53, lng: 101.493 }
+    },
+    {
+        title: "WANASARI NUSANTARA",
+        millCompanyName: "WANASARI NUSANTARA",
+        parentCompanyName: "MUSTIKA AGRO SARI",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: -0.287, lng: 101.4718333 }
+    },
+    {
+        title: "WIRA KARYA PRAMITA",
+        millCompanyName: "WIRA KARYA PRAMITA",
+        parentCompanyName: "WIRA KARYA PRAMITA",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: 0.543083, lng: 101.253167 }
+    },
+    {
+        title: "WIRA KARYA PRAMITA",
+        millCompanyName: "WIRA KARYA PRAMITA",
+        parentCompanyName: "DIVA PRATAMA SAKTI",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: 0.543359, lng: 101.253571 }
+    },
+    {
+        title: "YUNI BERSAUDARA SEJAHTERA",
+        millCompanyName: "YUNI BERSAUDARA SEJAHTERA",
+        parentCompanyName: "YUNI BERSAUDARA SEJAHTERA",
+        province: "RIAU",
+        country: "INDONESIA",
+        position: { lat: -0.026010716, lng: 101.189494 }
     }
 ];
 window.assets = assets;
