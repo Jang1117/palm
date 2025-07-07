@@ -13967,6 +13967,14 @@ const assets = [
         province: "KRABI",
         country: "THAILAND",
         position: { lat: 8.385622, lng: 98.729131 }
+    },
+    {
+        title: "Transco Energi Utama",
+        millCompanyName: "PT Transco Energi Utama",
+        parentCompanyName: "INCASI RAYA (GUNAS)",
+        province: "SUMATERA BARAT",
+        country: "INDONESIA",
+        position: { lat: -2.062159, lng: 101.005916 },
     }
 ];
 window.assets = assets;
