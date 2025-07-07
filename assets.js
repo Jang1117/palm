@@ -13975,6 +13975,22 @@ const assets = [
         province: "SUMATERA BARAT",
         country: "INDONESIA",
         position: { lat: -2.062159, lng: 101.005916 },
-    }
+    },
+    {
+        title: "Varita Majutama",
+        millCompanyName: "PT Varita Majutama",
+        parentCompanyName: "PT Varita Majutama",
+        province: "PAPUA BARAT",
+        country: "INDONESIA",
+        position: { lat: -2.583235872725291, lng: 133.21968999191176 },
+    },
+    {
+        title: "Rimbun Sawit Papua",
+        millCompanyName: "PT Rimbun Sawit Papua",
+        parentCompanyName: "PT Rimbun Sawit Papua",
+        province: "PAPUA BARAT",
+        country: "INDONESIA",
+        position: { lat: -3.1456947399235435, lng: 133.25216142822 },
+    }	
 ];
 window.assets = assets;
