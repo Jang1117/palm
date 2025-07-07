@@ -8443,7 +8443,7 @@ const assets = [
         title: "SUNGAI BENGALON",
         millCompanyName: "KEMILAU INDAH NUSANTARA",
         parentCompanyName: "AGRINDO",
-        province: "KUTAI TIMUR",
+        province: "KALIMANTAN TIMUR",
         country: "INDONESIA",
         position: { lat: 0.722944444, lng: 117.6575278 }
     },
@@ -8459,7 +8459,7 @@ const assets = [
         title: "SUNGAI PERAK",
         millCompanyName: "KRUING LESTARI JAYA",
         parentCompanyName: "GOLDEN AGRI-RESOURCES (GAR)",
-        province: "KUTAI BARAT",
+        province: "KALIMANTAN TIMUR",
         country: "INDONESIA",
         position: { lat: -0.661437, lng: 115.58972 }
     },
@@ -8467,7 +8467,7 @@ const assets = [
         title: "SWAKARSA SINARSENTOSA (DSN 1)",
         millCompanyName: "SWAKARSA SINARSENTOSA",
         parentCompanyName: "DHARMA SATYA NUSANTARA",
-        province: "KUTAI TIMUR",
+        province: "KALIMANTAN TIMUR",
         country: "INDONESIA",
         position: { lat: 1.12278, lng: 116.8519444 }
     },
@@ -8475,7 +8475,7 @@ const assets = [
         title: "SWAKARSA SINARSENTOSA (DSN 4)",
         millCompanyName: "SWAKARSA SINARSENTOSA",
         parentCompanyName: "DHARMA SATYA NUSANTARA",
-        province: "KUTAI TIMUR",
+        province: "KALIMANTAN TIMUR",
         country: "INDONESIA",
         position: { lat: 1.1514025, lng: 116.7463531 }
     },
@@ -8483,7 +8483,7 @@ const assets = [
         title: "TALISAYAN",
         millCompanyName: "TANJUNG BUYU PERKASA PLANTATIONS",
         parentCompanyName: "TELADAN PRIMA",
-        province: "BERAU",
+        province: "KALIMANTAN TIMUR",
         country: "INDONESIA",
         position: { lat: 1.514967, lng: 118.266783 }
     },
@@ -8491,7 +8491,7 @@ const assets = [
         title: "TEPIAN LANGSAT",
         millCompanyName: "ANUGERAH ENERGITAMA PALMA",
         parentCompanyName: "SERASIH",
-        province: "KUTAI TIMUR",
+        province: "KALIMANTAN TIMUR",
         country: "INDONESIA",
         position: { lat: 0.791325, lng: 117.282452 }
     },
@@ -8499,7 +8499,7 @@ const assets = [
         title: "WARU KALTIM PLANTATION",
         millCompanyName: "WARU KALTIM PLANTATION",
         parentCompanyName: "ASTRA AGRO LESTARI",
-        province: "PENAJAM PASER UTARA",
+        province: "KALIMANTAN TIMUR",
         country: "INDONESIA",
         position: { lat: -1.327916667, lng: 116.5440528 }
     },
@@ -8507,7 +8507,7 @@ const assets = [
         title: "YUDHA WAHANA ABADI",
         millCompanyName: "YUDHA WAHANA ABADI",
         parentCompanyName: "TRIPUTRA AGRO PERSADA",
-        province: "BERAU",
+        province: "KALIMANTAN TIMUR",
         country: "INDONESIA",
         position: { lat: 1.44075, lng: 117.2127 }
     },
