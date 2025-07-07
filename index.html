@@ -196,7 +196,7 @@
     </div>
 
     <script>
-        // assets.js를 동기적으로 로드
+        // assets.js 로드
         const assetsScript = document.createElement("script");
         assetsScript.src = "https://jang1117.github.io/palm/assets.js?t=20250704";
         assetsScript.async = false;
@@ -277,35 +277,22 @@
             }
             console.log(`지역 ${province} 자산 수: ${provinceAssets.length}`, provinceAssets);
 
-            if (provinceAssets.length === 1) {
-                const asset = provinceAssets[0];
+            const bounds = new window.google.maps.LatLngBounds();
+            let validCount = 0;
+            provinceAssets.forEach(asset => {
                 if (asset.position && asset.position.lat && asset.position.lng) {
-                    map.setCenter(asset.position);
-                    map.setZoom(15);
+                    bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
+                    validCount++;
                 } else {
                     console.warn(`자산 ${asset.title}의 위치 데이터 누락:`, asset.position);
-                    alert(`자산 ${asset.title}의 위치 데이터가 없습니다.`);
-                    return;
                 }
-            } else {
-                const bounds = new window.google.maps.LatLngBounds();
-                let validCount = 0;
-                provinceAssets.forEach(asset => {
-                    if (asset.position && asset.position.lat && asset.position.lng) {
-                        bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
-                        validCount++;
-                    } else {
-                        console.warn(`자산 ${asset.title}의 위치 데이터 누락:`, asset.position);
-                    }
-                });
-                if (validCount === 0) {
-                    console.warn(`지역 ${province}에 유효한 좌표가 있는 자산이 없습니다.`);
-                    alert(`지역 ${province}에 유효한 좌표가 있는 자산이 없습니다.`);
-                    return;
-                }
-                map.fitBounds(bounds);
-                map.setZoom(15);
+            });
+            if (validCount === 0) {
+                console.warn(`지역 ${province}에 유효한 좌표가 있는 자산이 없습니다.`);
+                alert(`지역 ${province}에 유효한 좌표가 있는 자산이 없습니다.`);
+                return;
             }
+            map.fitBounds(bounds);
             updateMarkers();
             console.log(`지역 ${province}로 이동, 줌 레벨: ${map.getZoom()}`);
         }
@@ -447,8 +434,8 @@
                             <p><strong>모회사:</strong> ${asset.parentCompanyName || "Unknown Parent"}</p>
                             <p><strong>지역:</strong> ${asset.province || "Unknown Province"}</p>
                             <p><strong>국가:</strong> ${asset.country || "Unknown Country"}</p>`);
-                        map.setZoom(15);
                         map.setCenter(asset.position);
+                        map.setZoom(15);
                     });
 
                     markers.push(marker);
