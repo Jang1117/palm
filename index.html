@@ -97,6 +97,7 @@
         }
         .global-button#showSidebarBtn {
             right: 100px;
+            display: none;
         }
         .global-button:hover {
             background-color: #e0e0e0;
@@ -198,20 +199,24 @@
         // assets.js를 동기적으로 로드
         const assetsScript = document.createElement("script");
         assetsScript.src = "https://jang1117.github.io/palm/assets.js?t=20250704";
-        assetsScript.async = false; // 동기 로드
+        assetsScript.async = false;
         assetsScript.onerror = function() {
             console.error("assets.js 로드 실패. 파일 경로 또는 구성을 확인하세요.");
             alert("자산 데이터를 로드하지 못했습니다. assets.js 파일을 확인하세요.");
             document.getElementById("millList").innerHTML = "<li>자산 데이터를 로드하지 못했습니다.</li>";
+            document.getElementById("millCount").textContent = "0";
         };
         assetsScript.onload = function() {
             console.log("assets.js 로드 완료, 자산 수:", window.assets ? window.assets.length : 0);
-            // 데이터 무결성 검증
             window.assets.forEach((asset, index) => {
-                if (!asset.country || !asset.province || !asset.title) {
+                if (!asset.country || !asset.province || !asset.title || !asset.position || !asset.position.lat || !asset.position.lng) {
                     console.warn(`자산 ${index}에 누락된 필드:`, asset);
                 }
             });
+            const kalimantanAssets = window.assets.filter(asset => 
+                asset.province && asset.province.toLowerCase().trim() === "kalimantan timur"
+            );
+            console.log("Kalimantan Timur 자산:", kalimantanAssets);
         };
         document.head.appendChild(assetsScript);
 
@@ -232,22 +237,28 @@
             }
         });
 
-        // 중심지점 계산 함수
         function calculateCenter() {
             if (!window.assets || window.assets.length === 0) {
                 console.error("assets 데이터가 없거나 로드되지 않음");
-                return { lat: -3.81, lng: 119.9 }; // 기본값
+                return { lat: -3.81, lng: 119.9 };
             }
-            const total = window.assets.reduce((acc, asset) => {
-                return {
-                    lat: acc.lat + asset.position.lat,
-                    lng: acc.lng + asset.position.lng
-                };
-            }, { lat: 0, lng: 0 });
-            return {
-                lat: total.lat / window.assets.length,
-                lng: total.lng / window.assets.length
+            const validAssets = window.assets.filter(asset => 
+                asset.position && asset.position.lat && asset.position.lng
+            );
+            if (validAssets.length === 0) {
+                console.error("유효한 좌표를 가진 자산이 없습니다.");
+                return { lat: -3.81, lng: 119.9 };
+            }
+            const total = validAssets.reduce((acc, asset) => ({
+                lat: acc.lat + asset.position.lat,
+                lng: acc.lng + asset.position.lng
+            }), { lat: 0, lng: 0 });
+            const center = {
+                lat: total.lat / validAssets.length,
+                lng: total.lng / validAssets.length
             };
+            console.log("계산된 중심점:", center);
+            return center;
         }
 
         function moveToProvince(province) {
@@ -256,16 +267,47 @@
                 return;
             }
             selectedProvince = province;
-            const provinceAssets = window.assets.filter(asset => asset.province === province);
-            const bounds = new window.google.maps.LatLngBounds();
-            provinceAssets.forEach(asset => {
-                bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
-            });
-            map.fitBounds(bounds);
-            const currentZoom = map.getZoom();
-            if (currentZoom > 10) map.setZoom(10);
-            if (currentZoom < 7) map.setZoom(7);
+            const provinceAssets = window.assets.filter(asset => 
+                asset.province && asset.province.toLowerCase().trim() === province.toLowerCase().trim()
+            );
+            if (provinceAssets.length === 0) {
+                console.warn(`지역 ${province}에 해당하는 자산이 없습니다.`);
+                alert(`지역 ${province}에 자산이 없습니다.`);
+                return;
+            }
+            console.log(`지역 ${province} 자산 수: ${provinceAssets.length}`, provinceAssets);
+
+            if (provinceAssets.length === 1) {
+                const asset = provinceAssets[0];
+                if (asset.position && asset.position.lat && asset.position.lng) {
+                    map.setCenter(asset.position);
+                    map.setZoom(15);
+                } else {
+                    console.warn(`자산 ${asset.title}의 위치 데이터 누락:`, asset.position);
+                    alert(`자산 ${asset.title}의 위치 데이터가 없습니다.`);
+                    return;
+                }
+            } else {
+                const bounds = new window.google.maps.LatLngBounds();
+                let validCount = 0;
+                provinceAssets.forEach(asset => {
+                    if (asset.position && asset.position.lat && asset.position.lng) {
+                        bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
+                        validCount++;
+                    } else {
+                        console.warn(`자산 ${asset.title}의 위치 데이터 누락:`, asset.position);
+                    }
+                });
+                if (validCount === 0) {
+                    console.warn(`지역 ${province}에 유효한 좌표가 있는 자산이 없습니다.`);
+                    alert(`지역 ${province}에 유효한 좌표가 있는 자산이 없습니다.`);
+                    return;
+                }
+                map.fitBounds(bounds);
+                map.setZoom(15);
+            }
             updateMarkers();
+            console.log(`지역 ${province}로 이동, 줌 레벨: ${map.getZoom()}`);
         }
 
         function showHome() {
@@ -277,7 +319,11 @@
             const center = calculateCenter();
             map.setCenter(center);
             map.setZoom(5);
+            document.getElementById("searchInput").value = "";
+            populateMillList();
             updateMarkers();
+            showSidebar();
+            closePopup();
             console.log("Home 중심:", center);
         }
 
@@ -286,9 +332,7 @@
             document.getElementById("map").style.width = "100%";
             document.getElementById("hideSidebarBtn").style.display = "none";
             document.getElementById("showSidebarBtn").style.display = "block";
-            if (map) {
-                google.maps.event.trigger(map, "resize");
-            }
+            if (map) google.maps.event.trigger(map, "resize");
         }
 
         function showSidebar() {
@@ -296,14 +340,13 @@
             document.getElementById("map").style.width = "100%";
             document.getElementById("hideSidebarBtn").style.display = "block";
             document.getElementById("showSidebarBtn").style.display = "none";
-            if (map) {
-                google.maps.event.trigger(map, "resize");
-            }
+            if (map) google.maps.event.trigger(map, "resize");
         }
 
         function updateMarkers() {
             markers.forEach(marker => marker.setMap(null));
             markers = [];
+            console.log("마커 업데이트 시작, selectedProvince:", selectedProvince);
 
             if (!window.assets || window.assets.length === 0) {
                 console.error("마커를 생성할 자산 데이터가 없습니다.");
@@ -313,30 +356,38 @@
             const zoom = map.getZoom();
             let displayAssets = window.assets;
 
-            if (selectedProvince && zoom > 7) {
-                displayAssets = window.assets.filter(asset => asset.province === selectedProvince);
+            if (selectedProvince) {
+                displayAssets = window.assets.filter(asset => 
+                    asset.province && asset.province.toLowerCase().trim() === selectedProvince.toLowerCase().trim()
+                );
+                console.log(`선택된 지역 ${selectedProvince}의 자산 수: ${displayAssets.length}`);
             }
 
-            if (zoom <= 7) {
+            if (zoom <= 7 && !selectedProvince) {
                 const groupedAssets = window.assets.reduce((groups, asset) => {
-                    const province = asset.province || "Unknown Province";
-                    if (!groups[province]) {
-                        groups[province] = [];
-                    }
+                    const province = asset.province && asset.province.trim() ? asset.province : "Unknown Province";
+                    if (!groups[province]) groups[province] = [];
                     groups[province].push(asset);
                     return groups;
                 }, {});
 
                 Object.keys(groupedAssets).sort().forEach(province => {
                     const provinceAssets = groupedAssets[province];
-                    let latSum = 0, lngSum = 0;
+                    let latSum = 0, lngSum = 0, validCount = 0;
                     provinceAssets.forEach(asset => {
-                        latSum += asset.position.lat;
-                        lngSum += asset.position.lng;
+                        if (asset.position && asset.position.lat && asset.position.lng) {
+                            latSum += asset.position.lat;
+                            lngSum += asset.position.lng;
+                            validCount++;
+                        }
                     });
+                    if (validCount === 0) {
+                        console.warn(`지역 ${province}에 유효한 좌표가 있는 자산이 없습니다.`);
+                        return;
+                    }
                     const center = {
-                        lat: latSum / provinceAssets.length,
-                        lng: lngSum / provinceAssets.length
+                        lat: latSum / validCount,
+                        lng: lngSum / validCount
                     };
 
                     const marker = new window.google.maps.Marker({
@@ -357,14 +408,16 @@
                         }
                     });
 
-                    marker.addListener("click", () => {
-                        moveToProvince(province);
-                    });
-
+                    marker.addListener("click", () => moveToProvince(province));
                     markers.push(marker);
                 });
+                console.log(`줌 레벨 ${zoom}에서 지역 마커 생성: ${markers.length}개`);
             } else {
                 displayAssets.forEach(asset => {
+                    if (!asset.position || !asset.position.lat || !asset.position.lng) {
+                        console.warn(`자산 ${asset.title}의 위치 데이터 누락:`, asset.position);
+                        return;
+                    }
                     const markerIcon = {
                         url: defaultIcon,
                         scaledSize: new window.google.maps.Size(40, 40),
@@ -400,6 +453,7 @@
 
                     markers.push(marker);
                 });
+                console.log(`줌 레벨 ${zoom}에서 개별 자산 마커 생성: ${markers.length}개`);
             }
         }
 
@@ -412,13 +466,11 @@
             popupTitle.textContent = title;
             popupDescription.innerHTML = description;
             popupExtra.innerHTML = extraContent;
-
             popupOverlay.style.display = "block";
         }
 
         function closePopup() {
-            const popupOverlay = document.getElementById("popupOverlay");
-            popupOverlay.style.display = "none";
+            document.getElementById("popupOverlay").style.display = "none";
         }
 
         function moveToAssets() {
@@ -428,14 +480,23 @@
             }
             selectedProvince = null;
             const bounds = new window.google.maps.LatLngBounds();
+            let validCount = 0;
             window.assets.forEach(asset => {
-                bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
+                if (asset.position && asset.position.lat && asset.position.lng) {
+                    bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
+                    validCount++;
+                }
             });
-            map.fitBounds(bounds);
-
-            const currentZoom = map.getZoom();
-            if (currentZoom > 10) map.setZoom(10);
-            if (currentZoom < 7) map.setZoom(7);
+            if (validCount === 0) {
+                console.warn("유효한 좌표가 있는 자산이 없습니다.");
+                map.setCenter(calculateCenter());
+                map.setZoom(5);
+            } else {
+                map.fitBounds(bounds);
+                const currentZoom = map.getZoom();
+                if (currentZoom > 10) map.setZoom(10);
+                if (currentZoom < 7) map.setZoom(7);
+            }
             updateMarkers();
         }
 
@@ -468,21 +529,15 @@
             function groupAssetsByCountryAndProvince(assets) {
                 console.log("groupAssetsByCountryAndProvince 호출됨, 자산 수:", assets.length);
                 const groups = assets.reduce((groups, asset) => {
-                    const country = asset.country || "Unknown Country";
-                    const province = asset.province || "Unknown Province";
-                    if (!groups[country]) {
-                        groups[country] = {};
-                    }
-                    if (!groups[country][province]) {
-                        groups[country][province] = [];
-                    }
+                    const country = asset.country && asset.country.trim() ? asset.country : "Unknown Country";
+                    const province = asset.province && asset.province.trim() ? asset.province : "Unknown Province";
+                    if (!groups[country]) groups[country] = {};
+                    if (!groups[country][province]) groups[country][province] = [];
                     groups[country][province].push(asset);
                     return groups;
                 }, {});
-                // 국가별 자산 수 디버깅
-                const totalGroupedAssets = Object.values(groups).reduce((total, provinces) => {
-                    return total + Object.values(provinces).flat().length;
-                }, 0);
+                const totalGroupedAssets = Object.values(groups).reduce((total, provinces) => 
+                    total + Object.values(provinces).flat().length, 0);
                 console.log("그룹핑된 자산:", groups);
                 console.log(`그룹핑된 총 자산 수: ${totalGroupedAssets}, 원본 자산 수: ${assets.length}`);
                 return groups;
@@ -493,8 +548,6 @@
                 millList.innerHTML = "";
                 const uniqueAssets = dedupeAndSortAssets(filteredAssets);
                 const groupedAssets = groupAssetsByCountryAndProvince(uniqueAssets);
-
-                // millCount 갱신
                 millCount.textContent = uniqueAssets.length;
 
                 if (Object.keys(groupedAssets).length === 0) {
@@ -515,23 +568,31 @@
                         const provinceDetails = document.createElement("details");
                         const provinceSummary = document.createElement("summary");
                         provinceSummary.textContent = `${province} (${groupedAssets[country][province].length})`;
+                        provinceSummary.addEventListener("click", () => moveToProvince(province));
                         provinceDetails.appendChild(provinceSummary);
 
                         const provinceUl = document.createElement("ul");
-                        groupedAssets[country][province].sort((a, b) => (a.title || "Unknown Title").localeCompare(b.title || "Unknown Title")).forEach(asset => {
+                        groupedAssets[country][province].sort((a, b) => 
+                            (a.title || "Unknown Title").localeCompare(b.title || "Unknown Title")
+                        ).forEach(asset => {
                             const li = document.createElement("li");
                             li.textContent = asset.title || "Unknown Title";
                             li.addEventListener("click", () => {
-                                map.setCenter(asset.position);
-                                map.setZoom(15);
-                                showPopup(asset.title || "Unknown Title", asset.title || "Unknown Title", 
-                                    asset.description 
-                                        ? `${asset.title || "Unknown Title"}은 ${asset.millCompanyName || "Unknown Company"} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName || "Unknown Parent"} 그룹의 일원입니다.<br>${asset.description.replace(/, /g, "<br>")}`
-                                        : `${asset.title || "Unknown Title"}은 ${asset.millCompanyName || "Unknown Company"} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName || "Unknown Parent"} 그룹의 일원입니다.`, 
-                                    `<p><strong>회사명:</strong> ${asset.millCompanyName || "Unknown Company"}</p>
-                                     <p><strong>모회사:</strong> ${asset.parentCompanyName || "Unknown Parent"}</p>
-                                     <p><strong>지역:</strong> ${asset.province || "Unknown Province"}</p>
-                                     <p><strong>국가:</strong> ${asset.country || "Unknown Country"}</p>`);
+                                if (asset.position && asset.position.lat && asset.position.lng) {
+                                    map.setCenter(asset.position);
+                                    map.setZoom(15);
+                                    showPopup(asset.title || "Unknown Title", asset.title || "Unknown Title", 
+                                        asset.description 
+                                            ? `${asset.title || "Unknown Title"}은 ${asset.millCompanyName || "Unknown Company"} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName || "Unknown Parent"} 그룹의 일원입니다.<br>${asset.description.replace(/, /g, "<br>")}`
+                                            : `${asset.title || "Unknown Title"}은 ${asset.millCompanyName || "Unknown Company"} 소속의 팜 오일 생산 시설로, ${asset.parentCompanyName || "Unknown Parent"} 그룹의 일원입니다.`, 
+                                        `<p><strong>회사명:</strong> ${asset.millCompanyName || "Unknown Company"}</p>
+                                         <p><strong>모회사:</strong> ${asset.parentCompanyName || "Unknown Parent"}</p>
+                                         <p><strong>지역:</strong> ${asset.province || "Unknown Province"}</p>
+                                         <p><strong>국가:</strong> ${asset.country || "Unknown Country"}</p>`);
+                                } else {
+                                    console.warn(`자산 ${asset.title}의 위치 데이터 누락:`, asset.position);
+                                    alert(`자산 ${asset.title}의 위치 데이터가 없습니다.`);
+                                }
                             });
                             provinceUl.appendChild(li);
                         });
@@ -568,6 +629,7 @@
                 console.error("assets 데이터가 없거나 비어 있음");
                 alert("자산 데이터를 로드하지 못했습니다. assets.js 파일을 확인하세요.");
                 document.getElementById("millList").innerHTML = "<li>자산 데이터를 로드하지 못했습니다.</li>";
+                document.getElementById("millCount").textContent = "0";
                 return;
             }
 
@@ -582,14 +644,13 @@
             console.log(`지도 초기화 완료. 줌 레벨: ${map.getZoom()}`);
 
             moveToAssets();
+            updateMarkers();
+            initializeSidebar();
 
             map.addListener("zoom_changed", () => {
                 console.log(`줌 레벨 변경: ${map.getZoom()}`);
                 updateMarkers();
             });
-
-            updateMarkers();
-            initializeSidebar();
         };
     </script>
 
