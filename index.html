@@ -97,7 +97,6 @@
         }
         .global-button#showSidebarBtn {
             right: 100px;
-            display: none;
         }
         .global-button:hover {
             background-color: #e0e0e0;
@@ -184,7 +183,7 @@
     <div id="map"></div>
     <button class="global-button" id="homeBtn" onclick="showHome()">Home</button>
     <button class="global-button" id="hideSidebarBtn" onclick="hideSidebar()">Hide Sidebar</button>
-    <button class="global-button" id="showSidebarBtn" onclick="showSidebar()">Show Sidebar</button>
+    <button class="global-button" id="showSidebarBtn" onclick="showSidebar()" style="display: none;">Show Sidebar</button>
 
     <div class="popup-overlay" id="popupOverlay">
         <div class="popup-content" id="popupContent">
@@ -196,20 +195,7 @@
     </div>
 
     <script>
-        // 전역 변수
-        let map;
-        let markers = [];
-        let selectedProvince = null;
-        let selectedCountry = null;
-        const defaultIcon = 'https://jang1117.github.io/palm/palm_tree.png';
-
-        // 마커 이미지 로드 확인
-        const img = new Image();
-        img.src = defaultIcon;
-        img.onload = () => console.log("마커 이미지가 로드되었습니다: ", defaultIcon);
-        img.onerror = () => console.error("마커 이미지 로드 실패: ", defaultIcon);
-
-        // assets.js 로드
+        // assets.js를 동기적으로 로드
         const assetsScript = document.createElement("script");
         assetsScript.src = "https://jang1117.github.io/palm/assets.js?t=20250704";
         assetsScript.async = false; // 동기 로드
@@ -217,22 +203,28 @@
             console.error("assets.js 로드 실패. 파일 경로 또는 구성을 확인하세요.");
             alert("자산 데이터를 로드하지 못했습니다. assets.js 파일을 확인하세요.");
             document.getElementById("millList").innerHTML = "<li>자산 데이터를 로드하지 못했습니다.</li>";
-            document.getElementById("millCount").textContent = "0";
         };
         assetsScript.onload = function() {
             console.log("assets.js 로드 완료, 자산 수:", window.assets ? window.assets.length : 0);
             // 데이터 무결성 검증
-            if (window.assets) {
-                window.assets.forEach((asset, index) => {
-                    if (!asset.country || !asset.province || !asset.title) {
-                        console.warn(`자산 ${index}에 누락된 필드:`, asset);
-                    }
-                });
-            }
+            window.assets.forEach((asset, index) => {
+                if (!asset.country || !asset.province || !asset.title) {
+                    console.warn(`자산 ${index}에 누락된 필드:`, asset);
+                }
+            });
         };
         document.head.appendChild(assetsScript);
 
-        // 전역 오류 핸들러
+        let map;
+        let markers = [];
+        let selectedProvince = null;
+
+        const defaultIcon = 'https://jang1117.github.io/palm/palm_tree.png';
+        const img = new Image();
+        img.src = defaultIcon;
+        img.onload = () => console.log("마커 이미지가 로드되었습니다: ", defaultIcon);
+        img.onerror = () => console.error("마커 이미지 로드 실패: ", defaultIcon);
+
         window.addEventListener('error', (event) => {
             if (event.message.includes('google is not defined') || event.message.includes('maps')) {
                 console.error('Google Maps API 로드 실패. API 키 또는 HTTP 리퍼러를 확인하세요.');
@@ -252,47 +244,18 @@
                     lng: acc.lng + asset.position.lng
                 };
             }, { lat: 0, lng: 0 });
-            const center = {
+            return {
                 lat: total.lat / window.assets.length,
                 lng: total.lng / window.assets.length
             };
-            console.log("계산된 중심점:", center);
-            return center;
         }
 
-        // 국가 이동 함수
-        function moveToCountry(country) {
-            if (!map) {
-                console.error("지도가 초기화되지 않았습니다.");
-                return;
-            }
-            selectedCountry = country;
-            selectedProvince = null; // 지역 필터 초기화
-            const countryAssets = window.assets.filter(asset => asset.country === country);
-            if (countryAssets.length === 0) {
-                console.warn(`국가 ${country}에 해당하는 자산이 없습니다.`);
-                return;
-            }
-            const bounds = new window.google.maps.LatLngBounds();
-            countryAssets.forEach(asset => {
-                bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
-            });
-            map.fitBounds(bounds);
-            const currentZoom = map.getZoom();
-            if (currentZoom > 10) map.setZoom(10);
-            if (currentZoom < 7) map.setZoom(7);
-            updateMarkers();
-            console.log(`국가 ${country}로 이동, 자산 수: ${countryAssets.length}`);
-        }
-
-        // 지역 이동 함수
         function moveToProvince(province) {
             if (!map) {
                 console.error("지도가 초기화되지 않았습니다.");
                 return;
             }
             selectedProvince = province;
-            selectedCountry = null; // 국가 필터 초기화
             const provinceAssets = window.assets.filter(asset => asset.province === province);
             const bounds = new window.google.maps.LatLngBounds();
             provinceAssets.forEach(asset => {
@@ -305,30 +268,19 @@
             updateMarkers();
         }
 
-        // Home 버튼 동작
         function showHome() {
             if (!map) {
                 console.error("지도가 초기화되지 않았습니다.");
                 return;
             }
             selectedProvince = null;
-            selectedCountry = null;
             const center = calculateCenter();
             map.setCenter(center);
             map.setZoom(5);
-            // 검색 입력란 초기화
-            const searchInput = document.getElementById("searchInput");
-            searchInput.value = "";
-            // 사이드바 및 마커 초기화
-            populateMillList();
             updateMarkers();
-            // 사이드바 표시 및 팝업 닫기
-            showSidebar();
-            closePopup();
-            console.log("Home 버튼 클릭 - 중심점:", center);
+            console.log("Home 중심:", center);
         }
 
-        // 사이드바 숨기기
         function hideSidebar() {
             document.getElementById("sidebar").style.visibility = "hidden";
             document.getElementById("map").style.width = "100%";
@@ -339,7 +291,6 @@
             }
         }
 
-        // 사이드바 표시
         function showSidebar() {
             document.getElementById("sidebar").style.visibility = "visible";
             document.getElementById("map").style.width = "100%";
@@ -350,7 +301,6 @@
             }
         }
 
-        // 마커 업데이트
         function updateMarkers() {
             markers.forEach(marker => marker.setMap(null));
             markers = [];
@@ -363,14 +313,12 @@
             const zoom = map.getZoom();
             let displayAssets = window.assets;
 
-            if (selectedCountry) {
-                displayAssets = window.assets.filter(asset => asset.country === selectedCountry);
-            } else if (selectedProvince && zoom > 7) {
+            if (selectedProvince && zoom > 7) {
                 displayAssets = window.assets.filter(asset => asset.province === selectedProvince);
             }
 
             if (zoom <= 7) {
-                const groupedAssets = displayAssets.reduce((groups, asset) => {
+                const groupedAssets = window.assets.reduce((groups, asset) => {
                     const province = asset.province || "Unknown Province";
                     if (!groups[province]) {
                         groups[province] = [];
@@ -455,7 +403,6 @@
             }
         }
 
-        // 팝업 표시
         function showPopup(id, title, description, extraContent) {
             const popupOverlay = document.getElementById("popupOverlay");
             const popupTitle = document.getElementById("popupTitle");
@@ -469,20 +416,17 @@
             popupOverlay.style.display = "block";
         }
 
-        // 팝업 닫기
         function closePopup() {
             const popupOverlay = document.getElementById("popupOverlay");
             popupOverlay.style.display = "none";
         }
 
-        // 자산 이동
         function moveToAssets() {
             if (!map) {
                 console.error("지도가 초기화되지 않았습니다.");
                 return;
             }
             selectedProvince = null;
-            selectedCountry = null;
             const bounds = new window.google.maps.LatLngBounds();
             window.assets.forEach(asset => {
                 bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
@@ -495,7 +439,6 @@
             updateMarkers();
         }
 
-        // 사이드바 초기화
         function initializeSidebar() {
             const millList = document.getElementById("millList");
             const searchInput = document.getElementById("searchInput");
@@ -509,6 +452,18 @@
             }
 
             console.log(`초기 자산 수: ${window.assets.length}`);
+
+            function dedupeAndSortAssets(assets) {
+                const uniqueAssets = [];
+                const seenTitles = new Set();
+                assets.forEach(asset => {
+                    if (!seenTitles.has(asset.title)) {
+                        seenTitles.add(asset.title);
+                        uniqueAssets.push(asset);
+                    }
+                });
+                return uniqueAssets.sort((a, b) => (a.title || "Unknown Title").localeCompare(b.title || "Unknown Title"));
+            }
 
             function groupAssetsByCountryAndProvince(assets) {
                 console.log("groupAssetsByCountryAndProvince 호출됨, 자산 수:", assets.length);
@@ -524,6 +479,7 @@
                     groups[country][province].push(asset);
                     return groups;
                 }, {});
+                // 국가별 자산 수 디버깅
                 const totalGroupedAssets = Object.values(groups).reduce((total, provinces) => {
                     return total + Object.values(provinces).flat().length;
                 }, 0);
@@ -535,10 +491,11 @@
             function populateMillList(filteredAssets = window.assets) {
                 console.log("populateMillList 호출됨, 필터링된 자산 수:", filteredAssets.length);
                 millList.innerHTML = "";
-                const sortedAssets = filteredAssets.sort((a, b) => (a.title || "Unknown Title").localeCompare(b.title || "Unknown Title"));
-                const groupedAssets = groupAssetsByCountryAndProvince(sortedAssets);
+                const uniqueAssets = dedupeAndSortAssets(filteredAssets);
+                const groupedAssets = groupAssetsByCountryAndProvince(uniqueAssets);
 
-                millCount.textContent = sortedAssets.length;
+                // millCount 갱신
+                millCount.textContent = uniqueAssets.length;
 
                 if (Object.keys(groupedAssets).length === 0) {
                     console.warn("그룹핑된 자산이 없음");
@@ -551,10 +508,6 @@
                     const countrySummary = document.createElement("summary");
                     countrySummary.textContent = `${country} (${Object.values(groupedAssets[country]).flat().length})`;
                     countrySummary.classList.add("country-summary");
-                    // 국가 클릭 이벤트 추가
-                    countrySummary.addEventListener("click", () => {
-                        moveToCountry(country);
-                    });
                     countryDetails.appendChild(countrySummary);
 
                     const countryUl = document.createElement("ul");
@@ -604,7 +557,6 @@
             });
         }
 
-        // Google Maps 초기화
         window.initMap = function() {
             if (typeof window.google === 'undefined' || typeof window.google.maps === 'undefined') {
                 console.error('Google Maps API가 로드되지 않았습니다. API 키와 네트워크를 확인하세요.');
@@ -616,7 +568,6 @@
                 console.error("assets 데이터가 없거나 비어 있음");
                 alert("자산 데이터를 로드하지 못했습니다. assets.js 파일을 확인하세요.");
                 document.getElementById("millList").innerHTML = "<li>자산 데이터를 로드하지 못했습니다.</li>";
-                document.getElementById("millCount").textContent = "0";
                 return;
             }
 
@@ -631,18 +582,19 @@
             console.log(`지도 초기화 완료. 줌 레벨: ${map.getZoom()}`);
 
             moveToAssets();
-            updateMarkers();
-            initializeSidebar();
 
             map.addListener("zoom_changed", () => {
                 console.log(`줌 레벨 변경: ${map.getZoom()}`);
                 updateMarkers();
             });
+
+            updateMarkers();
+            initializeSidebar();
         };
     </script>
 
     <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKZ64N6aTmQLaU312nCqXeyrNa-lol2IQ&callback=initMap"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKZ64N6aTmQLaU312nCqXeyrNa-lol2IQ&callback=initMap&loading=async"
         onerror="console.error('Google Maps API 스크립트 로드 실패. 네트워크 또는 API 키를 확인하세요.'); alert('Google Maps API 로드에 실패했습니다. API 키를 확인하세요.');">
     </script>
 </body>
