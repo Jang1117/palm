@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CPO Mill Plant Map by Seungho Jang</title>
+    <title>CPO Mill Plant Map</title>
     <style>
         html, body {
             height: 100%;
@@ -199,11 +199,10 @@
         // assets.js 로드
         const assetsScript = document.createElement("script");
         assetsScript.src = "https://jang1117.github.io/palm/assets.js?t=20250704";
-        //assetsScript.src = "./assets.js"; // 로컬 파일로 변경
         assetsScript.async = false;
         assetsScript.onerror = function() {
             console.error("assets.js 로드 실패. 파일 경로 또는 구성을 확인하세요.");
-            alert("자산 데이터를 로드하지 못했습니다. 새로고침 해주세요..");
+            alert("자산 데이터를 로드하지 못했습니다. assets.js 파일을 확인하세요.");
             document.getElementById("millList").innerHTML = "<li>자산 데이터를 로드하지 못했습니다.</li>";
             document.getElementById("millCount").textContent = "0";
         };
@@ -214,12 +213,19 @@
                     console.warn(`자산 ${index}에 누락된 필드:`, asset);
                 }
             });
-            const kalimantanAssets = window.assets.filter(asset => 
-                asset.province && asset.province.toLowerCase().trim() === "kalimantan timur"
-            );
-            console.log("Kalimantan Timur 자산:", kalimantanAssets);
-        };
-        document.head.appendChild(assetsScript);
+			
+			
+                    // Google Maps API 스크립트를 동적으로 로드
+        const mapsScript = document.createElement("script");
+			mapsScript.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBKZ64N6aTmQLaU312nCqXeyrNa-lol2IQ&callback=initMap&loading=async";
+			mapsScript.async = true;
+			mapsScript.onerror = function() {
+				console.error('Google Maps API 스크립트 로드 실패. 네트워크 또는 API 키를 확인하세요.');
+				alert('Google Maps API 로드에 실패했습니다. API 키를 확인하세요.');
+			};
+			document.head.appendChild(mapsScript);
+		};
+		document.head.appendChild(assetsScript);
 
         let map;
         let markers = [];
@@ -642,9 +648,11 @@
         };
     </script>
 
+	<!--
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKZ64N6aTmQLaU312nCqXeyrNa-lol2IQ&callback=initMap&loading=async"
         onerror="console.error('Google Maps API 스크립트 로드 실패. 네트워크 또는 API 키를 확인하세요.'); alert('Google Maps API 로드에 실패했습니다. API 키를 확인하세요.');">
     </script>
+	-->
 </body>
 </html>
