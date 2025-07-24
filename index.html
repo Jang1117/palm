@@ -304,22 +304,22 @@
             console.log(`지역 ${province}로 이동, 줌 레벨: ${map.getZoom()}`);
         }
 
-        function showHome() {
-            if (!map) {
-                console.error("지도가 초기화되지 않았습니다.");
-                return;
-            }
-            selectedProvince = null;
-            const center = calculateCenter();
-            map.setCenter(center);
-            map.setZoom(5);
-            document.getElementById("searchInput").value = "";
-            populateMillList();
-            updateMarkers();
-            showSidebar();
-            closePopup();
-            console.log("Home 중심:", center);
-        }
+	function showHome() {
+	    if (!map) {
+	        console.error("지도가 초기화되지 않았습니다.");
+	        return;
+	    }
+	    selectedProvince = null;
+	    const center = calculateCenter();
+	    map.setCenter(center);
+	    map.setZoom(5);
+	    document.getElementById("searchInput").value = ""; // 검색창 초기화
+	    populateMillList(window.assets); // 전체 자산 목록으로 강제 갱신
+	    updateMarkers();
+	    showSidebar();
+	    closePopup();
+	    console.log("Home 중심:", center);
+	}
 
         function hideSidebar() {
             document.getElementById("sidebar").style.visibility = "hidden";
