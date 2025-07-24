@@ -642,7 +642,7 @@
             }
 
             map = new window.google.maps.Map(document.getElementById("map"), {
-                zoom: 5,
+                zoom: 10,
                 center: calculateCenter(),
                 fullscreenControl: false,
                 mapTypeId: window.google.maps.MapTypeId.ROADMAP
@@ -651,7 +651,7 @@
             console.log("초기 중심:", calculateCenter());
             console.log(`지도 초기화 완료. 줌 레벨: ${map.getZoom()}`);
 
-            moveToAssets();
+            //moveToAssets();
             updateMarkers();
             initializeSidebar();
 
