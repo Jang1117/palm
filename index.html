@@ -247,14 +247,14 @@
         function calculateCenter() {
             if (!window.assets || window.assets.length === 0) {
                 console.error("assets 데이터가 없거나 로드되지 않음");
-                return { lat: -2.5, lng: 118.0 }; // ← 인도네시아 중앙 좌표로 변경
+                return { lat: -3.81, lng: 119.9 };
             }
             const validAssets = window.assets.filter(asset => 
                 asset.position && asset.position.lat && asset.position.lng
             );
             if (validAssets.length === 0) {
                 console.error("유효한 좌표를 가진 자산이 없습니다.");
-                return { lat: -2.5, lng: 118.0 }; // ← 인도네시아 중앙 좌표로 변경
+                return { lat: -3.81, lng: 119.9 };
             }
             const total = validAssets.reduce((acc, asset) => ({
                 lat: acc.lat + asset.position.lat,
@@ -304,8 +304,7 @@
             console.log(`지역 ${province}로 이동, 줌 레벨: ${map.getZoom()}`);
         }
 
-        /*
-	function showHome() {
+        function showHome() {
             if (!map) {
                 console.error("지도가 초기화되지 않았습니다.");
                 return;
@@ -315,26 +314,13 @@
             map.setCenter(center);
             map.setZoom(5);
             document.getElementById("searchInput").value = "";
-            //populateMillList();
+            populateMillList();
             updateMarkers();
             showSidebar();
             closePopup();
             console.log("Home 중심:", center);
         }
-	*/
 
-	function showHome() {
-	    if (!map) {
-	        console.error("지도가 초기화되지 않았습니다.");
-	        return;
-	    }
-	    selectedProvince = null;
-	    document.getElementById("searchInput").value = "";
-	    moveToAssets();  // ← calculateCenter() 대신 moveToAssets() 호출
-	    showSidebar();
-	    closePopup();
-	}
-	    
         function hideSidebar() {
             document.getElementById("sidebar").style.visibility = "hidden";
             document.getElementById("map").style.width = "100%";
@@ -503,7 +489,7 @@
                 map.fitBounds(bounds);
                 const currentZoom = map.getZoom();
                 if (currentZoom > 10) map.setZoom(10);
-                if (currentZoom < 3) map.setZoom(3);
+                if (currentZoom < 7) map.setZoom(7);
             }
             updateMarkers();
         }
@@ -642,7 +628,7 @@
             }
 
             map = new window.google.maps.Map(document.getElementById("map"), {
-                zoom: 10,
+                zoom: 5,
                 center: calculateCenter(),
                 fullscreenControl: false,
                 mapTypeId: window.google.maps.MapTypeId.ROADMAP
@@ -651,7 +637,7 @@
             console.log("초기 중심:", calculateCenter());
             console.log(`지도 초기화 완료. 줌 레벨: ${map.getZoom()}`);
 
-            //moveToAssets();
+            moveToAssets();
             updateMarkers();
             initializeSidebar();
 
