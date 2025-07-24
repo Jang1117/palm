@@ -213,19 +213,18 @@
                     console.warn(`자산 ${index}에 누락된 필드:`, asset);
                 }
             });
-			
-			
-                    // Google Maps API 스크립트를 동적으로 로드
-        const mapsScript = document.createElement("script");
-			mapsScript.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBKZ64N6aTmQLaU312nCqXeyrNa-lol2IQ&callback=initMap&loading=async";
-			mapsScript.async = true;
-			mapsScript.onerror = function() {
-				console.error('Google Maps API 스크립트 로드 실패. 네트워크 또는 API 키를 확인하세요.');
-				alert('Google Maps API 로드에 실패했습니다. API 키를 확인하세요.');
-			};
-			document.head.appendChild(mapsScript);
-		};
-		document.head.appendChild(assetsScript);
+
+            // Google Maps API 스크립트를 동적으로 로드
+            const mapsScript = document.createElement("script");
+            mapsScript.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBKZ64N6aTmQLaU312nCqXeyrNa-lol2IQ&callback=initMap&loading=async";
+            mapsScript.async = true;
+            mapsScript.onerror = function() {
+                console.error('Google Maps API 스크립트 로드 실패. 네트워크 또는 API 키를 확인하세요.');
+                alert('Google Maps API 로드에 실패했습니다. API 키를 확인하세요.');
+            };
+            document.head.appendChild(mapsScript);
+        };
+        document.head.appendChild(assetsScript);
 
         let map;
         let markers = [];
@@ -304,22 +303,19 @@
             console.log(`지역 ${province}로 이동, 줌 레벨: ${map.getZoom()}`);
         }
 
-	function showHome() {
-	    if (!map) {
-	        console.error("지도가 초기화되지 않았습니다.");
-	        return;
-	    }
-	    selectedProvince = null;
-	    const center = calculateCenter();
-	    map.setCenter(center);
-	    map.setZoom(5);
-	    document.getElementById("searchInput").value = ""; // 검색창 초기화
-	    populateMillList(window.assets); // 전체 자산 목록으로 강제 갱신
-	    updateMarkers();
-	    showSidebar();
-	    closePopup();
-	    console.log("Home 중심:", center);
-	}
+        function showHome() {
+            if (!map) {
+                console.error("지도가 초기화되지 않았습니다.");
+                return;
+            }
+            selectedProvince = null;
+            document.getElementById("searchInput").value = "";
+            populateMillList(window.assets);
+            moveToAssets(); // bounds 기반으로 지도 뷰 조정
+            showSidebar();
+            closePopup();
+            console.log("Home 버튼 클릭, moveToAssets 호출");
+        }
 
         function hideSidebar() {
             document.getElementById("sidebar").style.visibility = "hidden";
@@ -647,12 +643,5 @@
             });
         };
     </script>
-
-	<!--
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKZ64N6aTmQLaU312nCqXeyrNa-lol2IQ&callback=initMap&loading=async"
-        onerror="console.error('Google Maps API 스크립트 로드 실패. 네트워크 또는 API 키를 확인하세요.'); alert('Google Maps API 로드에 실패했습니다. API 키를 확인하세요.');">
-    </script>
-	-->
 </body>
 </html>
