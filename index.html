@@ -313,7 +313,7 @@
             moveToAssets();
             showSidebar();
             closePopup();
-            console.log("Home 버튼 클릭, moveToAssets 호출");
+            console.log("Home 버튼 클릭, 중심점:", map.getCenter(), "줌 레벨:", map.getZoom());
         }
 
         function hideSidebar() {
@@ -487,6 +487,7 @@
                 if (currentZoom < 7) map.setZoom(7);
             }
             updateMarkers();
+            console.log("moveToAssets 호출, 중심점:", map.getCenter(), "줌 레벨:", map.getZoom());
         }
 
         function dedupeAndSortAssets(assets) {
