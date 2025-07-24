@@ -304,7 +304,8 @@
             console.log(`지역 ${province}로 이동, 줌 레벨: ${map.getZoom()}`);
         }
 
-        function showHome() {
+        /*
+	function showHome() {
             if (!map) {
                 console.error("지도가 초기화되지 않았습니다.");
                 return;
@@ -320,7 +321,20 @@
             closePopup();
             console.log("Home 중심:", center);
         }
+	*/
 
+	function showHome() {
+	    if (!map) {
+	        console.error("지도가 초기화되지 않았습니다.");
+	        return;
+	    }
+	    selectedProvince = null;
+	    document.getElementById("searchInput").value = "";
+	    moveToAssets();  // ← calculateCenter() 대신 moveToAssets() 호출
+	    showSidebar();
+	    closePopup();
+	}
+	    
         function hideSidebar() {
             document.getElementById("sidebar").style.visibility = "hidden";
             document.getElementById("map").style.width = "100%";
