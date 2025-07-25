@@ -1,4 +1,4 @@
-<!DOCTYPE html>  <!-- -->
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -626,14 +626,13 @@
             }
 
             map = new window.google.maps.Map(document.getElementById("map"), {
-                zoom: 5,
                 center: calculateCenter(),
                 fullscreenControl: false,
                 mapTypeId: window.google.maps.MapTypeId.ROADMAP
             });
 
             console.log("초기 중심:", calculateCenter());
-            console.log(`지도 초기화 완료. 줌 레벨: ${map.getZoom()}`);
+            console.log(`지도 초기화 완료.`);
 
             moveToAssets();
             updateMarkers();
