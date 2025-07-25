@@ -307,13 +307,24 @@
                 console.error("지도가 초기화되지 않았습니다.");
                 return;
             }
+            
+            // 초기 상태로 완전히 리셋
             selectedProvince = null;
             document.getElementById("searchInput").value = "";
+            
+            // 지도를 초기 중심점과 줌 레벨로 설정
+            map.setCenter(calculateCenter());
+            map.setZoom(2); // 초기 줌 레벨과 동일하게 설정
+            
+            // 사이드바를 초기 상태로 복원
             populateMillList(window.assets);
-            moveToAssets();
             showSidebar();
             closePopup();
-            console.log("Home 버튼 클릭, 중심점:", map.getCenter(), "줌 레벨:", map.getZoom());
+            
+            // 마커 업데이트
+            updateMarkers();
+            
+            console.log("Home 버튼 클릭, 초기 상태로 복원 - 중심점:", map.getCenter(), "줌 레벨:", map.getZoom());
         }
 
         function hideSidebar() {
