@@ -316,13 +316,13 @@
             map.setCenter(calculateCenter());
             map.setZoom(2); // 초기 줌 레벨과 동일하게 설정
             
+            // moveToAssets() 호출하여 초기 구동과 동일한 로직 실행
+            moveToAssets();
+            
             // 사이드바를 초기 상태로 복원
             populateMillList(window.assets);
             showSidebar();
             closePopup();
-            
-            // 마커 업데이트
-            updateMarkers();
             
             console.log("Home 버튼 클릭, 초기 상태로 복원 - 중심점:", map.getCenter(), "줌 레벨:", map.getZoom());
         }
@@ -490,12 +490,12 @@
             if (validCount === 0) {
                 console.warn("유효한 좌표가 있는 자산이 없습니다.");
                 map.setCenter(calculateCenter());
-                map.setZoom(5);
+                map.setZoom(2); // 초기 줌 레벨과 동일하게 변경
             } else {
                 map.fitBounds(bounds);
                 const currentZoom = map.getZoom();
                 if (currentZoom > 10) map.setZoom(10);
-                if (currentZoom < 7) map.setZoom(7);
+                if (currentZoom < 2) map.setZoom(2); // 최소 줌 레벨을 2로 변경
             }
             updateMarkers();
             console.log("moveToAssets 호출, 중심점:", map.getCenter(), "줌 레벨:", map.getZoom());
