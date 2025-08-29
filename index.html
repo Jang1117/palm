@@ -361,10 +361,6 @@
             map.fitBounds(bounds);
             updateFilteredMarkers(mapFilteredAssets);
             
-            // 사이드바는 검색어만 적용한 결과로 업데이트 (국가/지역 목록 유지)
-            const sidebarFilteredAssets = getFilteredAssetsForSidebar();
-            populateMillList(sidebarFilteredAssets);
-            
             console.log(`국가 ${country}로 이동, 줌 레벨: ${map.getZoom()}`);
         }
         
@@ -407,10 +403,6 @@
             
             map.fitBounds(bounds);
             updateFilteredMarkers(mapFilteredAssets);
-            
-            // 사이드바는 검색어만 적용한 결과로 업데이트 (국가/지역 목록 유지)
-            const sidebarFilteredAssets = getFilteredAssetsForSidebar();
-            populateMillList(sidebarFilteredAssets);
             
             console.log(`지역 ${province}로 이동, 줌 레벨: ${map.getZoom()}`);
         }
@@ -649,6 +641,8 @@
                 });
                 
                 countryDetails.appendChild(countrySummary);
+                
+                // 검색어가 있을 때도 지역이 보이도록 수정
                 const countryUl = document.createElement("ul");
                 Object.keys(groupedAssets[country]).sort().forEach(province => {
                     const provinceDetails = document.createElement("details");
@@ -656,6 +650,7 @@
                     provinceSummary.textContent = `${province} (${groupedAssets[country][province].length})`;
                     provinceSummary.addEventListener("click", () => moveToProvince(province));
                     provinceDetails.appendChild(provinceSummary);
+                    
                     const provinceUl = document.createElement("ul");
                     groupedAssets[country][province].sort((a, b) => 
                         (a.title || "Unknown Title").localeCompare(b.title || "Unknown Title")
@@ -706,7 +701,7 @@
                 searchQuery = searchInput.value.toLowerCase();
                 console.log("검색 쿼리:", searchQuery);
                 
-                // 사이드바는 검색어만 적용
+                // 사이드바는 검색어만 적용하여 모든 국가/지역 표시
                 const sidebarFilteredAssets = getFilteredAssetsForSidebar();
                 populateMillList(sidebarFilteredAssets);
                 
@@ -747,7 +742,7 @@
             initializeSidebar();
             
             map.addListener("zoom_changed", () => {
-                console.log(`줌 레벨 변경: ${map.getZoom()}`);
+                console.log(`줄 레벨 변경: ${map.getZoom()}`);
                 const mapFilteredAssets = getFilteredAssetsForMap();
                 updateFilteredMarkers(mapFilteredAssets);
             });
