@@ -224,7 +224,7 @@
         let map;
         let markers = [];
         let selectedProvince = null;
-        let selectedCountry = null; // 새로 추가된 전역 변수
+        let selectedCountry = null;
         const defaultIcon = 'https://jang1117.github.io/palm/palm_tree.png';
         const img = new Image();
         img.src = defaultIcon;
@@ -259,14 +259,32 @@
             console.log("계산된 중심점:", center);
             return center;
         }
+        
+        // 다른 국가들의 details를 닫는 함수 추가
+        function closeOtherCountryDetails(currentCountry) {
+            const allCountryDetails = document.querySelectorAll('#millList details');
+            allCountryDetails.forEach(details => {
+                const summary = details.querySelector('summary');
+                if (summary && summary.classList.contains('country-summary')) {
+                    const countryName = summary.textContent.split(' (')[0]; // 국가명 추출 (숫자 제외)
+                    if (countryName !== currentCountry) {
+                        details.open = false; // details 요소 닫기
+                    }
+                }
+            });
+        }
+        
         function moveToCountry(country) {
             if (!map) {
                 console.error("지도가 초기화되지 않았습니다.");
                 return;
             }
             
-            selectedProvince = null; // 지역 선택 초기화
+            selectedProvince = null;
             selectedCountry = country;
+            
+            // 다른 국가들의 details 닫기
+            closeOtherCountryDetails(country);
             
             const countryAssets = window.assets.filter(asset => 
                 asset.country && asset.country.toLowerCase().trim() === country.toLowerCase().trim()
@@ -343,7 +361,7 @@
             }
             
             selectedProvince = null;
-            selectedCountry = null; // 국가 선택 초기화 추가
+            selectedCountry = null;
             document.getElementById("searchInput").value = "";
             
             map.setCenter(calculateCenter());
@@ -382,13 +400,11 @@
             let displayAssets = assets;
             
             if (selectedCountry && !selectedProvince) {
-                // 국가가 선택되었지만 지역이 선택되지 않은 경우
                 displayAssets = assets.filter(asset => 
                     asset.country && asset.country.toLowerCase().trim() === selectedCountry.toLowerCase().trim()
                 );
                 console.log(`선택된 국가 ${selectedCountry}의 자산 수: ${displayAssets.length}`);
             } else if (selectedProvince) {
-                // 기존 지역 필터링 로직 유지
                 displayAssets = assets.filter(asset => 
                     asset.province && asset.province.toLowerCase().trim() === selectedProvince.toLowerCase().trim()
                 );
@@ -396,7 +412,6 @@
             }
             
             if (zoom <= 7 && !selectedProvince && !selectedCountry) {
-                // 지역별 그룹 마커 표시 (국가나 지역이 선택되지 않은 경우만)
                 const groupedAssets = assets.reduce((groups, asset) => {
                     const province = asset.province && asset.province.trim() ? asset.province : "Unknown Province";
                     if (!groups[province]) groups[province] = [];
@@ -443,7 +458,6 @@
                 });
                 console.log(`줌 레벨 ${zoom}에서 지역 마커 생성: ${markers.length}개`);
             } else {
-                // 개별 자산 마커 표시
                 displayAssets.forEach(asset => {
                     if (!asset.position || !asset.position.lat || !asset.position.lng) {
                         console.warn(`자산 ${asset.title}의 위치 데이터 누락:`, asset.position);
@@ -508,7 +522,7 @@
                 return;
             }
             selectedProvince = null;
-            selectedCountry = null; // 국가 선택 초기화 추가
+            selectedCountry = null;
             const bounds = new window.google.maps.LatLngBounds();
             let validCount = 0;
             assets.forEach(asset => {
@@ -576,10 +590,14 @@
                 countrySummary.textContent = `${country} (${Object.values(groupedAssets[country]).flat().length})`;
                 countrySummary.classList.add("country-summary");
                 
-                // 국가 클릭 이벤트 추가
+                // 국가 클릭 이벤트 수정 - e.preventDefault() 추가하여 기본 토글 동작 방지
                 countrySummary.addEventListener("click", (e) => {
-                    e.stopPropagation(); // details 토글 방지
+                    e.preventDefault(); // 기본 details 토글 방지
                     moveToCountry(country);
+                    // 클릭한 국가의 details만 열기
+                    setTimeout(() => {
+                        countryDetails.open = true;
+                    }, 0);
                 });
                 
                 countryDetails.appendChild(countrySummary);
