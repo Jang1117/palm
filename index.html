@@ -225,7 +225,7 @@
         let markers = [];
         let selectedProvince = null;
         let selectedCountry = null;
-        let searchQuery = ""; // 검색어를 저장하는 전역 변수 추가
+        let searchQuery = "";
         const defaultIcon = 'https://jang1117.github.io/palm/palm_tree.png';
         const img = new Image();
         img.src = defaultIcon;
@@ -261,8 +261,8 @@
             return center;
         }
         
-        // 복합 필터링 함수 추가
-        function getFilteredAssets() {
+        // 지도 표시용 필터링 함수 (검색어 + 국가/지역)
+        function getFilteredAssetsForMap() {
             let assets = window.assets;
             
             // 검색어 필터 적용
@@ -283,6 +283,22 @@
                 // 국가 선택 필터 적용 (지역이 선택되지 않은 경우만)
                 assets = assets.filter(asset => 
                     asset.country && asset.country.toLowerCase().trim() === selectedCountry.toLowerCase().trim()
+                );
+            }
+            
+            return assets;
+        }
+        
+        // 사이드바 목록용 필터링 함수 (검색어만 적용)
+        function getFilteredAssetsForSidebar() {
+            let assets = window.assets;
+            
+            // 검색어 필터만 적용
+            if (searchQuery) {
+                assets = assets.filter(asset => 
+                    (asset.title && asset.title.toLowerCase().includes(searchQuery)) ||
+                    (asset.millCompanyName && asset.millCompanyName.toLowerCase().includes(searchQuery)) ||
+                    (asset.parentCompanyName && asset.parentCompanyName.toLowerCase().includes(searchQuery))
                 );
             }
             
@@ -313,21 +329,21 @@
             
             closeOtherCountryDetails(country);
             
-            // 필터링된 자산 가져오기
-            const filteredAssets = getFilteredAssets();
+            // 지도 표시용 필터링된 자산 가져오기 (검색어 + 국가 조건)
+            const mapFilteredAssets = getFilteredAssetsForMap();
             
-            if (filteredAssets.length === 0) {
+            if (mapFilteredAssets.length === 0) {
                 console.warn(`선택된 조건에 해당하는 자산이 없습니다.`);
                 alert(`선택된 조건에 해당하는 자산이 없습니다.`);
                 return;
             }
             
-            console.log(`국가 ${country} + 검색어 "${searchQuery}" 필터링된 자산 수: ${filteredAssets.length}`, filteredAssets);
+            console.log(`국가 ${country} + 검색어 "${searchQuery}" 필터링된 자산 수: ${mapFilteredAssets.length}`, mapFilteredAssets);
             
             const bounds = new window.google.maps.LatLngBounds();
             let validCount = 0;
             
-            filteredAssets.forEach(asset => {
+            mapFilteredAssets.forEach(asset => {
                 if (asset.position && asset.position.lat && asset.position.lng) {
                     bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
                     validCount++;
@@ -343,8 +359,12 @@
             }
             
             map.fitBounds(bounds);
-            updateFilteredMarkers(filteredAssets);
-            populateMillList(filteredAssets); // 사이드바 목록도 업데이트
+            updateFilteredMarkers(mapFilteredAssets);
+            
+            // 사이드바는 검색어만 적용한 결과로 업데이트 (국가/지역 목록 유지)
+            const sidebarFilteredAssets = getFilteredAssetsForSidebar();
+            populateMillList(sidebarFilteredAssets);
+            
             console.log(`국가 ${country}로 이동, 줌 레벨: ${map.getZoom()}`);
         }
         
@@ -356,21 +376,21 @@
             
             selectedProvince = province;
             
-            // 필터링된 자산 가져오기
-            const filteredAssets = getFilteredAssets();
+            // 지도 표시용 필터링된 자산 가져오기 (검색어 + 지역 조건)
+            const mapFilteredAssets = getFilteredAssetsForMap();
             
-            if (filteredAssets.length === 0) {
+            if (mapFilteredAssets.length === 0) {
                 console.warn(`선택된 조건에 해당하는 자산이 없습니다.`);
                 alert(`선택된 조건에 해당하는 자산이 없습니다.`);
                 return;
             }
             
-            console.log(`지역 ${province} + 검색어 "${searchQuery}" 필터링된 자산 수: ${filteredAssets.length}`, filteredAssets);
+            console.log(`지역 ${province} + 검색어 "${searchQuery}" 필터링된 자산 수: ${mapFilteredAssets.length}`, mapFilteredAssets);
             
             const bounds = new window.google.maps.LatLngBounds();
             let validCount = 0;
             
-            filteredAssets.forEach(asset => {
+            mapFilteredAssets.forEach(asset => {
                 if (asset.position && asset.position.lat && asset.position.lng) {
                     bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
                     validCount++;
@@ -386,8 +406,12 @@
             }
             
             map.fitBounds(bounds);
-            updateFilteredMarkers(filteredAssets);
-            populateMillList(filteredAssets); // 사이드바 목록도 업데이트
+            updateFilteredMarkers(mapFilteredAssets);
+            
+            // 사이드바는 검색어만 적용한 결과로 업데이트 (국가/지역 목록 유지)
+            const sidebarFilteredAssets = getFilteredAssetsForSidebar();
+            populateMillList(sidebarFilteredAssets);
+            
             console.log(`지역 ${province}로 이동, 줌 레벨: ${map.getZoom()}`);
         }
         
@@ -399,7 +423,7 @@
             
             selectedProvince = null;
             selectedCountry = null;
-            searchQuery = ""; // 검색어도 초기화
+            searchQuery = "";
             document.getElementById("searchInput").value = "";
             
             map.setCenter(calculateCenter());
@@ -437,10 +461,7 @@
             const zoom = map.getZoom();
             let displayAssets = assets;
             
-            // 이미 필터링된 자산을 받으므로 추가 필터링 불필요
-            
             if (zoom <= 7 && !selectedProvince && !selectedCountry) {
-                // 지역별 그룹 마커 표시 (국가나 지역이 선택되지 않은 경우만)
                 const groupedAssets = assets.reduce((groups, asset) => {
                     const province = asset.province && asset.province.trim() ? asset.province : "Unknown Province";
                     if (!groups[province]) groups[province] = [];
@@ -487,7 +508,6 @@
                 });
                 console.log(`줌 레벨 ${zoom}에서 지역 마커 생성: ${markers.length}개`);
             } else {
-                // 개별 자산 마커 표시
                 displayAssets.forEach(asset => {
                     if (!asset.position || !asset.position.lat || !asset.position.lng) {
                         console.warn(`자산 ${asset.title}의 위치 데이터 누락:`, asset.position);
@@ -682,19 +702,20 @@
             populateMillList();
             updateFilteredMarkers(window.assets);
             
-            // 검색 이벤트 리스너 수정
             searchInput.addEventListener("input", () => {
                 searchQuery = searchInput.value.toLowerCase();
                 console.log("검색 쿼리:", searchQuery);
                 
-                // 복합 필터링 적용
-                const filteredAssets = getFilteredAssets();
+                // 사이드바는 검색어만 적용
+                const sidebarFilteredAssets = getFilteredAssetsForSidebar();
+                populateMillList(sidebarFilteredAssets);
                 
-                populateMillList(filteredAssets);
-                updateFilteredMarkers(filteredAssets);
+                // 지도는 검색어 + 선택된 국가/지역 적용
+                const mapFilteredAssets = getFilteredAssetsForMap();
+                updateFilteredMarkers(mapFilteredAssets);
                 
-                if (filteredAssets.length > 0) {
-                    moveToAssets(filteredAssets);
+                if (mapFilteredAssets.length > 0) {
+                    moveToAssets(mapFilteredAssets);
                 } else {
                     map.setCenter(calculateCenter());
                     map.setZoom(2);
@@ -725,11 +746,10 @@
             moveToAssets();
             initializeSidebar();
             
-            // 줌 변경 이벤트 리스너 수정
             map.addListener("zoom_changed", () => {
                 console.log(`줌 레벨 변경: ${map.getZoom()}`);
-                const filteredAssets = getFilteredAssets();
-                updateFilteredMarkers(filteredAssets);
+                const mapFilteredAssets = getFilteredAssetsForMap();
+                updateFilteredMarkers(mapFilteredAssets);
             });
         };
     </script>
