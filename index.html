@@ -225,6 +225,7 @@
         let markers = [];
         let selectedProvince = null;
         let selectedCountry = null;
+        let searchQuery = ""; // 검색어를 저장하는 전역 변수 추가
         const defaultIcon = 'https://jang1117.github.io/palm/palm_tree.png';
         const img = new Image();
         img.src = defaultIcon;
@@ -260,15 +261,42 @@
             return center;
         }
         
-        // 다른 국가들의 details를 닫는 함수 추가
+        // 복합 필터링 함수 추가
+        function getFilteredAssets() {
+            let assets = window.assets;
+            
+            // 검색어 필터 적용
+            if (searchQuery) {
+                assets = assets.filter(asset => 
+                    (asset.title && asset.title.toLowerCase().includes(searchQuery)) ||
+                    (asset.millCompanyName && asset.millCompanyName.toLowerCase().includes(searchQuery)) ||
+                    (asset.parentCompanyName && asset.parentCompanyName.toLowerCase().includes(searchQuery))
+                );
+            }
+            
+            // 지역 선택 필터 적용
+            if (selectedProvince) {
+                assets = assets.filter(asset => 
+                    asset.province && asset.province.toLowerCase().trim() === selectedProvince.toLowerCase().trim()
+                );
+            } else if (selectedCountry) {
+                // 국가 선택 필터 적용 (지역이 선택되지 않은 경우만)
+                assets = assets.filter(asset => 
+                    asset.country && asset.country.toLowerCase().trim() === selectedCountry.toLowerCase().trim()
+                );
+            }
+            
+            return assets;
+        }
+        
         function closeOtherCountryDetails(currentCountry) {
             const allCountryDetails = document.querySelectorAll('#millList details');
             allCountryDetails.forEach(details => {
                 const summary = details.querySelector('summary');
                 if (summary && summary.classList.contains('country-summary')) {
-                    const countryName = summary.textContent.split(' (')[0]; // 국가명 추출 (숫자 제외)
+                    const countryName = summary.textContent.split(' (')[0];
                     if (countryName !== currentCountry) {
-                        details.open = false; // details 요소 닫기
+                        details.open = false;
                     }
                 }
             });
@@ -283,25 +311,23 @@
             selectedProvince = null;
             selectedCountry = country;
             
-            // 다른 국가들의 details 닫기
             closeOtherCountryDetails(country);
             
-            const countryAssets = window.assets.filter(asset => 
-                asset.country && asset.country.toLowerCase().trim() === country.toLowerCase().trim()
-            );
+            // 필터링된 자산 가져오기
+            const filteredAssets = getFilteredAssets();
             
-            if (countryAssets.length === 0) {
-                console.warn(`국가 ${country}에 해당하는 자산이 없습니다.`);
-                alert(`국가 ${country}에 자산이 없습니다.`);
+            if (filteredAssets.length === 0) {
+                console.warn(`선택된 조건에 해당하는 자산이 없습니다.`);
+                alert(`선택된 조건에 해당하는 자산이 없습니다.`);
                 return;
             }
             
-            console.log(`국가 ${country} 자산 수: ${countryAssets.length}`, countryAssets);
+            console.log(`국가 ${country} + 검색어 "${searchQuery}" 필터링된 자산 수: ${filteredAssets.length}`, filteredAssets);
             
             const bounds = new window.google.maps.LatLngBounds();
             let validCount = 0;
             
-            countryAssets.forEach(asset => {
+            filteredAssets.forEach(asset => {
                 if (asset.position && asset.position.lat && asset.position.lng) {
                     bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
                     validCount++;
@@ -311,33 +337,40 @@
             });
             
             if (validCount === 0) {
-                console.warn(`국가 ${country}에 유효한 좌표가 있는 자산이 없습니다.`);
-                alert(`국가 ${country}에 유효한 좌표가 있는 자산이 없습니다.`);
+                console.warn(`선택된 조건에 유효한 좌표가 있는 자산이 없습니다.`);
+                alert(`선택된 조건에 유효한 좌표가 있는 자산이 없습니다.`);
                 return;
             }
             
             map.fitBounds(bounds);
-            updateFilteredMarkers(countryAssets);
+            updateFilteredMarkers(filteredAssets);
+            populateMillList(filteredAssets); // 사이드바 목록도 업데이트
             console.log(`국가 ${country}로 이동, 줌 레벨: ${map.getZoom()}`);
         }
+        
         function moveToProvince(province) {
             if (!map) {
                 console.error("지도가 초기화되지 않았습니다.");
                 return;
             }
+            
             selectedProvince = province;
-            const provinceAssets = window.assets.filter(asset => 
-                asset.province && asset.province.toLowerCase().trim() === province.toLowerCase().trim()
-            );
-            if (provinceAssets.length === 0) {
-                console.warn(`지역 ${province}에 해당하는 자산이 없습니다.`);
-                alert(`지역 ${province}에 자산이 없습니다.`);
+            
+            // 필터링된 자산 가져오기
+            const filteredAssets = getFilteredAssets();
+            
+            if (filteredAssets.length === 0) {
+                console.warn(`선택된 조건에 해당하는 자산이 없습니다.`);
+                alert(`선택된 조건에 해당하는 자산이 없습니다.`);
                 return;
             }
-            console.log(`지역 ${province} 자산 수: ${provinceAssets.length}`, provinceAssets);
+            
+            console.log(`지역 ${province} + 검색어 "${searchQuery}" 필터링된 자산 수: ${filteredAssets.length}`, filteredAssets);
+            
             const bounds = new window.google.maps.LatLngBounds();
             let validCount = 0;
-            provinceAssets.forEach(asset => {
+            
+            filteredAssets.forEach(asset => {
                 if (asset.position && asset.position.lat && asset.position.lng) {
                     bounds.extend(new window.google.maps.LatLng(asset.position.lat, asset.position.lng));
                     validCount++;
@@ -345,15 +378,19 @@
                     console.warn(`자산 ${asset.title}의 위치 데이터 누락:`, asset.position);
                 }
             });
+            
             if (validCount === 0) {
-                console.warn(`지역 ${province}에 유효한 좌표가 있는 자산이 없습니다.`);
-                alert(`지역 ${province}에 유효한 좌표가 있는 자산이 없습니다.`);
+                console.warn(`선택된 조건에 유효한 좌표가 있는 자산이 없습니다.`);
+                alert(`선택된 조건에 유효한 좌표가 있는 자산이 없습니다.`);
                 return;
             }
+            
             map.fitBounds(bounds);
-            updateFilteredMarkers(provinceAssets);
+            updateFilteredMarkers(filteredAssets);
+            populateMillList(filteredAssets); // 사이드바 목록도 업데이트
             console.log(`지역 ${province}로 이동, 줌 레벨: ${map.getZoom()}`);
         }
+        
         function showHome() {
             if (!map) {
                 console.error("지도가 초기화되지 않았습니다.");
@@ -362,6 +399,7 @@
             
             selectedProvince = null;
             selectedCountry = null;
+            searchQuery = ""; // 검색어도 초기화
             document.getElementById("searchInput").value = "";
             
             map.setCenter(calculateCenter());
@@ -399,19 +437,10 @@
             const zoom = map.getZoom();
             let displayAssets = assets;
             
-            if (selectedCountry && !selectedProvince) {
-                displayAssets = assets.filter(asset => 
-                    asset.country && asset.country.toLowerCase().trim() === selectedCountry.toLowerCase().trim()
-                );
-                console.log(`선택된 국가 ${selectedCountry}의 자산 수: ${displayAssets.length}`);
-            } else if (selectedProvince) {
-                displayAssets = assets.filter(asset => 
-                    asset.province && asset.province.toLowerCase().trim() === selectedProvince.toLowerCase().trim()
-                );
-                console.log(`선택된 지역 ${selectedProvince}의 자산 수: ${displayAssets.length}`);
-            }
+            // 이미 필터링된 자산을 받으므로 추가 필터링 불필요
             
             if (zoom <= 7 && !selectedProvince && !selectedCountry) {
+                // 지역별 그룹 마커 표시 (국가나 지역이 선택되지 않은 경우만)
                 const groupedAssets = assets.reduce((groups, asset) => {
                     const province = asset.province && asset.province.trim() ? asset.province : "Unknown Province";
                     if (!groups[province]) groups[province] = [];
@@ -458,6 +487,7 @@
                 });
                 console.log(`줌 레벨 ${zoom}에서 지역 마커 생성: ${markers.length}개`);
             } else {
+                // 개별 자산 마커 표시
                 displayAssets.forEach(asset => {
                     if (!asset.position || !asset.position.lat || !asset.position.lng) {
                         console.warn(`자산 ${asset.title}의 위치 데이터 누락:`, asset.position);
@@ -590,11 +620,9 @@
                 countrySummary.textContent = `${country} (${Object.values(groupedAssets[country]).flat().length})`;
                 countrySummary.classList.add("country-summary");
                 
-                // 국가 클릭 이벤트 수정 - e.preventDefault() 추가하여 기본 토글 동작 방지
                 countrySummary.addEventListener("click", (e) => {
-                    e.preventDefault(); // 기본 details 토글 방지
+                    e.preventDefault();
                     moveToCountry(country);
-                    // 클릭한 국가의 details만 열기
                     setTimeout(() => {
                         countryDetails.open = true;
                     }, 0);
@@ -653,16 +681,18 @@
             console.log(`초기 자산 수: ${window.assets.length}`);
             populateMillList();
             updateFilteredMarkers(window.assets);
+            
+            // 검색 이벤트 리스너 수정
             searchInput.addEventListener("input", () => {
-                const query = searchInput.value.toLowerCase();
-                console.log("검색 쿼리:", query);
-                const filteredAssets = window.assets.filter(asset => 
-                    (asset.title && asset.title.toLowerCase().includes(query)) ||
-                    (asset.millCompanyName && asset.millCompanyName.toLowerCase().includes(query)) ||
-                    (asset.parentCompanyName && asset.parentCompanyName.toLowerCase().includes(query))
-                );
+                searchQuery = searchInput.value.toLowerCase();
+                console.log("검색 쿼리:", searchQuery);
+                
+                // 복합 필터링 적용
+                const filteredAssets = getFilteredAssets();
+                
                 populateMillList(filteredAssets);
                 updateFilteredMarkers(filteredAssets);
+                
                 if (filteredAssets.length > 0) {
                     moveToAssets(filteredAssets);
                 } else {
@@ -694,16 +724,12 @@
             console.log(`지도 초기화 완료.`);
             moveToAssets();
             initializeSidebar();
+            
+            // 줌 변경 이벤트 리스너 수정
             map.addListener("zoom_changed", () => {
                 console.log(`줌 레벨 변경: ${map.getZoom()}`);
-                const searchInput = document.getElementById("searchInput");
-                const query = searchInput.value.toLowerCase();
-                const assetsToDisplay = query ? window.assets.filter(asset => 
-                    (asset.title && asset.title.toLowerCase().includes(query)) ||
-                    (asset.millCompanyName && asset.millCompanyName.toLowerCase().includes(query)) ||
-                    (asset.parentCompanyName && asset.parentCompanyName.toLowerCase().includes(query))
-                ) : window.assets;
-                updateFilteredMarkers(assetsToDisplay);
+                const filteredAssets = getFilteredAssets();
+                updateFilteredMarkers(filteredAssets);
             });
         };
     </script>
